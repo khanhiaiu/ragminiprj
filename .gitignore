@@ -30,6 +30,7 @@ dist/
 
 # Generated parser output and temporary files
 parsed_test_document/
+qdrant_storage/
 tmp/
 temp/
 *.log
