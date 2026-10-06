@@ -1,0 +1,13 @@
+# Versions used to validate this project on Python 3.12 / Linux CPU.
+pymupdf==1.28.2
+openpyxl==3.1.5
+pydantic==2.13.5
+pillow==12.3.0
+docling-slim==2.133.0
+docling-core==2.99.0
+paddleocr==3.7.0
+paddlex==3.7.2
+paddlepaddle==3.3.0
+huggingface-hub==1.13.0
+opencv-contrib-python==4.10.0.84
+numpy==2.3.5

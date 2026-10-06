@@ -1,0 +1,5 @@
+# Reproducible development environment.
+# Direct and transitive versions validated on Python 3.12 / Linux CPU are pinned
+# in constraints.txt; project dependencies and extras are defined in pyproject.toml.
+-c constraints.txt
+-e .[docx,ocr,test]

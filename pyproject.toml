@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-document-parser"
+version = "0.1.0"
+description = "Document ingestion and canonical parsing for RAG"
+requires-python = ">=3.10,<3.14"
+dependencies = ["pymupdf>=1.24,<2", "openpyxl>=3.1,<4", "pydantic>=2,<3", "pillow>=10"]
+
+[project.optional-dependencies]
+docx = ["docling-slim[format-docx]>=2.133,<3"]
+ocr = [
+    "paddleocr[doc-parser]>=3.7,<4",
+    "paddlepaddle>=3.3,<4",
+    "huggingface-hub>=0.25,<2",
+]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["integration: real document parsing", "slow: model inference"]
