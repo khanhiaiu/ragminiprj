@@ -41,12 +41,21 @@ def main() -> int:
     parser.add_argument("--llm-url", default="http://localhost:8080/v1")
     parser.add_argument("--embedder", default="hash")
     parser.add_argument("--backend", default="local")
+    parser.add_argument("--qdrant-url", default=None,
+                        help="Qdrant URL (default: QDRANT_URL env / .env, else http://localhost:6333)")
+    parser.add_argument("--qdrant-api-key", default=None,
+                        help="Qdrant API key (default: QDRANT_API_KEY env / .env)")
+    parser.add_argument("--collection", default="docs")
     parser.add_argument("--top-k", type=int, default=5)
     parser.add_argument("--threshold", type=float, default=None)
     parser.add_argument("--session", default="cli")
     args = parser.parse_args()
 
-    retriever = HybridRetriever.load(args.rag_dir, embedder_name=args.embedder, backend=args.backend)
+    retriever = HybridRetriever.load(
+        args.rag_dir, embedder_name=args.embedder, backend=args.backend,
+        qdrant_url=args.qdrant_url, collection=args.collection,
+        qdrant_api_key=args.qdrant_api_key,
+    )
     llm = make_llm(args.llm, model=args.llm_model, base_url=args.llm_url)
     memory = SessionMemory()
     if args.query:

@@ -60,7 +60,10 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=ROOT / ".cache" / "rag")
     parser.add_argument("--embedder", default="hash", help="'hash' (offline/tests) or 'bge-m3' (production)")
     parser.add_argument("--backend", default="local", help="'local' | 'qdrant' | 'qdrant-memory' | 'auto'")
-    parser.add_argument("--qdrant-url", default="http://localhost:6333")
+    parser.add_argument("--qdrant-url", default=None,
+                        help="Qdrant URL (default: QDRANT_URL env / .env, else http://localhost:6333)")
+    parser.add_argument("--qdrant-api-key", default=None,
+                        help="Qdrant API key (default: QDRANT_API_KEY env / .env)")
     parser.add_argument("--collection", default=COLLECTION)
     parser.add_argument("--batch-size", type=int, default=16)
     args = parser.parse_args()
@@ -92,8 +95,14 @@ def main() -> int:
         store._by_hash = dict(prev._by_hash)
         qdrant = None
     else:
-        url = None if backend == "qdrant-memory" else args.qdrant_url
-        store = get_store(backend, url=url, collection=args.collection)
+        if backend == "qdrant-memory":
+            store = get_store(backend, collection=args.collection)
+        else:
+            from rag.store import resolve_qdrant_settings
+
+            url, api_key = resolve_qdrant_settings(args.qdrant_url, args.qdrant_api_key)
+            store = get_store(backend, url=url or "http://localhost:6333",
+                              collection=args.collection, api_key=api_key)
         store.ensure_collection()
         qdrant = store if backend != "local" else None
 

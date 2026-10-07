@@ -18,14 +18,19 @@ sys.path.insert(0, str(ROOT / "src"))
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--qdrant-url", default="http://localhost:6333")
+    parser.add_argument("--qdrant-url", default=None,
+                        help="Qdrant URL (default: QDRANT_URL env / .env, else http://localhost:6333)")
+    parser.add_argument("--qdrant-api-key", default=None,
+                        help="Qdrant API key (default: QDRANT_API_KEY env / .env)")
     parser.add_argument("--collection", default="docs")
     parser.add_argument("--memory", action="store_true")
     args = parser.parse_args()
-    from rag.store import get_store
+    from rag.store import get_store, resolve_qdrant_settings
 
     backend = "qdrant-memory" if args.memory else "qdrant"
-    store = get_store(backend, url=args.qdrant_url, collection=args.collection)
+    url, api_key = resolve_qdrant_settings(args.qdrant_url, args.qdrant_api_key)
+    store = get_store(backend, url=url or "http://localhost:6333",
+                      collection=args.collection, api_key=api_key)
     store.ensure_collection()
     print(f"Collection '{args.collection}' ready (backend={backend})")
     return 0

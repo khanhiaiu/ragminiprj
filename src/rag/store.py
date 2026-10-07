@@ -5,10 +5,14 @@ Two backends share one interface so tests/CI run without Docker:
 - ``LocalVectorStore`` (default): numpy cosine search + JSONL persistence.
   No server needed. Used by ``scripts/ingest.py --backend local`` and all
   unit tests.
-- ``QdrantStore``: real Qdrant (Docker at ``localhost:6333`` or
-  ``:memory:``). Requires ``qdrant-client``. Used with
+- ``QdrantStore``: real Qdrant (local Docker, self-hosted with TLS +
+  API key, or Qdrant Cloud). Requires ``qdrant-client``. Used with
   ``--backend qdrant`` / ``--backend auto`` (falls back to local when
-  the server/client is unavailable).
+  the server/client is unavailable). Connection settings resolve in
+  order: explicit argument → ``QDRANT_URL`` / ``QDRANT_API_KEY`` env →
+  repo-root ``.env`` file (also accepts ``CLUSTER_URL`` and
+  ``QDRANT__SERVICE__API_KEY`` aliases). REST transport is forced
+  (``prefer_grpc=False``) so Qdrant Cloud works without the gRPC port.
 
 Qdrant layout (created by ``ensure_collection``):
   collection ``docs``, vector ``dense`` size 1024 distance Cosine,
@@ -21,12 +25,61 @@ from __future__ import annotations
 
 import json
 import math
+import os
 from pathlib import Path
 from typing import Any, Sequence
 
 COLLECTION = "docs"
 VECTOR_NAME = "dense"
 VECTOR_SIZE = 1024
+
+# Env / .env keys accepted for Qdrant connections (explicit args win).
+_URL_KEYS = ("QDRANT_URL", "CLUSTER_URL")
+_API_KEY_KEYS = ("QDRANT_API_KEY", "QDRANT__SERVICE__API_KEY")
+
+
+def _load_dotenv_file() -> None:
+    """Fill missing Qdrant settings from the repo-root ``.env`` (no dependency).
+
+    Accepts both ``KEY=value`` and ``KEY: value`` lines, strips quotes, and
+    never overrides real environment variables. Only the keys in
+    ``_URL_KEYS`` / ``_API_KEY_KEYS`` are imported.
+    """
+    wanted = set(_URL_KEYS) | set(_API_KEY_KEYS)
+    if all(os.environ.get(k) for k in ("QDRANT_URL", "QDRANT_API_KEY")):
+        return
+    env_path = Path(__file__).resolve().parents[2] / ".env"
+    if not env_path.exists():
+        return
+    for raw in env_path.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or line.startswith("//"):
+            continue
+        if line.startswith("export "):
+            line = line[len("export "):].strip()
+        key, sep, value = line.partition("=")
+        if not sep:
+            key, sep, value = line.partition(":")
+        if not sep:
+            continue
+        key = key.strip()
+        if key not in wanted or os.environ.get(key):
+            continue
+        value = value.strip().strip("\"").strip("'")
+        if value:
+            os.environ[key] = value
+
+
+def resolve_qdrant_settings(
+    url: str | None = None, api_key: str | None = None
+) -> tuple[str | None, str | None]:
+    """Resolve Qdrant URL / API key: arg → env → .env aliases."""
+    _load_dotenv_file()
+    if not url:
+        url = os.environ.get("QDRANT_URL") or os.environ.get("CLUSTER_URL")
+    if not api_key:
+        api_key = os.environ.get("QDRANT_API_KEY") or os.environ.get("QDRANT__SERVICE__API_KEY")
+    return url, api_key
 
 
 def _cosine(a: Sequence[float], b: Sequence[float]) -> float:
@@ -140,15 +193,18 @@ class QdrantStore:
         collection: str = COLLECTION,
         vector_size: int = VECTOR_SIZE,
         in_memory: bool = False,
+        api_key: str | None = None,
     ) -> None:
         try:
             from qdrant_client import QdrantClient
         except ImportError as exc:
             raise ImportError("Install qdrant-client>=1.9 for --backend qdrant") from exc
+        url, api_key = resolve_qdrant_settings(url, api_key)
         if in_memory or not url:
             self.client = QdrantClient(":memory:")
         else:
-            self.client = QdrantClient(url=url, timeout=30)
+            # REST only: Qdrant Cloud free tier blocks the gRPC port.
+            self.client = QdrantClient(url=url, api_key=api_key, prefer_grpc=False, timeout=30)
         self.collection = collection
         self.vector_size = vector_size
 
@@ -265,11 +321,17 @@ def get_store(backend: str = "auto", **kwargs) -> LocalVectorStore | QdrantStore
     if key in {"qdrant-memory", "memory"}:
         return QdrantStore(in_memory=True, **{k: v for k, v in kwargs.items() if k in {"collection", "vector_size"}})
     if key == "qdrant":
-        return QdrantStore(url=kwargs.get("url"), collection=str(kwargs.get("collection", COLLECTION)))
+        return QdrantStore(
+            url=kwargs.get("url"), collection=str(kwargs.get("collection", COLLECTION)),
+            api_key=kwargs.get("api_key"),
+        )
     if key == "auto":
         url = kwargs.get("url")
         try:
-            store = QdrantStore(url=url, collection=str(kwargs.get("collection", COLLECTION)))
+            store = QdrantStore(
+                url=url, collection=str(kwargs.get("collection", COLLECTION)),
+                api_key=kwargs.get("api_key"),
+            )
             store.ensure_collection()
             return store
         except Exception:

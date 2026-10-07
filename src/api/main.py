@@ -50,7 +50,7 @@ class QueryResponse(BaseModel):
 _state: dict[str, Any] = {"retriever": None, "llm": None, "memory": None, "error": None}
 
 
-def _settings() -> dict[str, str]:
+def _settings() -> dict[str, Any]:
     return {
         "rag_dir": os.environ.get("RAG_DIR", str(ROOT / ".cache" / "rag")),
         "backend": os.environ.get("RAG_BACKEND", "local"),
@@ -58,7 +58,8 @@ def _settings() -> dict[str, str]:
         "llm_backend": os.environ.get("LLM_BACKEND", "fake"),
         "llm_model": os.environ.get("LLM_MODEL", "unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M"),
         "llm_base_url": os.environ.get("LLM_BASE_URL", "http://localhost:8080/v1"),
-        "qdrant_url": os.environ.get("QDRANT_URL", "http://localhost:6333"),
+        "qdrant_url": os.environ.get("QDRANT_URL"),
+        "qdrant_api_key": os.environ.get("QDRANT_API_KEY"),
     }
 
 
@@ -77,6 +78,7 @@ def get_components() -> dict[str, Any]:
             _state["retriever"] = HybridRetriever.load(
                 Path(settings["rag_dir"]), embedder_name=settings["embedder"],
                 backend=settings["backend"], qdrant_url=settings["qdrant_url"],
+                qdrant_api_key=settings["qdrant_api_key"],
             )
             _state["llm"] = make_llm(
                 settings["llm_backend"], model=settings["llm_model"], base_url=settings["llm_base_url"])

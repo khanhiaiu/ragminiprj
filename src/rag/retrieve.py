@@ -107,8 +107,9 @@ class HybridRetriever:
         rag_dir: Path,
         embedder_name: str = "hash",
         backend: str = "local",
-        qdrant_url: str = "http://localhost:6333",
+        qdrant_url: str | None = None,
         collection: str = "docs",
+        qdrant_api_key: str | None = None,
         **embedder_kwargs,
     ) -> "HybridRetriever":
         rag_dir = Path(rag_dir)
@@ -121,7 +122,11 @@ class HybridRetriever:
             store = LocalVectorStore.load(rag_dir)
             payloads = {str(p.get("chunk_id")): dict(p) for p in store.payloads}
         else:
-            store = get_store(backend, url=qdrant_url, collection=collection)
+            from .store import resolve_qdrant_settings
+
+            url, api_key = resolve_qdrant_settings(qdrant_url, qdrant_api_key)
+            store = get_store(backend, url=url or "http://localhost:6333",
+                              collection=collection, api_key=api_key)
             payloads = _payloads_from_chunks(rag_dir / "chunks.jsonl")
         return cls(store=store, bm25=bm25, embedder=embedder, payloads=payloads)
 

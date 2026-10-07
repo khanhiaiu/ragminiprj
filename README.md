@@ -188,13 +188,23 @@ Nếu đã có chunk chuẩn từ Step 1, truyền trực tiếp để bỏ qua 
 python scripts/ingest.py --chunks chunks.jsonl --embedder hash --backend local
 ```
 
-Chạy production với embedding bge-m3 và Qdrant:
+Chạy production với embedding bge-m3 và Qdrant local:
 
 ```bash
 docker compose up -d qdrant
 python scripts/init_qdrant.py
 python scripts/ingest.py --input parsed_test_document --embedder bge-m3 --backend qdrant
 ```
+
+Chạy với Qdrant Cloud (URL và key lấy từ flag, biến môi trường hoặc file `.env`):
+
+```bash
+python scripts/init_qdrant.py --qdrant-url https://<cluster>.cloud.qdrant.io --qdrant-api-key <key>
+python scripts/ingest.py --input parsed_test_document --embedder bge-m3 --backend qdrant \
+  --qdrant-url https://<cluster>.cloud.qdrant.io --qdrant-api-key <key>
+```
+
+Có thể đặt `QDRANT_URL` và `QDRANT_API_KEY` trong file `.env` ở thư mục gốc (đã gitignore, xem `.env.example`); script tự đọc khi thiếu flag. `query.py`, `chat.py` và API (`QDRANT_URL`/`QDRANT_API_KEY`) dùng cùng cơ chế.
 
 Kết quả mặc định ghi vào `.cache/rag/`:
 
