@@ -26,6 +26,7 @@ dist/
 .env
 .env.*
 !.env.example
+.pem
 
 # OCR models and tool caches
 .cache/
@@ -33,6 +34,7 @@ dist/
 # Generated parser output and temporary files
 parsed_test_document/
 output/
+qdrant_storage/
 tmp/
 temp/
 *.log

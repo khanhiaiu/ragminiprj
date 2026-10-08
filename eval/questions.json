@@ -1,0 +1,10 @@
+{
+  "note": "Tune the retrieval fallback threshold on this set (SystemDocuments §4.4). Threshold is NOT final until measured here.",
+  "questions": [
+    { "q": "Phí thường niên thẻ chuẩn là bao nhiêu?", "expect_contains": "300.000", "expect_type": "table" },
+    { "q": "Thẻ vàng có được miễn phí năm đầu không?", "expect_contains": "miễn năm đầu", "expect_type": "text" },
+    { "q": "Các bước mở thẻ tín dụng theo sơ đồ?", "expect_contains": "Bước 1", "expect_type": "figure" },
+    { "q": "Chính sách nghỉ phép năm thế nào?", "expect_contains": "nghỉ phép", "expect_type": "text" },
+    { "q": "Thủ tục hoàn toàn không có trong tài liệu là gì?", "expect_contains": null, "expect_fallback": true }
+  ]
+}

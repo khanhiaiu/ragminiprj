@@ -17,6 +17,24 @@ gpu = ["paddlepaddle-gpu==3.3.0"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
+docx = ["docling-slim[format-docx]>=2.133,<3"]
+ocr = [
+    "paddleocr[doc-parser]>=3.7,<4",
+    "paddlepaddle>=3.3,<4",
+    "huggingface-hub>=0.25,<2",
+]
+rag = [
+    "numpy>=1.26",
+    "qdrant-client>=1.9,<2",
+    "sentence-transformers>=2.7",
+]
+api = [
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "httpx>=0.27",
+    "streamlit>=1.33",
+]
+test = ["pytest>=8", "httpx>=0.27"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
