@@ -2,9 +2,9 @@
 
 Pipeline Python dùng để đọc tài liệu `PDF`, `DOCX`, `XLSX` và ảnh, sau đó chuẩn hóa nội dung và xuất ra JSON, Markdown cùng các asset liên quan.
 
-> Project tập trung vào ingestion/parsing và có lớp chuẩn bị dữ liệu retrieval; chưa triển khai
-> chunking, embedding, vector database hoặc truy vấn.
-Project gồm hai giai đoạn: (1) ingestion và parsing ra `CanonicalDocument`, (2) RAG local gồm chunking, embedding hybrid BM25 + bge-m3, lưu trữ Local/Qdrant, retrieval RRF top 5, sinh câu trả lời bằng Qwen3-4B qua llama.cpp, kèm FastAPI và Streamlit UI.
+Project gồm hai giai đoạn: (1) ingestion và parsing ra `CanonicalDocument`, (2) RAG gồm chunking, embedding BGE-M3 dense + lexical sparse, lưu trữ Qdrant, hybrid search bằng Qdrant Query API và RRF, sinh câu trả lời bằng Qwen3.5-2B qua llama.cpp, kèm FastAPI và Streamlit UI.
+
+Để mở lại hệ thống hỏi đáp đã có dữ liệu, xem [Khởi động hệ thống](#khởi-động-hệ-thống).
 
 ## Production ingestion pipeline
 
@@ -14,7 +14,7 @@ dữ liệu retrieval dẫn xuất được ghi vào thư mục output riêng:
 ```text
 CanonicalDocument + assets
   -> image context (BAAI/bge-m3 tokenizer, revision pinned, <= 200 tokens)
-  -> OpenCode VLM structured caption
+  -> Gemini VLM structured caption
   -> derived retrieval documents
   -> text/table/figure chunks (hard maximum 768 tokens)
   -> BGE-M3 dense 1024 + lexical sparse
@@ -24,7 +24,7 @@ CanonicalDocument + assets
 ```
 
 Cấu hình mặc định và revision được khóa tại
-[`config/rag_ingestion.json`](config/rag_ingestion.json). Gap analysis và thứ tự
+[`config.yaml`](config.yaml). Gap analysis và thứ tự
 triển khai nằm tại
 [`docs/INGESTION_IMPLEMENTATION_PLAN.md`](docs/INGESTION_IMPLEMENTATION_PLAN.md).
 
@@ -206,7 +206,9 @@ Trên Windows PowerShell, kích hoạt môi trường bằng:
 ```
 
 ## Chạy bằng GPU
-`requirements.txt` cài project ở chế độ editable cùng các extra DOCX, OCR và test. `constraints.txt` khóa các phiên bản đã được kiểm tra trên Python 3.12/Linux CPU.
+`requirements.txt` khai báo dependency chung và được `pyproject.toml` đọc khi build package.
+Cài project ở chế độ editable bằng `pip install -e`; chọn đúng một extra `cpu`
+hoặc `gpu` để cài backend Paddle tương ứng.
 
 Muốn chạy thêm RAG local, API và UI, cài các extra tương ứng:
 
@@ -214,7 +216,7 @@ Muốn chạy thêm RAG local, API và UI, cài các extra tương ứng:
 python -m pip install -e '.[rag,api]'
 ```
 
-Extra `rag` gồm `numpy`, `qdrant-client` và `sentence-transformers` cho embedding bge-m3 và Qdrant. Extra `api` gồm `fastapi`, `uvicorn`, `httpx` và `streamlit` cho service và chat UI. Chạy offline hoặc test chỉ cần embedder `hash`, không bắt buộc tải model embedding.
+Extra `rag` gồm `numpy`, `qdrant-client` và `FlagEmbedding` cho embedding BGE-M3 dense/sparse và Qdrant. Extra `api` gồm `fastapi`, `uvicorn`, `httpx` và `streamlit` cho service và chat UI. Chạy offline hoặc test chỉ cần embedder `hash`, không bắt buộc tải model embedding.
 
 Nếu Python trên Debian/Ubuntu không có `ensurepip`, có thể tạo môi trường bằng:
 
@@ -241,7 +243,7 @@ Nếu dùng phiên bản CUDA khác, chọn wheel Paddle tương ứng theo [hư
 
 ## Cấu hình
 
-File cấu hình mặc định nằm tại [`src/document_parser/config.yaml`](src/document_parser/config.yaml). Các mục thường cần chỉnh:
+File cấu hình mặc định nằm tại [`config.yaml`](config.yaml). Các mục thường cần chỉnh:
 
 ```yaml
 device: gpu:0 # cpu, gpu hoặc gpu:N
@@ -310,133 +312,453 @@ Script trả exit code `0` khi tất cả file thành công và `1` khi không c
 
 ## Tạo index RAG
 
-Sau khi có `parsed_test_document/`, tạo chunk, embedding và index hybrid bằng:
+Sau khi có canonical documents, tạo generation Qdrant mới và publish alias
+`docs_current` sau verification:
 
 ```bash
-python scripts/ingest.py --input parsed_test_document --embedder hash --backend local
+python scripts/ingest.py --input parsed_test_document/all_documents_gpu \
+  --output artifacts/ingestion --run-id production-v1
 ```
 
-Nếu đã có chunk chuẩn từ Step 1, truyền trực tiếp để bỏ qua fallback chunker:
+Nếu đã có chunks theo schema `Chunk`, truyền trực tiếp:
 
 ```bash
-python scripts/ingest.py --chunks chunks.jsonl --embedder hash --backend local
+python scripts/ingest.py --chunks chunks.jsonl --run-id production-v1
 ```
 
-Chạy production với embedding bge-m3 và Qdrant local:
+Qdrant phải chạy trước khi full ingest. `docker-compose.yml` hiện bật TLS và
+yêu cầu `tls/cert.pem`, `tls/key.pem` cùng `QDRANT__SERVICE__API_KEY`. Đặt
+`QDRANT_URL` dùng HTTPS và certificate được client tin cậy. Có thể dùng một
+Qdrant local không TLS riêng với `QDRANT_URL=http://localhost:6333`.
 
 ```bash
 docker compose up -d qdrant
-python scripts/init_qdrant.py
-python scripts/ingest.py --input parsed_test_document --embedder bge-m3 --backend qdrant
 ```
 
 Chạy với Qdrant Cloud (URL và key lấy từ flag, biến môi trường hoặc file `.env`):
 
 ```bash
-python scripts/init_qdrant.py --qdrant-url https://<cluster>.cloud.qdrant.io --qdrant-api-key <key>
-python scripts/ingest.py --input parsed_test_document --embedder bge-m3 --backend qdrant \
+python scripts/ingest.py --input parsed_test_document/all_documents_gpu --run-id production-v1 \
   --qdrant-url https://<cluster>.cloud.qdrant.io --qdrant-api-key <key>
 ```
 
 Có thể đặt `QDRANT_URL` và `QDRANT_API_KEY` trong file `.env` ở thư mục gốc (đã gitignore, xem `.env.example`); script tự đọc khi thiếu flag. `query.py`, `chat.py` và API (`QDRANT_URL`/`QDRANT_API_KEY`) dùng cùng cơ chế.
 
-Kết quả mặc định ghi vào `.cache/rag/`:
+Artifacts mặc định nằm trong `artifacts/ingestion/` (hoặc subdirectory `--run-id`):
 
 ```text
-.cache/rag/
+artifacts/ingestion/production-v1/
   chunks.jsonl      toàn bộ chunk theo schema Chunk
-  vectors.json      id và vector dense cho backend local
-  payloads.jsonl    payload Qdrant gồm doc_id, page, type, content, content_hash
-  bm25.json         index lexical cho hybrid search
+  embedding_fingerprint.json
+  verification_report.json
   manifest.json     counts, embedder, backend và collection
 ```
 
-Chunk tuân thủ contract `text`/`table`/`figure`: text gom theo heading khoảng 2000 ký tự với overlap 200 ký tự, mỗi bảng là một chunk kèm tiêu đề section, mỗi ảnh là một chunk figure giữ `image_path`. Mỗi chunk có `content_hash` nên ingest lại an toàn, chunk trùng bị bỏ qua. Toàn bộ `.cache/` đã được loại khỏi Git.
+Production query chỉ cần Qdrant và embedding model; không đọc `bm25.json`,
+`chunks.jsonl` hay vectors từ thư mục artifacts. Backend `local` dành cho test
+offline vẫn có thể được chọn rõ ràng:
+
+```bash
+python scripts/ingest.py --input parsed_test_document/all_documents_gpu \
+  --output .cache/rag --embedder hash --backend local
+python scripts/query.py --rag-dir .cache/rag --embedder hash --backend local --query "..."
+```
 
 ## Truy vấn RAG
 
-Truy vấn hybrid dense + BM25 với RRF, mặc định trả top 5:
+Mặc định encode câu hỏi bằng BGE-M3 dense + lexical sparse, gọi Qdrant Query API
+với prefetch top 10 mỗi nhánh và RRF, lấy tối đa 10 candidate từ alias `docs_current`,
+lọc cosine relevance, rồi rerank bằng `BAAI/bge-reranker-v2-m3` để trả top 5:
 
 ```bash
-python scripts/query.py --rag-dir .cache/rag --query "Phí thường niên thẻ chuẩn là bao nhiêu?"
+python scripts/query.py --query "Phí thường niên thẻ chuẩn là bao nhiêu?"
 ```
 
 Lọc theo loại chunk, chỉnh top K và ngưỡng fallback:
 
 ```bash
-python scripts/query.py --rag-dir .cache/rag --query "..." --filter-type table --top-k 5 --threshold 0.02 --as-json
+python scripts/query.py --query "..." --filter-type table --top-k 5 --as-json
 ```
 
-Threshold chưa có giá trị cố định; tune trên `eval/questions.json` trước khi chốt. Nếu best fused score dưới threshold hoặc query rỗng, pipeline trả fallback `không đủ thông tin` và không gọi LLM. Có thể bật rerank cross-encoder:
+Filter được áp dụng trong cả hai prefetch trước khi giới hạn số kết quả.
+Đổi generation/alias bằng `--collection`. RRF chỉ dùng để xếp hạng. Relevance
+gate dùng cosine giữa query dense vector và dense vector của mỗi candidate,
+được trả về trong cùng request Qdrant. Chỉ chunk đạt ngưỡng mới được đưa vào
+reranker và prompt. `--threshold` hiện mang nghĩa **dense cosine**, không dùng
+lại ngưỡng RRF cũ.
+
+Đo ngưỡng bằng bộ câu hỏi có cả câu được tài liệu hỗ trợ và câu ngoài tài liệu:
 
 ```bash
-python scripts/query.py --rag-dir .cache/rag --query "..." --rerank
+python scripts/eval_retrieval.py --questions eval/questions.json \
+  --calibrate-output artifacts/relevance-calibration.json --as-json
 ```
 
-Rerank dùng `BAAI/bge-reranker-v2-m3` trên CPU, mặc định tắt vì nặng trên máy 13GB RAM.
+Dataset phải khớp với corpus đã ingest; mỗi câu được hỗ trợ cần `expect_contains`.
+Lệnh chỉ ghi threshold khi có nguồn đúng cho câu positive và có ngưỡng phân tách
+được positive/negative; nếu không, lệnh trả exit code 1. Đây là calibration trên
+training set, cần kiểm tra lại bằng bộ câu hỏi độc lập trước khi triển khai.
+
+Export `RAG_RELEVANCE_THRESHOLD` bằng giá trị `threshold` trong report cho
+query/chat/API; CLI cũng nhận `--threshold`. Đo lại khi thay corpus hoặc embedding.
+Request có thể tăng ngưỡng nhưng không hạ ngưỡng đã cấu hình. Nếu chưa cấu hình
+threshold, không có evidence hợp lệ hoặc không chunk nào đạt ngưỡng, pipeline
+trả `không đủ thông tin` và không gọi LLM. Follow-up dùng rewrite deterministic
+trước retrieval nên câu bị từ chối cũng không gọi rewrite LLM. `/health` báo
+`needs-calibration` khi index đã load nhưng thiếu threshold.
+
+Rerank bật mặc định cho query/chat/API. Có thể tắt rõ ràng khi cần đối chiếu kết quả:
+
+```bash
+python scripts/query.py --query "..." --no-rerank
+```
+
+Reranker chạy trên CPU, nạp model một lần rồi dùng lại; batch size 2, chiều dài
+đầu vào tối đa 1024 token. Chỉnh `retrieval.candidate_top`, `top_k`, `rerank`,
+`reranker_model`, `reranker_device`, `reranker_batch_size`, `reranker_max_length`
+và `reranker_cache_dir` trong `config.yaml`. Nếu ít hơn 5 đoạn đạt ngưỡng liên quan,
+chỉ dùng các đoạn đủ điều kiện. Điểm rerank được trả riêng ở `chunks[].rerank_score`.
 
 ## Chat và sinh câu trả lời
 
 Chat một câu hỏi:
 
 ```bash
-python scripts/chat.py --rag-dir .cache/rag --query "Phí thường niên thẻ chuẩn?"
+python scripts/chat.py --query "Phí thường niên thẻ chuẩn?"
 ```
 
 Chat tương tác:
 
 ```bash
-python scripts/chat.py --rag-dir .cache/rag
+python scripts/chat.py
 ```
 
 Chat với LLM production qua llama-server:
 
 ```bash
-llama-server -hf unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M --port 8080
-python scripts/chat.py --rag-dir .cache/rag --llm server --query "..."
+llama-server -hf unsloth/Qwen3.5-2B-GGUF:Q4_K_M --no-mmproj --reasoning off --ctx-size 8192 --port 8080
+python scripts/chat.py --query "..." --rerank
 ```
 
-Luồng trả lời là guardrail-in → rewrite câu nối tiếp bằng memory → hybrid retrieve → fallback nếu thiếu context → build prompt top 5 đoạn đánh số `[S1]...[S5]` kèm lịch sử và summary → LLM Qwen3-4B nhiệt độ 0.15 → guardrail-out → đáp án kèm trích dẫn `[file_name, trang N]`. Không chạy VLM và LLM chat cùng lúc trên máy 16GB RAM.
+Luồng trả lời là guardrail-in → rewrite câu nối tiếp bằng memory → hybrid retrieve → fallback nếu thiếu context → build prompt top 5 đoạn đánh số `[S1]...[S5]` kèm lịch sử và summary → LLM Qwen3.5-2B nhiệt độ 0.15 → guardrail-out → đáp án kèm trích dẫn `[file_name, trang N]`. Không chạy VLM và LLM chat cùng lúc trên máy 16GB RAM.
 
-## Chạy API và UI
+## Khởi động hệ thống
 
-Khởi động FastAPI từ thư mục gốc:
+Hướng dẫn dưới đây dùng Bash trên Linux và cấu hình đã chạy thành công: Qwen3.5-2B
+**Q4_K_M**, llama.cpp trên CPU, BGE-M3, Qdrant, FastAPI và Streamlit. Chạy mọi lệnh
+từ thư mục gốc project. Nếu kho Qdrant đã có dữ liệu, mỗi lần mở lại chỉ cần chạy
+model → API → UI; không cần parse, caption hoặc ingest lại tài liệu.
+
+### 1. Chuẩn bị môi trường và kiểm tra Qdrant
+
+Kích hoạt môi trường đã cài project theo mục [Chạy nhanh bằng CPU](#chạy-nhanh-bằng-cpu)
+hoặc [Chạy bằng GPU](#chạy-bằng-gpu):
 
 ```bash
-uvicorn api.main:app --host 0.0.0.0 --port 8000
+cd /home/nghia/ai/tp/TPragsystem
+source .venv/bin/activate
 ```
 
-Cấu hình qua biến môi trường:
+Nếu môi trường chưa có các thư viện phục vụ API và UI, cài một lần:
 
 ```bash
-RAG_DIR=.cache/rag RAG_BACKEND=local RAG_EMBEDDER=hash \
-LLM_BACKEND=fake LLM_BASE_URL=http://localhost:8080/v1 \
-uvicorn api.main:app --host 0.0.0.0 --port 8000
+python -m pip install -e '.[rag,api]'
 ```
+
+Giữ thiết lập runtime trong `config.yaml`, thông tin kết nối riêng trong `.env`.
+Với Qdrant Cloud, `.env` ở thư mục gốc cần có:
+
+```dotenv
+QDRANT_URL=https://<cluster-id>.<region>.cloud.qdrant.io
+QDRANT_API_KEY=<api-key>
+```
+
+File `.env` hiện tại cũng có thể dùng `CLUSTER_URL` thay cho `QDRANT_URL`;
+project tự đọc cả hai cách đặt tên. Biến môi trường đã export có ưu tiên cao hơn
+`.env`. Dùng Qdrant Cloud thì không cần khởi động Docker. Nếu dùng Qdrant local,
+khởi động dịch vụ theo mục [Tạo index RAG](#tạo-index-rag), với URL/TLS và API key
+tương ứng. Không ghi đè `.env` đang có bằng file mẫu.
+
+Kiểm tra alias và số đoạn tài liệu, không in API key:
+
+```bash
+python - <<'PY'
+from qdrant_client import QdrantClient
+from project_settings import setting
+from rag.store import resolve_qdrant_settings
+
+url, api_key = resolve_qdrant_settings()
+client = QdrantClient(url=url, api_key=api_key, timeout=15)
+alias = setting("qdrant.alias", "QDRANT_COLLECTION")
+print(client.get_aliases())
+print(f"{alias}: {client.count(alias).count} đoạn tài liệu")
+client.close()
+PY
+```
+
+Kho demo hiện có **618 đoạn** qua alias `docs_current`. Nếu alias chưa tồn tại,
+hoàn tất ingest và publish trước khi chạy API.
+
+### 2. Chạy model Qwen — terminal 1
+
+Tải đúng file GGUF vào cache project và lưu đường dẫn vào biến shell. Lệnh này
+dùng lại file đã tải xong ở các lần sau; lần đầu cần kết nối Hugging Face và khoảng
+1,3 GB dung lượng cho model:
+
+```bash
+export QWEN_MODEL_PATH="$(HF_HUB_DISABLE_XET=1 python -c 'from huggingface_hub import hf_hub_download; print(hf_hub_download("unsloth/Qwen3.5-2B-GGUF", "Qwen3.5-2B-Q4_K_M.gguf", cache_dir=".cache/huggingface/hub"))')"
+test -f "$QWEN_MODEL_PATH"
+```
+
+Máy hiện tại đã có launcher llama.cpp tại `~/.local/bin/llama`:
+
+```bash
+~/.local/bin/llama serve \
+  --model "$QWEN_MODEL_PATH" \
+  --alias 'unsloth/Qwen3.5-2B-GGUF:Q4_K_M' \
+  --no-mmproj --reasoning off \
+  --ctx-size 8192 --parallel 1 --threads 4 --gpu-layers 0 \
+  --host 127.0.0.1 --port 8080
+```
+
+Nếu máy dùng binary `llama-server`, thay `~/.local/bin/llama serve` bằng
+`llama-server`, giữ nguyên các tham số. `--gpu-layers 0` chạy model trên CPU;
+`--no-mmproj` bỏ phần xử lý ảnh, `--reasoning off` tắt thinking cho chat tài liệu.
+Chờ log `model loaded` và `listening on http://127.0.0.1:8080`.
+
+### 3. Chạy API — terminal 2
+
+Mở terminal mới, vào thư mục project và kích hoạt `.venv` như bước 1:
+
+```bash
+OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 TOKENIZERS_PARALLELISM=false \
+  python -u scripts/serve_api.py
+```
+
+API lấy host/port từ `config.yaml`, mặc định là `0.0.0.0:8000`. BGE-M3 được nạp
+khi hỏi câu đầu tiên; nếu máy chưa có cache model, lần này cần mạng và thêm dung
+lượng lưu trữ. Reranker cũng cần cache riêng; tải trước một lần để tránh phải
+chờ tải model khi gửi câu đầu tiên:
+
+```bash
+HF_HUB_DISABLE_XET=1 python - <<'PY'
+from huggingface_hub import snapshot_download
+snapshot_download(
+    "BAAI/bge-reranker-v2-m3", cache_dir=".cache/huggingface/hub",
+    allow_patterns=["config.json", "model.safetensors", "tokenizer.json",
+                    "tokenizer_config.json", "special_tokens_map.json", "sentencepiece.bpe.model"],
+)
+PY
+```
+
+Chạy lệnh tải trước khi mở API hoặc ở một terminal chuẩn bị riêng. Khi BGE-M3 và
+reranker đã có đủ trong các thư mục cache tương ứng, có thể thêm
+`HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` trước lệnh để dùng cache hoàn toàn.
+
+### 4. Kiểm tra và mở giao diện — terminal 3
+
+Vào thư mục project và kích hoạt `.venv`, rồi kiểm tra:
+
+```bash
+curl --fail --silent --show-error http://localhost:8080/health
+curl --fail --silent --show-error http://localhost:8080/v1/models
+curl --fail --silent --show-error http://localhost:8000/health
+curl --fail --silent --show-error http://localhost:8000/stats
+```
+
+Model phải trả `status: ok`; `/v1/models` phải có
+`unsloth/Qwen3.5-2B-GGUF:Q4_K_M`. API phải có `status: ok`, `rag_loaded: true`,
+`error: null`; `/stats` phải trỏ tới `docs_current` và có dữ liệu.
+`/health` của API kiểm tra RAG nhưng không gọi thử LLM, nên cần kiểm tra cả cổng 8080.
+
+```bash
+python -m streamlit run ui/app.py \
+  --server.address 127.0.0.1 --server.port 8501 \
+  --server.headless true --browser.gatherUsageStats false
+```
+
+| Dịch vụ | Địa chỉ |
+| --- | --- |
+| Giao diện hỏi đáp | <http://localhost:8501> |
+| API Swagger | <http://localhost:8000/docs> |
+| API health | <http://localhost:8000/health> |
+| Model health | <http://localhost:8080/health> |
+
+Giữ cả ba terminal đang chạy. Mặc định UI gọi `http://localhost:8000`; đổi bằng
+biến `RAG_API_URL`. Thử câu hỏi mẫu trên UI hoặc gọi `/query` theo ví dụ bên dưới.
+Kết quả hợp lệ cần có câu trả lời, nguồn trích dẫn và `fallback: false` cho câu hỏi
+được tài liệu hỗ trợ. Lượt đầu thường chậm hơn do phải nạp BGE-M3.
+
+### Chạy nền và dừng hệ thống
+
+Nếu muốn đóng terminal mà dịch vụ vẫn chạy, dùng cách chạy nền dưới đây **thay
+cho** ba lệnh chạy trực tiếp ở trên. Kích hoạt `.venv` và thiết lập
+`QWEN_MODEL_PATH` như bước 2 trong cùng terminal. Kiểm tra các cổng trước;
+không khởi động thêm bản thứ hai khi dịch vụ đang chạy:
+
+```bash
+ss -ltnp | rg ':(8000|8080|8501)\b'
+mkdir -p .cache/run
+
+nohup ~/.local/bin/llama serve \
+  --model "$QWEN_MODEL_PATH" \
+  --alias 'unsloth/Qwen3.5-2B-GGUF:Q4_K_M' \
+  --no-mmproj --reasoning off \
+  --ctx-size 8192 --parallel 1 --threads 4 --gpu-layers 0 \
+  --host 127.0.0.1 --port 8080 \
+  > .cache/run/llm.log 2>&1 < /dev/null &
+echo $! > .cache/run/llm.pid
+```
+
+Chờ model health trả `ok`, rồi chạy API và kiểm tra API health trước khi chạy UI:
+
+```bash
+nohup env OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 TOKENIZERS_PARALLELISM=false \
+  python -u scripts/serve_api.py \
+  > .cache/run/api.log 2>&1 < /dev/null &
+echo $! > .cache/run/api.pid
+
+curl --fail --silent --show-error http://localhost:8000/health
+```
+
+Nếu API chưa kịp mở cổng, xem `.cache/run/api.log` và chạy lại lệnh kiểm tra health.
+Khi API trả `status: ok`, chạy UI:
+
+```bash
+nohup python -m streamlit run ui/app.py \
+  --server.address 127.0.0.1 --server.port 8501 \
+  --server.headless true --browser.gatherUsageStats false \
+  > .cache/run/ui.log 2>&1 < /dev/null &
+echo $! > .cache/run/ui.pid
+
+tail -n 30 .cache/run/llm.log .cache/run/api.log .cache/run/ui.log
+```
+
+Khi chạy trực tiếp, nhấn `Ctrl+C` ở từng terminal để dừng. Khi chạy nền, kiểm tra
+PID vẫn thuộc đúng dịch vụ trước khi dừng theo thứ tự UI → API → model:
+
+```bash
+for service in ui api llm; do
+  pid_file=".cache/run/$service.pid"
+  if [ -f "$pid_file" ]; then
+    ps -p "$(cat "$pid_file")" -o pid,args
+  fi
+done
+
+# Sau khi đối chiếu các PID ở trên:
+kill "$(cat .cache/run/ui.pid)"
+kill "$(cat .cache/run/api.pid)"
+kill "$(cat .cache/run/llm.pid)"
+```
+
+Chạy nền theo cách này không tự khởi động lại sau khi reboot. Dữ liệu Qdrant và
+lịch sử SQLite vẫn được giữ; lần mở sau chạy lại các bước khởi động.
+
+### API và sử dụng giao diện
 
 Các endpoint:
 
 | Endpoint | Phương thức | Nội dung trả về |
 | --- | --- | --- |
 | `/health` | GET | `status`, `rag_loaded`, `llm_backend` |
-| `/stats` | GET | `points`, `bm25_docs` |
-| `/query` | POST | `answer`, `citations`, `fallback`, `standalone_question`, `chunks` |
+| `/stats` | GET | `points`, `backend`, `collection`, `bm25_docs` (0 cho Qdrant) |
+| `/query` | POST | `answer`, `citations`, `fallback`, `standalone_question`, `chunks`, `context` |
+| `/sessions` | GET / POST | Liệt kê / tạo hội thoại theo `workspace_id` |
+| `/sessions/{session_id}` | GET / DELETE | Đọc / xóa hội thoại và context theo `workspace_id` |
+| `/sessions/{session_id}/messages/{message_id}/sources/{source_index}/images/{image_index}` | GET | Ảnh đính kèm nguồn của câu trả lời, theo `workspace_id` |
+| `/sessions/{session_id}/context/reset` | POST | Làm mới context, giữ lịch sử |
+| `/requests` | GET | Lịch sử request, phân trang, bộ lọc và thống kê runtime/TTFT |
+| `/requests/{request_id}` | GET | Chi tiết request, câu trả lời, thời gian từng bước và các nguồn |
 
 Ví dụ gọi query:
 
 ```bash
 curl -X POST http://localhost:8000/query \
   -H 'Content-Type: application/json' \
-  -d '{"question": "Phí thường niên thẻ chuẩn là bao nhiêu?", "session_id": "demo"}'
+  -d '{"question": "Theo tài liệu Luật Hộ tịch, người dân có thể nộp hồ sơ đăng ký hộ tịch bằng những cách nào?", "session_id": "demo"}'
 ```
 
-Chạy Streamlit UI sau khi API đã sẵn sàng:
+UI giữ `session_id` riêng cho memory hội thoại, hiển thị trạng thái RAG và nút tạo session mới.
 
-```bash
-streamlit run ui/app.py
+Biểu tượng **💡** nằm bên trái ô nhập câu hỏi. Chỉ khi bấm vào mới hiện hộp chọn
+câu mẫu: chọn chủ đề, bấm **Đổi câu**, rồi **Hỏi câu này** để gửi qua cùng luồng RAG
+như câu tự nhập. Đổi câu không gọi LLM và không lặp lại câu vừa hiển thị khi có
+nhiều câu trong chủ đề. Hộp chọn có tên tài liệu và vị trí nguồn.
+Hộp chọn tự đóng khi gửi câu hỏi để hiển thị hội thoại.
+Chọn file bằng `ui.demo_questions` trong `config.yaml`.
+
+Khi gửi câu tự nhập hoặc **Hỏi câu này**, phần giới thiệu được thay bằng hội thoại
+ngay trong vùng chính. Tin nhắn cuộn trong khung riêng, ô nhập luôn nằm bên dưới;
+không cần cuộn trang xuống để tìm câu trả lời đầu tiên.
+
+Chọn **Request dashboard** ở sidebar để xem lịch sử request của workspace hiện tại,
+lọc theo trạng thái hoặc hội thoại và chọn một dòng để xem chi tiết. Dashboard tự
+làm mới mỗi 5 giây; bảng phân trang 50 request, thống kê tính trên toàn bộ lịch sử
+khớp bộ lọc. Biểu đồ hiển thị các request trên trang hiện tại, thời gian theo UTC+7.
+
+Lịch sử được lưu trong bảng `request_history`, cùng file SQLite của hội thoại,
+gồm câu hỏi, câu trả lời, nguồn, trạng thái thành công/fallback/lỗi/đang xử lý,
+mã HTTP, runtime và TTFT. Bắt đầu ghi nhận từ khi tính năng này được triển khai;
+không suy ra timing cho các câu hỏi cũ. `/query` trả `request_id`, `metrics` và
+header `X-Request-ID`. Runtime tính từ khi API nhận câu hỏi đến khi xử lý xong,
+bao gồm chờ phiên, retrieval, rerank và generation. TTFT toàn luồng tính từ khi
+API nhận câu hỏi đến content delta đầu tiên của stream LLM; `llm_ttft_ms` chỉ tính
+từ lúc bắt đầu gọi model. Role delta, reasoning và metadata không được tính là
+token trả lời. UI hiện câu trả lời đầy đủ sau guardrail, nên TTFT này không phải
+thời gian đến khi trình duyệt hiển thị câu trả lời. Request không sinh token có
+TTFT `null`, hiện **—** trên dashboard và được loại khỏi trung bình TTFT.
+
+Sidebar hiển thị hội thoại theo **danh sách**, phiên đang mở được đánh dấu.
+Bấm tiêu đề để tiếp tục hoặc biểu tượng **thùng rác** bên cạnh để xóa tin nhắn
+và context của phiên đó. Khi xóa phiên đang mở, UI chuyển sang phiên còn lại;
+nếu danh sách rỗng, UI tạo một phiên mới. Xóa hội thoại không xóa tài liệu dùng
+chung hoặc số liệu request đã lưu trên dashboard.
+
+Toàn bộ tin nhắn, citations, nguồn truy xuất, fallback và context được lưu bằng SQLite tại
+`memory.storage_path` (mặc định `data/conversations.sqlite3`), tồn tại qua lần
+khởi động lại API. UI giữ workspace và phiên đang mở trong URL: lưu lại liên kết
+trên thanh địa chỉ để mở lại cùng danh sách hội thoại sau này. Đây là workspace
+cho demo cục bộ, chưa phải cơ chế đăng nhập/phân quyền người dùng.
+
+Ảnh có trong các chunk được chọn sau rerank sẽ hiện cùng citation tên tài liệu
+và **trang của ảnh** ngay dưới câu trả lời; ảnh trùng lặp trong cùng câu trả lời
+chỉ hiển thị một lần. Có thể mở các mục **Nguồn đối chiếu** để xem đoạn nội dung.
+Metadata ảnh được lưu theo tin nhắn, nên mở lại hội thoại vẫn giữ đúng nguồn.
+Các tin nhắn có trước bản cập nhật này giữ lịch sử cũ; không tự truy xuất lại ảnh.
+
+Qdrant lưu đường dẫn và metadata, không lưu file ảnh. Chép thư mục ảnh từ máy
+ingest sang máy chạy API, giữ cấu trúc `<tên tài liệu>/assets/<tên ảnh>`, rồi đặt:
+
+```yaml
+api:
+  source_assets_dir: parsed_test_document/all_documents_gpu
 ```
 
-Mặc định UI gọi `http://localhost:8000`; đổi bằng biến `RAG_API_URL`. UI giữ `session_id` riêng cho memory hội thoại, hiển thị trạng thái RAG và nút tạo session mới.
+Đường dẫn tương đối tính từ file `config.yaml`, hoặc dùng đường dẫn tuyệt đối.
+API ánh xạ đường dẫn máy cũ có đoạn `/all_documents_gpu/` sang thư mục này,
+chỉ phục vụ ảnh nằm bên trong thư mục đã cấu hình. Không cần ingest lại để đổi
+thư mục. Nếu file chưa có, UI ghi **Ảnh nguồn chưa có trên máy chủ** kèm citation;
+sau khi chép file, mở lại hội thoại để xem ảnh. Khởi động lại API khi đổi cấu hình.
+
+Mục **Ngữ cảnh phiên này** hiển thị số tin nhắn/ký tự đang dùng và ghi nhớ rút gọn.
+Mặc định giữ tối đa 6 tin nhắn gần nhất và 6.000 ký tự; các lượt cũ được rút gọn
+vào ghi nhớ tối đa 2.000 ký tự mà không gọi thêm LLM. Lịch sử đầy đủ vẫn được lưu.
+**Làm mới ngữ cảnh** bắt đầu chủ đề mới trong cùng phiên, giữ nguyên lịch sử.
+Fallback được lưu để xem lại nhưng không thêm vào context dùng cho các câu tiếp.
+Mỗi request nạp riêng context của phiên từ SQLite; ghi lịch sử và context trong
+cùng transaction, kiểm tra revision để tránh ghi đè khi có request đồng thời.
+
+`eval/questions.json` gồm 20 câu đối chiếu với corpus `docs_current` (618 chunks)
+và 4 câu ngoài phạm vi để kiểm tra fallback. Mỗi câu có nguồn ghi `doc_id`,
+`chunk_id`, tên tài liệu, vị trí và hash nội dung; đánh giá yêu cầu đáp án và loại
+chunk đúng trong cùng tài liệu. UI chỉ chọn câu có nguồn, không gửi đáp án kỳ vọng
+cho API. Các câu về ngân sách và đầu tư Aurelia ghi rõ **số liệu giả định**.
+Bộ nhỏ này phục vụ demo và hiệu chỉnh ban đầu; cần bộ đánh giá độc lập khi triển khai
+rộng hơn, và hiệu chỉnh lại sau khi thay corpus hoặc model.
+
+Ngưỡng demo trong `config.yaml` là `0.49437434740442704` (dense cosine), đo trên
+bộ câu hỏi này. Lần đánh giá đạt 24/24 câu; báo cáo nằm tại
+`artifacts/demo/evaluation.json` và `artifacts/demo/relevance-calibration.json`.
 
 ## Chạy test
 
@@ -457,14 +779,9 @@ Các test thông thường không yêu cầu GPU hoặc model OCR thật; OCR ba
 
 ## Cấu hình OCR
 
-Profile `config/ocr_scan_vi.json` dành cho tài liệu scan tiếng Việt dạng văn bản trên CPU. Profile sử dụng:
-
-- `PP-DocLayout-S` cho layout
-- `PP-OCRv5_mobile_det` cho text detection
-- `PP-OCRv6_medium_rec` với model tiếng Việt cho recognition
-- Tắt orientation, unwarping, region detection, table recognition và formula recognition
-
-Table recognition bị tắt vì profile này ưu tiên scan văn bản. Việc trích xuất bảng native từ PDF digital và XLSX vẫn hoạt động. Nếu tài liệu scan có bảng, tạo một file JSON khác và bật `use_table_recognition`.
+Chỉnh `device`, `models`, `ocr.options`, `postprocessing` và `text_correction`
+trong [`config.yaml`](config.yaml). Dùng `--device cpu` để override cho một lần chạy.
+Table recognition luôn bật để giữ cấu trúc bảng trong OCR.
 
 ## Dùng Python API
 
@@ -474,40 +791,36 @@ from document_parser import DocumentPipeline, ProjectConfig
 config = ProjectConfig.load().parser_config(device="cpu")
 summary = DocumentPipeline(config).parse_all("documents", "parsed_test_document/api")
 print(summary["counts"])
+```
+
 ## Cấu hình RAG
 
-Hai file JSON điều khiển index và sinh câu trả lời:
+Tất cả cấu hình runtime nằm trong [`config.yaml`](config.yaml) ở thư mục gốc: OCR,
+text correction, đường dẫn, chunking, embedding, Qdrant, retrieval, LLM, memory,
+API và UI. Các file JSON tham chiếu cũ và YAML riêng của parser đã được thay thế.
 
-| File | Nội dung chính |
-| --- | --- |
-| `config/rag_store.json` | `collection`, `vector_size` 1024, `distance` Cosine, `embedder` bge-m3, `bm25` k1/b, `qdrant_url` |
-| `config/rag_generate.json` | `llm` model Qwen3-4B Q4_K_M qua `base_url`, `temperature` 0.15, `memory` max turns/chars, `prompt` top_k và ngôn ngữ, `api` host/port |
+Thứ tự ưu tiên: CLI flags → environment → YAML. Mọi đường dẫn trong YAML được
+resolve theo thư mục chứa file, không phụ thuộc thư mục chạy lệnh. File tùy chỉnh
+được deep-merge lên mặc định; khóa không hợp lệ bị từ chối. Giữ API keys trong
+environment hoặc `.env`, không ghi secrets vào YAML.
 
-Ví dụ cấu hình store tối giản:
-
-```json
-{
-  "collection": "docs",
-  "vector_size": 1024,
-  "distance": "Cosine",
-  "embedder": "BAAI/bge-m3",
-  "qdrant_url": "http://localhost:6333"
-}
+```bash
+python scripts/query.py --config /path/config.yaml --query "..."
+python scripts/ingest.py --config /path/config.yaml
+python scripts/serve_api.py --config /path/config.yaml
+PROJECT_CONFIG=/path/config.yaml streamlit run ui/app.py
 ```
 
-Ví dụ cấu hình generate tối giản:
+`python scripts/serve_api.py` đọc `api.host` và `api.port`. Khi chạy `uvicorn`
+trực tiếp, host/port dùng flags của uvicorn; chọn YAML bằng `PROJECT_CONFIG`.
+Khởi động lại API/UI sau khi sửa cấu hình. Các thông số tương ứng gồm
+`qdrant.alias`, `embedding.model`/`revision`, `chunking.*`, `retrieval.top_k`,
+`llm.*`, `memory.*`, `guardrails.*` và `ui.api_url`.
 
-```json
-{
-  "llm": {
-    "backend": "server",
-    "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M",
-    "base_url": "http://localhost:8080/v1",
-    "temperature": 0.15,
-    "max_tokens": 512
-  }
-}
-```
+`retrieval.relevance_threshold: null` giữ generation ở chế độ fallback cho đến
+khi calibrate. Ghi ngưỡng đo được vào mục này, hoặc dùng `RAG_RELEVANCE_THRESHOLD`.
+Model/tokenizer phải dùng cùng revision; đổi model, corpus hoặc chunking cần
+re-index và calibrate lại. Egress acknowledgement vẫn là một CLI flag riêng.
 
 Bộ câu hỏi tune ngưỡng retrieval nằm trong `eval/questions.json`, mỗi item gồm `q`, `expect_contains`, `expect_type` và cờ `expect_fallback` cho câu ngoài tài liệu.
 
@@ -542,32 +855,33 @@ document = DocumentPipeline(config).parse(
     "documents/report.pdf", "parsed_test_document/report"
 )
 retrieval_document = RetrievalPreprocessor().process(document)
-Luồng RAG local sau parsing:
+```
+
+Luồng RAG production sau parsing:
 
 ```mermaid
 flowchart TD
-    K[CanonicalDocument] --> M[Chunk Contract]
-    M --> N[Hash / bge-m3 Embedder]
-    M --> O[BM25 Index]
-    N --> P[Local / Qdrant Store]
-    P --> Q[Hybrid Retriever]
-    O --> Q
-    Q -->|RRF dense top20 + sparse top20| R[Top 5 + Threshold Fallback]
-    R -->|đủ context| S[Memory Rewrite + Prompt]
-    S --> T[Qwen3-4B via llama-server]
+    K[CanonicalDocument] --> M[Type-aware chunks]
+    M --> N[BGE-M3 dense + lexical sparse]
+    N --> P[Verified Qdrant generation]
+    P --> Q[docs_current alias]
+    A[Question + memory rewrite] --> B[BGE-M3 query dense + sparse]
+    B --> Q
+    Q -->|Prefetch dense top10 + sparse top10, RRF top10| R[Threshold + BGE rerank + top5]
+    R -->|đủ context| S[Prompt]
+    S --> T[Qwen3.5-2B via llama-server]
     T --> U[Answer + Citations]
     R -->|thiếu context| V[không đủ thông tin]
 ```
 
-Retrieval fuse hai danh sách dense và BM25 bằng RRF, giữ top 5, hỗ trợ lọc `doc_id`/`type` và hook rerank `bge-reranker-v2-m3`. Memory giữ tối đa 6 turn và 6000 ký tự mỗi session, tự rewrite câu nối tiếp thành câu độc lập trước retrieval.
+Qdrant fuse dense và lexical sparse bằng RRF, lọc cosine relevance trước khi
+giữ top 5 sau rerank mặc định `bge-reranker-v2-m3`. Query/chat/API cùng dùng `HybridRetriever` và filter
+`doc_id`/`type`. Memory rewrite câu nối tiếp trước retrieval.
 
 ## Cấu trúc project
 
 ```text
-config/
-  ocr_scan_vi.json          Profile OCR tiếng Việt
-  rag_store.json            Collection, embedder bge-m3, BM25 và Qdrant URL
-  rag_generate.json         LLM Qwen3-4B, memory, prompt và API host/port
+config.yaml                Cấu hình runtime chung cho parser, RAG, API và UI
 documents/                  Tài liệu đầu vào mặc định
 eval/
   questions.json            Bộ câu hỏi tune ngưỡng retrieval
@@ -588,15 +902,16 @@ src/document_parser/
 src/rag/
   schemas.py                Schema Chunk text/table/figure
   chunk_contract.py         Fallback chunker chờ Step 1 hoàn thiện
-  embeddings.py             Hash embedder offline và bge-m3 CPU
-  bm25.py                   Index lexical tiếng Việt
+  embeddings.py             BGE-M3 dense/sparse và Hash embedder cho test
+  bm25.py                   Index lexical cho backend local development
   store.py                  LocalVectorStore và QdrantStore
-  retrieve.py               Hybrid RRF, threshold fallback và rerank hook
+  retrieve.py               Qdrant hybrid RRF, threshold fallback và rerank hook
   llm.py                    FakeLLM test và client llama-server
   memory.py                 Session memory, rewrite và summary
+  conversations.py          SQLite history và context riêng cho từng phiên
   guardrails.py             Kiểm tra input/output
   answer.py                 Build prompt, citations và fallback
-src/api/main.py             FastAPI /health, /stats và /query
+src/api/main.py             FastAPI /health, /stats, /query và /sessions
 ui/app.py                   Streamlit chat UI gọi API
 docker-compose.yml          Service Qdrant local
 tests/                      Unit và integration tests
@@ -625,38 +940,41 @@ python scripts/benchmark_ocr.py \
 Tài liệu chi tiết về model, hậu xử lý OCR, cấu trúc output và các giới hạn hiện tại nằm tại [`docs/README.md`](docs/README.md). Báo cáo parse gần nhất nằm tại [`docs/PARSE_REPORT.md`](docs/PARSE_REPORT.md).
 
 ## Xử lý lỗi thường gặp
-Sau đó chạy parser với `--ocr-options config/ocr_scan_vi.json`.
 
 **Paddle báo lỗi OneDNN/PIR trên CPU**
 
-Profile mặc định đã tắt MKLDNN cho pipeline. Nếu lỗi xuất hiện trong recognition model, bỏ phần `engine_config` của `TextRecognition` trong `config/ocr_pp_structure_vi.yaml` để dùng CPU backend thông thường.
+Mặc định `ocr.options.enable_mkldnn: false` trong `config.yaml`. Kiểm tra mục này khi chạy OCR trên CPU.
 
 **Script kết thúc với exit code 1**
 
 Mở `parsed_test_document/summary.json` để xem `failed`, `partial`, `failed_pages` và thông báo lỗi tương ứng.
 
-**`BM25 index not found` khi query/chat/API**
+**`BM25 index not found` trong backend local**
 
 Chạy ingest trước để tạo `.cache/rag/`:
 
 ```bash
-python scripts/ingest.py --input parsed_test_document --embedder hash --backend local
+python scripts/ingest.py --input parsed_test_document/all_documents_gpu \
+  --output .cache/rag --embedder hash --backend local
 ```
 
 **Qdrant không kết nối được**
 
-Kiểm tra container và tạo lại collection:
+Kiểm tra container, URL/TLS/API key và generation đã publish:
 
 ```bash
 docker compose ps
-python scripts/init_qdrant.py
 ```
 
-Muốn chạy không cần server, dùng `--backend local` hoặc `--backend qdrant-memory`.
+Muốn chạy offline, chọn `--backend local --embedder hash` và dùng cùng `--rag-dir`.
+`qdrant-memory` chỉ dùng trong test cùng process; index không tồn tại sau khi process thoát.
 
 **API trả `503 RAG index not loaded`**
 
-Kiểm tra biến `RAG_DIR` trỏ đúng thư mục chứa `bm25.json`, `vectors.json` và `payloads.jsonl`. Kiểm tra `/health` để xem `rag_loaded` và `error`.
+Production: kiểm tra `QDRANT_URL`, `QDRANT_API_KEY`, `QDRANT_COLLECTION` (mặc định
+`docs_current`) và generation đã publish. Local development: kiểm tra `RAG_DIR`
+chứa `bm25.json`, `vectors.json`, `payloads.jsonl`. Xem `/health` để biết lỗi;
+API thử khởi tạo lại ở request tiếp theo sau khi lỗi đã được xử lý.
 
 **LLM server unreachable**
 
@@ -672,8 +990,8 @@ Khởi động llama-server trước khi dùng `--llm server`, hoặc giữ `--l
 - Quality check đánh giá cấu trúc và chất lượng text cơ bản, chưa đo CER/WER.
 - Chunker RAG hiện là fallback tạm thời, chờ bản heading-aware đầy đủ của Step 1.
 - Embedder `hash` chỉ dùng cho test offline; production cần bge-m3 và tải model lần đầu.
-- Threshold fallback chưa chốt, cần tune trên `eval/questions.json`.
-- Rerank cross-encoder mặc định tắt vì nặng CPU.
+- Threshold cosine cần đo trên corpus thực; thiếu threshold thì trả fallback.
+- Rerank cross-encoder chạy trên CPU; lượt đầu chậm hơn do nạp model.
 
 - **Không tìm thấy tài liệu:** kiểm tra `--input`; chỉ các định dạng PDF, DOCX, XLSX và ảnh được hỗ trợ.
 - **Không tải được model:** kiểm tra kết nối mạng rồi chạy lại `python scripts/download_ocr_models.py`.

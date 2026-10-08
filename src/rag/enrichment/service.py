@@ -9,6 +9,8 @@ from pathlib import Path
 
 from PIL import Image
 
+from project_settings import setting
+
 from .cache import CaptionCache, caption_cache_key
 from .caption import (
     PREPROCESSING_VERSION,
@@ -25,8 +27,9 @@ def image_hash(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def prepare_api_copy(path: Path, *, max_dimension: int = 4096) -> tuple[bytes, str]:
+def prepare_api_copy(path: Path, *, max_dimension: int | None = None) -> tuple[bytes, str]:
     """Preserve original bytes unless safely downscaling a very large raster."""
+    max_dimension = max_dimension if max_dimension is not None else setting("captioning.maximum_image_dimension")
     raw = path.read_bytes()
     with Image.open(io.BytesIO(raw)) as image:
         width, height = image.size

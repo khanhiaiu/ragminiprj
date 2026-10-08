@@ -8,6 +8,8 @@ import re
 from collections import Counter
 from typing import Any, Literal
 
+from project_settings import setting
+
 from pydantic import BaseModel, ConfigDict, Field
 
 from document_parser.normalization.schema import CanonicalDocument, Element
@@ -86,11 +88,15 @@ class ImageContextExtractor:
         self,
         tokenizer: TokenizerLike,
         *,
-        max_tokens: int = 200,
-        preferred_each_side: int = 100,
-        model_name: str = BGE_M3_MODEL,
-        revision: str = BGE_M3_REVISION,
+        max_tokens: int | None = None,
+        preferred_each_side: int | None = None,
+        model_name: str | None = None,
+        revision: str | None = None,
     ) -> None:
+        max_tokens = max_tokens if max_tokens is not None else setting("image_context.maximum_tokens")
+        preferred_each_side = preferred_each_side if preferred_each_side is not None else setting("image_context.preferred_each_side")
+        model_name = model_name or setting("tokenizer.model")
+        revision = revision or setting("tokenizer.revision")
         if max_tokens != 200:
             raise ValueError("Image neighboring context budget is fixed at exactly 200 tokens")
         if preferred_each_side != 100:

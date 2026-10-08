@@ -10,6 +10,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Iterator, Protocol, Sequence
 
+from project_settings import setting
+
 from .enrichment.tokenizer import BGE_M3_MODEL, BGE_M3_REVISION, embedding_token_count
 
 
@@ -24,6 +26,8 @@ class HybridEmbedding:
 class BaseEmbedder(Protocol):
     dim: int
 
+    def embed_hybrid(self, texts: Sequence[str]) -> list[HybridEmbedding]: ...
+
     def embed_texts(self, texts: Sequence[str]) -> list[list[float]]: ...
 
 
@@ -31,7 +35,7 @@ def embedding_text_fingerprint(text: str, model_revision: str, config: str) -> s
     return hashlib.sha256(f"{model_revision}\n{config}\n{text}".encode("utf-8")).hexdigest()
 
 
-def _validate(item: HybridEmbedding, *, dim: int = 1024) -> None:
+def _validate(item: HybridEmbedding, *, dim: int = setting("embedding.dense_dimensions")) -> None:
     if len(item.dense) != dim:
         raise ValueError(f"dense vector dimension {len(item.dense)} != {dim}")
     if not all(math.isfinite(value) for value in item.dense):
@@ -60,11 +64,11 @@ class EmbeddingCache:
         if not path.exists():
             return None
         item = HybridEmbedding(**json.loads(path.read_text(encoding="utf-8")))
-        _validate(item)
+        _validate(item, dim=setting("embedding.dense_dimensions"))
         return item
 
     def put(self, item: HybridEmbedding) -> None:
-        _validate(item)
+        _validate(item, dim=setting("embedding.dense_dimensions"))
         path = self._path(item.text_fingerprint)
         path.parent.mkdir(parents=True, exist_ok=True)
         temporary = path.with_suffix(f".{os.getpid()}.tmp")
@@ -80,7 +84,8 @@ class HashEmbedder:
 
     revision = "hash-v2"
 
-    def __init__(self, dim: int = 1024) -> None:
+    def __init__(self, dim: int | None = None) -> None:
+        dim = dim if dim is not None else setting("embedding.dense_dimensions")
         if dim <= 0:
             raise ValueError("dim must be positive")
         self.dim = dim
@@ -115,18 +120,24 @@ class HashEmbedder:
 class BgeM3Embedder:
     """Single-load FlagEmbedding adapter with dense 1024 + lexical weights."""
 
-    dim = 1024
+    dim = setting("embedding.dense_dimensions")
 
     def __init__(
         self,
-        model_name: str = BGE_M3_MODEL,
-        revision: str = BGE_M3_REVISION,
-        device: str = "cpu",
-        batch_size: int = 4,
-        max_length: int = 768,
+        model_name: str | None = None,
+        revision: str | None = None,
+        device: str | None = None,
+        batch_size: int | None = None,
+        max_length: int | None = None,
         cache: EmbeddingCache | None = None,
         model: Any | None = None,
     ) -> None:
+        model_name = model_name or setting("embedding.model")
+        revision = revision or setting("embedding.revision")
+        device = device if device is not None else setting("embedding.device")
+        batch_size = batch_size if batch_size is not None else setting("embedding.batch_size")
+        max_length = max_length if max_length is not None else setting("embedding.max_length")
+        self.dim = setting("embedding.dense_dimensions")
         if batch_size <= 0:
             raise ValueError("batch_size must be positive")
         self.model_name = model_name
@@ -134,10 +145,12 @@ class BgeM3Embedder:
         self.device = device
         self.batch_size = batch_size
         self.max_length = max_length
+        self.use_fp16 = setting("embedding.use_fp16")
         self.cache = cache
         self._model = model
         self.encoding_config = json.dumps(
             {"dense": True, "sparse": True, "colbert": False, "max_length": max_length,
+             "model": model_name, "use_fp16": self.use_fp16,
              "input_token_policy": "special_tokens_no_truncation_v1"},
             sort_keys=True,
         )
@@ -153,7 +166,7 @@ class BgeM3Embedder:
                 ) from exc
             local_path = snapshot_download(repo_id=self.model_name, revision=self.revision)
             devices = [self.device] if self.device else None
-            self._model = BGEM3FlagModel(local_path, devices=devices, use_fp16=False)
+            self._model = BGEM3FlagModel(local_path, devices=devices, use_fp16=self.use_fp16)
         return self._model
 
     @staticmethod
@@ -199,7 +212,7 @@ class BgeM3Embedder:
                     text, self.revision, self.encoding_config
                 ),
             )
-            _validate(item)
+            _validate(item, dim=self.dim)
             if self.cache:
                 self.cache.put(item)
             output.append(item)
@@ -243,17 +256,17 @@ class BgeM3Embedder:
 def make_embedder(name: str, **kwargs) -> BaseEmbedder:
     key = name.strip().lower()
     if key in {"hash", "test", "offline"}:
-        return HashEmbedder(dim=int(kwargs.get("dim", 1024)))
+        return HashEmbedder(dim=int(kwargs.get("dim", setting("embedding.dense_dimensions"))))
     if key in {"bge-m3", "bge_m3", "bge", "dense"}:
         cache = kwargs.get("cache")
         if cache is None and kwargs.get("cache_dir"):
             cache = EmbeddingCache(kwargs["cache_dir"])
         return BgeM3Embedder(
-            model_name=str(kwargs.get("model_name", BGE_M3_MODEL)),
-            revision=str(kwargs.get("revision", BGE_M3_REVISION)),
-            device=str(kwargs.get("device", "cpu")),
-            batch_size=int(kwargs.get("batch_size", 4)),
-            max_length=int(kwargs.get("max_length", 768)),
+            model_name=str(kwargs.get("model_name", setting("embedding.model"))),
+            revision=str(kwargs.get("revision", setting("embedding.revision"))),
+            device=str(kwargs.get("device", setting("embedding.device"))),
+            batch_size=int(kwargs.get("batch_size", setting("embedding.batch_size"))),
+            max_length=int(kwargs.get("max_length", setting("embedding.max_length"))),
             cache=cache,
             model=kwargs.get("model"),
         )

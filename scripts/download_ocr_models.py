@@ -10,14 +10,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from document_parser.config import DEFAULT_CONFIG, ProjectConfig
+from document_parser.config import ProjectConfig
 from document_parser.utils.file_utils import file_digest
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--config", type=Path, default=DEFAULT_CONFIG, help="Shared project config YAML"
+        "--config", type=Path, default=None, help="Shared project config YAML"
     )
     parser.add_argument(
         "--output", type=Path, help="Override the configured recognition model directory"

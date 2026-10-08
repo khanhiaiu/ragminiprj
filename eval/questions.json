@@ -1,10 +1,314 @@
 {
-  "note": "Tune the retrieval fallback threshold on this set (SystemDocuments §4.4). Threshold is NOT final until measured here.",
+  "note": "Bộ câu hỏi demo được đối chiếu với 618 chunks trong Qdrant docs_current. Trích đoạn kỳ vọng giữ nguyên OCR. Số liệu Aurelia là giả định, chỉ dùng minh họa. Bộ nhỏ này phục vụ demo và hiệu chỉnh ban đầu, không thay thế đánh giá độc lập.",
+  "collection": "docs_current",
+  "source_points": 618,
   "questions": [
-    { "q": "Phí thường niên thẻ chuẩn là bao nhiêu?", "expect_contains": "300.000", "expect_type": "table" },
-    { "q": "Thẻ vàng có được miễn phí năm đầu không?", "expect_contains": "miễn năm đầu", "expect_type": "text" },
-    { "q": "Các bước mở thẻ tín dụng theo sơ đồ?", "expect_contains": "Bước 1", "expect_type": "figure" },
-    { "q": "Chính sách nghỉ phép năm thế nào?", "expect_contains": "nghỉ phép", "expect_type": "text" },
-    { "q": "Thủ tục hoàn toàn không có trong tài liệu là gì?", "expect_contains": null, "expect_fallback": true }
+    {
+      "id": "demo-01",
+      "q": "Theo tài liệu Luật Hộ tịch, người dân có thể nộp hồ sơ đăng ký hộ tịch bằng những cách nào?",
+      "category": "Hộ tịch",
+      "expect_contains": "nộp hồ sơ trực tuyến hoặc gửi hồ sơ qua dịch vụ bưu chính",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "27cb12cf85d016c8a536",
+        "chunk_id": "27cb12cf85d016c8a536-text-1324f467396f4e43fd34",
+        "file_name": "Luat Ho tich.pdf",
+        "page": 6,
+        "content_sha256": "9adc88dd4a0690455a5c96bee760f0827bf7a359aadedbdd134372415f88dd73"
+      }
+    },
+    {
+      "id": "demo-02",
+      "q": "Theo tài liệu Luật Hộ tịch, trường hợp trẻ chưa được đăng ký khai sinh chủ động thì cha mẹ phải đăng ký trong thời hạn bao lâu?",
+      "category": "Hộ tịch",
+      "expect_contains": "trong thời hạn 60 ngày kể từ ngày trẻ em được sinh ra",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "27cb12cf85d016c8a536",
+        "chunk_id": "27cb12cf85d016c8a536-text-1ea28978c63b70f8a52d",
+        "file_name": "Luat Ho tich.pdf",
+        "page": 8,
+        "content_sha256": "35b57de7fa5bec709a5a1ac2c525732896c762ede364cfbb08e08996968e161a"
+      }
+    },
+    {
+      "id": "demo-03",
+      "q": "Theo tài liệu Luật Hộ tịch, quê quán của trẻ khi đăng ký khai sinh được xác định như thế nào?",
+      "category": "Hộ tịch",
+      "expect_contains": "theo thỏa thuận của cha",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "27cb12cf85d016c8a536",
+        "chunk_id": "27cb12cf85d016c8a536-text-a4a9121fba81e1ab420f",
+        "file_name": "Luat Ho tich.pdf",
+        "page": 9,
+        "content_sha256": "7f6e4aa284ffa2b48acbb2a9078f948e8740fa2233607440e2c6f78d76a70f89"
+      }
+    },
+    {
+      "id": "demo-04",
+      "q": "Tài liệu về xu hướng tấn công mạng khuyến nghị doanh nghiệp sao lưu và phục hồi dữ liệu như thế nào để ứng phó mã độc tống tiền?",
+      "category": "An toàn mạng",
+      "expect_contains": "sao lưu định kỳ",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "f4c7c91e969badf04768",
+        "chunk_id": "f4c7c91e969badf04768-text-a23c9148c7c16cc87ebe",
+        "file_name": "Những xu hướng tấn công mạng mới và chiến lược ứng phó.pdf",
+        "page": 3,
+        "content_sha256": "cc74229607633cbd6ac9597874861c921f7f11da2ba4fbcadb8c52e1e9106532"
+      }
+    },
+    {
+      "id": "demo-05",
+      "q": "Trong infographic quy tắc “6 KHÔNG”, người dùng cần tránh những đường dẫn và tệp đính kèm nào?",
+      "category": "An toàn mạng",
+      "expect_contains": "KHÔNG truy cập, đăng nhập",
+      "expect_type": "figure",
+      "source": {
+        "doc_id": "6279f763225744518f0e",
+        "chunk_id": "6279f763225744518f0e-figure-1d83bd1d062607ccb28d",
+        "file_name": "Lừa đảo qua không gian mạng_ Thủ đoạn vô vàn – Hậu quả rõ ràng.pdf",
+        "page": 2,
+        "content_sha256": "74ec565bec3bb6616ba952019f20ec206505320f06dd21ab201aaccbfbb41146"
+      }
+    },
+    {
+      "id": "demo-06",
+      "q": "Theo cảnh báo trong tài liệu lừa đảo qua không gian mạng, cần làm gì khi nghi tài khoản ngân hàng bị lợi dụng?",
+      "category": "An toàn mạng",
+      "expect_contains": "BƯỚC 1: Khóa ngay tài khoản ngân hàng",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "6279f763225744518f0e",
+        "chunk_id": "6279f763225744518f0e-text-7326f8de5a6841a6fe1b",
+        "file_name": "Lừa đảo qua không gian mạng_ Thủ đoạn vô vàn – Hậu quả rõ ràng.pdf",
+        "page": 5,
+        "content_sha256": "83771703ffd94a9d3087cefebd1f8a319e9bd02e798ad78ef38e587326b4d382"
+      }
+    },
+    {
+      "id": "demo-07",
+      "q": "Theo Hình 6 trong báo cáo kinh tế 5 tháng đầu năm 2026, vốn đầu tư từ ngân sách Nhà nước của Hà Nội đạt bao nhiêu tỷ đồng?",
+      "category": "Biểu đồ kinh tế",
+      "expect_contains": "41.789,9",
+      "expect_type": "figure",
+      "source": {
+        "doc_id": "1e91532ff7759a381b88",
+        "chunk_id": "1e91532ff7759a381b88-figure-408625c2c30cf18f0986",
+        "file_name": "bc-216-ctk-17809033863311947637179.pdf",
+        "page": 10,
+        "content_sha256": "ffb4c7ace24bed9ebcb855af82124432bc3850f88885d5bb165c6b29f76b65e8"
+      }
+    },
+    {
+      "id": "demo-08",
+      "q": "Theo biểu đồ vốn đầu tư nước ngoài đăng ký 5 tháng đầu năm 2026, tổng vốn đăng ký là bao nhiêu tỷ USD?",
+      "category": "Biểu đồ kinh tế",
+      "expect_contains": "24,81",
+      "expect_type": "figure",
+      "source": {
+        "doc_id": "1e91532ff7759a381b88",
+        "chunk_id": "1e91532ff7759a381b88-figure-b06d36c542279b36d56d",
+        "file_name": "bc-216-ctk-17809033863311947637179.pdf",
+        "page": 10,
+        "content_sha256": "8fb8bc508a6c1509a83de581f00cb913420695852cd1e185619619aee22326ad"
+      }
+    },
+    {
+      "id": "demo-09",
+      "q": "Theo Hình 14 về thị trường xuất nhập khẩu 5 tháng đầu năm 2026, kim ngạch xuất khẩu sang Hoa Kỳ là bao nhiêu tỷ USD?",
+      "category": "Biểu đồ kinh tế",
+      "expect_contains": "Xuất khẩu 69,6",
+      "expect_type": "figure",
+      "source": {
+        "doc_id": "1e91532ff7759a381b88",
+        "chunk_id": "1e91532ff7759a381b88-figure-f5c84824be8105a07a99",
+        "file_name": "bc-216-ctk-17809033863311947637179.pdf",
+        "page": 18,
+        "content_sha256": "a919c697ff2d521fd1d51f9c8ae2a778a8471bc87ac28af5004644aa14bc29ab"
+      }
+    },
+    {
+      "id": "demo-10",
+      "q": "Theo infographic kinh tế 2 tháng đầu năm 2025, tổng mức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng đạt bao nhiêu?",
+      "category": "Biểu đồ kinh tế",
+      "expect_contains": "1.137,5 nghìn tỷ đồng",
+      "expect_type": "figure",
+      "source": {
+        "doc_id": "2d7536476950dae7c9a3",
+        "chunk_id": "2d7536476950dae7c9a3-figure-1881c5b16608a43bc0b4",
+        "file_name": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025.pdf",
+        "page": 6,
+        "content_sha256": "ac02ebf994aa7d07e8741428b3cc3896173cc0bef79d20c8465efb59f4de039a"
+      }
+    },
+    {
+      "id": "demo-11",
+      "q": "Theo bảng xếp hạng chỉ số đổi mới sáng tạo PII 2026 trong tài liệu, Hà Nội đứng thứ mấy và đạt bao nhiêu điểm?",
+      "category": "Đổi mới sáng tạo",
+      "expect_contains": "| 1 | TP. Hà Nội | 63.80 |",
+      "expect_type": "table",
+      "source": {
+        "doc_id": "ef2c2f5b7a2a43cc797e",
+        "chunk_id": "ef2c2f5b7a2a43cc797e-table-9265d74a1779f07e7a26",
+        "file_name": "Hà Nội dẫn đầu chỉ số đổi mới sáng tạo năm 2026.pdf",
+        "page": 1,
+        "content_sha256": "a218eee8004c76874d78f64476c6666d4d7774448da7f364b671fb927634826a"
+      }
+    },
+    {
+      "id": "demo-12",
+      "q": "Theo bài viết về PII 2026, Hà Nội dẫn đầu bao nhiêu trong tổng số 52 chỉ số thành phần?",
+      "category": "Đổi mới sáng tạo",
+      "expect_contains": "18 trong tổng số 52 chỉ số thành phần",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "ef2c2f5b7a2a43cc797e",
+        "chunk_id": "ef2c2f5b7a2a43cc797e-text-2995aaa2765a3f1e22df",
+        "file_name": "Hà Nội dẫn đầu chỉ số đổi mới sáng tạo năm 2026.pdf",
+        "page": 1,
+        "content_sha256": "6566495f0305a73e301366a244616c808ad336c3f0d829881f797297c1278b21"
+      }
+    },
+    {
+      "id": "demo-13",
+      "q": "Theo bảng chi theo bộ, ngành năm 2026 (số liệu giả định), Bộ Giao thông Vận tải có tổng dự toán và tổng giải ngân 9 tháng bao nhiêu tỷ ARL?",
+      "category": "Ngân sách minh họa",
+      "expect_contains": "| Bộ Giao thông Vận tải | 3500 | 44000 | 47500 |",
+      "expect_type": "table",
+      "source": {
+        "doc_id": "42c49790bad9f6ca121c",
+        "chunk_id": "42c49790bad9f6ca121c-table-4e77217278b97c69a5f4",
+        "file_name": "03_Chi_theo_bo_nganh_2026.xlsx",
+        "sheet": "Chi_theo_bo",
+        "content_sha256": "fc6e4370a0affe964802172f17cc48fab7f039f363506225179e03e3fda5005a"
+      }
+    },
+    {
+      "id": "demo-14",
+      "q": "Theo bảng thu chi ngân sách địa phương năm 2026 (số liệu giả định), vùng Cao nguyên Bắc nhận bổ sung từ trung ương bao nhiêu tỷ ARL?",
+      "category": "Ngân sách minh họa",
+      "expect_contains": "| Cao nguyên Bắc | 12 | 120000 | 12000 | 31000 | -19000 | 19000 |",
+      "expect_type": "table",
+      "source": {
+        "doc_id": "d44c80f03dfe3ce341c3",
+        "chunk_id": "d44c80f03dfe3ce341c3-table-1c214741301b510c4090",
+        "file_name": "04_Chi_theo_dia_phuong_2026.xlsx",
+        "sheet": "Chi_dia_phuong",
+        "content_sha256": "cc572626307d8ac9faabf66e4dd561609ce6b66535dae2e9f8947b48777e6f13"
+      }
+    },
+    {
+      "id": "demo-15",
+      "q": "Theo danh mục dự án đầu tư công năm 2026 (số liệu giả định), dự án DA01 Cao tốc Bắc–Nam giai đoạn 2 có kế hoạch vốn và giải ngân 9 tháng bao nhiêu tỷ ARL?",
+      "category": "Đầu tư công minh họa",
+      "expect_contains": "| DA01 | Cao tốc Bắc–Nam (giai đoạn 2) | Giao thông | Liên vùng | 185000 | 98000 | 22000 | 14300 |",
+      "expect_type": "table",
+      "source": {
+        "doc_id": "03babe613f7287b6b093",
+        "chunk_id": "03babe613f7287b6b093-table-9565624791aa766c652e",
+        "file_name": "05_Dau_tu_cong_du_an_2026.xlsx",
+        "sheet": "Du_an",
+        "content_sha256": "195c60afa0f11161213167c535ca525e70abf2529e3c040d972e7c97363aaad6"
+      }
+    },
+    {
+      "id": "demo-16",
+      "q": "Theo bảng tổng hợp đầu tư công năm 2026 (số liệu giả định), lĩnh vực giao thông có bao nhiêu dự án và kế hoạch vốn bao nhiêu tỷ ARL?",
+      "category": "Đầu tư công minh họa",
+      "expect_contains": "| Giao thông | 5 | 675000 | 69500 |",
+      "expect_type": "table",
+      "source": {
+        "doc_id": "03babe613f7287b6b093",
+        "chunk_id": "03babe613f7287b6b093-table-f466938396f35d40c8d2",
+        "file_name": "05_Dau_tu_cong_du_an_2026.xlsx",
+        "sheet": "Tong_hop_linh_vuc",
+        "content_sha256": "3fa7a5201aace7ddbcf81c4c79f452ae6951bc8cfa536e18f14800e2bbc0e23c"
+      }
+    },
+    {
+      "id": "demo-17",
+      "q": "Theo Thông tư 52/2026/TT-NHNN trong tài liệu, điều kiện về tỷ lệ nợ xấu của chi nhánh ngân hàng nước ngoài được quy định như thế nào?",
+      "category": "Ngân hàng",
+      "expect_contains": "không vượt quá 3%",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "40a483c0e01cc6863701",
+        "chunk_id": "40a483c0e01cc6863701-text-f99e601d290fcbbc0d73",
+        "file_name": "Thông tư số 52-2026-TT-NHNN.docx",
+        "content_sha256": "70acf5749f41dcdd94c8f9c39fa0f0ecf9ce59b389478a987922f88b9adfdf83"
+      }
+    },
+    {
+      "id": "demo-18",
+      "q": "Theo Thông tư 03/2020/TT-BKHCN trong tài liệu, Thông tư 15/2019 về thép không gỉ bị ngưng hiệu lực đến ngày nào?",
+      "category": "Văn bản quản lý",
+      "expect_contains": "đến hết ngày 31 tháng 12 năm 2021",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "95c0e98f956da074c6dc",
+        "chunk_id": "95c0e98f956da074c6dc-text-6b9d1ad34803950a2b20",
+        "file_name": "VanBanGoc_03-bkhcn.signed.pdf",
+        "page": 1,
+        "content_sha256": "2edf378b75e56471ac7bd1007e13d990c44d48dbba282ee2602e699d77fb9a4f"
+      }
+    },
+    {
+      "id": "demo-19",
+      "q": "Theo bài viết về thực trạng lừa đảo trực tuyến, trong 9 tháng năm 2024 Cục An toàn thông tin đã tiếp nhận hơn bao nhiêu phản ánh?",
+      "category": "An toàn mạng",
+      "expect_contains": "22.200 phản ánh",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "ba43dfc8d9fa0c3760bf",
+        "chunk_id": "ba43dfc8d9fa0c3760bf-text-d1af00e298ad5dc377e1",
+        "file_name": "Thực trạng và xu hướng lừa đảo trực tuyến tại Việt Nam - Cổng Thông tin điện tử Bộ Khoa học và Công nghệ.pdf",
+        "page": 1,
+        "content_sha256": "b10587278f0a1516c6702b06ca6de37dc31db461750552f81bc75e7941d336fd"
+      }
+    },
+    {
+      "id": "demo-20",
+      "q": "Theo báo cáo phòng chống tội phạm tháng 7/2025, toàn quốc đã bắt, vận động đầu thú và thanh loại bao nhiêu đối tượng truy nã?",
+      "category": "Số liệu an ninh",
+      "expect_contains": "140 đối tượng truy nã",
+      "expect_type": "text",
+      "source": {
+        "doc_id": "117251f397c376ea114e",
+        "chunk_id": "117251f397c376ea114e-text-d99240145a6abbc338b6",
+        "file_name": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7_2025.pdf",
+        "page": 2,
+        "content_sha256": "596195b363a4053ef174b7178362e1f9d4e53d689f860d77f26ddb1ce5288ff9"
+      }
+    },
+    {
+      "id": "fallback-01",
+      "q": "Công thức làm bánh tiramisu truyền thống gồm những nguyên liệu và bước nào?",
+      "category": "Ngoài phạm vi tài liệu",
+      "expect_fallback": true,
+      "expect_contains": null
+    },
+    {
+      "id": "fallback-02",
+      "q": "Vì sao hố đen phát ra bức xạ Hawking theo cơ học lượng tử?",
+      "category": "Ngoài phạm vi tài liệu",
+      "expect_fallback": true,
+      "expect_contains": null
+    },
+    {
+      "id": "fallback-03",
+      "q": "Đội bóng nào vô địch World Cup 2022 và tỷ số trận chung kết là bao nhiêu?",
+      "category": "Ngoài phạm vi tài liệu",
+      "expect_fallback": true,
+      "expect_contains": null
+    },
+    {
+      "id": "fallback-04",
+      "q": "Phí thường niên thẻ tín dụng Platinum của ngân hàng Sao Mai là bao nhiêu?",
+      "category": "Ngoài phạm vi tài liệu",
+      "expect_fallback": true,
+      "expect_contains": null
+    }
   ]
 }

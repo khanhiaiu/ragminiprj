@@ -13,6 +13,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
+from project_settings import configure_cli, configured_path, setting  # noqa: E402
+
 from document_parser.normalization.schema import CanonicalDocument  # noqa: E402
 from document_parser.retrieval.preprocessor import RetrievalPreprocessor  # noqa: E402
 from rag.bm25 import BM25Index  # noqa: E402
@@ -21,13 +23,11 @@ from rag.chunking import TypeAwareChunker  # noqa: E402
 from rag.chunking.chunker import ChunkingConfig  # noqa: E402
 from rag.embeddings import EmbeddingCache, HashEmbedder, make_embedder  # noqa: E402
 from rag.enrichment.tokenizer import (  # noqa: E402
-    BGE_M3_MODEL,
-    BGE_M3_REVISION,
     load_bge_m3_tokenizer,
 )
 from rag.indexing import GenerationIndexer  # noqa: E402
 from rag.schemas import Chunk  # noqa: E402
-from rag.store import COLLECTION, LocalVectorStore, get_store, resolve_qdrant_settings  # noqa: E402
+from rag.store import LocalVectorStore, get_store, resolve_qdrant_settings  # noqa: E402
 
 
 class WhitespaceTokenizer:
@@ -126,7 +126,7 @@ def prepare(args, output: Path) -> list[Chunk]:
         if args.embedder == "hash"
         else load_bge_m3_tokenizer(local_files_only=args.local_files_only)
     )
-    chunker = TypeAwareChunker(tokenizer, ChunkingConfig(merge_image_captions=bool(args.captions)))
+    chunker = TypeAwareChunker(tokenizer, ChunkingConfig(merge_image_captions=bool(args.captions) or setting("chunking.merge_image_captions")))
     chunks = []
     retrieval_dir = output / "retrieval"
     retrieval_dir.mkdir(parents=True, exist_ok=True)
@@ -151,22 +151,23 @@ def prepare(args, output: Path) -> list[Chunk]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", type=Path, default=ROOT / "parsed_test_document/all_documents_gpu")
+    configure_cli(parser)
+    parser.add_argument("--input", type=Path, default=configured_path("ingestion.input"))
     parser.add_argument("--captions", type=Path)
     parser.add_argument("--chunks", type=Path)
-    parser.add_argument("--output", type=Path, default=ROOT / "artifacts/ingestion")
+    parser.add_argument("--output", type=Path, default=configured_path("ingestion.output"))
     parser.add_argument("--run-id", help="Create a versioned output subdirectory")
-    parser.add_argument("--mode", choices=["prepare-only", "full-ingest"], default="full-ingest")
+    parser.add_argument("--mode", choices=["prepare-only", "full-ingest"], default=setting("ingestion.mode"))
     parser.add_argument("--prepare-only", action="store_true", help="Compatibility alias for --mode prepare-only")
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--resume", action=argparse.BooleanOptionalAction, default=True)
-    parser.add_argument("--embedder", choices=["hash", "bge-m3"], default="bge-m3")
-    parser.add_argument("--backend", choices=["local", "qdrant", "qdrant-memory", "auto"], default="qdrant")
+    parser.add_argument("--resume", action=argparse.BooleanOptionalAction, default=setting("ingestion.resume"))
+    parser.add_argument("--embedder", choices=["hash", "bge-m3"], default=setting("embedding.backend", "RAG_EMBEDDER"))
+    parser.add_argument("--backend", choices=["local", "qdrant", "qdrant-memory", "auto"], default=setting("qdrant.backend", "RAG_BACKEND"))
     parser.add_argument("--qdrant-url")
     parser.add_argument("--qdrant-api-key")
     parser.add_argument("--collection")
-    parser.add_argument("--batch-size", type=int, default=4)
-    parser.add_argument("--local-files-only", action="store_true")
+    parser.add_argument("--batch-size", type=int, default=setting("embedding.batch_size"))
+    parser.add_argument("--local-files-only", action=argparse.BooleanOptionalAction, default=setting("ingestion.local_files_only"))
     parser.add_argument("--no-publish", action="store_true")
     args = parser.parse_args()
     if args.prepare_only:
@@ -186,9 +187,9 @@ def main() -> int:
         "".join(chunk.model_dump_json() + "\n" for chunk in chunks), encoding="utf-8"
     )
     planned_fingerprint = {
-        "model": BGE_M3_MODEL if args.embedder == "bge-m3" else "hash",
-        "revision": BGE_M3_REVISION if args.embedder == "bge-m3" else "hash-v2",
-        "dense_dimensions": 1024,
+        "model": setting("embedding.model") if args.embedder == "bge-m3" else "hash",
+        "revision": setting("embedding.revision") if args.embedder == "bge-m3" else "hash-v2",
+        "dense_dimensions": setting("embedding.dense_dimensions"),
         "dense": True,
         "sparse": True,
         "colbert": False,
@@ -276,11 +277,11 @@ def main() -> int:
             status="completed",
         )
     else:
-        generation = args.collection or f"{COLLECTION}_{started.strftime('%Y%m%dT%H%M%SZ')}"
+        generation = args.collection or f"{setting('qdrant.collection_prefix')}_{started.strftime('%Y%m%dT%H%M%SZ')}"
         url, api_key = resolve_qdrant_settings(args.qdrant_url, args.qdrant_api_key)
         store = get_store(
             args.backend,
-            url=url or "http://localhost:6333",
+            url=url,
             api_key=api_key,
             collection=generation,
         )

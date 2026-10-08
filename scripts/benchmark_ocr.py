@@ -18,14 +18,14 @@ sys.path.insert(0, str(ROOT / "src"))
 
 import pymupdf
 
-from document_parser.config import DEFAULT_CONFIG, ProjectConfig
+from document_parser.config import ProjectConfig
 from document_parser.parsers.image.paddle_image_parser import PaddleEngine
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--config", type=Path, default=DEFAULT_CONFIG, help="Shared project config YAML"
+        "--config", type=Path, default=None, help="Shared project config YAML"
     )
     parser.add_argument("--device", help="cpu or gpu (optionally gpu:N)")
     parser.add_argument("--layout-model", help="Override the layout model")
