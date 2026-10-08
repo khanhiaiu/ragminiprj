@@ -6,7 +6,7 @@ embedding, vector database hoặc truy vấn.
 
 ## Cấu hình và chạy
 
-Chỉ chỉnh [config.yaml](../src/document_parser/config.yaml):
+Chỉ chỉnh [config.yaml](../config.yaml):
 
 ```yaml
 device: gpu:0
@@ -188,7 +188,7 @@ requirements.txt            Dependency chung
 pyproject.toml              Đóng gói và cấu hình công cụ
 scripts/                    Parse, tải model, benchmark, kiểm tra GPU
 src/document_parser/
-  config.yaml               Chọn thiết bị và model
+  # config.yaml nằm ở thư mục gốc, dùng chung cho parser/RAG/API/UI
   config.py                 Bộ nạp YAML và phân giải đường dẫn
   pipeline.py               Điều phối xử lý
   ocr/                      Layout, detection, recognition và table

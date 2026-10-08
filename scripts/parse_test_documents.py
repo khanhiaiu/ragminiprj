@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from document_parser.config import DEFAULT_CONFIG, ProjectConfig
+from document_parser.config import ProjectConfig
 from document_parser.parsers.image.paddle_image_parser import require_requested_gpu
 from document_parser.pipeline import DocumentPipeline
 
@@ -17,7 +17,7 @@ from document_parser.pipeline import DocumentPipeline
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--config", type=Path, default=DEFAULT_CONFIG, help="Shared project config YAML"
+        "--config", type=Path, default=None, help="Shared project config YAML"
     )
     parser.add_argument("--layout-model", help="Override the layout model")
     parser.add_argument("--detection-model", help="Override the text detection model")

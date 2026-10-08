@@ -1,24 +1,8 @@
-"""Vector storage for Step 2 (§4.3 Qdrant collection ``docs``).
+"""Qdrant dense/sparse generation storage and explicit local test storage.
 
-Two backends share one interface so tests/CI run without Docker:
-
-- ``LocalVectorStore`` (default): numpy cosine search + JSONL persistence.
-  No server needed. Used by ``scripts/ingest.py --backend local`` and all
-  unit tests.
-- ``QdrantStore``: real Qdrant (local Docker, self-hosted with TLS +
-  API key, or Qdrant Cloud). Requires ``qdrant-client``. Used with
-  ``--backend qdrant`` / ``--backend auto`` (falls back to local when
-  the server/client is unavailable). Connection settings resolve in
-  order: explicit argument → ``QDRANT_URL`` / ``QDRANT_API_KEY`` env →
-  repo-root ``.env`` file (also accepts ``CLUSTER_URL`` and
-  ``QDRANT__SERVICE__API_KEY`` aliases). REST transport is forced
-  (``prefer_grpc=False``) so Qdrant Cloud works without the gRPC port.
-
-Qdrant layout (created by ``ensure_collection``):
-  collection ``docs``, vector ``dense`` size 1024 distance Cosine,
-  payload indexes ``doc_id`` keyword + ``type`` keyword.
-Payload per point follows §4.3: doc_id, file_name, page, section, type,
-image_path, content, content_hash, ingested_at.
+Production queries use Qdrant prefetch + RRF through ``docs_current``.
+Connection settings resolve from arguments, environment, then repo-root .env.
+Failures never silently select the local development backend.
 """
 
 from __future__ import annotations
@@ -26,14 +10,25 @@ from __future__ import annotations
 import json
 import math
 import os
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Sequence
 
-COLLECTION = "rag_system_main_v1.0"
-CURRENT_ALIAS = "docs_current"
-VECTOR_NAME = "dense"
-SPARSE_VECTOR_NAME = "sparse"
-VECTOR_SIZE = 1024
+from project_settings import setting
+
+COLLECTION = setting("qdrant.collection_prefix")
+CURRENT_ALIAS = setting("qdrant.alias")
+VECTOR_NAME = setting("qdrant.dense_vector_name")
+SPARSE_VECTOR_NAME = setting("qdrant.sparse_vector_name")
+VECTOR_SIZE = setting("embedding.dense_dimensions")
+
+
+@dataclass(frozen=True)
+class ScoredHybridHit:
+    chunk_id: str
+    fused_score: float
+    dense_score: float | None
+    payload: dict[str, Any]
 
 # Env / .env keys accepted for Qdrant connections (explicit args win).
 _URL_KEYS = ("QDRANT_URL", "CLUSTER_URL")
@@ -81,7 +76,7 @@ def resolve_qdrant_settings(
         url = os.environ.get("QDRANT_URL") or os.environ.get("CLUSTER_URL")
     if not api_key:
         api_key = os.environ.get("QDRANT_API_KEY") or os.environ.get("QDRANT__SERVICE__API_KEY")
-    return url, api_key
+    return url or setting("qdrant.url"), api_key
 
 
 def _cosine(a: Sequence[float], b: Sequence[float]) -> float:
@@ -94,8 +89,8 @@ def _cosine(a: Sequence[float], b: Sequence[float]) -> float:
 class LocalVectorStore:
     """In-memory + on-disk dense store. Cosine search, hash dedup."""
 
-    def __init__(self, dim: int = VECTOR_SIZE) -> None:
-        self.dim = dim
+    def __init__(self, dim: int | None = None) -> None:
+        self.dim = dim if dim is not None else setting("embedding.dense_dimensions")
         self.ids: list[str] = []
         self.vectors: list[list[float]] = []
         self.payloads: list[dict] = []
@@ -165,7 +160,7 @@ class LocalVectorStore:
         (directory / "vectors.json").write_text(json.dumps({"ids": self.ids, "vectors": self.vectors}), encoding="utf-8")
 
     @classmethod
-    def load(cls, directory: Path, dim: int = VECTOR_SIZE) -> "LocalVectorStore":
+    def load(cls, directory: Path, dim: int | None = None) -> "LocalVectorStore":
         store = cls(dim=dim)
         directory = Path(directory)
         payloads_path = directory / "payloads.jsonl"
@@ -192,12 +187,16 @@ class QdrantStore:
     def __init__(
         self,
         url: str | None = None,
-        collection: str = COLLECTION,
-        vector_size: int = VECTOR_SIZE,
+        collection: str | None = None,
+        vector_size: int | None = None,
         in_memory: bool = False,
         api_key: str | None = None,
         client: Any | None = None,
     ) -> None:
+        collection = collection or setting("qdrant.collection_prefix")
+        vector_size = vector_size if vector_size is not None else setting("embedding.dense_dimensions")
+        self.dense_name = setting("qdrant.dense_vector_name")
+        self.sparse_name = setting("qdrant.sparse_vector_name")
         if client is not None:
             self.client = client
             self.collection = collection
@@ -212,7 +211,7 @@ class QdrantStore:
             self.client = QdrantClient(":memory:")
         else:
             # REST only: Qdrant Cloud free tier blocks the gRPC port.
-            self.client = QdrantClient(url=url, api_key=api_key, prefer_grpc=False, timeout=30)
+            self.client = QdrantClient(url=url, api_key=api_key, prefer_grpc=False, timeout=setting("qdrant.timeout_seconds"))
         self.collection = collection
         self.vector_size = vector_size
 
@@ -228,10 +227,10 @@ class QdrantStore:
         if self.collection not in existing:
             self.client.create_collection(
                 collection_name=self.collection,
-                vectors_config={VECTOR_NAME: VectorParams(size=self.vector_size, distance=Distance.COSINE)},
-                sparse_vectors_config={SPARSE_VECTOR_NAME: SparseVectorParams()},
+                vectors_config={self.dense_name: VectorParams(size=self.vector_size, distance=Distance.COSINE)},
+                sparse_vectors_config={self.sparse_name: SparseVectorParams()},
             )
-        for field in ("doc_id", "document_version", "type", "page", "sheet", "image_hash"):
+        for field in setting("qdrant.payload_indexes"):
             try:
                 self.client.create_payload_index(
                     collection_name=self.collection, field_name=field, field_schema=PayloadSchemaType.KEYWORD
@@ -276,7 +275,7 @@ class QdrantStore:
             # like "{doc}-c0001", so derive a deterministic UUID from them.
             digest = hashlib.md5(str(pid).encode("utf-8")).hexdigest()
             point_id = f"{digest[:8]}-{digest[8:12]}-{digest[12:16]}-{digest[16:20]}-{digest[20:32]}"
-            points.append(PointStruct(id=point_id, vector={VECTOR_NAME: list(map(float, vec))}, payload=dict(pay)))
+            points.append(PointStruct(id=point_id, vector={self.dense_name: list(map(float, vec))}, payload=dict(pay)))
         for i in range(0, len(points), 128):
             self.client.upsert(collection_name=self.collection, points=points[i : i + 128])
         return len(points)
@@ -318,8 +317,8 @@ class QdrantStore:
                 PointStruct(
                     id=self.deterministic_point_id(str(chunk_id)),
                     vector={
-                        VECTOR_NAME: list(map(float, dense)),
-                        SPARSE_VECTOR_NAME: SparseVector(
+                        self.dense_name: list(map(float, dense)),
+                        self.sparse_name: SparseVector(
                             indices=list(map(int, indices)), values=list(map(float, values))
                         ),
                     },
@@ -356,7 +355,7 @@ class QdrantStore:
             result = self.client.query_points(
                 collection_name=self.collection,
                 query=list(map(float, query_vector)),
-                using=VECTOR_NAME,
+                using=self.dense_name,
                 limit=top_k,
                 query_filter=qdrant_filter,
                 with_payload=True,
@@ -365,7 +364,7 @@ class QdrantStore:
         else:  # pragma: no cover - older client
             points = self.client.search(
                 collection_name=self.collection,
-                query_vector=(VECTOR_NAME, list(map(float, query_vector))),
+                query_vector=(self.dense_name, list(map(float, query_vector))),
                 query_filter=qdrant_filter,
                 limit=top_k,
                 with_payload=True,
@@ -392,7 +391,7 @@ class QdrantStore:
         result = self.client.query_points(
             collection_name=self.collection,
             query=SparseVector(indices=list(indices), values=list(values)),
-            using=SPARSE_VECTOR_NAME,
+            using=self.sparse_name,
             limit=top_k,
             query_filter=self._filter(filters),
             with_payload=True,
@@ -407,29 +406,78 @@ class QdrantStore:
         *,
         top_k: int = 20,
         filters: dict | None = None,
+        dense_top: int = 20,
+        sparse_top: int = 20,
     ) -> list[tuple[str, float, dict]]:
+        result = self._query_hybrid(
+            dense, sparse_indices, sparse_values, top_k=top_k, filters=filters,
+            dense_top=dense_top, sparse_top=sparse_top,
+        )
+        return self._points(result.points)
+
+    def search_hybrid_scored(
+        self,
+        dense: Sequence[float],
+        sparse_indices: Sequence[int],
+        sparse_values: Sequence[float],
+        *,
+        top_k: int = 20,
+        filters: dict | None = None,
+        dense_top: int = 20,
+        sparse_top: int = 20,
+    ) -> list[ScoredHybridHit]:
+        """Keep Qdrant RRF ranking and measure cosine relevance independently.
+
+        Returning the dense vectors in the same Query API response avoids a
+        second query and avoids treating rank-fusion scores as confidence.
+        """
+        result = self._query_hybrid(
+            dense, sparse_indices, sparse_values, top_k=top_k, filters=filters,
+            dense_top=dense_top, sparse_top=sparse_top, with_vectors=[self.dense_name],
+        )
+        hits = []
+        for point in result.points:
+            payload = dict(point.payload or {})
+            vector = (point.vector or {}).get(self.dense_name)
+            score = None
+            if vector is not None and len(vector) == len(dense):
+                score = _cosine(dense, vector)
+            hits.append(ScoredHybridHit(
+                chunk_id=str(payload.get("chunk_id", point.id)),
+                fused_score=float(point.score), dense_score=score, payload=payload,
+            ))
+        return hits
+
+    def _query_hybrid(
+        self, dense, sparse_indices, sparse_values, *, top_k, filters,
+        dense_top, sparse_top, with_vectors=False,
+    ):
         from qdrant_client.models import Fusion, FusionQuery, Prefetch, SparseVector
 
         query_filter = self._filter(filters)
-        result = self.client.query_points(
+        return self.client.query_points(
             collection_name=self.collection,
             prefetch=[
-                Prefetch(query=list(map(float, dense)), using=VECTOR_NAME, limit=max(top_k, 20)),
+                Prefetch(
+                    query=list(map(float, dense)), using=self.dense_name,
+                    limit=dense_top, filter=query_filter,
+                ),
                 Prefetch(
                     query=SparseVector(
                         indices=list(map(int, sparse_indices)),
                         values=list(map(float, sparse_values)),
                     ),
-                    using=SPARSE_VECTOR_NAME,
-                    limit=max(top_k, 20),
+                    using=self.sparse_name,
+                    limit=sparse_top,
+                    filter=query_filter,
                 ),
             ],
             query=FusionQuery(fusion=Fusion.RRF),
             query_filter=query_filter,
             limit=top_k,
             with_payload=True,
+            with_vectors=with_vectors,
         )
-        return self._points(result.points)
 
     @staticmethod
     def _points(points) -> list[tuple[str, float, dict]]:
@@ -452,7 +500,7 @@ class QdrantStore:
         ]
         return Filter(must=conditions) if conditions else None
 
-    def publish_alias(self, alias: str = CURRENT_ALIAS) -> None:
+    def publish_alias(self, alias: str | None = None) -> None:
         """Atomically point the stable alias at this verified generation."""
         from qdrant_client.models import (
             CreateAlias,
@@ -461,6 +509,7 @@ class QdrantStore:
             DeleteAliasOperation,
         )
 
+        alias = alias or setting("qdrant.alias", "QDRANT_COLLECTION")
         aliases = {item.alias_name for item in self.client.get_aliases().aliases}
         operations = []
         if alias in aliases:
@@ -477,23 +526,23 @@ class QdrantStore:
         return {"expected_points": expected, "actual_points": actual, "passed": actual == expected}
 
 
-def get_store(backend: str = "qdrant", **kwargs) -> LocalVectorStore | QdrantStore:
+def get_store(backend: str | None = None, **kwargs) -> LocalVectorStore | QdrantStore:
     """Select a store explicitly. Production failures never fall back silently."""
-    key = backend.strip().lower()
+    key = (backend or setting("qdrant.backend", "RAG_BACKEND")).strip().lower()
     if key == "local":
-        return LocalVectorStore(dim=int(kwargs.get("dim", VECTOR_SIZE)))
+        return LocalVectorStore(dim=int(kwargs.get("dim", setting("embedding.dense_dimensions"))))
     if key in {"qdrant-memory", "memory"}:
         return QdrantStore(in_memory=True, **{k: v for k, v in kwargs.items() if k in {"collection", "vector_size"}})
     if key == "qdrant":
         return QdrantStore(
-            url=kwargs.get("url"), collection=str(kwargs.get("collection", COLLECTION)),
+            url=kwargs.get("url"), collection=str(kwargs.get("collection", setting("qdrant.collection_prefix"))),
             api_key=kwargs.get("api_key"),
         )
     if key == "auto":
         url = kwargs.get("url")
         try:
             store = QdrantStore(
-                url=url, collection=str(kwargs.get("collection", COLLECTION)),
+                url=url, collection=str(kwargs.get("collection", setting("qdrant.collection_prefix"))),
                 api_key=kwargs.get("api_key"),
             )
             store.ensure_collection()

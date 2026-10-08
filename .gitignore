@@ -47,4 +47,4 @@ temp/
 Thumbs.db
 documents/
 artifacts/
-
+data/*.sqlite3*

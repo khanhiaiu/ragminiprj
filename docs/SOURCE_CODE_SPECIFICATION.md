@@ -86,7 +86,7 @@ ragminiprj/
 │   ├── benchmark_ocr.py           # benchmark trang PDF
 │   └── check_gpu.py               # kiểm tra Paddle CUDA
 ├── src/document_parser/
-│   ├── config.yaml                # cấu hình mặc định
+│   ├── config.py                  # đọc config.yaml chung ở thư mục gốc
 │   ├── config.py                  # load/merge/validate/resolve config
 │   ├── pipeline.py                # orchestration
 │   ├── errors.py                  # exception domain
@@ -190,7 +190,7 @@ Normalizer đồng thời:
 
 1. resolve đường dẫn YAML;
 2. đọc và validate cấu trúc cấp cao;
-3. deep-merge file người dùng lên `_DEFAULTS` lấy từ `src/document_parser/config.yaml`;
+3. deep-merge file người dùng lên `_DEFAULTS` lấy từ `config.yaml` ở thư mục gốc;
 4. đặt root resolve path:
    - config mặc định: root repository;
    - config tùy chỉnh: thư mục chứa config;
@@ -754,7 +754,7 @@ Các dependency chức năng:
 | NumPy/OpenCV | dữ liệu ảnh và dependency OCR |
 | pytest | test runner |
 
-Package dùng `setuptools`, source layout tại `src`, kèm `config.yaml` trong package data. Người dùng phải chọn đúng một extra `cpu` hoặc `gpu`; hai distribution đều cung cấp module `paddle`.
+Package dùng `setuptools`, source layout tại `src`, cài `config.yaml` vào `share/rag-document-parser`. Người dùng phải chọn đúng một extra `cpu` hoặc `gpu`; hai distribution đều cung cấp module `paddle`.
 
 ## 22. Kiểm thử hiện có
 

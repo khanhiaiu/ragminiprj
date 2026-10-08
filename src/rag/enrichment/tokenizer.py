@@ -5,8 +5,10 @@ from __future__ import annotations
 import hashlib
 from typing import Protocol, Sequence
 
-BGE_M3_MODEL = "BAAI/bge-m3"
-BGE_M3_REVISION = "5617a9f61b028005a4858fdac845db406aefb181"
+from project_settings import setting
+
+BGE_M3_MODEL = setting("tokenizer.model")
+BGE_M3_REVISION = setting("tokenizer.revision")
 
 
 class TokenizerLike(Protocol):
@@ -29,8 +31,8 @@ def embedding_token_count(tokenizer: TokenizerLike, text: str) -> int:
 
 
 def load_bge_m3_tokenizer(
-    model_name: str = BGE_M3_MODEL,
-    revision: str = BGE_M3_REVISION,
+    model_name: str | None = None,
+    revision: str | None = None,
     *,
     local_files_only: bool = False,
 ):
@@ -40,8 +42,8 @@ def load_bge_m3_tokenizer(
     except ImportError as exc:  # pragma: no cover - dependency error path
         raise ImportError("transformers is required for the pinned BGE-M3 tokenizer") from exc
     return AutoTokenizer.from_pretrained(
-        model_name,
-        revision=revision,
+        model_name or setting("tokenizer.model"),
+        revision=revision or setting("tokenizer.revision"),
         use_fast=True,
         local_files_only=local_files_only,
     )
@@ -50,8 +52,10 @@ def load_bge_m3_tokenizer(
 def tokenizer_fingerprint(
     tokenizer: TokenizerLike,
     *,
-    model_name: str = BGE_M3_MODEL,
-    revision: str = BGE_M3_REVISION,
+    model_name: str | None = None,
+    revision: str | None = None,
 ) -> str:
+    model_name = model_name or setting("tokenizer.model")
+    revision = revision or setting("tokenizer.revision")
     payload = f"{model_name}\n{revision}\n{tokenizer.__class__.__module__}.{tokenizer.__class__.__name__}"
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()

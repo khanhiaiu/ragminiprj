@@ -17,11 +17,15 @@ from typing import Any
 
 import httpx
 
-FILES_UPLOAD_URL = "https://generativelanguage.googleapis.com/upload/v1beta/files"
-API_ROOT = "https://generativelanguage.googleapis.com/v1beta"
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+from project_settings import configure_cli, secret, setting
+
+FILES_UPLOAD_URL = setting("pdf_conversion.upload_url")
+API_ROOT = setting("pdf_conversion.api_root")
 MIN_REQUEST_INTERVAL_SECONDS = 4.0
-DEFAULT_TIMEOUT_SECONDS = 120.0
-DEFAULT_MAX_OUTPUT_TOKENS = 8192
+DEFAULT_TIMEOUT_SECONDS = setting("pdf_conversion.timeout_seconds")
+DEFAULT_MAX_OUTPUT_TOKENS = setting("pdf_conversion.max_output_tokens")
 
 EXTRACTION_PROMPT = """Extract the complete readable text of the attached PDF and return it as clean Markdown.
 
@@ -92,15 +96,20 @@ class GeminiPDFMarkdown:
         *,
         api_key: str | None = None,
         model: str | None = None,
-        timeout_seconds: float = DEFAULT_TIMEOUT_SECONDS,
-        request_interval_seconds: float = MIN_REQUEST_INTERVAL_SECONDS,
-        poll_interval_seconds: float = MIN_REQUEST_INTERVAL_SECONDS,
-        max_retries: int = 3,
+        timeout_seconds: float | None = None,
+        request_interval_seconds: float | None = None,
+        poll_interval_seconds: float | None = None,
+        max_retries: int | None = None,
         client: httpx.Client | None = None,
-        max_output_tokens: int = DEFAULT_MAX_OUTPUT_TOKENS,
+        max_output_tokens: int | None = None,
     ) -> None:
-        self.api_key = api_key or os.environ.get("GEMINI_API_KEY")
-        self.model = model or os.environ.get("GEMINI_MODEL")
+        timeout_seconds = timeout_seconds if timeout_seconds is not None else setting("pdf_conversion.timeout_seconds")
+        request_interval_seconds = request_interval_seconds if request_interval_seconds is not None else setting("pdf_conversion.request_interval_seconds")
+        poll_interval_seconds = poll_interval_seconds if poll_interval_seconds is not None else setting("pdf_conversion.poll_interval_seconds")
+        max_retries = max_retries if max_retries is not None else setting("pdf_conversion.max_retries")
+        max_output_tokens = max_output_tokens if max_output_tokens is not None else setting("pdf_conversion.max_output_tokens")
+        self.api_key = api_key or secret("GEMINI_API_KEY")
+        self.model = model or setting("captioning.model", "GEMINI_MODEL")
         if not self.api_key:
             raise RuntimeError("GEMINI_API_KEY is not set in the environment")
         if not self.model:
@@ -187,7 +196,7 @@ class GeminiPDFMarkdown:
             raise ValueError(f"Input does not have a PDF signature: {pdf_path}")
         start = self._request(
             "POST",
-            FILES_UPLOAD_URL,
+            setting("pdf_conversion.upload_url"),
             headers={
                 "X-Goog-Upload-Protocol": "resumable",
                 "X-Goog-Upload-Command": "start",
@@ -222,7 +231,7 @@ class GeminiPDFMarkdown:
         state = file_info.get("state")
         while state == "PROCESSING":
             time.sleep(self.poll_interval_seconds)
-            response = self._request("GET", f"{API_ROOT}/{name}")
+            response = self._request("GET", f"{setting('pdf_conversion.api_root')}/{name}")
             file_info = response.json()
             state = file_info.get("state")
         if state == "FAILED":
@@ -234,7 +243,7 @@ class GeminiPDFMarkdown:
     def extract_markdown(self, file_info: dict[str, Any]) -> str:
         response = self._request(
             "POST",
-            f"{API_ROOT}/models/{self.model}:generateContent",
+            f"{setting('pdf_conversion.api_root')}/models/{self.model}:generateContent",
             headers={"Content-Type": "application/json"},
             json_body={
                 "system_instruction": {
@@ -364,6 +373,7 @@ def convert_with_local_parser(
 def main() -> int:
     load_project_gemini_env()
     parser = argparse.ArgumentParser(description=__doc__)
+    configure_cli(parser)
     parser.add_argument("pdf", type=Path, help="PDF file to upload to Gemini")
     parser.add_argument("--output", type=Path, help="Markdown output path; defaults to <PDF>.md")
     parser.add_argument("--force", action="store_true", help="Overwrite an existing output file")
@@ -379,12 +389,6 @@ def main() -> int:
         help="Fail instead of using local PDF/OCR when Gemini returns RECITATION",
     )
     parser.add_argument(
-        "--config",
-        type=Path,
-        default=Path(__file__).resolve().parents[1] / "src/document_parser/config.yaml",
-        help="Project parser config used by the local fallback",
-    )
-    parser.add_argument(
         "--local-output-dir",
         type=Path,
         help="Directory for local parser JSON, Markdown, and assets",
@@ -398,13 +402,13 @@ def main() -> int:
     parser.add_argument(
         "--request-interval",
         type=float,
-        default=MIN_REQUEST_INTERVAL_SECONDS,
+        default=setting("pdf_conversion.request_interval_seconds"),
         help="Minimum seconds between Gemini request starts (must be at least 4)",
     )
     parser.add_argument(
         "--max-output-tokens",
         type=int,
-        default=DEFAULT_MAX_OUTPUT_TOKENS,
+        default=setting("pdf_conversion.max_output_tokens"),
         help="Maximum Markdown output tokens; clipped output fails instead of being silently accepted",
     )
     args = parser.parse_args()

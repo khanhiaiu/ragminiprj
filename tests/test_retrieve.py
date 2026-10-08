@@ -28,7 +28,7 @@ def _build_retriever():
     store.upsert([c[0] for c in docs], vectors, payloads)
     bm25 = BM25Index()
     bm25.add([c[0] for c in docs], [c[2] for c in docs])
-    return HybridRetriever(store=store, bm25=bm25, embedder=embedder)
+    return HybridRetriever(store=store, bm25=bm25, embedder=embedder, threshold=0.0)
 
 
 def test_rrf_prefers_items_in_both_lists():
@@ -79,7 +79,7 @@ def test_reranker_hook_and_load_roundtrip(tmp_path):
         capture_output=True, text=True, cwd=str(Path(__file__).resolve().parents[1]),
     )
     assert proc.returncode == 0, proc.stderr
-    retriever = HybridRetriever.load(rag_dir, embedder_name="hash", backend="local")
+    retriever = HybridRetriever.load(rag_dir, embedder_name="hash", backend="local", threshold=0.0)
 
     def reverse_rerank(query, candidates):
         return list(reversed(candidates))

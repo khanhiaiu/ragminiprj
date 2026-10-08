@@ -116,7 +116,7 @@ def test_invalid_devices_are_rejected(custom_config, device):
     settings = yaml.safe_load(custom_config.read_text())
     settings["device"] = device
     custom_config.write_text(yaml.safe_dump(settings))
-    with pytest.raises(ValueError, match="device must be"):
+    with pytest.raises(ValueError, match="device (must be|cannot be null)"):
         ProjectConfig.load(custom_config)
 
 
@@ -124,7 +124,7 @@ def test_config_rejects_unknown_ocr_sections(custom_config):
     settings = yaml.safe_load(custom_config.read_text())
     settings["ocr"] = {"profiles": {}}
     custom_config.write_text(yaml.safe_dump(settings))
-    with pytest.raises(ValueError, match="ocr only supports"):
+    with pytest.raises(ValueError, match="ocr only supports|Unknown config field: ocr"):
         ProjectConfig.load(custom_config)
 
 
@@ -226,6 +226,14 @@ def test_parse_cli_uses_simple_config_outside_repository(custom_config, tmp_path
             }
 
     monkeypatch.setattr(script, "DocumentPipeline", Pipeline)
+    # This test verifies config plumbing; CUDA availability is tested separately.
+    monkeypatch.setitem(sys.modules, "paddle", SimpleNamespace(
+        __version__="test", is_compiled_with_cuda=lambda: True, set_device=lambda device: None,
+        device=SimpleNamespace(
+            get_device=lambda: "gpu:0",
+            cuda=SimpleNamespace(device_count=lambda: 1, get_device_name=lambda: "test GPU"),
+        ),
+    ))
     monkeypatch.chdir(work)
     monkeypatch.setattr(
         sys,

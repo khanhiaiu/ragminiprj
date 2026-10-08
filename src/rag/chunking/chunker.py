@@ -5,8 +5,10 @@ from __future__ import annotations
 import hashlib
 import json
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Iterable
+
+from project_settings import setting
 
 from document_parser.retrieval.models import RetrievalDocument, RetrievalElement
 
@@ -16,12 +18,12 @@ from rag.schemas import Chunk, ChunkImage, utc_now_iso
 
 @dataclass(frozen=True)
 class ChunkingConfig:
-    target_tokens: int = 500
-    preferred_min_tokens: int = 400
-    preferred_max_tokens: int = 600
-    hard_max_tokens: int = 768
-    overlap_tokens: int = 50
-    merge_image_captions: bool = False
+    target_tokens: int = field(default_factory=lambda: setting("chunking.target_tokens"))
+    preferred_min_tokens: int = field(default_factory=lambda: setting("chunking.preferred_min_tokens"))
+    preferred_max_tokens: int = field(default_factory=lambda: setting("chunking.preferred_max_tokens"))
+    hard_max_tokens: int = field(default_factory=lambda: setting("chunking.hard_max_tokens"))
+    overlap_tokens: int = field(default_factory=lambda: setting("chunking.overlap_tokens"))
+    merge_image_captions: bool = field(default_factory=lambda: setting("chunking.merge_image_captions"))
 
     def __post_init__(self):
         if not (0 <= self.overlap_tokens < self.target_tokens <= self.preferred_max_tokens):

@@ -23,7 +23,7 @@ def _retriever():
     )
     bm25 = BM25Index()
     bm25.add([c[0] for c in docs], [c[2] for c in docs])
-    return HybridRetriever(store=store, bm25=bm25, embedder=embedder)
+    return HybridRetriever(store=store, bm25=bm25, embedder=embedder, threshold=0.0)
 
 
 def test_answer_happy_path_appends_citations():

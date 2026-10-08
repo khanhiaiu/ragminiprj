@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
+from project_settings import configure_cli, configured_path, setting  # noqa: E402
+
 from rag.embeddings import make_embedder  # noqa: E402
 from rag.indexing import GenerationIndexer  # noqa: E402
 from rag.store import QdrantStore, resolve_qdrant_settings  # noqa: E402
@@ -18,6 +20,7 @@ from rag.store import QdrantStore, resolve_qdrant_settings  # noqa: E402
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    configure_cli(parser)
     parser.add_argument("--collection", required=True)
     parser.add_argument("--expected-points", required=True, type=int)
     parser.add_argument("--query", default="Điều khoản và số liệu trong tài liệu")
@@ -27,8 +30,8 @@ def main() -> int:
     parser.add_argument("--publish", action="store_true")
     args = parser.parse_args()
     url, api_key = resolve_qdrant_settings(args.qdrant_url, args.qdrant_api_key)
-    store = QdrantStore(url=url or "http://localhost:6333", api_key=api_key, collection=args.collection)
-    query = make_embedder("bge-m3").embed_hybrid([args.query])[0]
+    store = QdrantStore(url=url, api_key=api_key, collection=args.collection)
+    query = make_embedder(setting("embedding.backend", "RAG_EMBEDDER")).embed_hybrid([args.query])[0]
     indexer = GenerationIndexer(store)
     result = indexer.verify(args.expected_points, query)
     args.output.parent.mkdir(parents=True, exist_ok=True)

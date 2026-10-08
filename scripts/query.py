@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Step-3 query CLI: hybrid retrieve over an ingested .cache/rag directory.
+"""Query the published Qdrant dense/sparse index with server-side RRF.
 
 Examples:
-  python scripts/query.py --rag-dir .cache/rag --query "Phí thường niên thẻ chuẩn là bao nhiêu?"
-  python scripts/query.py --rag-dir .cache/rag --query "..." --top-k 5 --threshold 0.02 --as-json
-  python scripts/query.py --rag-dir .cache/rag --query "..." --filter-type table
+  python scripts/query.py --query "Phí thường niên thẻ chuẩn là bao nhiêu?"
+  python scripts/query.py --query "..." --top-k 5 --as-json
+  python scripts/query.py --query "..." --filter-type table
 """
 
 from __future__ import annotations
@@ -17,28 +17,31 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
+from project_settings import configure_cli, configured_path, setting  # noqa: E402
+
 from rag.retrieve import FALLBACK_MESSAGE, HybridRetriever  # noqa: E402
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--rag-dir", type=Path, default=ROOT / ".cache" / "rag")
+    configure_cli(parser)
+    parser.add_argument("--rag-dir", type=Path, default=configured_path("ingestion.rag_dir", "RAG_DIR"))
     parser.add_argument("--query", required=True)
-    parser.add_argument("--embedder", default="hash")
-    parser.add_argument("--backend", default="local")
+    parser.add_argument("--embedder", default=setting("embedding.backend", "RAG_EMBEDDER"), choices=["bge-m3", "hash"])
+    parser.add_argument("--backend", default=setting("qdrant.backend", "RAG_BACKEND"), choices=["qdrant", "local"])
     parser.add_argument("--qdrant-url", default=None,
                         help="Qdrant URL (default: QDRANT_URL env / .env, else http://localhost:6333)")
     parser.add_argument("--qdrant-api-key", default=None,
                         help="Qdrant API key (default: QDRANT_API_KEY env / .env)")
-    parser.add_argument("--collection", default="docs")
-    parser.add_argument("--dense-top", type=int, default=20)
-    parser.add_argument("--sparse-top", type=int, default=20)
-    parser.add_argument("--top-k", type=int, default=5)
+    parser.add_argument("--collection", default=setting("qdrant.alias", "QDRANT_COLLECTION"))
+    parser.add_argument("--dense-top", type=int, default=setting("retrieval.dense_top"))
+    parser.add_argument("--sparse-top", type=int, default=setting("retrieval.sparse_top"))
+    parser.add_argument("--top-k", type=int, default=setting("retrieval.top_k"))
     parser.add_argument("--threshold", type=float, default=None,
-                        help="Fallback if best fused score < threshold. Tune on eval/questions.json.")
+                        help="Minimum dense cosine relevance; defaults to RAG_RELEVANCE_THRESHOLD")
     parser.add_argument("--filter-doc", default=None)
     parser.add_argument("--filter-type", default=None, choices=["text", "table", "figure"])
-    parser.add_argument("--rerank", action="store_true", help="Use bge-reranker-v2-m3 (needs model download)")
+    parser.add_argument("--rerank", action=argparse.BooleanOptionalAction, default=setting("retrieval.rerank"), help="Use bge-reranker-v2-m3 (needs model download)")
     parser.add_argument("--as-json", action="store_true")
     args = parser.parse_args()
 
@@ -69,6 +72,8 @@ def main() -> int:
                         "dense_score": c.dense_score, "sparse_score": c.sparse_score,
                         "payload": c.payload, "citation": c.citation} for c in result["chunks"]],
             "reason": result.get("reason"), "fallback_message": FALLBACK_MESSAGE if result["fallback"] else None,
+            "best_score": result.get("best_score"), "score_metric": result.get("score_metric"),
+            "threshold": result.get("threshold"),
         }, ensure_ascii=False, indent=2))
         return 0
     if result["fallback"]:

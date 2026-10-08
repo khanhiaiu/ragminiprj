@@ -10,14 +10,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from document_parser.config import DEFAULT_CONFIG, ProjectConfig, normalize_device
+from document_parser.config import ProjectConfig, normalize_device
 from document_parser.parsers.image.paddle_image_parser import require_requested_gpu
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--config", type=Path, default=DEFAULT_CONFIG, help="Shared project config YAML"
+        "--config", type=Path, default=None, help="Shared project config YAML"
     )
     parser.add_argument("--device", help="gpu or gpu:N (default: gpu)")
     parser.add_argument("--output", type=Path)

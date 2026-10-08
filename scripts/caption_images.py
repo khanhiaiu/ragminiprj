@@ -15,6 +15,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
+from project_settings import configure_cli, configured_path, setting  # noqa: E402
+
 from document_parser.normalization.schema import CanonicalDocument  # noqa: E402
 from rag.enrichment.cache import CaptionCache  # noqa: E402
 from rag.enrichment.caption import CaptionRecord, CaptionStatus  # noqa: E402
@@ -65,13 +67,14 @@ def preflight(client: GeminiVLMClient) -> dict:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", type=Path, default=ROOT / "parsed_test_document/all_documents_gpu")
+    configure_cli(parser)
+    parser.add_argument("--input", type=Path, default=configured_path("ingestion.input"))
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--pilot", type=int, default=0, help="Process a representative deterministic sample")
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--resume", action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument("--resume", action=argparse.BooleanOptionalAction, default=setting("ingestion.resume"))
     parser.add_argument("--preflight-only", action="store_true")
-    parser.add_argument("--local-files-only", action="store_true")
+    parser.add_argument("--local-files-only", action=argparse.BooleanOptionalAction, default=setting("ingestion.local_files_only"))
     parser.add_argument(
         "--authorize-external-egress",
         metavar="ACK",

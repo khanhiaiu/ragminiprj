@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import base64
 import json
-import os
 import random
 import threading
 import time
@@ -14,14 +13,14 @@ from typing import Any, Callable
 
 import httpx
 
+from project_settings import secret, setting
+
 from .caption import ImageCaption, VLM_INSTRUCTION
 from .context import ImageContext
 
-OPENCODE_ENDPOINT = "https://opencode.ai/zen/v1/responses"
-DEFAULT_VLM_MODEL = "muse-spark-1.3-contributor-free"
-GEMINI_ENDPOINT_TEMPLATE = (
-    "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-)
+OPENCODE_ENDPOINT = setting("captioning.opencode.endpoint")
+DEFAULT_VLM_MODEL = setting("captioning.opencode.model")
+GEMINI_ENDPOINT_TEMPLATE = setting("captioning.endpoint_template")
 GEMINI_MIN_REQUEST_INTERVAL_SECONDS = 4.0
 
 
@@ -87,22 +86,22 @@ class OpenCodeVLMClient:
         *,
         model: str | None = None,
         endpoint: str | None = None,
-        timeout_seconds: float = 120,
-        max_retries: int = 3,
+        timeout_seconds: float | None = None,
+        max_retries: int | None = None,
         api_key: str | None = None,
         transport: httpx.BaseTransport | None = None,
         sleep: Callable[[float], None] = time.sleep,
     ) -> None:
-        self.model = model or os.environ.get("VLM_MODEL", DEFAULT_VLM_MODEL)
-        self.endpoint = endpoint or os.environ.get("OPENCODE_VLM_ENDPOINT", OPENCODE_ENDPOINT)
-        self.timeout_seconds = timeout_seconds
-        self.max_retries = max_retries
+        self.model = model or setting("captioning.opencode.model", "VLM_MODEL")
+        self.endpoint = endpoint or setting("captioning.opencode.endpoint", "OPENCODE_VLM_ENDPOINT")
+        self.timeout_seconds = timeout_seconds if timeout_seconds is not None else setting("captioning.timeout_seconds")
+        self.max_retries = max_retries if max_retries is not None else setting("captioning.maximum_retries")
         self._api_key = api_key
         self._transport = transport
         self._sleep = sleep
 
     def _key(self) -> str:
-        key = self._api_key or os.environ.get("OPENCODE_API_KEY")
+        key = self._api_key or secret("OPENCODE_API_KEY")
         if not key:
             raise RuntimeError("OPENCODE_API_KEY is required in the environment")
         return key
@@ -242,22 +241,23 @@ class GeminiVLMClient:
         self,
         *,
         model: str | None = None,
-        endpoint_template: str = GEMINI_ENDPOINT_TEMPLATE,
-        timeout_seconds: float = 120,
-        max_retries: int = 3,
-        min_request_interval_seconds: float = GEMINI_MIN_REQUEST_INTERVAL_SECONDS,
+        endpoint_template: str | None = None,
+        timeout_seconds: float | None = None,
+        max_retries: int | None = None,
+        min_request_interval_seconds: float | None = None,
         api_key: str | None = None,
         transport: httpx.BaseTransport | None = None,
         sleep: Callable[[float], None] = time.sleep,
         monotonic: Callable[[], float] = time.monotonic,
     ) -> None:
-        selected = model or os.environ.get("GEMINI_MODEL")
+        selected = model or setting("captioning.model", "GEMINI_MODEL")
         if not selected:
             raise RuntimeError("GEMINI_MODEL is required in the environment")
         self.model = selected.removeprefix("models/")
-        self.endpoint = endpoint_template.format(model=self.model)
-        self.timeout_seconds = timeout_seconds
-        self.max_retries = max_retries
+        self.endpoint = (endpoint_template or setting("captioning.endpoint_template")).format(model=self.model)
+        self.timeout_seconds = timeout_seconds if timeout_seconds is not None else setting("captioning.timeout_seconds")
+        self.max_retries = max_retries if max_retries is not None else setting("captioning.maximum_retries")
+        min_request_interval_seconds = min_request_interval_seconds if min_request_interval_seconds is not None else setting("captioning.minimum_request_interval_seconds")
         if min_request_interval_seconds < 4:
             raise ValueError("Gemini requests must be spaced by at least 4 seconds")
         self.min_request_interval_seconds = min_request_interval_seconds
@@ -269,7 +269,7 @@ class GeminiVLMClient:
         self._rate_lock = threading.Lock()
 
     def _key(self) -> str:
-        key = self._api_key or os.environ.get("GEMINI_API_KEY")
+        key = self._api_key or secret("GEMINI_API_KEY")
         if not key:
             raise RuntimeError("GEMINI_API_KEY is required in the environment")
         return key

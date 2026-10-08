@@ -7,12 +7,9 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-import yaml
+from project_settings import DEFAULT_CONFIG, config_path, configured_path, load_config, setting
 
-DEFAULT_CONFIG = Path(__file__).with_suffix(".yaml")
-PROJECT_ROOT = (
-    DEFAULT_CONFIG.parents[2] if DEFAULT_CONFIG.parent.parent.name == "src" else Path.cwd()
-)
+PROJECT_ROOT = DEFAULT_CONFIG.parent
 
 
 def normalize_device(device: str) -> str:
@@ -26,10 +23,7 @@ def normalize_device(device: str) -> str:
 
 
 def _read_settings(path: Path) -> dict[str, Any]:
-    try:
-        settings = yaml.safe_load(path.read_text(encoding="utf-8"))
-    except (OSError, yaml.YAMLError) as exc:
-        raise ValueError(f"Cannot read project config {path}: {exc}") from exc
+    settings = load_config(path)
     allowed = {
         "device",
         "models",
@@ -44,8 +38,7 @@ def _read_settings(path: Path) -> dict[str, Any]:
     }
     if not isinstance(settings, dict) or not {"device", "models"} <= settings.keys():
         raise ValueError("Config must contain device and models")
-    if settings.keys() - allowed:
-        raise ValueError(f"Unknown config fields: {sorted(settings.keys() - allowed)}")
+    settings = {key: value for key, value in settings.items() if key in allowed}
     normalize_device(settings["device"])
     models = settings["models"]
     if not isinstance(models, dict) or set(models) != {"layout", "detection", "recognition"}:
@@ -141,35 +134,35 @@ def _ocr_options(settings: dict, root: Path) -> dict:
 
 @dataclass(frozen=True)
 class PDFAnalyzerConfig:
-    minimum_text_chars: int = _DEFAULTS["pdf"]["minimum_text_chars"]
-    minimum_text_blocks: int = _DEFAULTS["pdf"]["minimum_text_blocks"]
-    minimum_printable_ratio: float = _DEFAULTS["pdf"]["minimum_printable_ratio"]
-    max_invalid_char_ratio: float = _DEFAULTS["pdf"]["max_invalid_char_ratio"]
-    minimum_text_quality: float = _DEFAULTS["pdf"]["minimum_text_quality"]
-    minimum_text_density: float = _DEFAULTS["pdf"]["minimum_text_density"]
-    scan_image_coverage_threshold: float = _DEFAULTS["pdf"]["scan_image_coverage_threshold"]
-    hybrid_image_coverage_threshold: float = _DEFAULTS["pdf"]["hybrid_image_coverage_threshold"]
+    minimum_text_chars: int = field(default_factory=lambda: setting("pdf.minimum_text_chars"))
+    minimum_text_blocks: int = field(default_factory=lambda: setting("pdf.minimum_text_blocks"))
+    minimum_printable_ratio: float = field(default_factory=lambda: setting("pdf.minimum_printable_ratio"))
+    max_invalid_char_ratio: float = field(default_factory=lambda: setting("pdf.max_invalid_char_ratio"))
+    minimum_text_quality: float = field(default_factory=lambda: setting("pdf.minimum_text_quality"))
+    minimum_text_density: float = field(default_factory=lambda: setting("pdf.minimum_text_density"))
+    scan_image_coverage_threshold: float = field(default_factory=lambda: setting("pdf.scan_image_coverage_threshold"))
+    hybrid_image_coverage_threshold: float = field(default_factory=lambda: setting("pdf.hybrid_image_coverage_threshold"))
 
 
 @dataclass(frozen=True)
 class ParserConfig:
     pdf: PDFAnalyzerConfig = field(default_factory=PDFAnalyzerConfig)
-    ocr_dpi: int = _DEFAULTS["ocr"]["dpi"]
+    ocr_dpi: int = field(default_factory=lambda: setting("ocr.dpi"))
     ocr_options: dict[str, Any] = field(
-        default_factory=lambda: _ocr_options(_DEFAULTS, PROJECT_ROOT)
+        default_factory=lambda: _ocr_options(_read_settings(config_path()), config_path().parent)
     )
-    recognition_model: str = _DEFAULTS["models"]["recognition"]
-    max_excel_region_cells: int = _DEFAULTS["max_excel_region_cells"]
-    input_dir: str = str(PROJECT_ROOT / _DEFAULTS["paths"]["input"])
-    output_dir: str = str(PROJECT_ROOT / _DEFAULTS["paths"]["output"])
+    recognition_model: str = field(default_factory=lambda: setting("models.recognition"))
+    max_excel_region_cells: int = field(default_factory=lambda: setting("max_excel_region_cells"))
+    input_dir: str = field(default_factory=lambda: str(configured_path("paths.input")))
+    output_dir: str = field(default_factory=lambda: str(configured_path("paths.output")))
     environment: dict[str, str] = field(
-        default_factory=lambda: _environment(_DEFAULTS, PROJECT_ROOT)
+        default_factory=lambda: _environment(_read_settings(config_path()), config_path().parent)
     )
     postprocessing: dict[str, Any] = field(
-        default_factory=lambda: deepcopy(_DEFAULTS["postprocessing"])
+        default_factory=lambda: setting("postprocessing")
     )
     text_correction: dict[str, Any] = field(
-        default_factory=lambda: deepcopy(_DEFAULTS["text_correction"])
+        default_factory=lambda: setting("text_correction")
     )
 
     def __post_init__(self) -> None:
@@ -347,8 +340,8 @@ class ProjectConfig:
     root: Path
 
     @classmethod
-    def load(cls, path: Path | str = DEFAULT_CONFIG) -> "ProjectConfig":
-        path = Path(path).expanduser().resolve()
+    def load(cls, path: Path | str | None = None) -> "ProjectConfig":
+        path = Path(path).expanduser().resolve() if path is not None else config_path()
         root = PROJECT_ROOT if path == DEFAULT_CONFIG.resolve() else path.parent
         return cls(_merge(_DEFAULTS, _read_settings(path)), root)
 
