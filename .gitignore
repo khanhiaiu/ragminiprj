@@ -1,0 +1,39 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Python environments, bytecode, and tool caches
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Downloaded models and runtime caches
+.cache/
+cache/
+
+# Build and package output
+build/
+dist/
+*.egg-info/
+
+# Generated parsing and ingestion output
+artifacts/
+parsed_test_document/
+output/
+tmp/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+documents/
