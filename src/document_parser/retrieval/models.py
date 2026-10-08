@@ -20,6 +20,12 @@ class RetrievalElement(BaseModel):
     bbox: tuple[float, float, float, float] | None = None
     heading_path: list[str] = Field(default_factory=list)
     source_element_ids: list[str] = Field(default_factory=list)
+    source_spans: list[dict[str, Any]] = Field(default_factory=list)
+    asset_path: str | None = None
+    image_hash: str | None = None
+    generated_enrichment: dict[str, Any] | None = None
+    uncertainty_flags: list[str] = Field(default_factory=list)
+    table_structure: dict[str, Any] | None = None
     metadata: dict[str, Any] = Field(default_factory=dict)
 
 
@@ -31,6 +37,7 @@ class RetrievalDocument(BaseModel):
     filename: str
     file_type: str
     source_path: str
+    document_version: str = "1"
     elements: list[RetrievalElement] = Field(default_factory=list)
     metadata: dict[str, Any] = Field(default_factory=dict)
 

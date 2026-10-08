@@ -29,12 +29,26 @@ class Chunk(BaseModel):
 
     chunk_id: str = Field(description="Stable id: {doc_id}-c{index:04d}")
     doc_id: str
+    document_version: str = "1"
     file_name: str = ""
     page: int | None = Field(default=None, ge=1)
+    page_end: int | None = Field(default=None, ge=1)
     section: str | None = None
     type: ChunkType = "text"
     content: str = Field(min_length=1)
+    text_for_embedding: str | None = None
+    heading_path: list[str] = Field(default_factory=list)
+    sheet: str | None = None
+    cell_range: str | None = None
+    source_element_ids: list[str] = Field(default_factory=list)
+    source_spans: list[dict[str, Any]] = Field(default_factory=list)
     image_path: str | None = None
+    image_hash: str | None = None
+    uncertainty_flags: list[str] = Field(default_factory=list)
+    contextual_content: bool = False
     content_hash: str = Field(description="sha256(content) hex, used for re-ingest dedup")
+    embedding_fingerprint: str | None = None
+    tokenizer_fingerprint: str | None = None
+    chunker_version: str = "legacy-adapter-v1"
     ingested_at: str = Field(default_factory=utc_now_iso)
     metadata: dict[str, Any] = Field(default_factory=dict)

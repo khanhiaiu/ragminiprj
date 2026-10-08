@@ -11,6 +11,9 @@ paddleocr[doc-parser]==3.7.0
 paddlex==3.7.2
 huggingface-hub>=0.34,<1
 transformers>=4.45,<5
+FlagEmbedding>=1.3.5,<2
+qdrant-client>=1.9,<2
+httpx>=0.27,<1
 sentencepiece>=0.2,<0.2.2
 # PyTorch 2.9+ wheels may require a newer CUDA driver than this project's
 # validated NVIDIA 575 / CUDA 12.9 host. Keep the CUDA 12.8-compatible line.

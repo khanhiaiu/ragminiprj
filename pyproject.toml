@@ -26,7 +26,10 @@ ocr = [
 rag = [
     "numpy>=1.26",
     "qdrant-client>=1.9,<2",
-    "sentence-transformers>=2.7",
+    "FlagEmbedding>=1.3.5,<2",
+    "transformers>=4.45,<5",
+    "httpx>=0.27,<1",
+    "pillow>=10",
 ]
 api = [
     "fastapi>=0.110",

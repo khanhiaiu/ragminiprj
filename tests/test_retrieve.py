@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import pytest
 
@@ -75,7 +76,7 @@ def test_reranker_hook_and_load_roundtrip(tmp_path):
     proc = subprocess.run(
         [sys.executable, "scripts/ingest.py", "--input", str(tmp_path / "parsed"),
          "--output", str(rag_dir), "--embedder", "hash", "--backend", "local"],
-        capture_output=True, text=True, cwd="/home/nghia/ai/tp/TPragsystem",
+        capture_output=True, text=True, cwd=str(Path(__file__).resolve().parents[1]),
     )
     assert proc.returncode == 0, proc.stderr
     retriever = HybridRetriever.load(rag_dir, embedder_name="hash", backend="local")

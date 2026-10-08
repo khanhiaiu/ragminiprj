@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from rag.bm25 import BM25Index, tokenize_vi
 from rag.chunk_contract import chunk_documents
@@ -144,7 +145,7 @@ def test_ingest_script_offline(tmp_path):
          "--backend", "local"],
         capture_output=True,
         text=True,
-        cwd=str(tmp_path / ".." / ".." if False else "/home/nghia/ai/tp/TPragsystem"),
+        cwd=str(Path(__file__).resolve().parents[1]),
     )
     assert proc.returncode == 0, proc.stderr
     manifest = json.loads((out / "manifest.json").read_text(encoding="utf-8"))
@@ -155,7 +156,7 @@ def test_ingest_script_offline(tmp_path):
          "--backend", "local"],
         capture_output=True,
         text=True,
-        cwd="/home/nghia/ai/tp/TPragsystem",
+        cwd=str(Path(__file__).resolve().parents[1]),
     )
     assert proc2.returncode == 0, proc2.stderr
     manifest2 = json.loads((out / "manifest.json").read_text(encoding="utf-8"))

@@ -1,0 +1,779 @@
+{
+  "schema_version": "1.0",
+  "document_id": "117251f397c376ea114e",
+  "filename": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7_2025.pdf",
+  "file_type": "pdf",
+  "source_path": "/workspace/APOLLO/ragminiprj/documents/Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7_2025.pdf",
+  "document_version": "1.0",
+  "elements": [
+    {
+      "element_id": "117251f397c376ea114e-e3",
+      "element_type": "paragraph",
+      "text": "Phòng, chống tội phạm và VPPL",
+      "text_for_embedding": "Phòng, chống tội phạm và VPPL",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 2,
+      "bbox": [
+        54.72,
+        35.04,
+        184.79999999999998,
+        45.12
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "117251f397c376ea114e-e3"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e3",
+          "page_number": 1,
+          "bbox": [
+            54.72,
+            35.04,
+            184.79999999999998,
+            45.12
+          ],
+          "order": 2,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e4",
+      "element_type": "heading",
+      "text": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025",
+      "text_for_embedding": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 1,
+      "section_id": "số-liệu-về-công-tác-đấu-tranh-phòng-chống-tội-phạm-tháng-7-2025-4",
+      "parent_id": null,
+      "order": 3,
+      "bbox": [
+        37.44,
+        68.16,
+        442.56,
+        82.56
+      ],
+      "heading_path": [
+        "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e4"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e4",
+          "page_number": 1,
+          "bbox": [
+            37.44,
+            68.16,
+            442.56,
+            82.56
+          ],
+          "order": 3,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e5",
+      "element_type": "paragraph",
+      "text": "Thực hiện Nghị định số 62/2024/NĐ-CP ngày 07 /6/202 4 của Chính phủ sửa đổi, bổ sung một số điều, phụ lục của Nghị định số 94/2016/NĐ-CP ngày 01/7/2016 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Thống kê, Bộ Công an công bố số liệu sơ bộ về công tác đấu tranh phòng., chống tội phạm tháng 7/2025 (từ ngày 15/6/2025 đến ngày 14/7/2025) như sau:",
+      "text_for_embedding": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025\nThực hiện Nghị định số 62/2024/NĐ-CP ngày 07 /6/202 4 của Chính phủ sửa đổi, bổ sung một số điều, phụ lục của Nghị định số 94/2016/NĐ-CP ngày 01/7/2016 của Chính phủ quy định chi tiết và hướng dẫn thi hành một số điều của Luật Thống kê, Bộ Công an công bố số liệu sơ bộ về công tác đấu tranh phòng., chống tội phạm tháng 7/2025 (từ ngày 15/6/2025 đến ngày 14/7/2025) như sau:",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 1,
+      "section_id": "số-liệu-về-công-tác-đấu-tranh-phòng-chống-tội-phạm-tháng-7-2025-4",
+      "parent_id": null,
+      "order": 4,
+      "bbox": [
+        36.96,
+        99.36,
+        570.72,
+        163.68
+      ],
+      "heading_path": [
+        "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e5"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e5",
+          "page_number": 1,
+          "bbox": [
+            36.96,
+            99.36,
+            570.72,
+            163.68
+          ],
+          "order": 4,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e6",
+      "element_type": "paragraph",
+      "text": "30/07/2025",
+      "text_for_embedding": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025\n30/07/2025",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 1,
+      "section_id": "số-liệu-về-công-tác-đấu-tranh-phòng-chống-tội-phạm-tháng-7-2025-4",
+      "parent_id": null,
+      "order": 5,
+      "bbox": [
+        37.92,
+        183.84,
+        99.84,
+        194.4
+      ],
+      "heading_path": [
+        "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e6"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e6",
+          "page_number": 1,
+          "bbox": [
+            37.92,
+            183.84,
+            99.84,
+            194.4
+          ],
+          "order": 5,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e7",
+      "element_type": "paragraph",
+      "text": "1. Phạm tội về trật tự xã hội:",
+      "text_for_embedding": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025\n1. Phạm tội về trật tự xã hội:",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 1,
+      "section_id": "số-liệu-về-công-tác-đấu-tranh-phòng-chống-tội-phạm-tháng-7-2025-4",
+      "parent_id": null,
+      "order": 6,
+      "bbox": [
+        38.879999999999995,
+        225.6,
+        188.64,
+        238.56
+      ],
+      "heading_path": [
+        "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e7"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e7",
+          "page_number": 1,
+          "bbox": [
+            38.879999999999995,
+            225.6,
+            188.64,
+            238.56
+          ],
+          "order": 6,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e9",
+      "element_type": "paragraph",
+      "text": "Biểu đồ phạm tội về trật tự xã hội tháng 7/2025.",
+      "text_for_embedding": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025\nBiểu đồ phạm tội về trật tự xã hội tháng 7/2025.",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 1,
+      "section_id": "số-liệu-về-công-tác-đấu-tranh-phòng-chống-tội-phạm-tháng-7-2025-4",
+      "parent_id": null,
+      "order": 8,
+      "bbox": [
+        180.48,
+        634.56,
+        428.15999999999997,
+        647.52
+      ],
+      "heading_path": [
+        "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e9"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e9",
+          "page_number": 1,
+          "bbox": [
+            180.48,
+            634.56,
+            428.15999999999997,
+            647.52
+          ],
+          "order": 8,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e10",
+      "element_type": "paragraph",
+      "text": "Toàn quốc xảy ra 3.214 vụ; khám phá 2.332 vụi; bắt giữ, xử lý 4.2523 đối tượng: tỷ lệ khám phá đạt 72,56%:; triệt phá 02 băng, nhóm. So với tháng 6/2025, giảm 811 vụ (-20,15), số vụ khám phá giảm 523 vụ (6-18,3289%), số đối tượng bị bắt giữ, xử lý giảm 1.119 đối tượng (619,83%); tăng 02 băn ám bị triệt phá.",
+      "text_for_embedding": "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025\nToàn quốc xảy ra 3.214 vụ; khám phá 2.332 vụi; bắt giữ, xử lý 4.2523 đối tượng: tỷ lệ khám phá đạt 72,56%:; triệt phá 02 băng, nhóm. So với tháng 6/2025, giảm 811 vụ (-20,15), số vụ khám phá giảm 523 vụ (6-18,3289%), số đối tượng bị bắt giữ, xử lý giảm 1.119 đối tượng (619,83%); tăng 02 băn ám bị triệt phá.",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 1,
+      "section_id": "số-liệu-về-công-tác-đấu-tranh-phòng-chống-tội-phạm-tháng-7-2025-4",
+      "parent_id": null,
+      "order": 9,
+      "bbox": [
+        36.96,
+        664.3199999999999,
+        571.1999999999999,
+        731.52
+      ],
+      "heading_path": [
+        "Số liệu về công tác đấu tranh phòng, chống tội phạm tháng 7/2025"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e10"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e10",
+          "page_number": 1,
+          "bbox": [
+            36.96,
+            664.3199999999999,
+            571.1999999999999,
+            731.52
+          ],
+          "order": 9,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e15",
+      "element_type": "heading",
+      "text": "2. Số vụ phạm tội về trật tự quản lý kinh tế:",
+      "text_for_embedding": "2. Số vụ phạm tội về trật tự quản lý kinh tế:",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "2-số-vụ-phạm-tội-về-trật-tự-quản-lý-kinh-tế-15",
+      "parent_id": null,
+      "order": 14,
+      "bbox": [
+        37.92,
+        29.279999999999998,
+        265.92,
+        42.239999999999995
+      ],
+      "heading_path": [
+        "2. Số vụ phạm tội về trật tự quản lý kinh tế:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e15"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e15",
+          "page_number": 2,
+          "bbox": [
+            37.92,
+            29.279999999999998,
+            265.92,
+            42.239999999999995
+          ],
+          "order": 14,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e16",
+      "element_type": "paragraph",
+      "text": "Toàn quốc xảy ra 147 vụ, s0o với tháng 6/2025 giảm 12 2 vụ (-45, 35%).",
+      "text_for_embedding": "2. Số vụ phạm tội về trật tự quản lý kinh tế:\nToàn quốc xảy ra 147 vụ, s0o với tháng 6/2025 giảm 12 2 vụ (-45, 35%).",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "2-số-vụ-phạm-tội-về-trật-tự-quản-lý-kinh-tế-15",
+      "parent_id": null,
+      "order": 15,
+      "bbox": [
+        37.44,
+        59.04,
+        404.64,
+        72.0
+      ],
+      "heading_path": [
+        "2. Số vụ phạm tội về trật tự quản lý kinh tế:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e16"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e16",
+          "page_number": 2,
+          "bbox": [
+            37.44,
+            59.04,
+            404.64,
+            72.0
+          ],
+          "order": 15,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e17",
+      "element_type": "paragraph",
+      "text": "3. Số vụ phạm tội về môi trường, an toàn thực phẩm:",
+      "text_for_embedding": "2. Số vụ phạm tội về trật tự quản lý kinh tế:\n3. Số vụ phạm tội về môi trường, an toàn thực phẩm:",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "2-số-vụ-phạm-tội-về-trật-tự-quản-lý-kinh-tế-15",
+      "parent_id": null,
+      "order": 16,
+      "bbox": [
+        37.92,
+        89.75999999999999,
+        319.2,
+        102.24
+      ],
+      "heading_path": [
+        "2. Số vụ phạm tội về trật tự quản lý kinh tế:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e17"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e17",
+          "page_number": 2,
+          "bbox": [
+            37.92,
+            89.75999999999999,
+            319.2,
+            102.24
+          ],
+          "order": 16,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e18",
+      "element_type": "paragraph",
+      "text": "Toàn quốc xảy ra 24 vụ, so với tháng 6/2025 giảm 02 vụ (47,69%).",
+      "text_for_embedding": "2. Số vụ phạm tội về trật tự quản lý kinh tế:\nToàn quốc xảy ra 24 vụ, so với tháng 6/2025 giảm 02 vụ (47,69%).",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "2-số-vụ-phạm-tội-về-trật-tự-quản-lý-kinh-tế-15",
+      "parent_id": null,
+      "order": 17,
+      "bbox": [
+        37.44,
+        119.03999999999999,
+        384.47999999999996,
+        132.48
+      ],
+      "heading_path": [
+        "2. Số vụ phạm tội về trật tự quản lý kinh tế:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e18"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e18",
+          "page_number": 2,
+          "bbox": [
+            37.44,
+            119.03999999999999,
+            384.47999999999996,
+            132.48
+          ],
+          "order": 17,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e20",
+      "element_type": "unknown",
+      "text": "Biểu đồ cơ cấu tội phạm về trật tự xã hội tháng 7/2025.",
+      "text_for_embedding": "2. Số vụ phạm tội về trật tự quản lý kinh tế:\nBiểu đồ cơ cấu tội phạm về trật tự xã hội tháng 7/2025.",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "2-số-vụ-phạm-tội-về-trật-tự-quản-lý-kinh-tế-15",
+      "parent_id": null,
+      "order": 19,
+      "bbox": [
+        161.28,
+        481.44,
+        446.88,
+        494.4
+      ],
+      "heading_path": [
+        "2. Số vụ phạm tội về trật tự quản lý kinh tế:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e20"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e20",
+          "page_number": 2,
+          "bbox": [
+            161.28,
+            481.44,
+            446.88,
+            494.4
+          ],
+          "order": 19,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "vision_footnote",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e21",
+      "element_type": "heading",
+      "text": "4. Số vụ phạm tội về ma túy:",
+      "text_for_embedding": "4. Số vụ phạm tội về ma túy:",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "4-số-vụ-phạm-tội-về-ma-túy-21",
+      "parent_id": null,
+      "order": 20,
+      "bbox": [
+        37.44,
+        529.92,
+        189.6,
+        542.4
+      ],
+      "heading_path": [
+        "4. Số vụ phạm tội về ma túy:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e21"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e21",
+          "page_number": 2,
+          "bbox": [
+            37.44,
+            529.92,
+            189.6,
+            542.4
+          ],
+          "order": 20,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e22",
+      "element_type": "paragraph",
+      "text": "Toàn quốc xảy ra 1.046 vụi, s0O với tháng 6/2025 giảm 190 vụ (615,37%).",
+      "text_for_embedding": "4. Số vụ phạm tội về ma túy:\nToàn quốc xảy ra 1.046 vụi, s0O với tháng 6/2025 giảm 190 vụ (615,37%).",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "4-số-vụ-phạm-tội-về-ma-túy-21",
+      "parent_id": null,
+      "order": 21,
+      "bbox": [
+        37.44,
+        559.68,
+        414.24,
+        573.12
+      ],
+      "heading_path": [
+        "4. Số vụ phạm tội về ma túy:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e22"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e22",
+          "page_number": 2,
+          "bbox": [
+            37.44,
+            559.68,
+            414.24,
+            573.12
+          ],
+          "order": 21,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e23",
+      "element_type": "heading",
+      "text": "5. Công tác truy nã:",
+      "text_for_embedding": "5. Công tác truy nã:",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "5-công-tác-truy-nã-23",
+      "parent_id": null,
+      "order": 22,
+      "bbox": [
+        38.4,
+        589.92,
+        143.04,
+        602.4
+      ],
+      "heading_path": [
+        "5. Công tác truy nã:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e23"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e23",
+          "page_number": 2,
+          "bbox": [
+            38.4,
+            589.92,
+            143.04,
+            602.4
+          ],
+          "order": 22,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "117251f397c376ea114e-e24",
+      "element_type": "paragraph",
+      "text": "Toàn quốc đã bhắt, vận động đầu thú, thanh loại 140 đối tượng truy nã, 76 đối tượng truy nã nguy hiểm và đặc biệt nguy hiểm bị bắt, vận động đầu thú, thanh loại. So với tháng 6/202 5, số đối tượng truy nã đã bắt, vận động đầu thú và thanh loại giảm 98 đối tượng (-41, 18%), số đối tượng truy nã nguy hiểm và đặc biệt nguy hiểm bị bắt, vận động đầu thú và thanh loại giảm 38 đối tượng (-33,33%).",
+      "text_for_embedding": "5. Công tác truy nã:\nToàn quốc đã bhắt, vận động đầu thú, thanh loại 140 đối tượng truy nã, 76 đối tượng truy nã nguy hiểm và đặc biệt nguy hiểm bị bắt, vận động đầu thú, thanh loại. So với tháng 6/202 5, số đối tượng truy nã đã bắt, vận động đầu thú và thanh loại giảm 98 đối tượng (-41, 18%), số đối tượng truy nã nguy hiểm và đặc biệt nguy hiểm bị bắt, vận động đầu thú và thanh loại giảm 38 đối tượng (-33,33%).",
+      "document_id": "117251f397c376ea114e",
+      "page_number": 2,
+      "section_id": "5-công-tác-truy-nã-23",
+      "parent_id": null,
+      "order": 23,
+      "bbox": [
+        36.96,
+        619.68,
+        571.1999999999999,
+        704.64
+      ],
+      "heading_path": [
+        "5. Công tác truy nã:"
+      ],
+      "source_element_ids": [
+        "117251f397c376ea114e-e24"
+      ],
+      "source_spans": [
+        {
+          "element_id": "117251f397c376ea114e-e24",
+          "page_number": 2,
+          "bbox": [
+            36.96,
+            619.68,
+            571.1999999999999,
+            704.64
+          ],
+          "order": 23,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    }
+  ],
+  "metadata": {
+    "source_parser": "paddleocr"
+  }
+}

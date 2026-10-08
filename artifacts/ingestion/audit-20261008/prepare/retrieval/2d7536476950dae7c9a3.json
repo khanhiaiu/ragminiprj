@@ -1,0 +1,5661 @@
+{
+  "schema_version": "1.0",
+  "document_id": "2d7536476950dae7c9a3",
+  "filename": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025.pdf",
+  "file_type": "pdf",
+  "source_path": "/workspace/APOLLO/ragminiprj/documents/BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025.pdf",
+  "document_version": "1.0",
+  "elements": [
+    {
+      "element_id": "2d7536476950dae7c9a3-e3",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH MỚI",
+      "text_for_embedding": "CHÍNH SÁCH MỚI",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 2,
+      "bbox": [
+        75.84,
+        32.16,
+        124.8,
+        40.32
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e3"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e3",
+          "page_number": 1,
+          "bbox": [
+            75.84,
+            32.16,
+            124.8,
+            40.32
+          ],
+          "order": 2,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e4",
+      "element_type": "paragraph",
+      "text": "THAM VẨN CHÍNH SÁCH",
+      "text_for_embedding": "THAM VẨN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 3,
+      "bbox": [
+        147.84,
+        32.16,
+        214.56,
+        40.32
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e4"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e4",
+          "page_number": 1,
+          "bbox": [
+            147.84,
+            32.16,
+            214.56,
+            40.32
+          ],
+          "order": 3,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e5",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "text_for_embedding": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 4,
+      "bbox": [
+        238.56,
+        32.16,
+        318.24,
+        40.32
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e5"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e5",
+          "page_number": 1,
+          "bbox": [
+            238.56,
+            32.16,
+            318.24,
+            40.32
+          ],
+          "order": 4,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e6",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 5,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.32
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e6"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e6",
+          "page_number": 1,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.32
+          ],
+          "order": 5,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e9",
+      "element_type": "paragraph",
+      "text": "Thứ Tư, 7/10/2",
+      "text_for_embedding": "Thứ Tư, 7/10/2",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 8,
+      "bbox": [
+        539.52,
+        46.08,
+        583.68,
+        52.8
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e9"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e9",
+          "page_number": 1,
+          "bbox": [
+            539.52,
+            46.08,
+            583.68,
+            52.8
+          ],
+          "order": 8,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e11",
+      "element_type": "paragraph",
+      "text": "Tìm kiếm..",
+      "text_for_embedding": "Tìm kiếm..",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 10,
+      "bbox": [
+        545.28,
+        64.32,
+        577.92,
+        71.52
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e11"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e11",
+          "page_number": 1,
+          "bbox": [
+            545.28,
+            64.32,
+            577.92,
+            71.52
+          ],
+          "order": 10,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e12",
+      "element_type": "paragraph",
+      "text": "Chính sách và cuộc sống",
+      "text_for_embedding": "Chính sách và cuộc sống",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 11,
+      "bbox": [
+        88.8,
+        103.67999999999999,
+        174.72,
+        111.36
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e12"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e12",
+          "page_number": 1,
+          "bbox": [
+            88.8,
+            103.67999999999999,
+            174.72,
+            111.36
+          ],
+          "order": 11,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e13",
+      "element_type": "paragraph",
+      "text": "Đoọc nhiều",
+      "text_for_embedding": "Đoọc nhiều",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 12,
+      "bbox": [
+        490.08,
+        109.92,
+        535.68,
+        119.52
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e13"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e13",
+          "page_number": 1,
+          "bbox": [
+            490.08,
+            109.92,
+            535.68,
+            119.52
+          ],
+          "order": 12,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e14",
+      "element_type": "heading",
+      "text": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 13,
+      "bbox": [
+        88.8,
+        118.08,
+        428.15999999999997,
+        157.92
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e14"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e14",
+          "page_number": 1,
+          "bbox": [
+            88.8,
+            118.08,
+            428.15999999999997,
+            157.92
+          ],
+          "order": 13,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "doc_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e16",
+      "element_type": "paragraph",
+      "text": "NGÀY VĂN HÓA I 24/11, người lao nghỉ, hưởng ngu:",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nNGÀY VĂN HÓA I 24/11, người lao nghỉ, hưởng ngu:",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 15,
+      "bbox": [
+        525.12,
+        136.32,
+        584.16,
+        167.51999999999998
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e16"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e16",
+          "page_number": 1,
+          "bbox": [
+            525.12,
+            136.32,
+            584.16,
+            167.51999999999998
+          ],
+          "order": 15,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e17",
+      "element_type": "paragraph",
+      "text": "06/03/2025 14:12",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\n06/03/2025 14:12",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 16,
+      "bbox": [
+        93.11999999999999,
+        169.92,
+        153.12,
+        177.12
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e17"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e17",
+          "page_number": 1,
+          "bbox": [
+            93.11999999999999,
+            169.92,
+            153.12,
+            177.12
+          ],
+          "order": 16,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e19",
+      "element_type": "paragraph",
+      "text": "Danh mục 111 NG nhận HỌC BỔNG",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nDanh mục 111 NG nhận HỌC BỔNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 18,
+      "bbox": [
+        525.12,
+        187.68,
+        584.16,
+        206.88
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e19"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e19",
+          "page_number": 1,
+          "bbox": [
+            525.12,
+            187.68,
+            584.16,
+            206.88
+          ],
+          "order": 18,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e20",
+      "element_type": "paragraph",
+      "text": "Google NewWwS Chia sẻ",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nGoogle NewWwS Chia sẻ",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 19,
+      "bbox": [
+        358.56,
+        189.6,
+        452.15999999999997,
+        199.2
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e20"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e20",
+          "page_number": 1,
+          "bbox": [
+            358.56,
+            189.6,
+            452.15999999999997,
+            199.2
+          ],
+          "order": 19,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e21",
+      "element_type": "paragraph",
+      "text": "(Chinhphu. vn) - Cục Thống kê (Bộ Tài chính) công bố Báo cáo tình hình kinh tế - xã hội tháng Hai và 02 tháng đầu năm 2025.",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\n(Chinhphu. vn) - Cục Thống kê (Bộ Tài chính) công bố Báo cáo tình hình kinh tế - xã hội tháng Hai và 02 tháng đầu năm 2025.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 20,
+      "bbox": [
+        88.32,
+        228.95999999999998,
+        447.35999999999996,
+        253.92
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e21"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e21",
+          "page_number": 1,
+          "bbox": [
+            88.32,
+            228.95999999999998,
+            447.35999999999996,
+            253.92
+          ],
+          "order": 20,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e22",
+      "element_type": "paragraph",
+      "text": "Chi tiết 34. ĐƠN V CHÍNH CẤP TỈNH",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nChi tiết 34. ĐƠN V CHÍNH CẤP TỈNH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 21,
+      "bbox": [
+        525.12,
+        235.67999999999998,
+        584.16,
+        253.92
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e22"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e22",
+          "page_number": 1,
+          "bbox": [
+            525.12,
+            235.67999999999998,
+            584.16,
+            253.92
+          ],
+          "order": 21,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e25",
+      "element_type": "paragraph",
+      "text": "Tra cứu TUỔI NG THỜI ĐIỂM NGH",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nTra cứu TUỔI NG THỜI ĐIỂM NGH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 24,
+      "bbox": [
+        525.12,
+        283.2,
+        584.16,
+        302.4
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e25"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e25",
+          "page_number": 1,
+          "bbox": [
+            525.12,
+            283.2,
+            584.16,
+            302.4
+          ],
+          "order": 24,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e27",
+      "element_type": "paragraph",
+      "text": "TOÀN VĂN: Nghị NQ/TW về đột ph khoa học, công n sáng tạo và chuyi quốc gia",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nTOÀN VĂN: Nghị NQ/TW về đột ph khoa học, công n sáng tạo và chuyi quốc gia",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 1,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 26,
+      "bbox": [
+        525.12,
+        331.2,
+        583.68,
+        384.0
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e27"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e27",
+          "page_number": 1,
+          "bbox": [
+            525.12,
+            331.2,
+            583.68,
+            384.0
+          ],
+          "order": 26,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e32",
+      "element_type": "paragraph",
+      "text": "THAM VẮN CHÍNH SÁCH",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nTHAM VẮN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 31,
+      "bbox": [
+        147.35999999999999,
+        32.16,
+        214.56,
+        40.32
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e32"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e32",
+          "page_number": 2,
+          "bbox": [
+            147.35999999999999,
+            32.16,
+            214.56,
+            40.32
+          ],
+          "order": 31,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e33",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nCHÍNH SÁCH VÀ CUỘC SỐNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 32,
+      "bbox": [
+        238.07999999999998,
+        32.16,
+        318.24,
+        40.32
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e33"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e33",
+          "page_number": 2,
+          "bbox": [
+            238.07999999999998,
+            32.16,
+            318.24,
+            40.32
+          ],
+          "order": 32,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e34",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nHƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 33,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.32
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e34"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e34",
+          "page_number": 2,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.32
+          ],
+          "order": 33,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e35",
+      "element_type": "paragraph",
+      "text": "PHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "text_for_embedding": "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025\nPHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "báo-cáo-tình-hình-ktxh-tháng-2-và-2-tháng-đầu-năm-2025-14",
+      "parent_id": null,
+      "order": 34,
+      "bbox": [
+        469.44,
+        32.16,
+        584.16,
+        40.32
+      ],
+      "heading_path": [
+        "BÁO CÁO TÌNH HÌNH KTXH THÁNG 2 VÀ 2 THÁNG ĐẦU NĂM 2025"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e35"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e35",
+          "page_number": 2,
+          "bbox": [
+            469.44,
+            32.16,
+            584.16,
+            40.32
+          ],
+          "order": 34,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e38",
+      "element_type": "heading",
+      "text": "1. Nông, lâm nghiệp và thủy sản",
+      "text_for_embedding": "1. Nông, lâm nghiệp và thủy sản",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "1-nông-lâm-nghiệp-và-thủy-sản-38",
+      "parent_id": null,
+      "order": 37,
+      "bbox": [
+        88.8,
+        558.72,
+        288.47999999999996,
+        572.16
+      ],
+      "heading_path": [
+        "1. Nông, lâm nghiệp và thủy sản"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e38"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e38",
+          "page_number": 2,
+          "bbox": [
+            88.8,
+            558.72,
+            288.47999999999996,
+            572.16
+          ],
+          "order": 37,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e39",
+      "element_type": "heading",
+      "text": "a) Nông nghiệp",
+      "text_for_embedding": "a) Nông nghiệp",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 38,
+      "bbox": [
+        88.8,
+        580.8,
+        155.04,
+        589.92
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e39"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e39",
+          "page_number": 2,
+          "bbox": [
+            88.8,
+            580.8,
+            155.04,
+            589.92
+          ],
+          "order": 38,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e40",
+      "element_type": "paragraph",
+      "text": "- Tính đến ngày 20/2/2025, cá nước đã gieo cấy được 2.756,1 nghìn ha lúa đông xuân, tăng 4,2% so với cùng kỳ năm trước. Trong đó các địa phương phía Bắc gieo cấy được 852,4 nghìn ha, tăng 12, 0%; các địa phương phía Nam gieo cấy 1.903,7 nghìn ha, tăng 1,1%, riêng vùng Đồng bằng sông Cửu Long đạt 1.505, 0 nghìn ha, tăng 1,2%.",
+      "text_for_embedding": "a) Nông nghiệp\n- Tính đến ngày 20/2/2025, cá nước đã gieo cấy được 2.756,1 nghìn ha lúa đông xuân, tăng 4,2% so với cùng kỳ năm trước. Trong đó các địa phương phía Bắc gieo cấy được 852,4 nghìn ha, tăng 12, 0%; các địa phương phía Nam gieo cấy 1.903,7 nghìn ha, tăng 1,1%, riêng vùng Đồng bằng sông Cửu Long đạt 1.505, 0 nghìn ha, tăng 1,2%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 39,
+      "bbox": [
+        87.84,
+        598.56,
+        454.56,
+        647.04
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e40"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e40",
+          "page_number": 2,
+          "bbox": [
+            87.84,
+            598.56,
+            454.56,
+            647.04
+          ],
+          "order": 39,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e41",
+      "element_type": "paragraph",
+      "text": "- Cây hàng năm: Diện tích một số ccây trồng như khoai lang, đậu tương giảm so với cùng kỳ năm trước chủ yếu do hiệu quá kinh tế không cao và gặp khó khăn trong khẩâu tiêu thụ sán phẩm.",
+      "text_for_embedding": "a) Nông nghiệp\n- Cây hàng năm: Diện tích một số ccây trồng như khoai lang, đậu tương giảm so với cùng kỳ năm trước chủ yếu do hiệu quá kinh tế không cao và gặp khó khăn trong khẩâu tiêu thụ sán phẩm.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 40,
+      "bbox": [
+        87.84,
+        654.24,
+        452.64,
+        688.8
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e41"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e41",
+          "page_number": 2,
+          "bbox": [
+            87.84,
+            654.24,
+            452.64,
+            688.8
+          ],
+          "order": 40,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e42",
+      "element_type": "paragraph",
+      "text": "- Chăn nuội: Chăn nuôội trậu, bò có xụ hướng giảml 11. Chăn nuội lợn và qgia cầm phát triển ttốt. Tổng số lơn của cá nước ước tính đến thười điểm cuối tháng 02/2025 tăng 3.,2% so với cùng thời điểm năm 2024; tổng số bò giảm 0, 5%; tổng số trâu giảm 4,0%; tổng số gia cầm tăng 3,4%.",
+      "text_for_embedding": "a) Nông nghiệp\n- Chăn nuội: Chăn nuôội trậu, bò có xụ hướng giảml 11. Chăn nuội lợn và qgia cầm phát triển ttốt. Tổng số lơn của cá nước ước tính đến thười điểm cuối tháng 02/2025 tăng 3.,2% so với cùng thời điểm năm 2024; tổng số bò giảm 0, 5%; tổng số trâu giảm 4,0%; tổng số gia cầm tăng 3,4%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 2,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 41,
+      "bbox": [
+        87.84,
+        697.4399999999999,
+        449.28,
+        745.92
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e42"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e42",
+          "page_number": 2,
+          "bbox": [
+            87.84,
+            697.4399999999999,
+            449.28,
+            745.92
+          ],
+          "order": 41,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e47",
+      "element_type": "paragraph",
+      "text": "THAM VẨN CHÍNH SÁCH",
+      "text_for_embedding": "a) Nông nghiệp\nTHAM VẨN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 46,
+      "bbox": [
+        147.84,
+        32.16,
+        214.56,
+        40.32
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e47"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e47",
+          "page_number": 3,
+          "bbox": [
+            147.84,
+            32.16,
+            214.56,
+            40.32
+          ],
+          "order": 46,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e48",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "text_for_embedding": "a) Nông nghiệp\nCHÍNH SÁCH VÀ CUỘC SỐNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 47,
+      "bbox": [
+        238.56,
+        32.16,
+        317.76,
+        40.32
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e48"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e48",
+          "page_number": 3,
+          "bbox": [
+            238.56,
+            32.16,
+            317.76,
+            40.32
+          ],
+          "order": 47,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e49",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "a) Nông nghiệp\nHƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 48,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.32
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e49"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e49",
+          "page_number": 3,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.32
+          ],
+          "order": 48,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e50",
+      "element_type": "paragraph",
+      "text": "PHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "text_for_embedding": "a) Nông nghiệp\nPHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 49,
+      "bbox": [
+        468.96,
+        32.16,
+        582.72,
+        39.36
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e50"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e50",
+          "page_number": 3,
+          "bbox": [
+            468.96,
+            32.16,
+            582.72,
+            39.36
+          ],
+          "order": 49,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e51",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH MỚI",
+      "text_for_embedding": "a) Nông nghiệp\nCHÍNH SÁCH MỚI",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 50,
+      "bbox": [
+        75.36,
+        32.64,
+        123.83999999999999,
+        39.36
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e51"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e51",
+          "page_number": 3,
+          "bbox": [
+            75.36,
+            32.64,
+            123.83999999999999,
+            39.36
+          ],
+          "order": 50,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e52",
+      "element_type": "paragraph",
+      "text": "Lào Cai vả Thanh Hoa; dịch cum gia cam con ơ Tuyen Quang, Long An, Tiên Giang; dịch viêm da nổi cục còn ở Tiên Giang: dịch dại trên động vật còn ở 12 địa phương và dịch tả lợn châu Phi còn ở 11 địa phương chưa qua 21 ngày.",
+      "text_for_embedding": "a) Nông nghiệp\nLào Cai vả Thanh Hoa; dịch cum gia cam con ơ Tuyen Quang, Long An, Tiên Giang; dịch viêm da nổi cục còn ở Tiên Giang: dịch dại trên động vật còn ở 12 địa phương và dịch tả lợn châu Phi còn ở 11 địa phương chưa qua 21 ngày.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "a-nông-nghiệp-39",
+      "parent_id": null,
+      "order": 51,
+      "bbox": [
+        87.84,
+        42.72,
+        442.56,
+        77.28
+      ],
+      "heading_path": [
+        "a) Nông nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e52"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e52",
+          "page_number": 3,
+          "bbox": [
+            87.84,
+            42.72,
+            442.56,
+            77.28
+          ],
+          "order": 51,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e53",
+      "element_type": "heading",
+      "text": "b) Lâm nghiệp",
+      "text_for_embedding": "b) Lâm nghiệp",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "b-lâm-nghiệp-53",
+      "parent_id": null,
+      "order": 52,
+      "bbox": [
+        88.8,
+        86.39999999999999,
+        150.72,
+        95.03999999999999
+      ],
+      "heading_path": [
+        "b) Lâm nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e53"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e53",
+          "page_number": 3,
+          "bbox": [
+            88.8,
+            86.39999999999999,
+            150.72,
+            95.03999999999999
+          ],
+          "order": 52,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e54",
+      "element_type": "paragraph",
+      "text": "Diện tích rừng trồng mưới tập trung cá nước tháng 02/2025 ước đạt 11,4 nghìn ha, tăng 8,5% so với cùng kỳ năm 2024; số cây lâm nghiệp trồng phân tán đạt 9, 6 triệu cây, tăng 8,8%; sản lượng gổỗ khai thác ước đạt 1.338, 8 nghìn mư3, tăng 18,2%; diện tích rừng bị thiệt hại là 73,1 ha, tăng 34,7%. Tính chung hai tháng đầu năm 2025, diện tích rừng trồng mới cá nước ước đạt 20,1 nghìn ha, tăng 8,8% so vưới cùng kỳ năm trước:; số cầây lâm nghiệp trồng phân tán đạt 13,4 triệu cầây, tăng 6,8%; sản lượng gổ khai thác đạt 2.620,7 nghìn m3, tăng 18, 9%; đdiện tích rừng bị thiệt hại là 145,4 ha, tăng 64,0%.",
+      "text_for_embedding": "b) Lâm nghiệp\nDiện tích rừng trồng mưới tập trung cá nước tháng 02/2025 ước đạt 11,4 nghìn ha, tăng 8,5% so với cùng kỳ năm 2024; số cây lâm nghiệp trồng phân tán đạt 9, 6 triệu cây, tăng 8,8%; sản lượng gổỗ khai thác ước đạt 1.338, 8 nghìn mư3, tăng 18,2%; diện tích rừng bị thiệt hại là 73,1 ha, tăng 34,7%. Tính chung hai tháng đầu năm 2025, diện tích rừng trồng mới cá nước ước đạt 20,1 nghìn ha, tăng 8,8% so vưới cùng kỳ năm trước:; số cầây lâm nghiệp trồng phân tán đạt 13,4 triệu cầây, tăng 6,8%; sản lượng gổ khai thác đạt 2.620,7 nghìn m3, tăng 18, 9%; đdiện tích rừng bị thiệt hại là 145,4 ha, tăng 64,0%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "b-lâm-nghiệp-53",
+      "parent_id": null,
+      "order": 53,
+      "bbox": [
+        87.84,
+        102.72,
+        454.08,
+        195.84
+      ],
+      "heading_path": [
+        "b) Lâm nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e54"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e54",
+          "page_number": 3,
+          "bbox": [
+            87.84,
+            102.72,
+            454.08,
+            195.84
+          ],
+          "order": 53,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e55",
+      "element_type": "heading",
+      "text": "c) Thủy sản",
+      "text_for_embedding": "c) Thủy sản",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "c-thủy-sản-55",
+      "parent_id": null,
+      "order": 54,
+      "bbox": [
+        88.8,
+        204.0,
+        140.16,
+        212.64
+      ],
+      "heading_path": [
+        "c) Thủy sản"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e55"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e55",
+          "page_number": 3,
+          "bbox": [
+            88.8,
+            204.0,
+            140.16,
+            212.64
+          ],
+          "order": 54,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e56",
+      "element_type": "paragraph",
+      "text": "Sản lượng thủy sản tháng 02/2025 ước đạt 650,5 nghìn tấn, tăng 4,0% so với cùng kỳ năm trước. Thính chung hai tháng đầu năm 2025, sản lượng thủy sản ước đạt 1.242, 9 nghìn tấn, tăng 2,4% so vưới cùng kỳ năm trước, trong đó: Sưản lượng thuủy sản nuôi trồng ước đạt 692,2 nghìn tấn, tăng 4,9%; sản lượng thủy sản khai thác ước đạt 550,7 nghìn tấn, giảm 0,5%.",
+      "text_for_embedding": "c) Thủy sản\nSản lượng thủy sản tháng 02/2025 ước đạt 650,5 nghìn tấn, tăng 4,0% so với cùng kỳ năm trước. Thính chung hai tháng đầu năm 2025, sản lượng thủy sản ước đạt 1.242, 9 nghìn tấn, tăng 2,4% so vưới cùng kỳ năm trước, trong đó: Sưản lượng thuủy sản nuôi trồng ước đạt 692,2 nghìn tấn, tăng 4,9%; sản lượng thủy sản khai thác ước đạt 550,7 nghìn tấn, giảm 0,5%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 3,
+      "section_id": "c-thủy-sản-55",
+      "parent_id": null,
+      "order": 55,
+      "bbox": [
+        87.84,
+        220.79999999999998,
+        451.2,
+        281.28
+      ],
+      "heading_path": [
+        "c) Thủy sản"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e56"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e56",
+          "page_number": 3,
+          "bbox": [
+            87.84,
+            220.79999999999998,
+            451.2,
+            281.28
+          ],
+          "order": 55,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e61",
+      "element_type": "paragraph",
+      "text": "THAM VẮN CHÍNH SÁCH",
+      "text_for_embedding": "c) Thủy sản\nTHAM VẮN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "c-thủy-sản-55",
+      "parent_id": null,
+      "order": 60,
+      "bbox": [
+        147.35999999999999,
+        32.16,
+        214.56,
+        40.32
+      ],
+      "heading_path": [
+        "c) Thủy sản"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e61"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e61",
+          "page_number": 4,
+          "bbox": [
+            147.35999999999999,
+            32.16,
+            214.56,
+            40.32
+          ],
+          "order": 60,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e62",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "text_for_embedding": "c) Thủy sản\nCHÍNH SÁCH VÀ CUỘC SỐNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "c-thủy-sản-55",
+      "parent_id": null,
+      "order": 61,
+      "bbox": [
+        238.07999999999998,
+        32.16,
+        318.24,
+        40.32
+      ],
+      "heading_path": [
+        "c) Thủy sản"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e62"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e62",
+          "page_number": 4,
+          "bbox": [
+            238.07999999999998,
+            32.16,
+            318.24,
+            40.32
+          ],
+          "order": 61,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e63",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "c) Thủy sản\nHƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "c-thủy-sản-55",
+      "parent_id": null,
+      "order": 62,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.32
+      ],
+      "heading_path": [
+        "c) Thủy sản"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e63"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e63",
+          "page_number": 4,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.32
+          ],
+          "order": 62,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e64",
+      "element_type": "paragraph",
+      "text": "PHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "text_for_embedding": "c) Thủy sản\nPHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "c-thủy-sản-55",
+      "parent_id": null,
+      "order": 63,
+      "bbox": [
+        469.44,
+        32.16,
+        584.16,
+        40.32
+      ],
+      "heading_path": [
+        "c) Thủy sản"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e64"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e64",
+          "page_number": 4,
+          "bbox": [
+            469.44,
+            32.16,
+            584.16,
+            40.32
+          ],
+          "order": 63,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e67",
+      "element_type": "unknown",
+      "text": "ĐlồHI GĐAa",
+      "text_for_embedding": "c) Thủy sản\nĐlồHI GĐAa",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "c-thủy-sản-55",
+      "parent_id": null,
+      "order": 66,
+      "bbox": [
+        34.56,
+        504.96,
+        51.36,
+        614.88
+      ],
+      "heading_path": [
+        "c) Thủy sản"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e67"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e67",
+          "page_number": 4,
+          "bbox": [
+            34.56,
+            504.96,
+            51.36,
+            614.88
+          ],
+          "order": 66,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "aside_text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e69",
+      "element_type": "heading",
+      "text": "2. Sản xuất công nghiệp",
+      "text_for_embedding": "2. Sản xuất công nghiệp",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "2-sản-xuất-công-nghiệp-69",
+      "parent_id": null,
+      "order": 68,
+      "bbox": [
+        88.32,
+        558.72,
+        242.88,
+        572.16
+      ],
+      "heading_path": [
+        "2. Sản xuất công nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e69"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e69",
+          "page_number": 4,
+          "bbox": [
+            88.32,
+            558.72,
+            242.88,
+            572.16
+          ],
+          "order": 68,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e70",
+      "element_type": "paragraph",
+      "text": "- Chỉ số sản xuất toàn ngành công nghiệp (1IP) tháng 02/2025 ước tính giảm 2,2% so Vvới tháng trước; tăng 17,2% so vưới cùng kỳ năm trước. Tính chung hai tháng đầu năm 2025, IIP tăng 7,2% so với cùng kỳ năm trước (cùng kỳ năm 2024 tăng 6, 5%). Trong đó, ngành chế biến, chế tạo tăng 9,3%, đóng góp 7,9 điểm phần trăm trong mức tăng chung: ngành sán xuất và phân phối điện tăng 2,3%, đóng góp 0,2 điểm phần trăm; ngành cung cấp nước, hoạt động quản lý và xử lý rác thải, nước thải tăng 8,0%, đóng góp 0,1 điểm phần trăm; ngành khai khoáng giảm 6,4%, làm giảm 1,0 điểm phần trăm.",
+      "text_for_embedding": "2. Sản xuất công nghiệp\n- Chỉ số sản xuất toàn ngành công nghiệp (1IP) tháng 02/2025 ước tính giảm 2,2% so Vvới tháng trước; tăng 17,2% so vưới cùng kỳ năm trước. Tính chung hai tháng đầu năm 2025, IIP tăng 7,2% so với cùng kỳ năm trước (cùng kỳ năm 2024 tăng 6, 5%). Trong đó, ngành chế biến, chế tạo tăng 9,3%, đóng góp 7,9 điểm phần trăm trong mức tăng chung: ngành sán xuất và phân phối điện tăng 2,3%, đóng góp 0,2 điểm phần trăm; ngành cung cấp nước, hoạt động quản lý và xử lý rác thải, nước thải tăng 8,0%, đóng góp 0,1 điểm phần trăm; ngành khai khoáng giảm 6,4%, làm giảm 1,0 điểm phần trăm.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "2-sản-xuất-công-nghiệp-69",
+      "parent_id": null,
+      "order": 69,
+      "bbox": [
+        87.36,
+        580.3199999999999,
+        452.15999999999997,
+        668.16
+      ],
+      "heading_path": [
+        "2. Sản xuất công nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e70"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e70",
+          "page_number": 4,
+          "bbox": [
+            87.36,
+            580.3199999999999,
+            452.15999999999997,
+            668.16
+          ],
+          "order": 69,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e71",
+      "element_type": "paragraph",
+      "text": "Người dân và Doanh nghiệp, nị có thể thực hiện góp ý và hiến Phủ băng các phương thức dưi:",
+      "text_for_embedding": "2. Sản xuất công nghiệp\nNgười dân và Doanh nghiệp, nị có thể thực hiện góp ý và hiến Phủ băng các phương thức dưi:",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "2-sản-xuất-công-nghiệp-69",
+      "parent_id": null,
+      "order": 70,
+      "bbox": [
+        493.91999999999996,
+        583.1999999999999,
+        584.16,
+        611.04
+      ],
+      "heading_path": [
+        "2. Sản xuất công nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e71"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e71",
+          "page_number": 4,
+          "bbox": [
+            493.91999999999996,
+            583.1999999999999,
+            584.16,
+            611.04
+          ],
+          "order": 70,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e73",
+      "element_type": "paragraph",
+      "text": "Gọi tổng đài",
+      "text_for_embedding": "2. Sản xuất công nghiệp\nGọi tổng đài",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "2-sản-xuất-công-nghiệp-69",
+      "parent_id": null,
+      "order": 72,
+      "bbox": [
+        515.04,
+        629.28,
+        553.4399999999999,
+        636.9599999999999
+      ],
+      "heading_path": [
+        "2. Sản xuất công nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e73"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e73",
+          "page_number": 4,
+          "bbox": [
+            515.04,
+            629.28,
+            553.4399999999999,
+            636.9599999999999
+          ],
+          "order": 72,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e75",
+      "element_type": "paragraph",
+      "text": "Góp ý qua Zalo",
+      "text_for_embedding": "2. Sản xuất công nghiệp\nGóp ý qua Zalo",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "2-sản-xuất-công-nghiệp-69",
+      "parent_id": null,
+      "order": 74,
+      "bbox": [
+        514.56,
+        660.0,
+        562.0799999999999,
+        668.16
+      ],
+      "heading_path": [
+        "2. Sản xuất công nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e75"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e75",
+          "page_number": 4,
+          "bbox": [
+            514.56,
+            660.0,
+            562.0799999999999,
+            668.16
+          ],
+          "order": 74,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e76",
+      "element_type": "paragraph",
+      "text": "- Chỉ số sản xuất công nghiệp hại tháng đầậu năm 2025 so với cùng kỳ năm trước tăng ở 58 địa phương và giảm ở 5 địa phương trên cá nước.",
+      "text_for_embedding": "2. Sản xuất công nghiệp\n- Chỉ số sản xuất công nghiệp hại tháng đầậu năm 2025 so với cùng kỳ năm trước tăng ở 58 địa phương và giảm ở 5 địa phương trên cá nước.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "2-sản-xuất-công-nghiệp-69",
+      "parent_id": null,
+      "order": 75,
+      "bbox": [
+        87.36,
+        675.8399999999999,
+        454.56,
+        698.4
+      ],
+      "heading_path": [
+        "2. Sản xuất công nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e76"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e76",
+          "page_number": 4,
+          "bbox": [
+            87.36,
+            675.8399999999999,
+            454.56,
+            698.4
+          ],
+          "order": 75,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e78",
+      "element_type": "paragraph",
+      "text": "Gửi góp ý trực tiếp",
+      "text_for_embedding": "2. Sản xuất công nghiệp\nGửi góp ý trực tiếp",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "2-sản-xuất-công-nghiệp-69",
+      "parent_id": null,
+      "order": 77,
+      "bbox": [
+        514.56,
+        690.72,
+        572.64,
+        699.36
+      ],
+      "heading_path": [
+        "2. Sản xuất công nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e78"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e78",
+          "page_number": 4,
+          "bbox": [
+            514.56,
+            690.72,
+            572.64,
+            699.36
+          ],
+          "order": 77,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e79",
+      "element_type": "paragraph",
+      "text": "- Số lao động đang liàm việc trong các doanh nghiệp công nghiệp tại thời điểm 01/02/2025 tăng 1,0% so với cùng thười điểm tháng trước và tăng 4,4% so với cùng thời điểm năm trước.",
+      "text_for_embedding": "2. Sản xuất công nghiệp\n- Số lao động đang liàm việc trong các doanh nghiệp công nghiệp tại thời điểm 01/02/2025 tăng 1,0% so với cùng thười điểm tháng trước và tăng 4,4% so với cùng thời điểm năm trước.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "2-sản-xuất-công-nghiệp-69",
+      "parent_id": null,
+      "order": 78,
+      "bbox": [
+        87.36,
+        706.0799999999999,
+        454.56,
+        729.12
+      ],
+      "heading_path": [
+        "2. Sản xuất công nghiệp"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e79"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e79",
+          "page_number": 4,
+          "bbox": [
+            87.36,
+            706.0799999999999,
+            454.56,
+            729.12
+          ],
+          "order": 78,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e80",
+      "element_type": "heading",
+      "text": "3. Tình hình đăng ký doanh nghiệp l12)1",
+      "text_for_embedding": "3. Tình hình đăng ký doanh nghiệp l12)1",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 4,
+      "section_id": "3-tình-hình-đăng-ký-doanh-nghiệp-l12-1-80",
+      "parent_id": null,
+      "order": 79,
+      "bbox": [
+        88.8,
+        739.1999999999999,
+        323.52,
+        754.56
+      ],
+      "heading_path": [
+        "3. Tình hình đăng ký doanh nghiệp l12)1"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e80"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e80",
+          "page_number": 4,
+          "bbox": [
+            88.8,
+            739.1999999999999,
+            323.52,
+            754.56
+          ],
+          "order": 79,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e85",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH MỚI",
+      "text_for_embedding": "3. Tình hình đăng ký doanh nghiệp l12)1\nCHÍNH SÁCH MỚI",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "3-tình-hình-đăng-ký-doanh-nghiệp-l12-1-80",
+      "parent_id": null,
+      "order": 84,
+      "bbox": [
+        75.84,
+        32.16,
+        124.8,
+        40.8
+      ],
+      "heading_path": [
+        "3. Tình hình đăng ký doanh nghiệp l12)1"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e85"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e85",
+          "page_number": 5,
+          "bbox": [
+            75.84,
+            32.16,
+            124.8,
+            40.8
+          ],
+          "order": 84,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e86",
+      "element_type": "paragraph",
+      "text": "THAM VẮN CHÍNH SÁCH",
+      "text_for_embedding": "3. Tình hình đăng ký doanh nghiệp l12)1\nTHAM VẮN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "3-tình-hình-đăng-ký-doanh-nghiệp-l12-1-80",
+      "parent_id": null,
+      "order": 85,
+      "bbox": [
+        147.35999999999999,
+        32.16,
+        214.56,
+        40.32
+      ],
+      "heading_path": [
+        "3. Tình hình đăng ký doanh nghiệp l12)1"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e86"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e86",
+          "page_number": 5,
+          "bbox": [
+            147.35999999999999,
+            32.16,
+            214.56,
+            40.32
+          ],
+          "order": 85,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e87",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "text_for_embedding": "3. Tình hình đăng ký doanh nghiệp l12)1\nCHÍNH SÁCH VÀ CUỘC SỐNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "3-tình-hình-đăng-ký-doanh-nghiệp-l12-1-80",
+      "parent_id": null,
+      "order": 86,
+      "bbox": [
+        238.07999999999998,
+        32.16,
+        317.76,
+        40.32
+      ],
+      "heading_path": [
+        "3. Tình hình đăng ký doanh nghiệp l12)1"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e87"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e87",
+          "page_number": 5,
+          "bbox": [
+            238.07999999999998,
+            32.16,
+            317.76,
+            40.32
+          ],
+          "order": 86,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e88",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "3. Tình hình đăng ký doanh nghiệp l12)1\nHƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "3-tình-hình-đăng-ký-doanh-nghiệp-l12-1-80",
+      "parent_id": null,
+      "order": 87,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.32
+      ],
+      "heading_path": [
+        "3. Tình hình đăng ký doanh nghiệp l12)1"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e88"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e88",
+          "page_number": 5,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.32
+          ],
+          "order": 87,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e89",
+      "element_type": "unknown",
+      "text": "PHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "text_for_embedding": "3. Tình hình đăng ký doanh nghiệp l12)1\nPHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "3-tình-hình-đăng-ký-doanh-nghiệp-l12-1-80",
+      "parent_id": null,
+      "order": 88,
+      "bbox": [
+        468.96,
+        32.16,
+        582.72,
+        39.36
+      ],
+      "heading_path": [
+        "3. Tình hình đăng ký doanh nghiệp l12)1"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e89"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e89",
+          "page_number": 5,
+          "bbox": [
+            468.96,
+            32.16,
+            582.72,
+            39.36
+          ],
+          "order": 88,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "aside_text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e90",
+      "element_type": "paragraph",
+      "text": "với tháng trước và tăng 34, 4% so vưới cung ky năm trươc; có gân 7,1 nghin doanh nghiệp quay trở lại hoạt động, giảm 69,1% và tăng 32, 1%; có 3.554 doanh nghiệp đăng ký tạm ngừng kinh doanh có thời hạn, giảm 93,3% và giảm 30, 9%; có 2.971 doanh nghiệp ngừng hoạt động chờ làm thủ tục giải thể, giảm 14, 9% và tăng 38, 0%; có 1.737 doanh nghiệp hoàn ttất thủ tục giải thể, giảm 14,1% và tăng 44,4%.",
+      "text_for_embedding": "3. Tình hình đăng ký doanh nghiệp l12)1\nvới tháng trước và tăng 34, 4% so vưới cung ky năm trươc; có gân 7,1 nghin doanh nghiệp quay trở lại hoạt động, giảm 69,1% và tăng 32, 1%; có 3.554 doanh nghiệp đăng ký tạm ngừng kinh doanh có thời hạn, giảm 93,3% và giảm 30, 9%; có 2.971 doanh nghiệp ngừng hoạt động chờ làm thủ tục giải thể, giảm 14, 9% và tăng 38, 0%; có 1.737 doanh nghiệp hoàn ttất thủ tục giải thể, giảm 14,1% và tăng 44,4%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "3-tình-hình-đăng-ký-doanh-nghiệp-l12-1-80",
+      "parent_id": null,
+      "order": 89,
+      "bbox": [
+        87.36,
+        42.239999999999995,
+        455.03999999999996,
+        103.67999999999999
+      ],
+      "heading_path": [
+        "3. Tình hình đăng ký doanh nghiệp l12)1"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e90"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e90",
+          "page_number": 5,
+          "bbox": [
+            87.36,
+            42.239999999999995,
+            455.03999999999996,
+            103.67999999999999
+          ],
+          "order": 89,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e91",
+      "element_type": "paragraph",
+      "text": "- Tính chung hai tháng đầu năm 2025, cáả nước có hơn 49, 8 nghìn doanh nghiệp đăng ký thành lập mới và quay trở lại hoạt động, tăng 19, 3% so với cùng kỳ năm trước. Bình quân 1 tháng có hơn 24,9 nghìn doanh nghiệp thành lập mới và quay trở lại hoạt động. Số doanh nghiệp rút lui khỏi thị trường là hơn 67, o nghìn doanh nghiệp, tăng 6, 9% so với cùng kỳ năm trước; bình quân 1 tháng có hơn 33,5 nghìn doanh nghiệp rút lui khỏi thị trường.",
+      "text_for_embedding": "3. Tình hình đăng ký doanh nghiệp l12)1\n- Tính chung hai tháng đầu năm 2025, cáả nước có hơn 49, 8 nghìn doanh nghiệp đăng ký thành lập mới và quay trở lại hoạt động, tăng 19, 3% so với cùng kỳ năm trước. Bình quân 1 tháng có hơn 24,9 nghìn doanh nghiệp thành lập mới và quay trở lại hoạt động. Số doanh nghiệp rút lui khỏi thị trường là hơn 67, o nghìn doanh nghiệp, tăng 6, 9% so với cùng kỳ năm trước; bình quân 1 tháng có hơn 33,5 nghìn doanh nghiệp rút lui khỏi thị trường.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "3-tình-hình-đăng-ký-doanh-nghiệp-l12-1-80",
+      "parent_id": null,
+      "order": 90,
+      "bbox": [
+        87.36,
+        111.83999999999999,
+        455.03999999999996,
+        173.28
+      ],
+      "heading_path": [
+        "3. Tình hình đăng ký doanh nghiệp l12)1"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e91"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e91",
+          "page_number": 5,
+          "bbox": [
+            87.36,
+            111.83999999999999,
+            455.03999999999996,
+            173.28
+          ],
+          "order": 90,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e92",
+      "element_type": "heading",
+      "text": "4. Đầu tư",
+      "text_for_embedding": "4. Đầu tư",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 91,
+      "bbox": [
+        88.8,
+        183.35999999999999,
+        148.32,
+        194.4
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e92"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e92",
+          "page_number": 5,
+          "bbox": [
+            88.8,
+            183.35999999999999,
+            148.32,
+            194.4
+          ],
+          "order": 91,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e93",
+      "element_type": "paragraph",
+      "text": "- Vốn đầu tư thưực hiện từ ngưuồn ngân sách Nhà nước tháng Hai ước đạt 37, 9 nghìn tỷ đồng, tăng 36, 5% so với cùng kỳ năm trước. Tính chung hai tháng đầu năm 2025, vốn đầu tư thưực hiện từn ngưồn ngân sách Nhà nước ước đạt 73,2 nghìn tỷ đồng, bằng 8, 5% kế hoạch năm và tăng 21,7% so với cùng kỳ năm trước (cùng kỳ năm 2024 bằng 7,7% và tăng 2,6%).",
+      "text_for_embedding": "4. Đầu tư\n- Vốn đầu tư thưực hiện từ ngưuồn ngân sách Nhà nước tháng Hai ước đạt 37, 9 nghìn tỷ đồng, tăng 36, 5% so với cùng kỳ năm trước. Tính chung hai tháng đầu năm 2025, vốn đầu tư thưực hiện từn ngưồn ngân sách Nhà nước ước đạt 73,2 nghìn tỷ đồng, bằng 8, 5% kế hoạch năm và tăng 21,7% so với cùng kỳ năm trước (cùng kỳ năm 2024 bằng 7,7% và tăng 2,6%).",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 92,
+      "bbox": [
+        87.84,
+        205.44,
+        450.71999999999997,
+        265.92
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e93"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e93",
+          "page_number": 5,
+          "bbox": [
+            87.84,
+            205.44,
+            450.71999999999997,
+            265.92
+          ],
+          "order": 92,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e94",
+      "element_type": "paragraph",
+      "text": "- Tổng vốn đầu tư nước ngoài đăng ký vào Việt Nam trong hai tháng đầu năm 2025 bao gồm: Vốn đăng ký cấp mới, vốn đăng ký điều chỉnh và giá trị góp vốn, mua cổ phần của nhà đầu tư nước ngoài đạt gần 6, 90 tỷ USD, tăng 35, 5% so với cùng kỳ năm trước.",
+      "text_for_embedding": "4. Đầu tư\n- Tổng vốn đầu tư nước ngoài đăng ký vào Việt Nam trong hai tháng đầu năm 2025 bao gồm: Vốn đăng ký cấp mới, vốn đăng ký điều chỉnh và giá trị góp vốn, mua cổ phần của nhà đầu tư nước ngoài đạt gần 6, 90 tỷ USD, tăng 35, 5% so với cùng kỳ năm trước.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 93,
+      "bbox": [
+        87.84,
+        274.56,
+        441.59999999999997,
+        309.59999999999997
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e94"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e94",
+          "page_number": 5,
+          "bbox": [
+            87.84,
+            274.56,
+            441.59999999999997,
+            309.59999999999997
+          ],
+          "order": 93,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e95",
+      "element_type": "paragraph",
+      "text": "- Vốn đầu tư trưực tiếp nước nngoài thực hiện tại Việt Nam hai tháng đầu năm 2025 ước đạt 2,95 tỷ USD, tăng 5,4% so với cùng kỳ năm trước.",
+      "text_for_embedding": "4. Đầu tư\n- Vốn đầu tư trưực tiếp nước nngoài thực hiện tại Việt Nam hai tháng đầu năm 2025 ước đạt 2,95 tỷ USD, tăng 5,4% so với cùng kỳ năm trước.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 94,
+      "bbox": [
+        87.84,
+        317.76,
+        448.32,
+        339.84
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e95"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e95",
+          "page_number": 5,
+          "bbox": [
+            87.84,
+            317.76,
+            448.32,
+            339.84
+          ],
+          "order": 94,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e96",
+      "element_type": "paragraph",
+      "text": "- Đầu tư của Việt Nam ra nước ngoài trong hai tháng đầu năm 2025 có 30 dự án được cấp mới giấy chứng nhận đầu tư với tổng số vốn của phía Việt Nam là 233,6 triệu USD, gấp 9.,4 lần so với cùng kỳ năm trước; có 05 lượt dự án điều chỉnh vốn với số vốn điều chỉnh tăng 5.4 triệu USD, gấp 24, 3 ilân. Tính chung tổng vốnn đầu tư của Việt Nam ra nước ngoài (vốn cấp mới và điều chỉnh) đạt 2389 triệu USD, gấp 9, 5 lân so với cùng kỳ năm trước.",
+      "text_for_embedding": "4. Đầu tư\n- Đầu tư của Việt Nam ra nước ngoài trong hai tháng đầu năm 2025 có 30 dự án được cấp mới giấy chứng nhận đầu tư với tổng số vốn của phía Việt Nam là 233,6 triệu USD, gấp 9.,4 lần so với cùng kỳ năm trước; có 05 lượt dự án điều chỉnh vốn với số vốn điều chỉnh tăng 5.4 triệu USD, gấp 24, 3 ilân. Tính chung tổng vốnn đầu tư của Việt Nam ra nước ngoài (vốn cấp mới và điều chỉnh) đạt 2389 triệu USD, gấp 9, 5 lân so với cùng kỳ năm trước.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 5,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 95,
+      "bbox": [
+        87.84,
+        348.0,
+        451.2,
+        408.96
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e96"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e96",
+          "page_number": 5,
+          "bbox": [
+            87.84,
+            348.0,
+            451.2,
+            408.96
+          ],
+          "order": 95,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e101",
+      "element_type": "paragraph",
+      "text": "THAM VẮN CHÍNH SÁCH",
+      "text_for_embedding": "4. Đầu tư\nTHAM VẮN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 100,
+      "bbox": [
+        147.35999999999999,
+        32.16,
+        214.56,
+        40.32
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e101"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e101",
+          "page_number": 6,
+          "bbox": [
+            147.35999999999999,
+            32.16,
+            214.56,
+            40.32
+          ],
+          "order": 100,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e102",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "text_for_embedding": "4. Đầu tư\nCHÍNH SÁCH VÀ CUỘC SỐNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 101,
+      "bbox": [
+        238.07999999999998,
+        32.16,
+        318.24,
+        40.32
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e102"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e102",
+          "page_number": 6,
+          "bbox": [
+            238.07999999999998,
+            32.16,
+            318.24,
+            40.32
+          ],
+          "order": 101,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e103",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "4. Đầu tư\nHƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 102,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.32
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e103"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e103",
+          "page_number": 6,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.32
+          ],
+          "order": 102,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e104",
+      "element_type": "paragraph",
+      "text": "PHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "text_for_embedding": "4. Đầu tư\nPHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "4-đầu-tư-92",
+      "parent_id": null,
+      "order": 103,
+      "bbox": [
+        469.44,
+        32.16,
+        584.16,
+        40.32
+      ],
+      "heading_path": [
+        "4. Đầu tư"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e104"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e104",
+          "page_number": 6,
+          "bbox": [
+            469.44,
+            32.16,
+            584.16,
+            40.32
+          ],
+          "order": 103,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e107",
+      "element_type": "heading",
+      "text": "5. Thu, chi ngân sách Nhà nước",
+      "text_for_embedding": "5. Thu, chi ngân sách Nhà nước",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "5-thu-chi-ngân-sách-nhà-nước-107",
+      "parent_id": null,
+      "order": 106,
+      "bbox": [
+        88.32,
+        558.72,
+        288.47999999999996,
+        571.1999999999999
+      ],
+      "heading_path": [
+        "5. Thu, chi ngân sách Nhà nước"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e107"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e107",
+          "page_number": 6,
+          "bbox": [
+            88.32,
+            558.72,
+            288.47999999999996,
+            571.1999999999999
+          ],
+          "order": 106,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e108",
+      "element_type": "paragraph",
+      "text": "Tổng thu ngân sách Nhà nước tháng 02/2025 ước đạt 191,9 nghìn tỷ đồng. Lũy kế tổng thu ngân sách Nhà nước hai tháng đầu năm 2025 đạt 499, 8 nghìn tỷ đồng, bằng 25, 4% dự ttoán năm và tăng 25,7% so với cùng kỳ năm trước.",
+      "text_for_embedding": "5. Thu, chi ngân sách Nhà nước\nTổng thu ngân sách Nhà nước tháng 02/2025 ước đạt 191,9 nghìn tỷ đồng. Lũy kế tổng thu ngân sách Nhà nước hai tháng đầu năm 2025 đạt 499, 8 nghìn tỷ đồng, bằng 25, 4% dự ttoán năm và tăng 25,7% so với cùng kỳ năm trước.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "5-thu-chi-ngân-sách-nhà-nước-107",
+      "parent_id": null,
+      "order": 107,
+      "bbox": [
+        87.84,
+        580.3199999999999,
+        453.12,
+        615.84
+      ],
+      "heading_path": [
+        "5. Thu, chi ngân sách Nhà nước"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e108"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e108",
+          "page_number": 6,
+          "bbox": [
+            87.84,
+            580.3199999999999,
+            453.12,
+            615.84
+          ],
+          "order": 107,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e109",
+      "element_type": "paragraph",
+      "text": "Tổng chi ngân sách Nhà nước tháng 02/2025 ước đạt 140, 6 nghìn tỷ đồng: lũy kế hai tháng đầu năm 2025 ước đạt 29 3,8 nghìn tỷ đồng, bằng 11,5% dự toán năm và tăng 13, 2% so với cùng kỳ năm trướCc.",
+      "text_for_embedding": "5. Thu, chi ngân sách Nhà nước\nTổng chi ngân sách Nhà nước tháng 02/2025 ước đạt 140, 6 nghìn tỷ đồng: lũy kế hai tháng đầu năm 2025 ước đạt 29 3,8 nghìn tỷ đồng, bằng 11,5% dự toán năm và tăng 13, 2% so với cùng kỳ năm trướCc.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "5-thu-chi-ngân-sách-nhà-nước-107",
+      "parent_id": null,
+      "order": 108,
+      "bbox": [
+        87.84,
+        624.0,
+        454.08,
+        659.52
+      ],
+      "heading_path": [
+        "5. Thu, chi ngân sách Nhà nước"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e109"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e109",
+          "page_number": 6,
+          "bbox": [
+            87.84,
+            624.0,
+            454.08,
+            659.52
+          ],
+          "order": 108,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e110",
+      "element_type": "heading",
+      "text": "6. Thương mại, giá cả, vận tải và du lịch",
+      "text_for_embedding": "6. Thương mại, giá cả, vận tải và du lịch",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "6-thương-mại-giá-cả-vận-tải-và-du-lịch-110",
+      "parent_id": null,
+      "order": 109,
+      "bbox": [
+        88.32,
+        669.6,
+        337.44,
+        682.56
+      ],
+      "heading_path": [
+        "6. Thương mại, giá cả, vận tải và du lịch"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e110"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e110",
+          "page_number": 6,
+          "bbox": [
+            88.32,
+            669.6,
+            337.44,
+            682.56
+          ],
+          "order": 109,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e111",
+      "element_type": "heading",
+      "text": "a) Bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng",
+      "text_for_embedding": "a) Bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "a-bán-lẻ-hàng-hóa-và-doanh-thu-dịch-vụ-tiêu-dùng-111",
+      "parent_id": null,
+      "order": 110,
+      "bbox": [
+        88.8,
+        692.16,
+        297.12,
+        700.8
+      ],
+      "heading_path": [
+        "a) Bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e111"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e111",
+          "page_number": 6,
+          "bbox": [
+            88.8,
+            692.16,
+            297.12,
+            700.8
+          ],
+          "order": 110,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e112",
+      "element_type": "paragraph",
+      "text": "Tổng mức bán lẻ hàng hóa và doanh thu diịch vụ tiêu dùng theo giá hiện hành tháng 02/2025 ước đạt 561,7 nghìn tỷ đồng, giảm 2, 5%% so với tháng trước và tăng 9,4% so với cùng kỳ n năm trước. Tính chung hai tháng đầu năm 2025, tổng mưức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng theo giá hiện hành ước đạt 1.137, 5 nghìn tỷ đồng, tăng 9,4% so",
+      "text_for_embedding": "a) Bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng\nTổng mức bán lẻ hàng hóa và doanh thu diịch vụ tiêu dùng theo giá hiện hành tháng 02/2025 ước đạt 561,7 nghìn tỷ đồng, giảm 2, 5%% so với tháng trước và tăng 9,4% so với cùng kỳ n năm trước. Tính chung hai tháng đầu năm 2025, tổng mưức bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng theo giá hiện hành ước đạt 1.137, 5 nghìn tỷ đồng, tăng 9,4% so",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 6,
+      "section_id": "a-bán-lẻ-hàng-hóa-và-doanh-thu-dịch-vụ-tiêu-dùng-111",
+      "parent_id": null,
+      "order": 111,
+      "bbox": [
+        87.84,
+        708.9599999999999,
+        456.47999999999996,
+        757.4399999999999
+      ],
+      "heading_path": [
+        "a) Bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e112"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e112",
+          "page_number": 6,
+          "bbox": [
+            87.84,
+            708.9599999999999,
+            456.47999999999996,
+            757.4399999999999
+          ],
+          "order": 111,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e117",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH MỚI THAM VẮN CHÍNH SÁCH (cùng kỳ năm 2024 tăng 5,3%).",
+      "text_for_embedding": "a) Bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng\nCHÍNH SÁCH MỚI THAM VẮN CHÍNH SÁCH (cùng kỳ năm 2024 tăng 5,3%).",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "a-bán-lẻ-hàng-hóa-và-doanh-thu-dịch-vụ-tiêu-dùng-111",
+      "parent_id": null,
+      "order": 116,
+      "bbox": [
+        75.36,
+        32.64,
+        215.51999999999998,
+        51.839999999999996
+      ],
+      "heading_path": [
+        "a) Bán lẻ hàng hóa và doanh thu dịch vụ tiêu dùng"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e117"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e117",
+          "page_number": 7,
+          "bbox": [
+            75.36,
+            32.64,
+            215.51999999999998,
+            51.839999999999996
+          ],
+          "order": 116,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e118",
+      "element_type": "heading",
+      "text": "b) Xuất, nhập khẩu hàng hóal131",
+      "text_for_embedding": "b) Xuất, nhập khẩu hàng hóal131",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "b-xuất-nhập-khẩu-hàng-hóal131-118",
+      "parent_id": null,
+      "order": 117,
+      "bbox": [
+        89.28,
+        60.96,
+        220.32,
+        72.0
+      ],
+      "heading_path": [
+        "b) Xuất, nhập khẩu hàng hóal131"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e118"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e118",
+          "page_number": 7,
+          "bbox": [
+            89.28,
+            60.96,
+            220.32,
+            72.0
+          ],
+          "order": 117,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e119",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SÕNG",
+      "text_for_embedding": "b) Xuất, nhập khẩu hàng hóal131\nCHÍNH SÁCH VÀ CUỘC SÕNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "b-xuất-nhập-khẩu-hàng-hóal131-118",
+      "parent_id": null,
+      "order": 118,
+      "bbox": [
+        238.07999999999998,
+        32.16,
+        318.24,
+        40.8
+      ],
+      "heading_path": [
+        "b) Xuất, nhập khẩu hàng hóal131"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e119"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e119",
+          "page_number": 7,
+          "bbox": [
+            238.07999999999998,
+            32.16,
+            318.24,
+            40.8
+          ],
+          "order": 118,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e120",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "b) Xuất, nhập khẩu hàng hóal131\nHƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "b-xuất-nhập-khẩu-hàng-hóal131-118",
+      "parent_id": null,
+      "order": 119,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.8
+      ],
+      "heading_path": [
+        "b) Xuất, nhập khẩu hàng hóal131"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e120"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e120",
+          "page_number": 7,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.8
+          ],
+          "order": 119,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e121",
+      "element_type": "paragraph",
+      "text": "Trong tháng Hai, tổng kim ngạch xuất, nhập khẩu hàng hóa 4iIi đạt 63,77 tỷ USD, tăng 0,7% so với tháng trước và tăng 32, 6% so với chùng kỳ năm trước l51. Thính chung hai tháng đầu năm 2025, tổng kim ngạch xuất, nhập khẩu hàng hóa đạt 127,07 tỷ USD, tăng 12,0% so với cùng kỳ năm trước, trong đó xuất khẩu tăng 8, 4%:; nhập khẩu tăng 15, 9% l6i. Ccán cân thương mại hàng hóa xuất siêu 1,47 tỷ USD.",
+      "text_for_embedding": "b) Xuất, nhập khẩu hàng hóal131\nTrong tháng Hai, tổng kim ngạch xuất, nhập khẩu hàng hóa 4iIi đạt 63,77 tỷ USD, tăng 0,7% so với tháng trước và tăng 32, 6% so với chùng kỳ năm trước l51. Thính chung hai tháng đầu năm 2025, tổng kim ngạch xuất, nhập khẩu hàng hóa đạt 127,07 tỷ USD, tăng 12,0% so với cùng kỳ năm trước, trong đó xuất khẩu tăng 8, 4%:; nhập khẩu tăng 15, 9% l6i. Ccán cân thương mại hàng hóa xuất siêu 1,47 tỷ USD.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "b-xuất-nhập-khẩu-hàng-hóal131-118",
+      "parent_id": null,
+      "order": 120,
+      "bbox": [
+        87.84,
+        81.6,
+        452.15999999999997,
+        146.4
+      ],
+      "heading_path": [
+        "b) Xuất, nhập khẩu hàng hóal131"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e121"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e121",
+          "page_number": 7,
+          "bbox": [
+            87.84,
+            81.6,
+            452.15999999999997,
+            146.4
+          ],
+          "order": 120,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e122",
+      "element_type": "heading",
+      "text": "- Xuất khẩu hàng hóa",
+      "text_for_embedding": "- Xuất khẩu hàng hóa",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "xuất-khẩu-hàng-hóa-122",
+      "parent_id": null,
+      "order": 121,
+      "bbox": [
+        89.28,
+        154.56,
+        178.07999999999998,
+        163.2
+      ],
+      "heading_path": [
+        "- Xuất khẩu hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e122"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e122",
+          "page_number": 7,
+          "bbox": [
+            89.28,
+            154.56,
+            178.07999999999998,
+            163.2
+          ],
+          "order": 121,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e123",
+      "element_type": "paragraph",
+      "text": "+ Kim ngạch xuất khẩu hàng hóa tháng 02/2025 đạt 31,11 tỷ USD, giảm 6,2% so với tháng trước và tăng 25,7% so với cùng kỳ năm trước. Thính chung hai tháng đầu năm 2025, kim ngạch xuất khẩu hàng hóa đạt 64,27 tỷ USD, tăng 8,4% so vưới cùng kỳ năm trước. Trong đó, khu vưực kinh tế trong nước đạt 17, 92 tỷ USD, tăng 12, 8%, chiểm 27, 9% tổng kim ngạch xuất khẩu; khu vưực có vốn đầu tư nước ngoài (kể cá dầu thô) đạt 46, 35 tỷ USD, tăng 6,7%, chiếm 72,1%.",
+      "text_for_embedding": "- Xuất khẩu hàng hóa\n+ Kim ngạch xuất khẩu hàng hóa tháng 02/2025 đạt 31,11 tỷ USD, giảm 6,2% so với tháng trước và tăng 25,7% so với cùng kỳ năm trước. Thính chung hai tháng đầu năm 2025, kim ngạch xuất khẩu hàng hóa đạt 64,27 tỷ USD, tăng 8,4% so vưới cùng kỳ năm trước. Trong đó, khu vưực kinh tế trong nước đạt 17, 92 tỷ USD, tăng 12, 8%, chiểm 27, 9% tổng kim ngạch xuất khẩu; khu vưực có vốn đầu tư nước ngoài (kể cá dầu thô) đạt 46, 35 tỷ USD, tăng 6,7%, chiếm 72,1%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "xuất-khẩu-hàng-hóa-122",
+      "parent_id": null,
+      "order": 122,
+      "bbox": [
+        87.84,
+        171.84,
+        450.24,
+        245.28
+      ],
+      "heading_path": [
+        "- Xuất khẩu hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e123"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e123",
+          "page_number": 7,
+          "bbox": [
+            87.84,
+            171.84,
+            450.24,
+            245.28
+          ],
+          "order": 122,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e124",
+      "element_type": "paragraph",
+      "text": "+ Về cơ cấu nhóm hàng xuất khẩu hai tháng đầu năm 2025, nhóm hàng công nghiệp chế biến đạt 57,01 tỷ USD, chiếm 88, 7%.",
+      "text_for_embedding": "- Xuất khẩu hàng hóa\n+ Về cơ cấu nhóm hàng xuất khẩu hai tháng đầu năm 2025, nhóm hàng công nghiệp chế biến đạt 57,01 tỷ USD, chiếm 88, 7%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "xuất-khẩu-hàng-hóa-122",
+      "parent_id": null,
+      "order": 123,
+      "bbox": [
+        88.8,
+        253.92,
+        445.44,
+        276.0
+      ],
+      "heading_path": [
+        "- Xuất khẩu hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e124"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e124",
+          "page_number": 7,
+          "bbox": [
+            88.8,
+            253.92,
+            445.44,
+            276.0
+          ],
+          "order": 123,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e125",
+      "element_type": "heading",
+      "text": "- Nhập khẩu hàng hóa",
+      "text_for_embedding": "- Nhập khẩu hàng hóa",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "nhập-khẩu-hàng-hóa-125",
+      "parent_id": null,
+      "order": 124,
+      "bbox": [
+        89.75999999999999,
+        284.64,
+        181.44,
+        293.28
+      ],
+      "heading_path": [
+        "- Nhập khẩu hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e125"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e125",
+          "page_number": 7,
+          "bbox": [
+            89.75999999999999,
+            284.64,
+            181.44,
+            293.28
+          ],
+          "order": 124,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e126",
+      "element_type": "paragraph",
+      "text": "+ Kim ngạch nhập khẩu hàng hóa tháng 02/2025 đạt 32, 66 tỷ USD, tăng 8,44% so với tháng trước và tăng 40, 0% so với cùng kỳ năm trước. Thính chung hai tháng đầu năm 2025, kim ngạch nhập khẩu hàng hóa đạt 62, 8 tỷ USD, tăng 15, 9% so vưới cùng kỳ năm trước, trong đó khu vực kinh tế trong nước đạt 22,8 tỷ USD, tăng 18,7%; khu vưực có vốn đầu tư nước ngoài đạt 40,0 tỷ USD, tăng 14,4%.",
+      "text_for_embedding": "- Nhập khẩu hàng hóa\n+ Kim ngạch nhập khẩu hàng hóa tháng 02/2025 đạt 32, 66 tỷ USD, tăng 8,44% so với tháng trước và tăng 40, 0% so với cùng kỳ năm trước. Thính chung hai tháng đầu năm 2025, kim ngạch nhập khẩu hàng hóa đạt 62, 8 tỷ USD, tăng 15, 9% so vưới cùng kỳ năm trước, trong đó khu vực kinh tế trong nước đạt 22,8 tỷ USD, tăng 18,7%; khu vưực có vốn đầu tư nước ngoài đạt 40,0 tỷ USD, tăng 14,4%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "nhập-khẩu-hàng-hóa-125",
+      "parent_id": null,
+      "order": 125,
+      "bbox": [
+        88.32,
+        301.44,
+        454.56,
+        362.4
+      ],
+      "heading_path": [
+        "- Nhập khẩu hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e126"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e126",
+          "page_number": 7,
+          "bbox": [
+            88.32,
+            301.44,
+            454.56,
+            362.4
+          ],
+          "order": 125,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e127",
+      "element_type": "paragraph",
+      "text": "+ Về cơ cấẩu nhóm hàng nhập khẩu hai tháng đầu năm 2025, nhóm hàng tư liệu sản xuất đạt 58, 83 tỷ USD, chiểm 93,7%.",
+      "text_for_embedding": "- Nhập khẩu hàng hóa\n+ Về cơ cấẩu nhóm hàng nhập khẩu hai tháng đầu năm 2025, nhóm hàng tư liệu sản xuất đạt 58, 83 tỷ USD, chiểm 93,7%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "nhập-khẩu-hàng-hóa-125",
+      "parent_id": null,
+      "order": 126,
+      "bbox": [
+        88.32,
+        371.03999999999996,
+        442.56,
+        392.64
+      ],
+      "heading_path": [
+        "- Nhập khẩu hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e127"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e127",
+          "page_number": 7,
+          "bbox": [
+            88.32,
+            371.03999999999996,
+            442.56,
+            392.64
+          ],
+          "order": 126,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e128",
+      "element_type": "paragraph",
+      "text": "- Về thị trường xuất, nhập khẩu hàng hóa 2 tháng đầu năm 2025, Hoa Kỳ là thị trường xuất khẩu lớn nhất của Việt Nam với kim ngạch đạt 19,6 tỷ USD. Trung Quốc là thị trường nhập khẩu lớn nhất của Việt Nam với kim ngạch đạt 23, 3 tỷ USD.",
+      "text_for_embedding": "- Nhập khẩu hàng hóa\n- Về thị trường xuất, nhập khẩu hàng hóa 2 tháng đầu năm 2025, Hoa Kỳ là thị trường xuất khẩu lớn nhất của Việt Nam với kim ngạch đạt 19,6 tỷ USD. Trung Quốc là thị trường nhập khẩu lớn nhất của Việt Nam với kim ngạch đạt 23, 3 tỷ USD.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "nhập-khẩu-hàng-hóa-125",
+      "parent_id": null,
+      "order": 127,
+      "bbox": [
+        88.32,
+        400.8,
+        452.15999999999997,
+        435.84
+      ],
+      "heading_path": [
+        "- Nhập khẩu hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e128"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e128",
+          "page_number": 7,
+          "bbox": [
+            88.32,
+            400.8,
+            452.15999999999997,
+            435.84
+          ],
+          "order": 127,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e129",
+      "element_type": "paragraph",
+      "text": "- Cán cân thương mại hàng hóa hai tháng đầu năm 2025 xuất siêu 1,47 tỷ USD (cùng kỳ năm trước xuất siêu 5,13 tỷ USD). Trong đó, khu vưực kinh tế trong nước nhập siêu 4, 87 tỷ USD;: khu vực có vưốn đầu tư nước ngoài (kể cả dầu thôi) xuất siêu 6, 34 tỷ USD.",
+      "text_for_embedding": "- Nhập khẩu hàng hóa\n- Cán cân thương mại hàng hóa hai tháng đầu năm 2025 xuất siêu 1,47 tỷ USD (cùng kỳ năm trước xuất siêu 5,13 tỷ USD). Trong đó, khu vưực kinh tế trong nước nhập siêu 4, 87 tỷ USD;: khu vực có vưốn đầu tư nước ngoài (kể cả dầu thôi) xuất siêu 6, 34 tỷ USD.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "nhập-khẩu-hàng-hóa-125",
+      "parent_id": null,
+      "order": 128,
+      "bbox": [
+        88.32,
+        444.47999999999996,
+        445.91999999999996,
+        479.52
+      ],
+      "heading_path": [
+        "- Nhập khẩu hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e129"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e129",
+          "page_number": 7,
+          "bbox": [
+            88.32,
+            444.47999999999996,
+            445.91999999999996,
+            479.52
+          ],
+          "order": 128,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e130",
+      "element_type": "heading",
+      "text": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 129,
+      "bbox": [
+        88.8,
+        487.2,
+        339.84,
+        496.32
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e130"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e130",
+          "page_number": 7,
+          "bbox": [
+            88.8,
+            487.2,
+            339.84,
+            496.32
+          ],
+          "order": 129,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e131",
+      "element_type": "paragraph",
+      "text": "- Chỉ số giá tiêu dùng (CPlI) tháng 02/2025 tăng 0,348% so viới tháng trước; tăng 1,328% so với tháng 12/2024 và tăng 2, 918% s0o với chùng kỳ năm 2024. Bình quân hai tháng đầu năm 2025, CPI tăng 3,27% so với cùng kỳ năm trước; lạm phát cơ bản tăng 2, 97%.",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\n- Chỉ số giá tiêu dùng (CPlI) tháng 02/2025 tăng 0,348% so viới tháng trước; tăng 1,328% so với tháng 12/2024 và tăng 2, 918% s0o với chùng kỳ năm 2024. Bình quân hai tháng đầu năm 2025, CPI tăng 3,27% so với cùng kỳ năm trước; lạm phát cơ bản tăng 2, 97%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 130,
+      "bbox": [
+        87.84,
+        504.96,
+        444.96,
+        540.0
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e131"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e131",
+          "page_number": 7,
+          "bbox": [
+            87.84,
+            504.96,
+            444.96,
+            540.0
+          ],
+          "order": 130,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e132",
+      "element_type": "paragraph",
+      "text": "- Chỉ số giá vàng tháng 02/2025 tăng 4,72% so với tháng trước; tăng 32, 57% so với cùng kỳ năm trước; tăng 5,8% so với tháng 12/2024; bình quân 02 tháng đầu năm 2025, chỉ số giá vàng tăng 30,84%.",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\n- Chỉ số giá vàng tháng 02/2025 tăng 4,72% so với tháng trước; tăng 32, 57% so với cùng kỳ năm trước; tăng 5,8% so với tháng 12/2024; bình quân 02 tháng đầu năm 2025, chỉ số giá vàng tăng 30,84%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 131,
+      "bbox": [
+        87.84,
+        547.1999999999999,
+        445.91999999999996,
+        583.1999999999999
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e132"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e132",
+          "page_number": 7,
+          "bbox": [
+            87.84,
+            547.1999999999999,
+            445.91999999999996,
+            583.1999999999999
+          ],
+          "order": 131,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e133",
+      "element_type": "paragraph",
+      "text": "- Chỉ số giá đô la M9Ỹỹ tháng 02/2025 giưảm 0, 06% so với tháng trước; tăng 3,52% so với cùng kỳ năm trước; tăng 0,15% so với tháng 12/202 4; bình quân 02 tháng đầu năm 2025, chỉ số giá đô la MỸỹ tăng 3,75%.",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\n- Chỉ số giá đô la M9Ỹỹ tháng 02/2025 giưảm 0, 06% so với tháng trước; tăng 3,52% so với cùng kỳ năm trước; tăng 0,15% so với tháng 12/202 4; bình quân 02 tháng đầu năm 2025, chỉ số giá đô la MỸỹ tăng 3,75%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 132,
+      "bbox": [
+        87.84,
+        590.88,
+        444.96,
+        626.4
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e133"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e133",
+          "page_number": 7,
+          "bbox": [
+            87.84,
+            590.88,
+            444.96,
+            626.4
+          ],
+          "order": 132,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e135",
+      "element_type": "paragraph",
+      "text": "PHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\nPHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 7,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 134,
+      "bbox": [
+        469.44,
+        32.16,
+        584.16,
+        40.8
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e135"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e135",
+          "page_number": 7,
+          "bbox": [
+            469.44,
+            32.16,
+            584.16,
+            40.8
+          ],
+          "order": 134,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e139",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH MỚI",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\nCHÍNH SÁCH MỚI",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 138,
+      "bbox": [
+        75.36,
+        30.72,
+        125.28,
+        41.28
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e139"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e139",
+          "page_number": 8,
+          "bbox": [
+            75.36,
+            30.72,
+            125.28,
+            41.28
+          ],
+          "order": 138,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e140",
+      "element_type": "paragraph",
+      "text": "THAM VẮN CHÍNH SÁCH",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\nTHAM VẮN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 139,
+      "bbox": [
+        147.35999999999999,
+        32.16,
+        214.56,
+        40.8
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e140"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e140",
+          "page_number": 8,
+          "bbox": [
+            147.35999999999999,
+            32.16,
+            214.56,
+            40.8
+          ],
+          "order": 139,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e141",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\nCHÍNH SÁCH VÀ CUỘC SỐNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 140,
+      "bbox": [
+        238.07999999999998,
+        32.16,
+        318.24,
+        40.32
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e141"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e141",
+          "page_number": 8,
+          "bbox": [
+            238.07999999999998,
+            32.16,
+            318.24,
+            40.32
+          ],
+          "order": 140,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e142",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\nHƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 141,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.32
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e142"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e142",
+          "page_number": 8,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.32
+          ],
+          "order": 141,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e143",
+      "element_type": "paragraph",
+      "text": "PHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "text_for_embedding": "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ\nPHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "c-cchỉ-số-giá-tiêu-dùng-chỉ-số-giá-vàng-và-chỉ-số-giá-đô-la-mỹỹ-130",
+      "parent_id": null,
+      "order": 142,
+      "bbox": [
+        469.44,
+        32.16,
+        584.16,
+        40.8
+      ],
+      "heading_path": [
+        "c) Cchỉ số giá tiêu dùng, chỉ số giá vàng và chỉ số giá đô la MỸỹ"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e143"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e143",
+          "page_number": 8,
+          "bbox": [
+            469.44,
+            32.16,
+            584.16,
+            40.8
+          ],
+          "order": 142,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e145",
+      "element_type": "heading",
+      "text": "d) Vận tải hành khách và hàng hóa",
+      "text_for_embedding": "d) Vận tải hành khách và hàng hóa",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "d-vận-tải-hành-khách-và-hàng-hóa-145",
+      "parent_id": null,
+      "order": 144,
+      "bbox": [
+        88.8,
+        555.84,
+        233.28,
+        564.48
+      ],
+      "heading_path": [
+        "d) Vận tải hành khách và hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e145"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e145",
+          "page_number": 8,
+          "bbox": [
+            88.8,
+            555.84,
+            233.28,
+            564.48
+          ],
+          "order": 144,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e146",
+      "element_type": "paragraph",
+      "text": "Vận tải hành khách tháng 02/2025 ước đạt 464,3 triệu lượnt khách vận chuyển, tăng 12,2% so với cùng kỳ năm trước và luân chuyển 26,3 tỷ lượt khách. km, tăng 12,7%. Tính chung hai tháng đầu năm 2025, vận tải hành khách ước đạt 912,4 triệu lượt khách vận chuyển, tăng 183,8% so với cùng kỳ năm trước và luân chuyển đạt 52,1 tỷ lượt khách. km, tăng 16,2%.",
+      "text_for_embedding": "d) Vận tải hành khách và hàng hóa\nVận tải hành khách tháng 02/2025 ước đạt 464,3 triệu lượnt khách vận chuyển, tăng 12,2% so với cùng kỳ năm trước và luân chuyển 26,3 tỷ lượt khách. km, tăng 12,7%. Tính chung hai tháng đầu năm 2025, vận tải hành khách ước đạt 912,4 triệu lượt khách vận chuyển, tăng 183,8% so với cùng kỳ năm trước và luân chuyển đạt 52,1 tỷ lượt khách. km, tăng 16,2%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "d-vận-tải-hành-khách-và-hàng-hóa-145",
+      "parent_id": null,
+      "order": 145,
+      "bbox": [
+        88.32,
+        573.6,
+        455.03999999999996,
+        621.6
+      ],
+      "heading_path": [
+        "d) Vận tải hành khách và hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e146"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e146",
+          "page_number": 8,
+          "bbox": [
+            88.32,
+            573.6,
+            455.03999999999996,
+            621.6
+          ],
+          "order": 145,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e147",
+      "element_type": "paragraph",
+      "text": "Vận tải hàng hóa tháng 02/2025 ước đạt 234,2 triệu tấn hàng hóa vận chuyển, tăng 16, O0% so với cùng kỳ năm trước và luân chuyển 48, 9 tỷ tấn. km, tăng 19,1%. Tính chung hai tháng đầu năm 2025, vận tái hàng hóa ước đạt 471,8 triệu tấn hàng hóa vận chuyển, tăng 14,5% so với cùng kỳ năm trước và luân chuyển 98,1 tỷ tấn. km, tăng 11,8%.",
+      "text_for_embedding": "d) Vận tải hành khách và hàng hóa\nVận tải hàng hóa tháng 02/2025 ước đạt 234,2 triệu tấn hàng hóa vận chuyển, tăng 16, O0% so với cùng kỳ năm trước và luân chuyển 48, 9 tỷ tấn. km, tăng 19,1%. Tính chung hai tháng đầu năm 2025, vận tái hàng hóa ước đạt 471,8 triệu tấn hàng hóa vận chuyển, tăng 14,5% so với cùng kỳ năm trước và luân chuyển 98,1 tỷ tấn. km, tăng 11,8%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "d-vận-tải-hành-khách-và-hàng-hóa-145",
+      "parent_id": null,
+      "order": 146,
+      "bbox": [
+        88.32,
+        629.28,
+        450.71999999999997,
+        677.76
+      ],
+      "heading_path": [
+        "d) Vận tải hành khách và hàng hóa"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e147"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e147",
+          "page_number": 8,
+          "bbox": [
+            88.32,
+            629.28,
+            450.71999999999997,
+            677.76
+          ],
+          "order": 146,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e148",
+      "element_type": "heading",
+      "text": "đ) Khách quốc tế đến Việt Nam",
+      "text_for_embedding": "đ) Khách quốc tế đến Việt Nam",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "đ-khách-quốc-tế-đến-việt-nam-148",
+      "parent_id": null,
+      "order": 147,
+      "bbox": [
+        88.8,
+        685.92,
+        219.84,
+        694.56
+      ],
+      "heading_path": [
+        "đ) Khách quốc tế đến Việt Nam"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e148"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e148",
+          "page_number": 8,
+          "bbox": [
+            88.8,
+            685.92,
+            219.84,
+            694.56
+          ],
+          "order": 147,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e149",
+      "element_type": "paragraph",
+      "text": "Chính sách thị thực thuận lợi, các chương trình quảng bá, xúc tiến du lịch được đẩy mạnh cùng với những giải thưởng du lịch danh giá được các tổ chưức quốc tế trao tặng đã thu hút khách quốc tế đến Việt Nam trong tháng 02/2025 ước đạt giần 1,9 triệu lượt người, tăng",
+      "text_for_embedding": "đ) Khách quốc tế đến Việt Nam\nChính sách thị thực thuận lợi, các chương trình quảng bá, xúc tiến du lịch được đẩy mạnh cùng với những giải thưởng du lịch danh giá được các tổ chưức quốc tế trao tặng đã thu hút khách quốc tế đến Việt Nam trong tháng 02/2025 ước đạt giần 1,9 triệu lượt người, tăng",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 8,
+      "section_id": "đ-khách-quốc-tế-đến-việt-nam-148",
+      "parent_id": null,
+      "order": 148,
+      "bbox": [
+        87.84,
+        702.72,
+        452.64,
+        738.24
+      ],
+      "heading_path": [
+        "đ) Khách quốc tế đến Việt Nam"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e149"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e149",
+          "page_number": 8,
+          "bbox": [
+            87.84,
+            702.72,
+            452.64,
+            738.24
+          ],
+          "order": 148,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e154",
+      "element_type": "paragraph",
+      "text": "THAM VẮN CHÍNH SÁCH",
+      "text_for_embedding": "đ) Khách quốc tế đến Việt Nam\nTHAM VẮN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "đ-khách-quốc-tế-đến-việt-nam-148",
+      "parent_id": null,
+      "order": 153,
+      "bbox": [
+        147.35999999999999,
+        32.16,
+        214.56,
+        40.8
+      ],
+      "heading_path": [
+        "đ) Khách quốc tế đến Việt Nam"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e154"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e154",
+          "page_number": 9,
+          "bbox": [
+            147.35999999999999,
+            32.16,
+            214.56,
+            40.8
+          ],
+          "order": 153,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e155",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH VÀ CUỘC SỐNG",
+      "text_for_embedding": "đ) Khách quốc tế đến Việt Nam\nCHÍNH SÁCH VÀ CUỘC SỐNG",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "đ-khách-quốc-tế-đến-việt-nam-148",
+      "parent_id": null,
+      "order": 154,
+      "bbox": [
+        238.07999999999998,
+        32.16,
+        317.76,
+        40.32
+      ],
+      "heading_path": [
+        "đ) Khách quốc tế đến Việt Nam"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e155"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e155",
+          "page_number": 9,
+          "bbox": [
+            238.07999999999998,
+            32.16,
+            317.76,
+            40.32
+          ],
+          "order": 154,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e156",
+      "element_type": "paragraph",
+      "text": "HƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "text_for_embedding": "đ) Khách quốc tế đến Việt Nam\nHƯỚNG DẪN THỰC HIỆN CHÍNH SÁCH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "đ-khách-quốc-tế-đến-việt-nam-148",
+      "parent_id": null,
+      "order": 155,
+      "bbox": [
+        341.76,
+        32.16,
+        445.91999999999996,
+        40.8
+      ],
+      "heading_path": [
+        "đ) Khách quốc tế đến Việt Nam"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e156"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e156",
+          "page_number": 9,
+          "bbox": [
+            341.76,
+            32.16,
+            445.91999999999996,
+            40.8
+          ],
+          "order": 155,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e157",
+      "element_type": "paragraph",
+      "text": "CHÍNH SÁCH MỚI",
+      "text_for_embedding": "đ) Khách quốc tế đến Việt Nam\nCHÍNH SÁCH MỚI",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "đ-khách-quốc-tế-đến-việt-nam-148",
+      "parent_id": null,
+      "order": 156,
+      "bbox": [
+        75.36,
+        32.64,
+        123.83999999999999,
+        39.36
+      ],
+      "heading_path": [
+        "đ) Khách quốc tế đến Việt Nam"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e157"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e157",
+          "page_number": 9,
+          "bbox": [
+            75.36,
+            32.64,
+            123.83999999999999,
+            39.36
+          ],
+          "order": 156,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e158",
+      "element_type": "paragraph",
+      "text": "PHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "text_for_embedding": "đ) Khách quốc tế đến Việt Nam\nPHÁT TRIỂN KINH TẾ TƯ NHÂN VÀ DOANH",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "đ-khách-quốc-tế-đến-việt-nam-148",
+      "parent_id": null,
+      "order": 157,
+      "bbox": [
+        468.96,
+        32.64,
+        582.72,
+        39.36
+      ],
+      "heading_path": [
+        "đ) Khách quốc tế đến Việt Nam"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e158"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e158",
+          "page_number": 9,
+          "bbox": [
+            468.96,
+            32.64,
+            582.72,
+            39.36
+          ],
+          "order": 157,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e159",
+      "element_type": "paragraph",
+      "text": "Việt Nam đạt hơn 3, 96 triệu lượt ngươi, tảăng 30,2% so vơi củng kỳ năm trước.",
+      "text_for_embedding": "đ) Khách quốc tế đến Việt Nam\nViệt Nam đạt hơn 3, 96 triệu lượt ngươi, tảăng 30,2% so vơi củng kỳ năm trước.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "đ-khách-quốc-tế-đến-việt-nam-148",
+      "parent_id": null,
+      "order": 158,
+      "bbox": [
+        88.32,
+        43.199999999999996,
+        400.32,
+        51.839999999999996
+      ],
+      "heading_path": [
+        "đ) Khách quốc tế đến Việt Nam"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e159"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e159",
+          "page_number": 9,
+          "bbox": [
+            88.32,
+            43.199999999999996,
+            400.32,
+            51.839999999999996
+          ],
+          "order": 158,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e160",
+      "element_type": "heading",
+      "text": "7. Một số tình hình xã hội",
+      "text_for_embedding": "7. Một số tình hình xã hội",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 159,
+      "bbox": [
+        88.8,
+        60.0,
+        192.48,
+        68.64
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e160"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e160",
+          "page_number": 9,
+          "bbox": [
+            88.8,
+            60.0,
+            192.48,
+            68.64
+          ],
+          "order": 159,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e161",
+      "element_type": "paragraph",
+      "text": "- Theo kết quả sơ bộ Điều tra lao động việc làm, tình hình đời sống dân cư trong tháng Hai năm nay khởi sắc hơn tháng Một. Công tác bảo đảm an sinh xã hội luôn được các cấp, ngành thực hiện khịp thời. Thính từ đầu năm đến ngày 271/2/2025, Chính phủ đã hỗ trợ cho người dân gần 6, 9 nghìn tấn gạo, trong đó: Hổỗ trợ hơn 6 nghìn tấn gạo cứu đói nhân dịp Tết Nguyên đán cho 402, 6 nghìn nhân khẩu171: hổ trợ 836 tấn gạo cứu đói giáp hạt năm 2025 ccho 55, 8 nghìn nhân khẩu.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n- Theo kết quả sơ bộ Điều tra lao động việc làm, tình hình đời sống dân cư trong tháng Hai năm nay khởi sắc hơn tháng Một. Công tác bảo đảm an sinh xã hội luôn được các cấp, ngành thực hiện khịp thời. Thính từ đầu năm đến ngày 271/2/2025, Chính phủ đã hỗ trợ cho người dân gần 6, 9 nghìn tấn gạo, trong đó: Hổỗ trợ hơn 6 nghìn tấn gạo cứu đói nhân dịp Tết Nguyên đán cho 402, 6 nghìn nhân khẩu171: hổ trợ 836 tấn gạo cứu đói giáp hạt năm 2025 ccho 55, 8 nghìn nhân khẩu.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 160,
+      "bbox": [
+        87.84,
+        76.8,
+        455.52,
+        150.72
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e161"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e161",
+          "page_number": 9,
+          "bbox": [
+            87.84,
+            76.8,
+            455.52,
+            150.72
+          ],
+          "order": 160,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e162",
+      "element_type": "paragraph",
+      "text": "- Trong tháng Hai (từ 26/01-25/02/2025), cá nước xảy ra 1.431 vụ tại nạn giao thông. Tính chung hai tháng đầu năm 2025, trên địa bàn cáả nước xảy ra 3.203 vụ tai nạn giao thông. làm chết 1.748 người và bị thương 2.191 người. So với cùng kỳ năm trước, số vụ tai nạn giao thông giảm 31,2%: số người chết giảm 10,5%:; số người bị thương giảm 41%. Bình quân một ngày trong hai tháng đầu năm 2025, trên địa bàn cáả nước xảy ra 52 vụ tai nạn giao thông. làm chết 28 người, bị thương 35 người.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n- Trong tháng Hai (từ 26/01-25/02/2025), cá nước xảy ra 1.431 vụ tại nạn giao thông. Tính chung hai tháng đầu năm 2025, trên địa bàn cáả nước xảy ra 3.203 vụ tai nạn giao thông. làm chết 1.748 người và bị thương 2.191 người. So với cùng kỳ năm trước, số vụ tai nạn giao thông giảm 31,2%: số người chết giảm 10,5%:; số người bị thương giảm 41%. Bình quân một ngày trong hai tháng đầu năm 2025, trên địa bàn cáả nước xảy ra 52 vụ tai nạn giao thông. làm chết 28 người, bị thương 35 người.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 161,
+      "bbox": [
+        87.84,
+        159.35999999999999,
+        454.08,
+        233.28
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e162"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e162",
+          "page_number": 9,
+          "bbox": [
+            87.84,
+            159.35999999999999,
+            454.08,
+            233.28
+          ],
+          "order": 161,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e163",
+      "element_type": "paragraph",
+      "text": "- Thiệt hại do thiên tai trong tháng Hai chủ yếu do ảnh hưởng của mưa lốc, giông sét lràm 5 người bị thương; 545, 3 ha lúa và hoa màu bị ngập, hư hỏng: tổng giá trị thiệt hại về tài sản do thiên tai gây ra trong tháng là gần 6 tỷ đồng, giảm 64,7% so với cùng kỳ năm trước. Tính chung hai tháng đầu năm nay, thiên tai làm 5 người bị thương; 2,7 nghìn ha lúa và hoa màu bị hư hóỏng,; tổng giá trị thiệt hại về tài sản ước tính 20, 8 tỷ đồng, giảm 73,7% so với cùng kỳ năm 2024.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n- Thiệt hại do thiên tai trong tháng Hai chủ yếu do ảnh hưởng của mưa lốc, giông sét lràm 5 người bị thương; 545, 3 ha lúa và hoa màu bị ngập, hư hỏng: tổng giá trị thiệt hại về tài sản do thiên tai gây ra trong tháng là gần 6 tỷ đồng, giảm 64,7% so với cùng kỳ năm trước. Tính chung hai tháng đầu năm nay, thiên tai làm 5 người bị thương; 2,7 nghìn ha lúa và hoa màu bị hư hóỏng,; tổng giá trị thiệt hại về tài sản ước tính 20, 8 tỷ đồng, giảm 73,7% so với cùng kỳ năm 2024.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 162,
+      "bbox": [
+        87.84,
+        241.44,
+        453.12,
+        315.36
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e163"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e163",
+          "page_number": 9,
+          "bbox": [
+            87.84,
+            241.44,
+            453.12,
+            315.36
+          ],
+          "order": 162,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e164",
+      "element_type": "paragraph",
+      "text": "- Trong tháng 02/2o025, theo báo cáo từ Sở Tài ngquyên và Môi trường, Cônng an tỉnh, thành phố trưực thuộc Trung ương được các Cục Thống kê tổng hượp, các cơ quan chức năng đã phát hiện 1.535 vụ vi phạm môi trường. Thính chung hai tháng năm nay, các cơ quan chức năng phát hiện 5.329 vụ vi phạm môi trường, trong đó xử lý 4.659 vụ với tổng số tiên phạt 54,9 tỷ đồng, giảm 1,1% so với cùng kỳ năm trước.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n- Trong tháng 02/2o025, theo báo cáo từ Sở Tài ngquyên và Môi trường, Cônng an tỉnh, thành phố trưực thuộc Trung ương được các Cục Thống kê tổng hượp, các cơ quan chức năng đã phát hiện 1.535 vụ vi phạm môi trường. Thính chung hai tháng năm nay, các cơ quan chức năng phát hiện 5.329 vụ vi phạm môi trường, trong đó xử lý 4.659 vụ với tổng số tiên phạt 54,9 tỷ đồng, giảm 1,1% so với cùng kỳ năm trước.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 163,
+      "bbox": [
+        87.84,
+        324.0,
+        451.68,
+        384.96
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e164"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e164",
+          "page_number": 9,
+          "bbox": [
+            87.84,
+            324.0,
+            451.68,
+            384.96
+          ],
+          "order": 163,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e165",
+      "element_type": "paragraph",
+      "text": "- Trong tháng, cáả nước xảy ra 338 vụ cháy, nổ, làm 06 người chết và 04 người bị thương. thiệt hại ước tính 24,6 tý đồng, gấp 2,1 lần tháng trước và giảm 11,2% so với cùng kỳ năm trước. Thính chung hai tháng đầu năm nay, trên địa bàn cá nước xảy ra 7 15 vụ cháy, nổ, làm 14 người chết và 12 người bị thương, thiệt hại ước tính 36,3 tỷ đồng, giảm 23% so với cùng kỳ năm trước./.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n- Trong tháng, cáả nước xảy ra 338 vụ cháy, nổ, làm 06 người chết và 04 người bị thương. thiệt hại ước tính 24,6 tý đồng, gấp 2,1 lần tháng trước và giảm 11,2% so với cùng kỳ năm trước. Thính chung hai tháng đầu năm nay, trên địa bàn cá nước xảy ra 7 15 vụ cháy, nổ, làm 14 người chết và 12 người bị thương, thiệt hại ước tính 36,3 tỷ đồng, giảm 23% so với cùng kỳ năm trước./.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 164,
+      "bbox": [
+        87.84,
+        392.64,
+        452.15999999999997,
+        454.08
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e165"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e165",
+          "page_number": 9,
+          "bbox": [
+            87.84,
+            392.64,
+            452.15999999999997,
+            454.08
+          ],
+          "order": 164,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e166",
+      "element_type": "paragraph",
+      "text": "11 Chăn nuôi trâu, bò lấy thịt giảm chủ yếu do điều kiện chăn nuôi khó khăn, chi phí chăn nuôi cao, lợi nhuận mang lại thấp, dẫn đến việc giảm số lượng đầu con. Tuy nhiên, đàn bò: sữa vẫn phát triển ổn định.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n11 Chăn nuôi trâu, bò lấy thịt giảm chủ yếu do điều kiện chăn nuôi khó khăn, chi phí chăn nuôi cao, lợi nhuận mang lại thấp, dẫn đến việc giảm số lượng đầu con. Tuy nhiên, đàn bò: sữa vẫn phát triển ổn định.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 165,
+      "bbox": [
+        87.84,
+        462.24,
+        447.84,
+        497.28
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e166"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e166",
+          "page_number": 9,
+          "bbox": [
+            87.84,
+            462.24,
+            447.84,
+            497.28
+          ],
+          "order": 165,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e167",
+      "element_type": "paragraph",
+      "text": "121 Nguồn: Hệ thông thông tin đăng ký doanh nghiệp quốc gia, Cục Phát triển doanh nghiệp tư nhân và kinh tế tập thể, Bộ Trài chính, nhận ngày 03/3/2025. Thực hiện Nghị định SỐ 62/2024/NĐ -CP ngày 07/6/2024 của Chính phủ (có hiệu lực kêể từ ngày 01/8/2024), thời kỳ số liệu về đăng ký doanh nghiệp trong tháng được tính từ ngày 01 đến ngày cuối cùng của tháng báo cáo. Riêng đối với các chỉ tiêu thời điểm ( doanh nghiệp quay trở lại hoạt động, doanh nghiệp tạm ngừng kinh doanh có thười hạn, doanh nghiệp tạm ngừng hoạt động chờ làm thủ tục giải thể), thời kỳ số liệu các tháng trước thời điểm 01/8/2024 được tính từ ngày 21 của tháng trước tháng báo cáo đến ngày 20 của tháng báo cáo.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n121 Nguồn: Hệ thông thông tin đăng ký doanh nghiệp quốc gia, Cục Phát triển doanh nghiệp tư nhân và kinh tế tập thể, Bộ Trài chính, nhận ngày 03/3/2025. Thực hiện Nghị định SỐ 62/2024/NĐ -CP ngày 07/6/2024 của Chính phủ (có hiệu lực kêể từ ngày 01/8/2024), thời kỳ số liệu về đăng ký doanh nghiệp trong tháng được tính từ ngày 01 đến ngày cuối cùng của tháng báo cáo. Riêng đối với các chỉ tiêu thời điểm ( doanh nghiệp quay trở lại hoạt động, doanh nghiệp tạm ngừng kinh doanh có thười hạn, doanh nghiệp tạm ngừng hoạt động chờ làm thủ tục giải thể), thời kỳ số liệu các tháng trước thời điểm 01/8/2024 được tính từ ngày 21 của tháng trước tháng báo cáo đến ngày 20 của tháng báo cáo.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 166,
+      "bbox": [
+        87.84,
+        505.44,
+        454.56,
+        605.76
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e167"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e167",
+          "page_number": 9,
+          "bbox": [
+            87.84,
+            505.44,
+            454.56,
+            605.76
+          ],
+          "order": 166,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e168",
+      "element_type": "paragraph",
+      "text": "131 Kim ngạch xuất khẩu tính theo giá F. o0. B và kim ngạch nhập khẩu tính theo giá C. I. F (bao gồm chi phí vận tải, bảo hiểm của hàng nhập khẩu).",
+      "text_for_embedding": "7. Một số tình hình xã hội\n131 Kim ngạch xuất khẩu tính theo giá F. o0. B và kim ngạch nhập khẩu tính theo giá C. I. F (bao gồm chi phí vận tải, bảo hiểm của hàng nhập khẩu).",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 167,
+      "bbox": [
+        88.8,
+        613.4399999999999,
+        436.8,
+        636.48
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e168"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e168",
+          "page_number": 9,
+          "bbox": [
+            88.8,
+            613.4399999999999,
+            436.8,
+            636.48
+          ],
+          "order": 167,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e169",
+      "element_type": "paragraph",
+      "text": "141 Số liệu sơ bộ xuất khẩu, nhập khẩu hàng hóa tháng 02/2025 do Cục Hoải quan cung cấp ngày 03/3/2O025.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n141 Số liệu sơ bộ xuất khẩu, nhập khẩu hàng hóa tháng 02/2025 do Cục Hoải quan cung cấp ngày 03/3/2O025.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 168,
+      "bbox": [
+        88.32,
+        643.68,
+        454.08,
+        665.76
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e169"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e169",
+          "page_number": 9,
+          "bbox": [
+            88.32,
+            643.68,
+            454.08,
+            665.76
+          ],
+          "order": 168,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e170",
+      "element_type": "paragraph",
+      "text": "151 Do tháng Hai năm trước có kỳ nghỉ Tết Nguyên đán nên số ngày làm việc của tháng Hai năm nay nhiều hơn tháng Hai năm trước 5 ngày.",
+      "text_for_embedding": "7. Một số tình hình xã hội\n151 Do tháng Hai năm trước có kỳ nghỉ Tết Nguyên đán nên số ngày làm việc của tháng Hai năm nay nhiều hơn tháng Hai năm trước 5 ngày.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 169,
+      "bbox": [
+        88.8,
+        673.92,
+        453.59999999999997,
+        696.9599999999999
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e170"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e170",
+          "page_number": 9,
+          "bbox": [
+            88.8,
+            673.92,
+            453.59999999999997,
+            696.9599999999999
+          ],
+          "order": 169,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "2d7536476950dae7c9a3-e171",
+      "element_type": "paragraph",
+      "text": "I161 Tổng kim ngạch xuất, nhập khẩu hàng hóa hai tháng đầu năm 2024 đạt 113,5 tỷ USD, tăng 18,2% so với cùng kỳ năm trước, trong đó xuất khẩu đạt 59,3 tỷ USD, tăng 1989,2%; nhập khẩu đạt 54,2 tỷ USD, tăng 17,1%.",
+      "text_for_embedding": "7. Một số tình hình xã hội\nI161 Tổng kim ngạch xuất, nhập khẩu hàng hóa hai tháng đầu năm 2024 đạt 113,5 tỷ USD, tăng 18,2% so với cùng kỳ năm trước, trong đó xuất khẩu đạt 59,3 tỷ USD, tăng 1989,2%; nhập khẩu đạt 54,2 tỷ USD, tăng 17,1%.",
+      "document_id": "2d7536476950dae7c9a3",
+      "page_number": 9,
+      "section_id": "7-một-số-tình-hình-xã-hội-160",
+      "parent_id": null,
+      "order": 170,
+      "bbox": [
+        88.32,
+        703.68,
+        445.44,
+        739.68
+      ],
+      "heading_path": [
+        "7. Một số tình hình xã hội"
+      ],
+      "source_element_ids": [
+        "2d7536476950dae7c9a3-e171"
+      ],
+      "source_spans": [
+        {
+          "element_id": "2d7536476950dae7c9a3-e171",
+          "page_number": 9,
+          "bbox": [
+            88.32,
+            703.68,
+            445.44,
+            739.68
+          ],
+          "order": 170,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    }
+  ],
+  "metadata": {
+    "source_parser": "paddleocr"
+  }
+}

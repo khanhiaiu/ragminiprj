@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "artifacts_root": "artifacts/ingestion",
+  "tokenizer": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "add_special_tokens": false
+  },
+  "image_context": {
+    "maximum_tokens": 200,
+    "preferred_before": 100,
+    "preferred_after": 100
+  },
+  "captioning": {
+    "provider": "google-gemini",
+    "endpoint_template": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+    "model_env": "GEMINI_MODEL",
+    "api_key_env": "GEMINI_API_KEY",
+    "timeout_seconds": 120,
+    "maximum_retries": 3,
+    "concurrency": 1,
+    "minimum_request_interval_seconds": 4,
+    "external_egress_enabled": false,
+    "external_egress_acknowledgement": null
+  },
+  "chunking": {
+    "target_tokens": 500,
+    "preferred_min_tokens": 400,
+    "preferred_max_tokens": 600,
+    "hard_max_tokens": 768,
+    "overlap_tokens": 50
+  },
+  "embedding": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dense_dimensions": 1024,
+    "batch_size": 4,
+    "return_dense": true,
+    "return_sparse": true,
+    "return_colbert": false
+  },
+  "qdrant": {
+    "url": "http://localhost:6333",
+    "collection_prefix": "docs",
+    "alias": "docs_current",
+    "dense_vector_name": "dense",
+    "sparse_vector_name": "sparse",
+    "publish_only_after_verification": true,
+    "keep_previous_generation": true
+  }
+}

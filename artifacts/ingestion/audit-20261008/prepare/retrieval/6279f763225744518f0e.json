@@ -1,0 +1,2845 @@
+{
+  "schema_version": "1.0",
+  "document_id": "6279f763225744518f0e",
+  "filename": "Lừa đảo qua không gian mạng_ Thủ đoạn vô vàn – Hậu quả rõ ràng.pdf",
+  "file_type": "pdf",
+  "source_path": "/workspace/APOLLO/ragminiprj/documents/Lừa đảo qua không gian mạng_ Thủ đoạn vô vàn – Hậu quả rõ ràng.pdf",
+  "document_version": "1.0",
+  "elements": [
+    {
+      "element_id": "6279f763225744518f0e-e3",
+      "element_type": "heading",
+      "text": "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:",
+      "text_for_embedding": "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "trang-thông-tin-điện-tử-gông-main-tỉnh-quảng-ngãi-nh-ttps-congan-quangngai-gov-v-3",
+      "parent_id": null,
+      "order": 2,
+      "bbox": [
+        156.0,
+        45.12,
+        455.52,
+        75.84
+      ],
+      "heading_path": [
+        "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e3"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e3",
+          "page_number": 1,
+          "bbox": [
+            156.0,
+            45.12,
+            455.52,
+            75.84
+          ],
+          "order": 2,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "doc_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e4",
+      "element_type": "paragraph",
+      "text": "Q",
+      "text_for_embedding": "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:\nQ",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "trang-thông-tin-điện-tử-gông-main-tỉnh-quảng-ngãi-nh-ttps-congan-quangngai-gov-v-3",
+      "parent_id": null,
+      "order": 3,
+      "bbox": [
+        564.0,
+        126.72,
+        573.12,
+        136.32
+      ],
+      "heading_path": [
+        "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e4"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e4",
+          "page_number": 1,
+          "bbox": [
+            564.0,
+            126.72,
+            573.12,
+            136.32
+          ],
+          "order": 3,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e5",
+      "element_type": "paragraph",
+      "text": "Nhập từ khóa...",
+      "text_for_embedding": "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:\nNhập từ khóa...",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "trang-thông-tin-điện-tử-gông-main-tỉnh-quảng-ngãi-nh-ttps-congan-quangngai-gov-v-3",
+      "parent_id": null,
+      "order": 4,
+      "bbox": [
+        408.0,
+        127.19999999999999,
+        457.91999999999996,
+        136.32
+      ],
+      "heading_path": [
+        "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e5"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e5",
+          "page_number": 1,
+          "bbox": [
+            408.0,
+            127.19999999999999,
+            457.91999999999996,
+            136.32
+          ],
+          "order": 4,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e6",
+      "element_type": "paragraph",
+      "text": "Thứ tư, 07/10/2026 - 11: 00: 13",
+      "text_for_embedding": "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:\nThứ tư, 07/10/2026 - 11: 00: 13",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "trang-thông-tin-điện-tử-gông-main-tỉnh-quảng-ngãi-nh-ttps-congan-quangngai-gov-v-3",
+      "parent_id": null,
+      "order": 5,
+      "bbox": [
+        31.2,
+        128.16,
+        128.16,
+        135.35999999999999
+      ],
+      "heading_path": [
+        "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e6"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e6",
+          "page_number": 1,
+          "bbox": [
+            31.2,
+            128.16,
+            128.16,
+            135.35999999999999
+          ],
+          "order": 5,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e7",
+      "element_type": "paragraph",
+      "text": "Trang chủ (htps: /congan.quangngai. gov. vn/) 2 Tin tức - sự kiện (/danh-muốc-san-pham/-tin-tục-su-kien) Ccảnh báo tội phạm (/danh-muốc-san-pham/-tin-tuc-su-kien/canh-bao-tc",
+      "text_for_embedding": "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:\nTrang chủ (htps: /congan.quangngai. gov. vn/) 2 Tin tức - sự kiện (/danh-muốc-san-pham/-tin-tục-su-kien) Ccảnh báo tội phạm (/danh-muốc-san-pham/-tin-tuc-su-kien/canh-bao-tc",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "trang-thông-tin-điện-tử-gông-main-tỉnh-quảng-ngãi-nh-ttps-congan-quangngai-gov-v-3",
+      "parent_id": null,
+      "order": 6,
+      "bbox": [
+        30.72,
+        147.84,
+        584.16,
+        156.48
+      ],
+      "heading_path": [
+        "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e7"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e7",
+          "page_number": 1,
+          "bbox": [
+            30.72,
+            147.84,
+            584.16,
+            156.48
+          ],
+          "order": 6,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e8",
+      "element_type": "paragraph",
+      "text": "Thứ sáu, 14/11/2025 120:15",
+      "text_for_embedding": "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:\nThứ sáu, 14/11/2025 120:15",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "trang-thông-tin-điện-tử-gông-main-tỉnh-quảng-ngãi-nh-ttps-congan-quangngai-gov-v-3",
+      "parent_id": null,
+      "order": 7,
+      "bbox": [
+        31.2,
+        174.23999999999998,
+        108.47999999999999,
+        181.44
+      ],
+      "heading_path": [
+        "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e8"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e8",
+          "page_number": 1,
+          "bbox": [
+            31.2,
+            174.23999999999998,
+            108.47999999999999,
+            181.44
+          ],
+          "order": 7,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e9",
+      "element_type": "paragraph",
+      "text": "A- A A- TỆG",
+      "text_for_embedding": "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:\nA- A A- TỆG",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "trang-thông-tin-điện-tử-gông-main-tỉnh-quảng-ngãi-nh-ttps-congan-quangngai-gov-v-3",
+      "parent_id": null,
+      "order": 8,
+      "bbox": [
+        513.6,
+        174.23999999999998,
+        578.88,
+        182.88
+      ],
+      "heading_path": [
+        "TRANG THÔNG TIN ĐIỆN TỬ GÔNG MAIN TỈNH QUẢNG NGÃI (nh ttps://congan.quangngai.gov.vn/:"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e9"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e9",
+          "page_number": 1,
+          "bbox": [
+            513.6,
+            174.23999999999998,
+            578.88,
+            182.88
+          ],
+          "order": 8,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e10",
+      "element_type": "heading",
+      "text": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 9,
+      "bbox": [
+        30.72,
+        196.79999999999998,
+        415.2,
+        209.28
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e10"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e10",
+          "page_number": 1,
+          "bbox": [
+            30.72,
+            196.79999999999998,
+            415.2,
+            209.28
+          ],
+          "order": 9,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e11",
+      "element_type": "paragraph",
+      "text": "Trong kỷ nguyên số, không gian mạng trở thành một phần không thể thiếu trong đời sống hàng ngày, mang liại nhiều tiện tích to lớn. Tuy nhiên, đi kèm vưới sự phát triển đó là những mối đe doa tiềm ẩn, đặc biệt là tình trạng lưừa đảo trưực tuyến ngày càng tinh vi và phức tạp với thiệt hại lớn về tài sản và ảnh hưởng đến an ninh, trật tự.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\nTrong kỷ nguyên số, không gian mạng trở thành một phần không thể thiếu trong đời sống hàng ngày, mang liại nhiều tiện tích to lớn. Tuy nhiên, đi kèm vưới sự phát triển đó là những mối đe doa tiềm ẩn, đặc biệt là tình trạng lưừa đảo trưực tuyến ngày càng tinh vi và phức tạp với thiệt hại lớn về tài sản và ảnh hưởng đến an ninh, trật tự.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 10,
+      "bbox": [
+        29.759999999999998,
+        240.95999999999998,
+        577.92,
+        280.32
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e11"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e11",
+          "page_number": 1,
+          "bbox": [
+            29.759999999999998,
+            240.95999999999998,
+            577.92,
+            280.32
+          ],
+          "order": 10,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e12",
+      "element_type": "paragraph",
+      "text": "Văn phòng Cơ quan CSĐT Công an tỉnh với nhiệm vụ tổ chức trực ban hình siự tiếp nhận tố giác, tin biáo viề tiội phạm, kiến nghi khiởi tố, trong năm 2025 đã tiếp nhận hàng trăm đơn tố giác về tội phạm lưừa đảo qua không gian mạng vưới tổng số tiền biị chiểm đoạt hơn 38 tỷ đồng.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\nVăn phòng Cơ quan CSĐT Công an tỉnh với nhiệm vụ tổ chức trực ban hình siự tiếp nhận tố giác, tin biáo viề tiội phạm, kiến nghi khiởi tố, trong năm 2025 đã tiếp nhận hàng trăm đơn tố giác về tội phạm lưừa đảo qua không gian mạng vưới tổng số tiền biị chiểm đoạt hơn 38 tỷ đồng.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 11,
+      "bbox": [
+        29.759999999999998,
+        294.71999999999997,
+        577.92,
+        333.59999999999997
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e12"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e12",
+          "page_number": 1,
+          "bbox": [
+            29.759999999999998,
+            294.71999999999997,
+            577.92,
+            333.59999999999997
+          ],
+          "order": 11,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e13",
+      "element_type": "paragraph",
+      "text": "Các đối tượng đã lượi duụng sư thiểu hiểu biết, tậm lý chủ quan hoặc lòng tin của người dân để thưực hiện các hành vi lưừa đảo chiệm đoạt tài sản như: giả danh cán bộ Công an, Toòa án yêu cầu noạn nhân chuyển tiền để chứng minh mình không có liên quan đến vụ án, vụ việc đang điều tra, giải quyiết; chuyển tiền tham gia cộng tácác viên online để hưởng hoa hồng cao; vay tiền qua ap pph điện thoại,... cá biệt có trường hợp bị lưừa đảo số tiền lên đến hàng tỷ đồng.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\nCác đối tượng đã lượi duụng sư thiểu hiểu biết, tậm lý chủ quan hoặc lòng tin của người dân để thưực hiện các hành vi lưừa đảo chiệm đoạt tài sản như: giả danh cán bộ Công an, Toòa án yêu cầu noạn nhân chuyển tiền để chứng minh mình không có liên quan đến vụ án, vụ việc đang điều tra, giải quyiết; chuyển tiền tham gia cộng tácác viên online để hưởng hoa hồng cao; vay tiền qua ap pph điện thoại,... cá biệt có trường hợp bị lưừa đảo số tiền lên đến hàng tỷ đồng.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 1,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 12,
+      "bbox": [
+        29.759999999999998,
+        338.88,
+        577.92,
+        392.64
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e13"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e13",
+          "page_number": 1,
+          "bbox": [
+            29.759999999999998,
+            338.88,
+            577.92,
+            392.64
+          ],
+          "order": 12,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e20",
+      "element_type": "paragraph",
+      "text": "Với đặc điểm và thủu đoạn hoạt động ẩn danh - liên tỉnh - xuyên biên giới, tiền chiểm đoạt được chuyển qua nhiều toài khoản để cắct dấu vết, khi nhạn nhân chuyển tiền, chỉ vài phút sau tiền đã \"đi lòng vòng ” khiến việc thu hồi gặp nhiều khó khăn; nhiều gia đình mất sạch tiền tiết kiệm, lâm vào cảnh nợ nần viì vay mượn để chuyển tiền theo yêu cầu của các đối tượng lưừa đảo.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\nVới đặc điểm và thủu đoạn hoạt động ẩn danh - liên tỉnh - xuyên biên giới, tiền chiểm đoạt được chuyển qua nhiều toài khoản để cắct dấu vết, khi nhạn nhân chuyển tiền, chỉ vài phút sau tiền đã \"đi lòng vòng ” khiến việc thu hồi gặp nhiều khó khăn; nhiều gia đình mất sạch tiền tiết kiệm, lâm vào cảnh nợ nần viì vay mượn để chuyển tiền theo yêu cầu của các đối tượng lưừa đảo.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 19,
+      "bbox": [
+        30.24,
+        450.71999999999997,
+        577.92,
+        490.08
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e20"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e20",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            450.71999999999997,
+            577.92,
+            490.08
+          ],
+          "order": 19,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e21",
+      "element_type": "paragraph",
+      "text": "Để gónp phần khéo giảm tình trạng liưừa đảo qua không gian mạng, bên cạnh ciác biện phánp nghiệp vụ để phòng ngưừa, đấu tranh của lực lượng Công an và các cơ quan quản lý nhà nước thì yếu tố then chốt chính là tinh thần cảnh giác tội phạm của môỗi người dân với những nguyên tắc cốt lõi sau:",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\nĐể gónp phần khéo giảm tình trạng liưừa đảo qua không gian mạng, bên cạnh ciác biện phánp nghiệp vụ để phòng ngưừa, đấu tranh của lực lượng Công an và các cơ quan quản lý nhà nước thì yếu tố then chốt chính là tinh thần cảnh giác tội phạm của môỗi người dân với những nguyên tắc cốt lõi sau:",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 20,
+      "bbox": [
+        30.24,
+        494.88,
+        578.4,
+        533.28
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e21"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e21",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            494.88,
+            578.4,
+            533.28
+          ],
+          "order": 20,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e22",
+      "element_type": "paragraph",
+      "text": "1. KHôÔNG cung cấp thông tin cá nhân, địa chỉ, số điện thoại, số tài khoản ngân hàng của mình cho đối tượng không quen biết, thận trọng rà soát và kiểm tra kỹ thông tin trước khi thực hiện chiác giao diịch chuyển tiền.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\n1. KHôÔNG cung cấp thông tin cá nhân, địa chỉ, số điện thoại, số tài khoản ngân hàng của mình cho đối tượng không quen biết, thận trọng rà soát và kiểm tra kỹ thông tin trước khi thực hiện chiác giao diịch chuyển tiền.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 21,
+      "bbox": [
+        30.72,
+        538.56,
+        578.4,
+        563.52
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e22"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e22",
+          "page_number": 2,
+          "bbox": [
+            30.72,
+            538.56,
+            578.4,
+            563.52
+          ],
+          "order": 21,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e23",
+      "element_type": "paragraph",
+      "text": "2. KHÔNG kết bạn và nói chuyện vưới người lạ, đặc biệt là các tài khoản có hình ảnh đại diện đẹp và bắt mắt. Tuyệt đối không nhận lười mời tham gia các hội, nhóm mà không rõ mục đích của đối tượng.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\n2. KHÔNG kết bạn và nói chuyện vưới người lạ, đặc biệt là các tài khoản có hình ảnh đại diện đẹp và bắt mắt. Tuyệt đối không nhận lười mời tham gia các hội, nhóm mà không rõ mục đích của đối tượng.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 22,
+      "bbox": [
+        30.72,
+        568.8,
+        578.4,
+        593.28
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e23"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e23",
+          "page_number": 2,
+          "bbox": [
+            30.72,
+            568.8,
+            578.4,
+            593.28
+          ],
+          "order": 22,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e24",
+      "element_type": "paragraph",
+      "text": "3. KHôNG truy cập, đăng nhập vào các đường dẫn, liên kết, website, ứng dụng hoặc mở tệp đính kèm từ người gửi không xác định, nếu tài khoản là người quen cần xác nhận trực tiếp với chủ tài khoản.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\n3. KHôNG truy cập, đăng nhập vào các đường dẫn, liên kết, website, ứng dụng hoặc mở tệp đính kèm từ người gửi không xác định, nếu tài khoản là người quen cần xác nhận trực tiếp với chủ tài khoản.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 23,
+      "bbox": [
+        30.24,
+        599.04,
+        577.92,
+        623.52
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e24"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e24",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            599.04,
+            577.92,
+            623.52
+          ],
+          "order": 23,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e25",
+      "element_type": "paragraph",
+      "text": "4. KHôNG có cán bộ Công an, Viện Kiểm siát, Tòa án,.... gọi điện để điều tra qua điện thoại, yêu cầu cung cấp thông tin hay yêu cầu chuyển tiền để chứng minh mình trong sạch.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\n4. KHôNG có cán bộ Công an, Viện Kiểm siát, Tòa án,.... gọi điện để điều tra qua điện thoại, yêu cầu cung cấp thông tin hay yêu cầu chuyển tiền để chứng minh mình trong sạch.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 24,
+      "bbox": [
+        30.24,
+        628.8,
+        578.4,
+        653.28
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e25"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e25",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            628.8,
+            578.4,
+            653.28
+          ],
+          "order": 24,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e26",
+      "element_type": "paragraph",
+      "text": "5. KHÔNG tham lam những tài sản, món quà không rõ nguồn gôốc có thể nhận được một cách dễ dàng, những lợi nhuận phi thưực tế mà không tốn sức lao động, những lười mời chào, dụ dỗ \"việc nhệẹ, lương cao \"”.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\n5. KHÔNG tham lam những tài sản, món quà không rõ nguồn gôốc có thể nhận được một cách dễ dàng, những lợi nhuận phi thưực tế mà không tốn sức lao động, những lười mời chào, dụ dỗ \"việc nhệẹ, lương cao \"”.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 25,
+      "bbox": [
+        30.72,
+        659.04,
+        578.88,
+        683.52
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e26"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e26",
+          "page_number": 2,
+          "bbox": [
+            30.72,
+            659.04,
+            578.88,
+            683.52
+          ],
+          "order": 25,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e27",
+      "element_type": "paragraph",
+      "text": "6. KHÔNG thực hiện chuyển khoản trước, tuyệt đối không chuyển cọc, chuyển khoản cho chác đối tượng lạ trong bhất kỳ trường hợp nào. 7. KHÔNG BỎ QUA các cảnh báo về các thủ đoạn lưừa đảo của Cơ quan Công an trên các phương tiện thông tin đại chúng.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\n6. KHÔNG thực hiện chuyển khoản trước, tuyệt đối không chuyển cọc, chuyển khoản cho chác đối tượng lạ trong bhất kỳ trường hợp nào. 7. KHÔNG BỎ QUA các cảnh báo về các thủ đoạn lưừa đảo của Cơ quan Công an trên các phương tiện thông tin đại chúng.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 26,
+      "bbox": [
+        30.72,
+        688.8,
+        577.92,
+        716.16
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e27"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e27",
+          "page_number": 2,
+          "bbox": [
+            30.72,
+            688.8,
+            577.92,
+            716.16
+          ],
+          "order": 26,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e28",
+      "element_type": "paragraph",
+      "text": "Lưừa đảno qua mạng internet vẫn đang là vấn đề nhức nhối, gia tăng nhanh về cả số vụ lẫn mức độ thiệt hại. Mỗi người dân hãy lhà một người dùng mạng tinh tường, luôn nâng cao tinh thần cảnh giác để bảo vệ chính mình và gónp phần loại bảỏ tội phạm mạng, bảo đảm an trônhbá, Đt trtoà ong không gian số.",
+      "text_for_embedding": "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng\nLưừa đảno qua mạng internet vẫn đang là vấn đề nhức nhối, gia tăng nhanh về cả số vụ lẫn mức độ thiệt hại. Mỗi người dân hãy lhà một người dùng mạng tinh tường, luôn nâng cao tinh thần cảnh giác để bảo vệ chính mình và gónp phần loại bảỏ tội phạm mạng, bảo đảm an trônhbá, Đt trtoà ong không gian số.",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 2,
+      "section_id": "lừa-đảo-qua-không-gian-mạng-thủ-đoạn-vvô-vàn---huậu-quả-rõ-ràng-10",
+      "parent_id": null,
+      "order": 27,
+      "bbox": [
+        30.24,
+        720.9599999999999,
+        578.88,
+        759.36
+      ],
+      "heading_path": [
+        "Lừa đảo qua không gian mạng: Thủ đoạn vvô vàn - Huậu quả rõ ràng"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e28"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e28",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            720.9599999999999,
+            578.88,
+            759.36
+          ],
+          "order": 27,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e34",
+      "element_type": "heading",
+      "text": "TIN CÙNG CHUYÊN MỤC",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 33,
+      "bbox": [
+        36.48,
+        76.8,
+        156.96,
+        87.84
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e34"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e34",
+          "page_number": 3,
+          "bbox": [
+            36.48,
+            76.8,
+            156.96,
+            87.84
+          ],
+          "order": 33,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e36",
+      "element_type": "paragraph",
+      "text": "(/đdanh-muốc-san-phamv/-tin-tuốc-su-kien/canh-qgiac-thu-doan-lua-dao-trong-mua-mua-sam-truốc-tuyen.htmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/đdanh-muốc-san-phamv/-tin-tuốc-su-kien/canh-qgiac-thu-doan-lua-dao-trong-mua-mua-sam-truốc-tuyen.htmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 35,
+      "bbox": [
+        30.72,
+        221.76,
+        355.68,
+        228.95999999999998
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e36"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e36",
+          "page_number": 3,
+          "bbox": [
+            30.72,
+            221.76,
+            355.68,
+            228.95999999999998
+          ],
+          "order": 35,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e37",
+      "element_type": "paragraph",
+      "text": "Cảnh giác thủ đoạn lưừa đảo trong muùa mua sắm trực tuyến (/danh-muốc-san-pham/-tin-tuục-su-kien/canh-giac-thu-doan-lua-dao-trong -mua-mua-sam-truc-tuyen.htmil)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh giác thủ đoạn lưừa đảo trong muùa mua sắm trực tuyến (/danh-muốc-san-pham/-tin-tuục-su-kien/canh-giac-thu-doan-lua-dao-trong -mua-mua-sam-truc-tuyen.htmil)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 36,
+      "bbox": [
+        30.72,
+        236.16,
+        577.92,
+        243.84
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e37"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e37",
+          "page_number": 3,
+          "bbox": [
+            30.72,
+            236.16,
+            577.92,
+            243.84
+          ],
+          "order": 36,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e39",
+      "element_type": "paragraph",
+      "text": "(/danh-muốc-san-pham(/-tin-tuc-su-kien/cong-an-tinh-quang-ngai-canh-bao-thu-doan-su-dung-tri-tue-nhan-tao-ai-lam-gia-giay-dang-ky-xe-de-lua-daonhtmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/danh-muốc-san-pham(/-tin-tuc-su-kien/cong-an-tinh-quang-ngai-canh-bao-thu-doan-su-dung-tri-tue-nhan-tao-ai-lam-gia-giay-dang-ky-xe-de-lua-daonhtmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 38,
+      "bbox": [
+        30.72,
+        395.52,
+        507.35999999999996,
+        402.71999999999997
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e39"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e39",
+          "page_number": 3,
+          "bbox": [
+            30.72,
+            395.52,
+            507.35999999999996,
+            402.71999999999997
+          ],
+          "order": 38,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e40",
+      "element_type": "paragraph",
+      "text": "Công an tỉnh Quảng Ngãi cảnh báo thủ đoạn sử dụng trí tuệ nhân tạo (Ai) làm giả giấy đăng ký xe để lừa đảo (/danh-muụốc-san-pham(/-tin-tuốc-su-kien/cong -an-tinh.quang-ngai-canh-bao-thu-doan-su-dung-trìi-tue-nhan-tao-cai-lam-gia-giay-dang-ky-xe-de-lua-dao. h tmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCông an tỉnh Quảng Ngãi cảnh báo thủ đoạn sử dụng trí tuệ nhân tạo (Ai) làm giả giấy đăng ký xe để lừa đảo (/danh-muụốc-san-pham(/-tin-tuốc-su-kien/cong -an-tinh.quang-ngai-canh-bao-thu-doan-su-dung-trìi-tue-nhan-tao-cai-lam-gia-giay-dang-ky-xe-de-lua-dao. h tmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 39,
+      "bbox": [
+        30.24,
+        409.91999999999996,
+        569.76,
+        428.64
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e40"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e40",
+          "page_number": 3,
+          "bbox": [
+            30.24,
+            409.91999999999996,
+            569.76,
+            428.64
+          ],
+          "order": 39,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e42",
+      "element_type": "paragraph",
+      "text": "(/danh-muốc-san-phamv/-tin-tuốc-su-kien/cong-an-tinh-quang-ngai-canh-bao-thu-doan-lua-dao-qua-nhay-may-tu-so-dien-thoai-la.htmil)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/danh-muốc-san-phamv/-tin-tuốc-su-kien/cong-an-tinh-quang-ngai-canh-bao-thu-doan-lua-dao-qua-nhay-may-tu-so-dien-thoai-la.htmil)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 41,
+      "bbox": [
+        30.72,
+        569.28,
+        440.15999999999997,
+        576.48
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e42"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e42",
+          "page_number": 3,
+          "bbox": [
+            30.72,
+            569.28,
+            440.15999999999997,
+            576.48
+          ],
+          "order": 41,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e43",
+      "element_type": "paragraph",
+      "text": "Công an tỉnh Quảng Ngãi cảnh báo thủ đoạn lừa đảo qua \"nháy máy \" từ số điện thoại lạ (/danh-muụốc -san-phamv/-tỉn-tuụốc-su-kien/cong -an-tỉnh-quang -ngai-canh-baothu-doan-lua-dao-qua-nhay-may-tu-so-dien-thoai-la. h tmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCông an tỉnh Quảng Ngãi cảnh báo thủ đoạn lừa đảo qua \"nháy máy \" từ số điện thoại lạ (/danh-muụốc -san-phamv/-tỉn-tuụốc-su-kien/cong -an-tỉnh-quang -ngai-canh-baothu-doan-lua-dao-qua-nhay-may-tu-so-dien-thoai-la. h tmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 42,
+      "bbox": [
+        30.24,
+        583.1999999999999,
+        572.64,
+        601.4399999999999
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e43"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e43",
+          "page_number": 3,
+          "bbox": [
+            30.24,
+            583.1999999999999,
+            572.64,
+            601.4399999999999
+          ],
+          "order": 42,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e44",
+      "element_type": "paragraph",
+      "text": "Công an tỉnh Quảng Ngãi cảnh báo thủ đoạn lừa đảo qua \"nháy máy \" từ số điện thoại lạ (/danh-muụốc -san-phamv/-tỉn-tuụốc-su-kien/cong -an-tỉnh-quang -ngai-canh-bao-",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCông an tỉnh Quảng Ngãi cảnh báo thủ đoạn lừa đảo qua \"nháy máy \" từ số điện thoại lạ (/danh-muụốc -san-phamv/-tỉn-tuụốc-su-kien/cong -an-tỉnh-quang -ngai-canh-bao-",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 43,
+      "bbox": [
+        32.64,
+        584.16,
+        573.6,
+        592.3199999999999
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e44"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e44",
+          "page_number": 3,
+          "bbox": [
+            32.64,
+            584.16,
+            573.6,
+            592.3199999999999
+          ],
+          "order": 43,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e46",
+      "element_type": "paragraph",
+      "text": "(/đanh-muốc-san-phamv/-tin-tuc-su-kien/canh-giac-voi-nguy-co-danh-cap-du-lieu-khi-su-dung-wi-ti-mien-phi-tai-san-bay-htmil)6 Đã kết nối EMC",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/đanh-muốc-san-phamv/-tin-tuc-su-kien/canh-giac-voi-nguy-co-danh-cap-du-lieu-khi-su-dung-wi-ti-mien-phi-tai-san-bay-htmil)6 Đã kết nối EMC",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 3,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 45,
+      "bbox": [
+        31.2,
+        742.56,
+        413.28,
+        758.88
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e46"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e46",
+          "page_number": 3,
+          "bbox": [
+            31.2,
+            742.56,
+            413.28,
+            758.88
+          ],
+          "order": 45,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e51",
+      "element_type": "paragraph",
+      "text": "Cảnh giác với nguy cơ đánh cắp dữ liệu khi sử dụng Wi-Fi miễn phí tại sân bay (/danh-muục-san-phamv/-tin-tuụốc-su-kien/canh-giac-voi-ngquy-co-danh-cap-du-liêu-khin. su-dung-mwi-fi-mien-phi-tai-san-bay.nhtml)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh giác với nguy cơ đánh cắp dữ liệu khi sử dụng Wi-Fi miễn phí tại sân bay (/danh-muục-san-phamv/-tin-tuụốc-su-kien/canh-giac-voi-ngquy-co-danh-cap-du-liêu-khin. su-dung-mwi-fi-mien-phi-tai-san-bay.nhtml)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 50,
+      "bbox": [
+        30.24,
+        28.799999999999997,
+        572.64,
+        46.559999999999995
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e51"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e51",
+          "page_number": 4,
+          "bbox": [
+            30.24,
+            28.799999999999997,
+            572.64,
+            46.559999999999995
+          ],
+          "order": 50,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e53",
+      "element_type": "paragraph",
+      "text": "(/đdanh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-bao-toi-pham-trom-cap-tai-san-tren-đia-ban-xa-ngonk-bay.htmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/đdanh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-bao-toi-pham-trom-cap-tai-san-tren-đia-ban-xa-ngonk-bay.htmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 52,
+      "bbox": [
+        31.2,
+        188.16,
+        423.84,
+        194.88
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e53"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e53",
+          "page_number": 4,
+          "bbox": [
+            31.2,
+            188.16,
+            423.84,
+            194.88
+          ],
+          "order": 52,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e54",
+      "element_type": "paragraph",
+      "text": "Cảnh báo tội phạm trộm cắp tài sản trên địa bàn xã Ngọk Bay (/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao -toi-pham/canh-bao-toi-pham-trom-cap-tại-san-trendia-ban-xa-ngok-bay.html)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh báo tội phạm trộm cắp tài sản trên địa bàn xã Ngọk Bay (/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao -toi-pham/canh-bao-toi-pham-trom-cap-tại-san-trendia-ban-xa-ngok-bay.html)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 53,
+      "bbox": [
+        30.24,
+        203.51999999999998,
+        570.72,
+        220.32
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e54"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e54",
+          "page_number": 4,
+          "bbox": [
+            30.24,
+            203.51999999999998,
+            570.72,
+            220.32
+          ],
+          "order": 53,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e55",
+      "element_type": "paragraph",
+      "text": "Cảnh báo tội phạm trộm cắp tài sản trên địa bàn xã Ngọk Bay (/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao -toi-pham/canh-bao-toi-pham-trom-cap-tại-san-tren-",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh báo tội phạm trộm cắp tài sản trên địa bàn xã Ngọk Bay (/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao -toi-pham/canh-bao-toi-pham-trom-cap-tại-san-tren-",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 54,
+      "bbox": [
+        32.64,
+        203.51999999999998,
+        571.1999999999999,
+        211.67999999999998
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e55"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e55",
+          "page_number": 4,
+          "bbox": [
+            32.64,
+            203.51999999999998,
+            571.1999999999999,
+            211.67999999999998
+          ],
+          "order": 54,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e57",
+      "element_type": "paragraph",
+      "text": "(/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-lua-dao-loi-dung-chuong-trinh-tang-qua-trung-thu.htmil)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-lua-dao-loi-dung-chuong-trinh-tang-qua-trung-thu.htmil)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 56,
+      "bbox": [
+        31.2,
+        361.91999999999996,
+        416.15999999999997,
+        369.12
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e57"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e57",
+          "page_number": 4,
+          "bbox": [
+            31.2,
+            361.91999999999996,
+            416.15999999999997,
+            369.12
+          ],
+          "order": 56,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e58",
+      "element_type": "paragraph",
+      "text": "Cảnh giác lưừa đảo lợi dụng chương trình tặng quaà Trung thu (/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-lua-dao-loi-dung -chuong-trinhtang-qua-trung-thu.htmIl;",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh giác lưừa đảo lợi dụng chương trình tặng quaà Trung thu (/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-lua-dao-loi-dung -chuong-trinhtang-qua-trung-thu.htmIl;",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 57,
+      "bbox": [
+        29.759999999999998,
+        376.32,
+        564.0,
+        394.08
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e58"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e58",
+          "page_number": 4,
+          "bbox": [
+            29.759999999999998,
+            376.32,
+            564.0,
+            394.08
+          ],
+          "order": 57,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e59",
+      "element_type": "paragraph",
+      "text": "Cảnh giác lưừa đảo lợi dụng chương trình tặng quaà Trung thu (/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-lua-dao-loi-dung -chuong-trinh-",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh giác lưừa đảo lợi dụng chương trình tặng quaà Trung thu (/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-lua-dao-loi-dung -chuong-trinh-",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 58,
+      "bbox": [
+        32.64,
+        376.8,
+        564.9599999999999,
+        384.96
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e59"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e59",
+          "page_number": 4,
+          "bbox": [
+            32.64,
+            376.8,
+            564.9599999999999,
+            384.96
+          ],
+          "order": 58,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e61",
+      "element_type": "paragraph",
+      "text": "(/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-thu-doan-lua-dao-tinh-vri-khi-thue-nha-trocanh-giac-thu-doan-lua-dao-tinh-vi-khi-thuae-nha-tro.html)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/danh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-thu-doan-lua-dao-tinh-vri-khi-thue-nha-trocanh-giac-thu-doan-lua-dao-tinh-vi-khi-thuae-nha-tro.html)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 60,
+      "bbox": [
+        30.72,
+        535.1999999999999,
+        549.12,
+        542.4
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e61"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e61",
+          "page_number": 4,
+          "bbox": [
+            30.72,
+            535.1999999999999,
+            549.12,
+            542.4
+          ],
+          "order": 60,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e62",
+      "element_type": "paragraph",
+      "text": "Cảnh giác thủ đoạn lừa đoảo thiỉnh vi khi thuê nhà trọ (/danh-muốc-san-pham/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-thu-doan-lua-dao-tinh-vi-khi-thue-nhatrocanh-giac-thu-doan-lua-dao-tỉnh-vri-khi-thue-nha-tro.html)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh giác thủ đoạn lừa đoảo thiỉnh vi khi thuê nhà trọ (/danh-muốc-san-pham/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-thu-doan-lua-dao-tinh-vi-khi-thue-nhatrocanh-giac-thu-doan-lua-dao-tỉnh-vri-khi-thue-nha-tro.html)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 61,
+      "bbox": [
+        29.759999999999998,
+        550.0799999999999,
+        556.8,
+        567.84
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e62"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e62",
+          "page_number": 4,
+          "bbox": [
+            29.759999999999998,
+            550.0799999999999,
+            556.8,
+            567.84
+          ],
+          "order": 61,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e63",
+      "element_type": "paragraph",
+      "text": "Cảnh giác thủ đoạn lừa đoảo thiỉnh vi khi thuê nhà trọ (/danh-muốc-san-pham/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-thu-doan-lua-dao-tinh-vi-khi-thue-nha-",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh giác thủ đoạn lừa đoảo thiỉnh vi khi thuê nhà trọ (/danh-muốc-san-pham/-tin-tuốc-su-kien/canh-bao-toi-pham/canh-giac-thu-doan-lua-dao-tinh-vi-khi-thue-nha-",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 62,
+      "bbox": [
+        32.64,
+        550.56,
+        557.76,
+        558.72
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e63"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e63",
+          "page_number": 4,
+          "bbox": [
+            32.64,
+            550.56,
+            557.76,
+            558.72
+          ],
+          "order": 62,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e65",
+      "element_type": "paragraph",
+      "text": "(/danh-muốc-san-pham/-tin-tuục-su-kien/cong-an-tinh-quang-ngai-canh-bao-chieu-lua-dao-mao-danh-phat-ngquoi-qua-website-dich-vu-cong-gia-mao-htmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/danh-muốc-san-pham/-tin-tuục-su-kien/cong-an-tinh-quang-ngai-canh-bao-chieu-lua-dao-mao-danh-phat-ngquoi-qua-website-dich-vu-cong-gia-mao-htmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 64,
+      "bbox": [
+        30.72,
+        709.4399999999999,
+        502.56,
+        716.64
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e65"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e65",
+          "page_number": 4,
+          "bbox": [
+            30.72,
+            709.4399999999999,
+            502.56,
+            716.64
+          ],
+          "order": 64,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e66",
+      "element_type": "paragraph",
+      "text": "Công an thỉnh Quảng Ngãi cảnh báo chiêu lừa đảo mạo danh \"phạt nguội\" qua website diịch vụ công giả mạo (/ danh-muục-san-phamv/-tin-tuục-su-kieng/cong -an-tỉnhquang-ngai-canh-bao-chieu-lua-dao-mao-danh-phat-nguoi-qua-website -dich-vu-cong-gia-mao.nhtml)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCông an thỉnh Quảng Ngãi cảnh báo chiêu lừa đảo mạo danh \"phạt nguội\" qua website diịch vụ công giả mạo (/ danh-muục-san-phamv/-tin-tuục-su-kieng/cong -an-tỉnhquang-ngai-canh-bao-chieu-lua-dao-mao-danh-phat-nguoi-qua-website -dich-vu-cong-gia-mao.nhtml)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 65,
+      "bbox": [
+        30.24,
+        723.8399999999999,
+        564.48,
+        741.6
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e66"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e66",
+          "page_number": 4,
+          "bbox": [
+            30.24,
+            723.8399999999999,
+            564.48,
+            741.6
+          ],
+          "order": 65,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e67",
+      "element_type": "paragraph",
+      "text": "Công an thỉnh Quảng Ngãi cảnh báo chiêu lừa đảo mạo danh \"phạt nguội\" qua website diịch vụ công giả mạo (/ danh-muục-san-phamv/-tin-tuục-su-kieng/cong -an-tỉnh-",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCông an thỉnh Quảng Ngãi cảnh báo chiêu lừa đảo mạo danh \"phạt nguội\" qua website diịch vụ công giả mạo (/ danh-muục-san-phamv/-tin-tuục-su-kieng/cong -an-tỉnh-",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 4,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 66,
+      "bbox": [
+        32.64,
+        724.3199999999999,
+        564.9599999999999,
+        732.48
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e67"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e67",
+          "page_number": 4,
+          "bbox": [
+            32.64,
+            724.3199999999999,
+            564.9599999999999,
+            732.48
+          ],
+          "order": 66,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e74",
+      "element_type": "paragraph",
+      "text": "(/danh-muốc-san-phamv/-tin-tuc-su-kien/canh-bao-toi-pham/canh-bao-thu-doan-gia-mao-buu-dien-viet-nam-de-lua-dao-chiem-doat-tạai-san-tren-khong-gian-mang.htmIl)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/danh-muốc-san-phamv/-tin-tuc-su-kien/canh-bao-toi-pham/canh-bao-thu-doan-gia-mao-buu-dien-viet-nam-de-lua-dao-chiem-doat-tạai-san-tren-khong-gian-mang.htmIl)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 73,
+      "bbox": [
+        31.2,
+        153.12,
+        543.36,
+        159.84
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e74"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e74",
+          "page_number": 5,
+          "bbox": [
+            31.2,
+            153.12,
+            543.36,
+            159.84
+          ],
+          "order": 73,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e75",
+      "element_type": "paragraph",
+      "text": "Cảnh báo thủ đoạn giả mạo Bưu điện Việt Nam để lưừa đảo chiếm đoạt tài sản trên không gian mạng (/danh-muụốc-san -pham(/-tin-tuục-su-kien/canh -bao-toipham/canh-bao-thu-doan-gia-mao-buu-dien-viet-nam-de-lua-dao-chiem-doat-tai-san-tren-khong-gian-mang.html)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh báo thủ đoạn giả mạo Bưu điện Việt Nam để lưừa đảo chiếm đoạt tài sản trên không gian mạng (/danh-muụốc-san -pham(/-tin-tuục-su-kien/canh -bao-toipham/canh-bao-thu-doan-gia-mao-buu-dien-viet-nam-de-lua-dao-chiem-doat-tai-san-tren-khong-gian-mang.html)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 74,
+      "bbox": [
+        30.24,
+        168.0,
+        540.48,
+        185.28
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e75"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e75",
+          "page_number": 5,
+          "bbox": [
+            30.24,
+            168.0,
+            540.48,
+            185.28
+          ],
+          "order": 74,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e76",
+      "element_type": "paragraph",
+      "text": "Cảnh báo thủ đoạn giả mạo Bưu điện Việt Nam để lưừa đảo chiếm đoạt tài sản trên không gian mạng (/danh-muụốc-san -pham(/-tin-tuục-su-kien/canh -bao-toi-",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh báo thủ đoạn giả mạo Bưu điện Việt Nam để lưừa đảo chiếm đoạt tài sản trên không gian mạng (/danh-muụốc-san -pham(/-tin-tuục-su-kien/canh -bao-toi-",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 75,
+      "bbox": [
+        32.64,
+        168.48,
+        540.96,
+        176.16
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e76"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e76",
+          "page_number": 5,
+          "bbox": [
+            32.64,
+            168.48,
+            540.96,
+            176.16
+          ],
+          "order": 75,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e78",
+      "element_type": "paragraph",
+      "text": "(/đdanh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-he-luy-tu-but-titem-giam-can-. htmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/đdanh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-he-luy-tu-but-titem-giam-can-. htmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 77,
+      "bbox": [
+        31.2,
+        326.88,
+        290.4,
+        334.08
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e78"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e78",
+          "page_number": 5,
+          "bbox": [
+            31.2,
+            326.88,
+            290.4,
+            334.08
+          ],
+          "order": 77,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e79",
+      "element_type": "paragraph",
+      "text": "Cảnh báo hệ luụy từ \"“\"bút tiêm giảm cầân\" (/danh-muụốc-san-phamv/-tin-tuục-su-kien/canh-bao-he-luy-tu-but-tiem-giam-can-.html)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh báo hệ luụy từ \"“\"bút tiêm giảm cầân\" (/danh-muụốc-san-phamv/-tin-tuục-su-kien/canh-bao-he-luy-tu-but-tiem-giam-can-.html)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 78,
+      "bbox": [
+        31.2,
+        341.28,
+        440.15999999999997,
+        348.96
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e79"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e79",
+          "page_number": 5,
+          "bbox": [
+            31.2,
+            341.28,
+            440.15999999999997,
+            348.96
+          ],
+          "order": 78,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e81",
+      "element_type": "paragraph",
+      "text": "(/đdanh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-vi-pham-phap-luat-lien-quan-hoat-dong-cho-thuae-cho-muon-va-mua-ban-tai-khoan-ngan-hang-.nhtmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/đdanh-muốc-san-phamv/-tin-tuốc-su-kien/canh-bao-vi-pham-phap-luat-lien-quan-hoat-dong-cho-thuae-cho-muon-va-mua-ban-tai-khoan-ngan-hang-.nhtmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 80,
+      "bbox": [
+        32.64,
+        500.64,
+        492.96,
+        508.79999999999995
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e81"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e81",
+          "page_number": 5,
+          "bbox": [
+            32.64,
+            500.64,
+            492.96,
+            508.79999999999995
+          ],
+          "order": 80,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e82",
+      "element_type": "paragraph",
+      "text": "Cảnh báo vi phạm pháp luật liên quan hoạt động cho thuê, cho mượn và mua bán tài khoản ngân hàng (/danh -muốc-san- phamv/-tin-tuục-su-kien/canh - bao-vi-phamphap-luat-lien-quan-hoat-dong-cho-thue-cho-muon-va-mua-ban-tai-khoan-ngan-hang-.html)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh báo vi phạm pháp luật liên quan hoạt động cho thuê, cho mượn và mua bán tài khoản ngân hàng (/danh -muốc-san- phamv/-tin-tuục-su-kien/canh - bao-vi-phamphap-luat-lien-quan-hoat-dong-cho-thue-cho-muon-va-mua-ban-tai-khoan-ngan-hang-.html)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 81,
+      "bbox": [
+        30.24,
+        516.0,
+        568.3199999999999,
+        532.8
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e82"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e82",
+          "page_number": 5,
+          "bbox": [
+            30.24,
+            516.0,
+            568.3199999999999,
+            532.8
+          ],
+          "order": 81,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e83",
+      "element_type": "paragraph",
+      "text": "Cảnh báo vi phạm pháp luật liên quan hoạt động cho thuê, cho mượn và mua bán tài khoản ngân hàng (/danh -muốc-san- phamv/-tin-tuục-su-kien/canh - bao-vi-pham-",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nCảnh báo vi phạm pháp luật liên quan hoạt động cho thuê, cho mượn và mua bán tài khoản ngân hàng (/danh -muốc-san- phamv/-tin-tuục-su-kien/canh - bao-vi-pham-",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 82,
+      "bbox": [
+        32.64,
+        516.0,
+        568.8,
+        524.16
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e83"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e83",
+          "page_number": 5,
+          "bbox": [
+            32.64,
+            516.0,
+            568.8,
+            524.16
+          ],
+          "order": 82,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e85",
+      "element_type": "paragraph",
+      "text": "(/danh-muc-san-pham/-tin-tuốc-su-kien/ban-an-nghienm-khạc-cho-hanh-vi-tai-pham-ma-tuy-loi-canh-tinh-danh-thep-cho-gioi-tre.html)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\n(/danh-muc-san-pham/-tin-tuốc-su-kien/ban-an-nghienm-khạc-cho-hanh-vi-tai-pham-ma-tuy-loi-canh-tinh-danh-thep-cho-gioi-tre.html)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 84,
+      "bbox": [
+        31.2,
+        674.88,
+        438.71999999999997,
+        681.12
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e85"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e85",
+          "page_number": 5,
+          "bbox": [
+            31.2,
+            674.88,
+            438.71999999999997,
+            681.12
+          ],
+          "order": 84,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e86",
+      "element_type": "paragraph",
+      "text": "Bản án nghiêm khắc cho hành vi tái phạm ma túy - Lời cảnh thỉnh đanh thép cho giới trẻ (/danh-muụốc-san-pham/-tin-tuụốc-su-kien/ban-an-nghiem-khaạc-cho-hanh -vi-taipham-ma-tuy-loi-canh-tinh-danh-thep-cho-gioi-tre.htmi)",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nBản án nghiêm khắc cho hành vi tái phạm ma túy - Lời cảnh thỉnh đanh thép cho giới trẻ (/danh-muụốc-san-pham/-tin-tuụốc-su-kien/ban-an-nghiem-khaạc-cho-hanh -vi-taipham-ma-tuy-loi-canh-tinh-danh-thep-cho-gioi-tre.htmi)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 85,
+      "bbox": [
+        30.24,
+        688.8,
+        576.48,
+        707.04
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e86"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e86",
+          "page_number": 5,
+          "bbox": [
+            30.24,
+            688.8,
+            576.48,
+            707.04
+          ],
+          "order": 85,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e87",
+      "element_type": "paragraph",
+      "text": "Bản án nghiêm khắc cho hành vi tái phạm ma túy - Lời cảnh thỉnh đanh thép cho giới trẻ (/danh-muụốc-san-pham/-tin-tuụốc-su-kien/ban-an-nghiem-khaạc-cho-hanh -vi-tai-",
+      "text_for_embedding": "TIN CÙNG CHUYÊN MỤC\nBản án nghiêm khắc cho hành vi tái phạm ma túy - Lời cảnh thỉnh đanh thép cho giới trẻ (/danh-muụốc-san-pham/-tin-tuụốc-su-kien/ban-an-nghiem-khaạc-cho-hanh -vi-tai-",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 5,
+      "section_id": "tin-cùng-chuyên-mục-34",
+      "parent_id": null,
+      "order": 86,
+      "bbox": [
+        32.64,
+        689.28,
+        577.4399999999999,
+        697.4399999999999
+      ],
+      "heading_path": [
+        "TIN CÙNG CHUYÊN MỤC"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e87"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e87",
+          "page_number": 5,
+          "bbox": [
+            32.64,
+            689.28,
+            577.4399999999999,
+            697.4399999999999
+          ],
+          "order": 86,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e94",
+      "element_type": "heading",
+      "text": "Công an tỉnh Quảng Ngãi",
+      "text_for_embedding": "Công an tỉnh Quảng Ngãi",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 6,
+      "section_id": "công-an-tỉnh-quảng-ngãi-94",
+      "parent_id": null,
+      "order": 93,
+      "bbox": [
+        31.68,
+        53.76,
+        153.6,
+        64.32
+      ],
+      "heading_path": [
+        "Công an tỉnh Quảng Ngãi"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e94"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e94",
+          "page_number": 6,
+          "bbox": [
+            31.68,
+            53.76,
+            153.6,
+            64.32
+          ],
+          "order": 93,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "doc_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e95",
+      "element_type": "paragraph",
+      "text": "gChiịu trách nhiệm: Đại tá Lương Việt Long - Trưởng phòng Tham mưu, Trưởng Ban Biên tập",
+      "text_for_embedding": "Công an tỉnh Quảng Ngãi\ngChiịu trách nhiệm: Đại tá Lương Việt Long - Trưởng phòng Tham mưu, Trưởng Ban Biên tập",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 6,
+      "section_id": "công-an-tỉnh-quảng-ngãi-94",
+      "parent_id": null,
+      "order": 94,
+      "bbox": [
+        31.68,
+        71.03999999999999,
+        332.15999999999997,
+        79.67999999999999
+      ],
+      "heading_path": [
+        "Công an tỉnh Quảng Ngãi"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e95"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e95",
+          "page_number": 6,
+          "bbox": [
+            31.68,
+            71.03999999999999,
+            332.15999999999997,
+            79.67999999999999
+          ],
+          "order": 94,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e96",
+      "element_type": "paragraph",
+      "text": "9 Xã An Phú, Tỉnh Quảng Ngãi",
+      "text_for_embedding": "Công an tỉnh Quảng Ngãi\n9 Xã An Phú, Tỉnh Quảng Ngãi",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 6,
+      "section_id": "công-an-tỉnh-quảng-ngãi-94",
+      "parent_id": null,
+      "order": 95,
+      "bbox": [
+        32.16,
+        85.92,
+        133.92,
+        94.08
+      ],
+      "heading_path": [
+        "Công an tỉnh Quảng Ngãi"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e96"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e96",
+          "page_number": 6,
+          "bbox": [
+            32.16,
+            85.92,
+            133.92,
+            94.08
+          ],
+          "order": 95,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e97",
+      "element_type": "paragraph",
+      "text": "Điện: thoại: 069.4309.303 (te1l: 069.4309.303)",
+      "text_for_embedding": "Công an tỉnh Quảng Ngãi\nĐiện: thoại: 069.4309.303 (te1l: 069.4309.303)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 6,
+      "section_id": "công-an-tỉnh-quảng-ngãi-94",
+      "parent_id": null,
+      "order": 96,
+      "bbox": [
+        32.16,
+        100.32,
+        183.84,
+        108.47999999999999
+      ],
+      "heading_path": [
+        "Công an tỉnh Quảng Ngãi"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e97"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e97",
+          "page_number": 6,
+          "bbox": [
+            32.16,
+            100.32,
+            183.84,
+            108.47999999999999
+          ],
+          "order": 96,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e98",
+      "element_type": "paragraph",
+      "text": "Email: ca(Qquangngiai.gov.vn (mailto: ca(Qquangngiai. gov.vn)",
+      "text_for_embedding": "Công an tỉnh Quảng Ngãi\nEmail: ca(Qquangngiai.gov.vn (mailto: ca(Qquangngiai. gov.vn)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 6,
+      "section_id": "công-an-tỉnh-quảng-ngãi-94",
+      "parent_id": null,
+      "order": 97,
+      "bbox": [
+        31.68,
+        115.67999999999999,
+        233.76,
+        124.32
+      ],
+      "heading_path": [
+        "Công an tỉnh Quảng Ngãi"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e98"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e98",
+          "page_number": 6,
+          "bbox": [
+            31.68,
+            115.67999999999999,
+            233.76,
+            124.32
+          ],
+          "order": 97,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "6279f763225744518f0e-e99",
+      "element_type": "paragraph",
+      "text": "Cổng thông titn điện tử Quảng ngaãi https: //quangngai. gov.vn)",
+      "text_for_embedding": "Công an tỉnh Quảng Ngãi\nCổng thông titn điện tử Quảng ngaãi https: //quangngai. gov.vn)",
+      "document_id": "6279f763225744518f0e",
+      "page_number": 6,
+      "section_id": "công-an-tỉnh-quảng-ngãi-94",
+      "parent_id": null,
+      "order": 98,
+      "bbox": [
+        209.76,
+        138.24,
+        400.8,
+        147.35999999999999
+      ],
+      "heading_path": [
+        "Công an tỉnh Quảng Ngãi"
+      ],
+      "source_element_ids": [
+        "6279f763225744518f0e-e99"
+      ],
+      "source_spans": [
+        {
+          "element_id": "6279f763225744518f0e-e99",
+          "page_number": 6,
+          "bbox": [
+            209.76,
+            138.24,
+            400.8,
+            147.35999999999999
+          ],
+          "order": 98,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    }
+  ],
+  "metadata": {
+    "source_parser": "paddleocr"
+  }
+}
