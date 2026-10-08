@@ -29,7 +29,7 @@ import os
 from pathlib import Path
 from typing import Any, Sequence
 
-COLLECTION = "docs"
+COLLECTION = "rag_system_main_v1.0"
 CURRENT_ALIAS = "docs_current"
 VECTOR_NAME = "dense"
 SPARSE_VECTOR_NAME = "sparse"

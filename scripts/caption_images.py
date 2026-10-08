@@ -121,7 +121,7 @@ def main() -> int:
             json.dumps(preflight_result, ensure_ascii=False, indent=2), encoding="utf-8"
         )
         service = CaptionService(client, CaptionCache(args.output / "caption_cache"), policy)
-        for _, document, element, context, asset in selected:
+        for index, (_, document, element, context, asset) in enumerate(selected, start=1):
             records.append(
                 service.process(
                     document_id=document.document_id,
@@ -132,6 +132,11 @@ def main() -> int:
                     resume=args.resume,
                 ).model_dump(mode="json")
             )
+            print(
+                f"Caption {index}/{len(selected)}: {element.element_id} {records[-1]['status']}",
+                flush=True,
+            )
+            write_jsonl(args.output / "captions.jsonl", records)
     for document_path, document, element, context, asset in work:
         if (document.document_id, element.element_id) in selected_ids and not args.dry_run:
             continue

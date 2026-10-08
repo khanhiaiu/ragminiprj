@@ -22,6 +22,20 @@ def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+class ChunkImage(BaseModel):
+    """Image asset and its caption, retained in retrieval results."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    element_id: str
+    path: str | None = None
+    image_hash: str | None = None
+    page: int | None = None
+    caption: str
+    visible_text: list[str] = Field(default_factory=list)
+    uncertainties: list[str] = Field(default_factory=list)
+
+
 class Chunk(BaseModel):
     """Single retrievable unit. One table / one figure caption = one chunk."""
 
@@ -44,6 +58,7 @@ class Chunk(BaseModel):
     source_spans: list[dict[str, Any]] = Field(default_factory=list)
     image_path: str | None = None
     image_hash: str | None = None
+    image: list[ChunkImage] = Field(default_factory=list)
     uncertainty_flags: list[str] = Field(default_factory=list)
     contextual_content: bool = False
     content_hash: str = Field(description="sha256(content) hex, used for re-ingest dedup")

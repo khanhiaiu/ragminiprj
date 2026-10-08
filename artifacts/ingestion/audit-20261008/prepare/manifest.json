@@ -11,5 +11,7 @@
   "chunks_inserted": 0,
   "chunks_skipped_dup": 0,
   "published": false,
-  "status": "prepared"
+  "status": "retired_missing_image_captions",
+  "recovery_directory": "/workspace/APOLLO/ragminiprj/artifacts/ingestion/audit-20261008/retired-no-captions-20261008T064347Z",
+  "retired_at": "2026-10-08T06:43:50.149065+00:00"
 }

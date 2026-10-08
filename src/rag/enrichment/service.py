@@ -73,7 +73,14 @@ class CaptionService:
             context_hash=context.context_hash,
             preprocessing_version=PREPROCESSING_VERSION,
         )
-        if resume and (cached := self.cache.get(key)) is not None:
+        reusable_statuses = {
+            CaptionStatus.completed, CaptionStatus.needs_review, CaptionStatus.excluded,
+        }
+        if (
+            resume
+            and (cached := self.cache.get(key)) is not None
+            and cached.status in reusable_statuses
+        ):
             return cached
         record = CaptionRecord(
             document_id=document_id,

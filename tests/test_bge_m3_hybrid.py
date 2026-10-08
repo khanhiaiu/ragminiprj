@@ -66,3 +66,18 @@ def test_hash_fake_also_exposes_valid_sparse_vectors():
     assert len(result.dense) == 1024
     assert len(result.sparse_indices) == len(result.sparse_values) == 2
     assert all(math.isfinite(value) and value > 0 for value in result.sparse_values)
+
+
+def test_embedder_rejects_input_that_would_be_silently_truncated():
+    class Tokenizer:
+        def encode(self, text, *, add_special_tokens=False):
+            return list(range(len(text.split()) + (2 if add_special_tokens else 0)))
+
+    model = FakeBgeM3()
+    model.tokenizer = Tokenizer()
+    embedder = BgeM3Embedder(model=model, max_length=5)
+    embedder.embed_hybrid(["a b c"])
+    assert len(model.calls) == 1
+    with pytest.raises(ValueError, match="refusing silent truncation"):
+        embedder.embed_hybrid(["a b c d"])
+    assert len(model.calls) == 1

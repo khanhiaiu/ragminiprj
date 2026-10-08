@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Iterator, Protocol, Sequence
 
-from .enrichment.tokenizer import BGE_M3_MODEL, BGE_M3_REVISION
+from .enrichment.tokenizer import BGE_M3_MODEL, BGE_M3_REVISION, embedding_token_count
 
 
 @dataclass(frozen=True)
@@ -137,7 +137,8 @@ class BgeM3Embedder:
         self.cache = cache
         self._model = model
         self.encoding_config = json.dumps(
-            {"dense": True, "sparse": True, "colbert": False, "max_length": max_length},
+            {"dense": True, "sparse": True, "colbert": False, "max_length": max_length,
+             "input_token_policy": "special_tokens_no_truncation_v1"},
             sort_keys=True,
         )
 
@@ -163,7 +164,17 @@ class BgeM3Embedder:
     def _encode_missing(self, texts: list[str]) -> list[HybridEmbedding]:
         if not texts:
             return []
-        result = self._load().encode(
+        model = self._load()
+        tokenizer = getattr(model, "tokenizer", None)
+        if tokenizer is not None:
+            for text in texts:
+                count = embedding_token_count(tokenizer, text)
+                if count > self.max_length:
+                    raise ValueError(
+                        f"embedding input has {count} tokens including special tokens; "
+                        f"limit is {self.max_length}; refusing silent truncation"
+                    )
+        result = model.encode(
             texts,
             batch_size=self.batch_size,
             max_length=self.max_length,

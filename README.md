@@ -82,6 +82,22 @@ và reading order. Batch đầy đủ bỏ `--pilot`. Mọi image discoverable �
 
 ### Prepare và full ingest
 
+Khi truyền `--captions`, pipeline ghép caption vào đúng image element của tài liệu
+retrieval và chunk chung với văn bản xung quanh. File caption phải hoàn tất, không còn bản ghi `pending`
+hoặc `error`. Mỗi chunk có trường `image`: danh sách chứa ID ảnh, đường dẫn asset,
+hash, trang, caption, văn bản nhìn thấy và các chi tiết chưa chắc chắn. Chunk không
+chứa ảnh có `image: []`. Trường này được giữ trong JSON và payload Qdrant để dùng
+khi truy xuất. Tài liệu retrieval đã ghép caption nằm trong thư mục `retrieval/`
+của run.
+
+Chunker `type-aware-v2` chỉ thêm heading một lần, ưu tiên ranh giới đoạn/câu và
+không tạo chunk chỉ chứa overlap. Caption gồm cả `steps`, `relationships` và
+`chart_details`; caption vừa hard limit được giữ nguyên trong một chunk. Nếu
+caption quá dài, các phần giữ tiêu đề và được đánh dấu bằng
+`metadata.split_image_captions`, còn trường `image` vẫn giữ caption đầy đủ.
+Ngân sách 768 token bao gồm heading và special tokens của tokenizer BGE-M3;
+embedder từ chối đầu vào quá giới hạn thay vì âm thầm truncate.
+
 Chuẩn bị retrieval/chunk mà chưa embedding hoặc ghi Qdrant:
 
 ```bash

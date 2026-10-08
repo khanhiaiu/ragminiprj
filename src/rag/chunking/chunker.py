@@ -4,13 +4,14 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from dataclasses import dataclass
 from typing import Iterable
 
 from document_parser.retrieval.models import RetrievalDocument, RetrievalElement
 
-from rag.enrichment.tokenizer import TokenizerLike, tokenizer_fingerprint
-from rag.schemas import Chunk, utc_now_iso
+from rag.enrichment.tokenizer import TokenizerLike, embedding_token_count, tokenizer_fingerprint
+from rag.schemas import Chunk, ChunkImage, utc_now_iso
 
 
 @dataclass(frozen=True)
@@ -20,16 +21,25 @@ class ChunkingConfig:
     preferred_max_tokens: int = 600
     hard_max_tokens: int = 768
     overlap_tokens: int = 50
+    merge_image_captions: bool = False
 
     def __post_init__(self):
         if not (0 <= self.overlap_tokens < self.target_tokens <= self.preferred_max_tokens):
             raise ValueError("invalid text token budgets")
         if self.preferred_max_tokens > self.hard_max_tokens:
             raise ValueError("preferred maximum cannot exceed hard maximum")
+        if not 0 <= self.preferred_min_tokens <= self.target_tokens:
+            raise ValueError("preferred minimum must be between zero and target")
+
+
+@dataclass(frozen=True)
+class _TextPiece:
+    text: str
+    element: RetrievalElement
 
 
 class TypeAwareChunker:
-    version = "type-aware-v1"
+    version = "type-aware-v2"
 
     def __init__(self, tokenizer: TokenizerLike, config: ChunkingConfig | None = None):
         self.tokenizer = tokenizer
@@ -43,6 +53,44 @@ class TypeAwareChunker:
         return self.tokenizer.decode(
             tokens, skip_special_tokens=True, clean_up_tokenization_spaces=False
         ).strip()
+
+    @staticmethod
+    def _embedding_text(body: str, headings: list[str]) -> str:
+        prefix = "\n".join(dict.fromkeys(h for h in headings if h))
+        if not prefix or body == prefix or body.startswith(prefix + "\n"):
+            return body
+        return prefix + "\n\n" + body
+
+    def _input_count(self, body: str, headings: list[str]) -> int:
+        return embedding_token_count(self.tokenizer, self._embedding_text(body, headings))
+
+    def _text_units(self, text: str, headings: list[str]) -> Iterable[str]:
+        """Keep paragraphs/sentences intact; split tokens only for oversized sentences."""
+        limit = self.config.target_tokens
+        capacity = limit - self._input_count("", headings)
+        if capacity <= 0:
+            raise ValueError("heading leaves no room for chunk content")
+        for paragraph in re.split(r"\n\s*\n", text.strip()):
+            if not paragraph.strip():
+                continue
+            if self._input_count(paragraph, headings) <= limit:
+                yield paragraph
+                continue
+            for sentence in re.split(r"(?<=[.!?。！？])\s+|\n+", paragraph):
+                if not sentence.strip():
+                    continue
+                if self._input_count(sentence, headings) <= limit:
+                    yield sentence
+                    continue
+                tokens = self._tokens(sentence)
+                while tokens:
+                    take = min(capacity, len(tokens))
+                    while take and self._input_count(self._decode(tokens[:take]), headings) > limit:
+                        take -= 1
+                    if not take:
+                        raise ValueError("unable to fit content in chunk token budget")
+                    yield self._decode(tokens[:take])
+                    tokens = tokens[take:]
 
     @staticmethod
     def _id(document_id: str, kind: str, ordinal: int, source_ids: list[str], text: str) -> str:
@@ -65,9 +113,11 @@ class TypeAwareChunker:
         sheet: str | None = None,
         cell_range: str | None = None,
     ) -> Chunk:
-        count = len(self._tokens(embedding))
+        count = embedding_token_count(self.tokenizer, embedding)
         if count > self.config.hard_max_tokens:
-            raise ValueError(f"chunk embedding input has {count} tokens; hard limit is 768")
+            raise ValueError(
+                f"chunk embedding input has {count} tokens; hard limit is {self.config.hard_max_tokens}"
+            )
         source_ids = list(dict.fromkeys(i for e in elements for i in e.source_element_ids))
         pages = [e.page_number for e in elements if e.page_number is not None]
         headings = elements[-1].heading_path if elements else []
@@ -90,54 +140,107 @@ class TypeAwareChunker:
             source_spans=[span for e in elements for span in e.source_spans],
             image_path=elements[0].asset_path if kind == "figure" and elements else None,
             image_hash=elements[0].image_hash if kind == "figure" and elements else None,
+            image=[
+                ChunkImage(
+                    element_id=e.element_id,
+                    path=e.asset_path,
+                    image_hash=e.image_hash,
+                    page=e.page_number,
+                    caption=e.text,
+                    visible_text=(e.generated_enrichment or {}).get("visible_text") or [],
+                    uncertainties=e.uncertainty_flags,
+                )
+                for e in elements if e.element_type == "image"
+            ],
             uncertainty_flags=[flag for e in elements for flag in e.uncertainty_flags],
             contextual_content=any(e.generated_enrichment is not None for e in elements),
             content_hash=content_hash,
             ingested_at=utc_now_iso(),
             tokenizer_fingerprint=self.tokenizer_fingerprint,
             chunker_version=self.version,
-            metadata={"embedding_token_count": count},
+            metadata={
+                "embedding_token_count": count,
+                "token_count_includes_special_tokens": True,
+                "split_image_captions": [
+                    e.element_id for e in elements if e.metadata.get("caption_split_for_budget")
+                ],
+            },
         )
 
     def _text_chunks(
         self, document: RetrievalDocument, elements: list[RetrievalElement], ordinal: int
     ) -> tuple[list[Chunk], int]:
         chunks: list[Chunk] = []
-        grouped: list[RetrievalElement] = []
-        group_tokens: list[int] = []
+        pieces: list[_TextPiece] = []
+        has_new_content = False
+        current_path: list[str] | None = None
 
-        def flush():
-            nonlocal ordinal, grouped, group_tokens
-            if not group_tokens:
+        def body(values: list[_TextPiece]) -> str:
+            # Keep heading provenance, but put structural headings only in the
+            # embedding prefix when this chunk also has a body. An orphan
+            # heading still needs a chunk of its own, otherwise content is lost.
+            content = [p for p in values if not (
+                p.element.element_type == "heading"
+                and p.text in p.element.heading_path
+            )]
+            return "\n\n".join(piece.text for piece in (content or values))
+
+        def flush(*, retain_overlap: bool = True):
+            nonlocal ordinal, pieces, has_new_content
+            if not has_new_content:
+                if not retain_overlap:
+                    pieces = []
                 return
-            content = self._decode(group_tokens)
-            chunks.append(self._build(document, "text", ordinal, content, content, grouped))
+            content = body(pieces)
+            grouped = list({p.element.element_id: p.element for p in pieces}.values())
+            kind = "figure" if all(e.element_type == "image" for e in grouped) else "text"
+            chunks.append(self._build(
+                document, kind, ordinal, content,
+                self._embedding_text(content, current_path or []), grouped,
+            ))
             ordinal += 1
-            tail = group_tokens[-self.config.overlap_tokens :] if self.config.overlap_tokens else []
-            # The overlap belongs to the same source elements and section only.
-            grouped = grouped[-1:] if tail else []
-            group_tokens = list(tail)
+            overlap: list[_TextPiece] = []
+            remaining = self.config.overlap_tokens if retain_overlap else 0
+            for piece in reversed(pieces):
+                # A caption is atomic: never carry a caption fragment as overlap.
+                if not remaining or piece.element.element_type in {"image", "heading"}:
+                    break
+                tokens = self._tokens(piece.text)
+                take = min(remaining, len(tokens))
+                overlap.insert(0, _TextPiece(self._decode(tokens[-take:]), piece.element))
+                remaining -= take
+            pieces = overlap
+            has_new_content = False
 
-        current_path = None
         for element in elements:
-            tokens = self._tokens(element.text_for_embedding)
-            if current_path is not None and element.heading_path != current_path and group_tokens:
-                flush()
-                grouped, group_tokens = [], []  # no overlap across section boundaries
+            if current_path is not None and element.heading_path != current_path:
+                flush(retain_overlap=False)
             current_path = element.heading_path
-            start = 0
-            while start < len(tokens):
-                room = self.config.target_tokens - len(group_tokens)
-                take = min(room, len(tokens) - start)
-                group_tokens.extend(tokens[start : start + take])
-                if element not in grouped:
-                    grouped.append(element)
-                start += take
-                if len(group_tokens) >= self.config.target_tokens:
+            is_image = element.element_type == "image"
+            if is_image and self._input_count(element.text, current_path) <= self.config.hard_max_tokens:
+                units = [element.text]
+            else:
+                if is_image:
+                    element = element.model_copy(update={
+                        "metadata": {**element.metadata, "caption_split_for_budget": True}
+                    })
+                title = (element.generated_enrichment or {}).get("title", "").strip() if is_image else ""
+                split_headings = [*current_path, title] if title else current_path
+                units = self._text_units(element.text, split_headings)
+                if title:
+                    units = (text if text.startswith(title) else title + "\n" + text for text in units)
+            for text in units:
+                piece = _TextPiece(text, element)
+                candidate = body([*pieces, piece])
+                if pieces and self._input_count(candidate, current_path) > self.config.preferred_max_tokens:
                     flush()
-            if len(group_tokens) >= self.config.preferred_min_tokens:
-                flush()
-        flush()
+                if pieces and self._input_count(body([*pieces, piece]), current_path) > self.config.preferred_max_tokens:
+                    pieces = []  # discard overlap rather than cut a new paragraph/caption
+                pieces.append(piece)
+                has_new_content = True
+                if self._input_count(body(pieces), current_path) >= self.config.target_tokens:
+                    flush()
+        flush(retain_overlap=False)
         return chunks, ordinal
 
     def _table_chunks(
@@ -159,7 +262,7 @@ class TypeAwareChunker:
         for row in groups:
             candidate = "\n".join([*current, row] if row else current)
             embedding = "\n".join([*element.heading_path, candidate])
-            if len(self._tokens(embedding)) > self.config.hard_max_tokens:
+            if embedding_token_count(self.tokenizer, embedding) > self.config.hard_max_tokens:
                 if len(current) == header_count:
                     raise ValueError(
                         f"table row in {element.element_id} exceeds 768 tokens and cannot be cut safely"
@@ -241,7 +344,9 @@ class TypeAwareChunker:
                 text_buffer = []
 
         for element in sorted(document.elements, key=lambda item: item.order):
-            if element.element_type in {"table", "image"}:
+            if element.element_type == "image" and self.config.merge_image_captions:
+                text_buffer.append(element)
+            elif element.element_type in {"table", "image"}:
                 flush_text()
                 if element.element_type == "table":
                     made, ordinal = self._table_chunks(document, element, ordinal)

@@ -1,8 +1,10 @@
 """Conservative, non-mutating preparation of canonical elements for retrieval."""
 
+import json
 import re
 import unicodedata
 from copy import deepcopy
+from pathlib import Path
 from typing import Any
 
 from ..normalization.ocr_postprocessing import clean_text
@@ -122,22 +124,40 @@ class RetrievalPreprocessor:
     def _figure_text(caption: dict[str, Any], headings: list[str]) -> tuple[str, str]:
         output = caption["caption"]
         visible = output.get("visible_text") or []
-        display = output.get("caption", "").strip()
-        values = [*headings, output.get("title", "").strip(), display]
+        values = [output.get("title", "").strip(), output.get("caption", "").strip()]
         if visible:
             values.append("Văn bản nhìn thấy: " + "; ".join(map(str, visible)))
+        for key, label in (
+            ("steps", "Các bước"),
+            ("relationships", "Các quan hệ"),
+            ("chart_details", "Chi tiết biểu đồ"),
+        ):
+            value = output.get(key)
+            if value:
+                items = value if isinstance(value, list) else [value]
+                values.extend(
+                    label + ": " + (
+                        item if isinstance(item, str)
+                        else json.dumps(item, ensure_ascii=False, separators=(", ", ": "))
+                    )
+                    for item in items
+                )
         # Neighboring context is intentionally absent from embedding text.
-        return display, "\n".join(value for value in values if value)
+        display = "\n".join(value for value in values if value)
+        return display, "\n".join([*headings, display])
 
     def process(
-        self, document: CanonicalDocument, captions: dict[str, Any] | None = None
+        self, document: CanonicalDocument, captions: dict[str, Any] | None = None,
+        *, asset_base: Path | None = None,
     ) -> RetrievalDocument:
         heading_state: list[tuple[str, str, int | None]] = []
         elements = []
-        for source in document.elements:
+        for source in sorted(document.elements, key=lambda element: element.order):
             if source.metadata.get("exclude_from_content") or source.element_type in self.excluded_types:
                 continue
             caption = self._caption_for(source, captions) if source.element_type == "image" else None
+            if caption and caption.get("document_id", document.document_id) != document.document_id:
+                raise ValueError(f"Caption document mismatch for {source.element_id}")
             if source.element_type == "image" and caption is None:
                 continue
             text = clean_retrieval_text(source.text, preserve_table=source.element_type == "table")
@@ -150,6 +170,9 @@ class RetrievalPreprocessor:
             if source.element_type == "heading":
                 heading_state = self._update_heading_path(heading_state, source, text)
             headings = [entry[1] for entry in heading_state]
+            asset_path = source.metadata.get("asset_path")
+            if asset_path and asset_base is not None:
+                asset_path = str((asset_base / asset_path).resolve())
             elements.append(
                 RetrievalElement(
                     element_id=source.element_id,
@@ -176,7 +199,7 @@ class RetrievalPreprocessor:
                             "cell_range": source.metadata.get("range"),
                         }
                     ],
-                    asset_path=source.metadata.get("asset_path"),
+                    asset_path=asset_path,
                     image_hash=caption.get("image_hash") if caption else None,
                     generated_enrichment=caption.get("caption") if caption else None,
                     uncertainty_flags=(

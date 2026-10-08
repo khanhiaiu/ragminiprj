@@ -23,6 +23,11 @@ class TokenizerLike(Protocol):
     ) -> str: ...
 
 
+def embedding_token_count(tokenizer: TokenizerLike, text: str) -> int:
+    """Count the complete model input, including BOS/EOS special tokens."""
+    return len(tokenizer.encode(text, add_special_tokens=True))
+
+
 def load_bge_m3_tokenizer(
     model_name: str = BGE_M3_MODEL,
     revision: str = BGE_M3_REVISION,

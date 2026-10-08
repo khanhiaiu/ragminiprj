@@ -18,6 +18,7 @@ from document_parser.retrieval.preprocessor import RetrievalPreprocessor  # noqa
 from rag.bm25 import BM25Index  # noqa: E402
 from rag.chunk_contract import chunk_documents  # noqa: E402
 from rag.chunking import TypeAwareChunker  # noqa: E402
+from rag.chunking.chunker import ChunkingConfig  # noqa: E402
 from rag.embeddings import EmbeddingCache, HashEmbedder, make_embedder  # noqa: E402
 from rag.enrichment.tokenizer import (  # noqa: E402
     BGE_M3_MODEL,
@@ -70,7 +71,19 @@ def load_chunks_file(path: Path) -> list[Chunk]:
 def load_captions(path: Path | None) -> dict[str, dict]:
     if path is None:
         return {}
-    return {value["image_element_id"]: value for value in load_jsonl(path)}
+    records = load_jsonl(path)
+    unfinished = [value for value in records if value.get("status") not in {
+        "completed", "needs_review", "excluded"
+    }]
+    if not records or unfinished:
+        raise ValueError(
+            f"Caption file is incomplete: {len(unfinished)}/{len(records)} records pending/error; "
+            "generate captions before preparing chunks"
+        )
+    captions = {value["image_element_id"]: value for value in records}
+    if len(captions) != len(records):
+        raise ValueError("Duplicate image_element_id in caption file")
+    return captions
 
 
 def payload(chunk: Chunk) -> dict:
@@ -88,6 +101,7 @@ def payload(chunk: Chunk) -> dict:
         "type": chunk.type,
         "image_path": chunk.image_path,
         "image_hash": chunk.image_hash,
+        "image": [item.model_dump(mode="json") for item in chunk.image],
         "content": chunk.content,
         "text_for_embedding": chunk.text_for_embedding or chunk.content,
         "source_element_ids": chunk.source_element_ids,
@@ -112,13 +126,22 @@ def prepare(args, output: Path) -> list[Chunk]:
         if args.embedder == "hash"
         else load_bge_m3_tokenizer(local_files_only=args.local_files_only)
     )
-    chunker = TypeAwareChunker(tokenizer)
+    chunker = TypeAwareChunker(tokenizer, ChunkingConfig(merge_image_captions=bool(args.captions)))
     chunks = []
     retrieval_dir = output / "retrieval"
     retrieval_dir.mkdir(parents=True, exist_ok=True)
     for path in documents:
         canonical = CanonicalDocument.model_validate_json(path.read_text(encoding="utf-8"))
-        derived = RetrievalPreprocessor().process(canonical, captions=captions)
+        if args.captions:
+            missing = [
+                element.element_id for element in canonical.elements
+                if element.element_type == "image"
+                and not element.metadata.get("exclude_from_content")
+                and element.element_id not in captions
+            ]
+            if missing:
+                raise ValueError(f"Missing captions for images in {canonical.document_id}: {missing}")
+        derived = RetrievalPreprocessor().process(canonical, captions=captions, asset_base=path.parent)
         (retrieval_dir / f"{canonical.document_id}.json").write_text(
             derived.model_dump_json(indent=2), encoding="utf-8"
         )
