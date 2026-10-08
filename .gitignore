@@ -11,6 +11,8 @@ htmlcov/
 
 # Virtual environments
 .venv/
+.venv-gpu/
+.venv-*/
 venv/
 env/
 
@@ -31,6 +33,7 @@ dist/
 
 # Generated parser output and temporary files
 parsed_test_document/
+output/
 qdrant_storage/
 tmp/
 temp/
@@ -41,3 +44,4 @@ temp/
 .vscode/
 .DS_Store
 Thumbs.db
+documents/

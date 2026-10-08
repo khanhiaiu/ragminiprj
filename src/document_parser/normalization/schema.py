@@ -3,7 +3,9 @@ from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
-ElementType = Literal["heading", "paragraph", "list", "table", "image", "formula", "header", "footer", "unknown"]
+ElementType = Literal[
+    "heading", "paragraph", "list", "table", "image", "formula", "header", "footer", "unknown"
+]
 PageType = Literal["digital", "scanned", "hybrid"]
 
 
@@ -59,6 +61,10 @@ class CanonicalDocument(BaseModel):
         for element in self.elements:
             if element.parent_id and element.parent_id not in ids:
                 raise ValueError(f"Missing parent: {element.parent_id}")
-            if page_numbers and element.page_number is not None and element.page_number not in page_numbers:
+            if (
+                page_numbers
+                and element.page_number is not None
+                and element.page_number not in page_numbers
+            ):
                 raise ValueError(f"Missing page: {element.page_number}")
         return self

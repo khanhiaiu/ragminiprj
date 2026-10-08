@@ -1,0 +1,138 @@
+# File cấu hình chính. Đường dẫn tương đối tính từ gốc project.
+device: gpu:0
+models:
+  layout: PP-DocLayout_plus-L
+  detection: PP-OCRv6_medium_det
+  recognition: tieubaoca/pp-ocrv6-medium-rec-vietnamese
+
+paths:
+  input: output/pdf
+  output: parsed_test_document/ppocrv6_vi_medium_clean
+  recognition_model: .cache/models/ppocrv6_vi
+
+ocr:
+  dpi: 150
+  options:
+    # Có thể thêm tham số khởi tạo PPStructureV3 tại đây.
+    # Tên model và device lấy từ các mục trên, không khai báo lại.
+    cpu_threads: 4
+    enable_mkldnn: false
+    mkldnn_cache_capacity: 10
+    text_recognition_batch_size: 1
+    text_det_limit_type: max
+    text_det_limit_side_len: 1280
+    text_det_thresh: 0.3
+    text_det_box_thresh: 0.6
+    text_det_unclip_ratio: 1.5
+    text_rec_score_thresh: 0.0
+    layout_threshold: 0.5
+    layout_nms: true
+    use_tensorrt: false
+    precision: fp32
+    enable_hpi: false
+    use_doc_orientation_classify: false
+    use_doc_unwarping: false
+    use_textline_orientation: false
+    use_region_detection: false
+    use_seal_recognition: false
+    use_table_recognition: true
+    use_formula_recognition: false
+    use_chart_recognition: false
+
+pdf:
+  minimum_text_chars: 40
+  minimum_text_blocks: 1
+  minimum_printable_ratio: 0.95
+  max_invalid_char_ratio: 0.03
+  minimum_text_quality: 0.85
+  minimum_text_density: 0.00005
+  scan_image_coverage_threshold: 0.70
+  hybrid_image_coverage_threshold: 0.08
+
+max_excel_region_cells: 1000000
+
+# Hậu xử lý code thuần. Giữ bản OCR gốc và lịch sử thay đổi trong JSON.
+postprocessing:
+  enabled: true
+  reconstruct_lines: true
+  line_assignment_ratio: 0.5
+  line_match_ratio: 1.0 # Mặc định chỉ ghép khi nội dung khớp, bỏ qua khoảng trắng.
+  line_row_tolerance: 0.5
+  duplicate_overlap: 0.8
+  reading_order: auto # auto, single_column hoặc preserve
+  column_min_width_ratio: 0.18
+  column_gap_ratio: 0.05
+  column_overlap_ratio: 0.5
+  page_number_margin_ratio: 0.08
+  page_number_center_tolerance: 0.2
+  normalize_punctuation: true
+  flag_years: true
+  flag_spelling: true
+  # Chỉ dùng để tạo gợi ý, không tự thay chữ theo từ điển.
+  spelling_vocabulary: [thực, phục, quyền, nghĩa, Việt, Nam, bè, vĩ, mục, bằng, lực, chịu, tổ, chức, lợi, ích, toàn, thổ, sống, tính, dân, cộng, hòa, thủ, giữ, gìn, xây, dựng, bảo, vệ]
+  retry_numbering: true
+  retry_scales: [1.5, 2.0]
+  retry_crop_padding: 3 # pixel trên ảnh render
+  retry_min_confidence: 0.8
+  retry_min_agreement: 2
+
+# Candidate-based OCR correction. Tokenizer/model are loaded only for suspicious,
+# eligible PaddleOCR text; every candidate still passes the safety gate.
+text_correction:
+  enabled: true
+  backend: protonx
+  models:
+    protonx:
+      model_name: protonx-models/nano-protonx-legal-tc
+    protonx_legal:
+      model_name: protonx-models/protonx-legal-tc
+    bmd1905:
+      model_name: bmd1905/vietnamese-correction-v2
+    bravend:
+      model_name: bravend/bartpho-syllable-vi-spellcheck
+      revision: 31f323bd148f9f0e23722bf3226a752d124c1023
+      trust_remote_code: true
+  device: auto
+  only_ocr: true
+  eligible_element_types: [heading, paragraph, list]
+  detector:
+    enabled: true
+    use_ocr_confidence: true
+    min_ocr_confidence: 0.92
+    use_vocabulary: true
+    use_spelling_flags: true
+  generation:
+    num_beams: 5
+    max_input_tokens: 128
+    max_new_tokens: 160
+    length_penalty: 1.0
+    early_stopping: true
+  safety:
+    enabled: true
+    max_auto_edit_ratio: 0.15
+    preserve_numbers: true
+    preserve_dates: true
+    preserve_identifiers: true
+    preserve_urls: true
+    preserve_emails: true
+    preserve_structure: true
+
+environment:
+  # Các biến cache được chuyển thành đường dẫn tuyệt đối.
+  PADDLE_PDX_CACHE_HOME: .cache/paddlex
+  HF_HOME: .cache/huggingface
+  PADDLE_HOME: .cache/paddle
+  XDG_CACHE_HOME: .cache
+  PADDLE_PDX_MODEL_SOURCE: BOS
+  PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: "True"
+  PADDLE_PDX_DISABLE_DEVICE_FALLBACK: "True"
+  FLAGS_allocator_strategy: auto_growth
+
+# Chỉ dùng khi models.recognition chọn repository tiếng Việt bên dưới.
+# Model Paddle chính thức được tải tự động, không dùng bộ trọng số này.
+recognition_download:
+  repository: tieubaoca/pp-ocrv6-medium-rec-vietnamese
+  model_name: PP-OCRv6_medium_rec
+  revision: edc19ca6890bedb7a68c055d21190b44fc1aaa00
+  files: [inference.json, inference.pdiparams, inference.yml, ppocr_keys.txt]
+  max_workers: 4

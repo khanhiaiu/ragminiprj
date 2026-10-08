@@ -21,11 +21,15 @@ class DoclingDOCXParser:
                 from docling.datamodel.base_models import InputFormat
                 from docling.datamodel.document import InputDocument
             except ImportError as exc:
-                raise DependencyUnavailableError("Install the DOCX extra: pip install '.[docx]'") from exc
+                raise DependencyUnavailableError(
+                    "Install DOCX dependencies: pip install -r requirements.txt"
+                ) from exc
             # This is the same declarative Word backend used by SimplePipeline.
             # DocumentConverter imports unrelated OCR pipelines in SDK 2.133,
             # so invoke the Word backend without requiring scipy / torch.
-            input_doc = InputDocument(path_or_stream=path, format=InputFormat.DOCX, backend=MsWordDocumentBackend)
+            input_doc = InputDocument(
+                path_or_stream=path, format=InputFormat.DOCX, backend=MsWordDocumentBackend
+            )
             backend = getattr(input_doc, "_backend", None)
             try:
                 if not input_doc.valid or backend is None or not backend.is_valid():
@@ -42,18 +46,30 @@ class DoclingDOCXParser:
                 raise DocumentParseError(f"Docling conversion status: {status}")
             doc, errors = result.document, [str(e) for e in result.errors]
         data = document_data(path, "docling")
-        data["metadata"]["backend"] = "MsWordDocumentBackend" if self._converter is None else "DocumentConverter"
+        data["metadata"]["backend"] = (
+            "MsWordDocumentBackend" if self._converter is None else "DocumentConverter"
+        )
         data["metadata"]["conversion_status"] = status
         data["metadata"]["conversion_errors"] = errors
         for number, page in doc.pages.items():
-            data["pages"].append({"page_number": number, "width": page.size.width, "height": page.size.height})
+            data["pages"].append(
+                {"page_number": number, "width": page.size.width, "height": page.size.height}
+            )
         references = {}
         parent_references = []
         for item, level in doc.iterate_items():
             label = str(item.label.value)
-            metadata = {"parser": "docling", "original_label": label, "structural_level": level,
-                        "docling_ref": item.self_ref}
-            element = {"element_type": label, "text": getattr(item, "text", ""), "metadata": metadata}
+            metadata = {
+                "parser": "docling",
+                "original_label": label,
+                "structural_level": level,
+                "docling_ref": item.self_ref,
+            }
+            element = {
+                "element_type": label,
+                "text": getattr(item, "text", ""),
+                "metadata": metadata,
+            }
             if label == "table":
                 element["text"] = item.export_to_markdown(doc=doc)
                 metadata["table_html"] = item.export_to_html(doc=doc)

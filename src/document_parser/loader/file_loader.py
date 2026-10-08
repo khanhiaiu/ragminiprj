@@ -20,4 +20,8 @@ class FileLoader:
         directory = Path(directory).resolve()
         if not directory.is_dir():
             raise DocumentParseError(f"Input directory does not exist: {directory}")
-        return sorted(p for p in directory.rglob("*") if p.is_file() and p.suffix.lower() in SUPPORTED_EXTENSIONS)
+        return sorted(
+            p
+            for p in directory.rglob("*")
+            if p.is_file() and p.suffix.lower() in SUPPORTED_EXTENSIONS
+        )
