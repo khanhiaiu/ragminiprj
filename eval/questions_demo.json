@@ -1,0 +1,11 @@
+{
+  "note": "Grounded in processed_documents/69-bgddt.signed.pdf.md (Quy che truong nang khieu, Thong tu 69/2026/TT-BGDDT). Use to tune threshold until the main eval set's target docs are ingested.",
+  "questions": [
+    { "q": "Quy chế tổ chức trường năng khiếu ban hành kèm văn bản nào?", "expect_contains": "Thông tư số 69", "expect_type": "text" },
+    { "q": "Trường năng khiếu gồm những loại hình nào?", "expect_contains": "thể dục, thể thao", "expect_type": "text" },
+    { "q": "Quy chế này áp dụng đối với đối tượng nào?", "expect_contains": "Trường năng khiếu nghệ thuật", "expect_type": "text" },
+    { "q": "Cơ cấu tổ chức của trường năng khiếu gồm những gì?", "expect_contains": "Cơ cấu tổ chức", "expect_type": "text" },
+    { "q": "Phí thường niên thẻ tín dụng là bao nhiêu?", "expect_contains": null, "expect_fallback": true },
+    { "q": "Chính sách nghỉ phép năm thế nào?", "expect_contains": null, "expect_fallback": true }
+  ]
+}

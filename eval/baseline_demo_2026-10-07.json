@@ -1,0 +1,67 @@
+{
+  "summary": {
+    "total": 6,
+    "passed": 4,
+    "failed": 2,
+    "threshold": null,
+    "questions": "eval/questions_demo.json"
+  },
+  "rows": [
+    {
+      "q": "Quy chế tổ chức trường năng khiếu ban hành kèm văn bản nào?",
+      "fallback": false,
+      "reason": null,
+      "best_score": 0.0323,
+      "top_citation": "[69-bgddt.signed.pdf.md, trang 1]",
+      "contains": true,
+      "type_match": true,
+      "pass": true
+    },
+    {
+      "q": "Trường năng khiếu gồm những loại hình nào?",
+      "fallback": false,
+      "reason": null,
+      "best_score": 0.0315,
+      "top_citation": "[69-bgddt.signed.pdf.md, trang 2]",
+      "contains": true,
+      "type_match": true,
+      "pass": true
+    },
+    {
+      "q": "Quy chế này áp dụng đối với đối tượng nào?",
+      "fallback": false,
+      "reason": null,
+      "best_score": 0.0328,
+      "top_citation": "[69-bgddt.signed.pdf.md, trang 1]",
+      "contains": true,
+      "type_match": true,
+      "pass": true
+    },
+    {
+      "q": "Cơ cấu tổ chức của trường năng khiếu gồm những gì?",
+      "fallback": false,
+      "reason": null,
+      "best_score": 0.0325,
+      "top_citation": "[69-bgddt.signed.pdf.md, trang 5]",
+      "contains": true,
+      "type_match": true,
+      "pass": true
+    },
+    {
+      "q": "Phí thường niên thẻ tín dụng là bao nhiêu?",
+      "fallback": false,
+      "reason": null,
+      "best_score": 0.0317,
+      "top_citation": "[69-bgddt.signed.pdf.md, trang 10]",
+      "pass": false
+    },
+    {
+      "q": "Chính sách nghỉ phép năm thế nào?",
+      "fallback": false,
+      "reason": null,
+      "best_score": 0.0323,
+      "top_citation": "[69-bgddt.signed.pdf.md, trang 13]",
+      "pass": false
+    }
+  ]
+}
