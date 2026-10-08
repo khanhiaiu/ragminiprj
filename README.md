@@ -6,6 +6,175 @@ Pipeline Python dùng để đọc tài liệu `PDF`, `DOCX`, `XLSX` và ảnh, 
 > chunking, embedding, vector database hoặc truy vấn.
 Project gồm hai giai đoạn: (1) ingestion và parsing ra `CanonicalDocument`, (2) RAG local gồm chunking, embedding hybrid BM25 + bge-m3, lưu trữ Local/Qdrant, retrieval RRF top 5, sinh câu trả lời bằng Qwen3-4B qua llama.cpp, kèm FastAPI và Streamlit UI.
 
+## Production ingestion pipeline
+
+Pipeline mới giữ nguyên `document.json` và asset do parser tạo. Mọi caption và
+dữ liệu retrieval dẫn xuất được ghi vào thư mục output riêng:
+
+```text
+CanonicalDocument + assets
+  -> image context (BAAI/bge-m3 tokenizer, revision pinned, <= 200 tokens)
+  -> OpenCode VLM structured caption
+  -> derived retrieval documents
+  -> text/table/figure chunks (hard maximum 768 tokens)
+  -> BGE-M3 dense 1024 + lexical sparse
+  -> Qdrant generation collection
+  -> dense/sparse/hybrid verification
+  -> docs_current alias
+```
+
+Cấu hình mặc định và revision được khóa tại
+[`config/rag_ingestion.json`](config/rag_ingestion.json). Gap analysis và thứ tự
+triển khai nằm tại
+[`docs/INGESTION_IMPLEMENTATION_PLAN.md`](docs/INGESTION_IMPLEMENTATION_PLAN.md).
+
+### Image context và caption
+
+Mỗi image dùng tối đa đúng 200 token văn bản hợp lệ gần nhất theo canonical
+reading order: 100 token trước và 100 token sau. Phần quota thiếu được chuyển
+sang phía còn lại. Context có provenance đến element/page/section, tokenizer
+fingerprint và deterministic hash. Header/footer, nội dung bị exclude, OCR debug,
+placeholder và caption AI cũ không được dùng.
+
+Tạo context report mà không gửi dữ liệu ra ngoài:
+
+```bash
+python scripts/caption_images.py \
+  --input parsed_test_document/all_documents_gpu \
+  --output artifacts/ingestion/caption-dry-run \
+  --dry-run
+```
+
+Captioning gọi trực tiếp Gemini Developer API, mỗi request chứa đúng một image.
+API key và model chỉ được đọc từ biến môi trường. Rate limiter giữ tối thiểu 4
+giây giữa thời điểm bắt đầu hai request liên tiếp, kể cả retry và preflight:
+
+```bash
+export GEMINI_API_KEY='...'
+export GEMINI_MODEL='gemini-3.5-flash-lite'
+```
+
+Trước batch, chạy preflight thật bằng ảnh tổng hợp để xác nhận model và request
+format hiện tại có hỗ trợ vision:
+
+```bash
+python scripts/caption_images.py \
+  --output artifacts/ingestion/preflight \
+  --preflight-only
+```
+
+Document image và context chỉ được gửi khi người vận hành cấp acknowledgement
+rõ ràng. Giá trị này nên được ghi trong audit log của run, không đặt trong `.env`:
+
+```bash
+python scripts/caption_images.py \
+  --input parsed_test_document/all_documents_gpu \
+  --output artifacts/ingestion/caption-pilot-v1 \
+  --pilot 10 \
+  --authorize-external-egress I_AUTHORIZE_DOCUMENT_EGRESS
+```
+
+Output gồm `preflight.json`, `image_context_debug.jsonl`, `captions.jsonl`, cache
+checkpoint và `pilot_report.json`. Pilot report để trạng thái visual review là
+`pending`; người review phải kiểm tra correctness, nhánh bị bỏ sót, số liệu hallucinate
+và reading order. Batch đầy đủ bỏ `--pilot`. Mọi image discoverable đều có disposition
+`pending`, `completed`, `needs_review`, `excluded` hoặc `error`, nên có thể resume.
+
+### Prepare và full ingest
+
+Khi truyền `--captions`, pipeline ghép caption vào đúng image element của tài liệu
+retrieval và chunk chung với văn bản xung quanh. File caption phải hoàn tất, không còn bản ghi `pending`
+hoặc `error`. Mỗi chunk có trường `image`: danh sách chứa ID ảnh, đường dẫn asset,
+hash, trang, caption, văn bản nhìn thấy và các chi tiết chưa chắc chắn. Chunk không
+chứa ảnh có `image: []`. Trường này được giữ trong JSON và payload Qdrant để dùng
+khi truy xuất. Tài liệu retrieval đã ghép caption nằm trong thư mục `retrieval/`
+của run.
+
+Chunker `type-aware-v2` chỉ thêm heading một lần, ưu tiên ranh giới đoạn/câu và
+không tạo chunk chỉ chứa overlap. Caption gồm cả `steps`, `relationships` và
+`chart_details`; caption vừa hard limit được giữ nguyên trong một chunk. Nếu
+caption quá dài, các phần giữ tiêu đề và được đánh dấu bằng
+`metadata.split_image_captions`, còn trường `image` vẫn giữ caption đầy đủ.
+Ngân sách 768 token bao gồm heading và special tokens của tokenizer BGE-M3;
+embedder từ chối đầu vào quá giới hạn thay vì âm thầm truncate.
+
+Chuẩn bị retrieval/chunk mà chưa embedding hoặc ghi Qdrant:
+
+```bash
+python scripts/ingest.py \
+  --input parsed_test_document/all_documents_gpu \
+  --captions artifacts/ingestion/caption-v1/captions.jsonl \
+  --output artifacts/ingestion \
+  --run-id prepare-v1 \
+  --mode prepare-only
+```
+
+Full production ingest tạo collection generation mới. Nếu count hoặc smoke query
+dense/sparse/hybrid thất bại, script trả exit code 1 và không đổi alias:
+
+```bash
+export QDRANT_URL='http://localhost:6333'
+python scripts/ingest.py \
+  --input parsed_test_document/all_documents_gpu \
+  --captions artifacts/ingestion/caption-v1/captions.jsonl \
+  --output artifacts/ingestion \
+  --run-id ingest-v1 \
+  --mode full-ingest \
+  --embedder bge-m3 \
+  --backend qdrant
+```
+
+`--backend local --embedder hash` dành cho unit test/offline development và phải
+được chọn rõ ràng. Production không tự fallback khỏi Qdrant. Mỗi run ghi derived
+retrieval JSON, `chunks.jsonl`, embedding fingerprint, manifest và verification
+report. Collection generation cũ được giữ để rollback; chỉ alias `docs_current`
+được chuyển atomically sau verification.
+
+Có thể verify lại generation và tùy chọn publish:
+
+```bash
+python scripts/verify_index.py \
+  --collection docs_20261008T120000Z \
+  --expected-points 649 \
+  --output artifacts/ingestion/verify-v1.json \
+  --publish
+```
+
+Các test external thật không chạy mặc định vì cần model download, OpenCode key,
+quyền data egress và Qdrant server. Unit test dùng fake VLM/embedding/store:
+
+```bash
+pytest -q tests/test_image_context.py tests/test_captioning.py \
+  tests/test_type_aware_chunking.py tests/test_bge_m3_hybrid.py \
+  tests/test_index_publication.py
+```
+
+### Xuất PDF thành Markdown bằng Gemini
+
+Script này upload một PDF lên Gemini Files API, yêu cầu model trong `GEMINI_MODEL`
+trích xuất toàn bộ văn bản thành Markdown, rồi lưu cạnh PDF với phần mở rộng `.md`:
+
+```bash
+python scripts/pdf_to_markdown_gemini.py documents/van-ban.pdf
+```
+
+Script đọc `GEMINI_API_KEY` và `GEMINI_MODEL` từ environment hoặc `.env` ở thư mục
+gốc project. Có thể chỉ định output và cho phép ghi đè rõ ràng:
+
+```bash
+python scripts/pdf_to_markdown_gemini.py documents/van-ban.pdf \
+  --output output/van-ban.md \
+  --force
+```
+
+Mọi request tới Gemini cách nhau tối thiểu 4 giây. Nếu phản hồi chạm giới hạn
+output, script báo lỗi thay vì lưu bản Markdown bị cắt; có thể tăng giới hạn bằng
+`--max-output-tokens`. PDF được gửi tới Google Gemini để xử lý.
+Nếu Gemini kết thúc với `RECITATION`, model đã nhận file nhưng chặn trả lại văn
+bản nguyên văn; đây không phải lỗi API key hoặc kết nối. Dùng parser PDF/OCR
+local của project để xuất toàn văn trong trường hợp đó.
+
+
 ## Yêu cầu
 
 - Python `3.11` đến `3.13` (khuyến nghị `3.12`)

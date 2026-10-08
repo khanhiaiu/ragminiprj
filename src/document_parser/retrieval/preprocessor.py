@@ -1,8 +1,10 @@
 """Conservative, non-mutating preparation of canonical elements for retrieval."""
 
+import json
 import re
 import unicodedata
 from copy import deepcopy
+from pathlib import Path
 from typing import Any
 
 from ..normalization.ocr_postprocessing import clean_text
@@ -65,7 +67,7 @@ class RetrievalPreprocessor:
 
     def __init__(self, config: dict[str, Any] | None = None):
         self.config = config or {}
-        self.excluded_types = set(self.config.get("excluded_types", ["header", "footer", "image"]))
+        self.excluded_types = set(self.config.get("excluded_types", ["header", "footer"]))
 
     @staticmethod
     def _retrieval_metadata(element: Element) -> dict[str, Any]:
@@ -103,27 +105,82 @@ class RetrievalPreprocessor:
             values.append(text)
         return "\n".join(value for value in values if value)
 
-    def process(self, document: CanonicalDocument) -> RetrievalDocument:
+    @staticmethod
+    def _caption_for(source: Element, captions: dict[str, Any] | None) -> dict[str, Any] | None:
+        if not captions or source.element_id not in captions:
+            return None
+        value = captions[source.element_id]
+        if hasattr(value, "model_dump"):
+            value = value.model_dump(mode="json")
+        status = value.get("status")
+        if status not in {"completed", "needs_review"}:
+            return None
+        output = value.get("caption") or {}
+        if not output or not output.get("retrieval_useful"):
+            return None
+        return value
+
+    @staticmethod
+    def _figure_text(caption: dict[str, Any], headings: list[str]) -> tuple[str, str]:
+        output = caption["caption"]
+        visible = output.get("visible_text") or []
+        values = [output.get("title", "").strip(), output.get("caption", "").strip()]
+        if visible:
+            values.append("Văn bản nhìn thấy: " + "; ".join(map(str, visible)))
+        for key, label in (
+            ("steps", "Các bước"),
+            ("relationships", "Các quan hệ"),
+            ("chart_details", "Chi tiết biểu đồ"),
+        ):
+            value = output.get(key)
+            if value:
+                items = value if isinstance(value, list) else [value]
+                values.extend(
+                    label + ": " + (
+                        item if isinstance(item, str)
+                        else json.dumps(item, ensure_ascii=False, separators=(", ", ": "))
+                    )
+                    for item in items
+                )
+        # Neighboring context is intentionally absent from embedding text.
+        display = "\n".join(value for value in values if value)
+        return display, "\n".join([*headings, display])
+
+    def process(
+        self, document: CanonicalDocument, captions: dict[str, Any] | None = None,
+        *, asset_base: Path | None = None,
+    ) -> RetrievalDocument:
         heading_state: list[tuple[str, str, int | None]] = []
         elements = []
-        for source in document.elements:
-            if (
-                source.metadata.get("exclude_from_content")
-                or source.element_type in self.excluded_types
-            ):
+        for source in sorted(document.elements, key=lambda element: element.order):
+            if source.metadata.get("exclude_from_content") or source.element_type in self.excluded_types:
+                continue
+            caption = self._caption_for(source, captions) if source.element_type == "image" else None
+            if caption and caption.get("document_id", document.document_id) != document.document_id:
+                raise ValueError(f"Caption document mismatch for {source.element_id}")
+            if source.element_type == "image" and caption is None:
                 continue
             text = clean_retrieval_text(source.text, preserve_table=source.element_type == "table")
+            if caption is not None:
+                text, embedding_text = self._figure_text(
+                    caption, [entry[1] for entry in heading_state]
+                )
             if not text:
                 continue
             if source.element_type == "heading":
                 heading_state = self._update_heading_path(heading_state, source, text)
             headings = [entry[1] for entry in heading_state]
+            asset_path = source.metadata.get("asset_path")
+            if asset_path and asset_base is not None:
+                asset_path = str((asset_base / asset_path).resolve())
             elements.append(
                 RetrievalElement(
                     element_id=source.element_id,
                     element_type=source.element_type,
                     text=text,
-                    text_for_embedding=self._embedding_text(text, headings),
+                    text_for_embedding=(
+                        embedding_text if caption is not None else self._embedding_text(text, headings)
+                    ),
                     document_id=document.document_id,
                     page_number=source.page_number,
                     section_id=source.section_id,
@@ -132,6 +189,33 @@ class RetrievalPreprocessor:
                     bbox=source.bbox,
                     heading_path=headings,
                     source_element_ids=[source.element_id],
+                    source_spans=[
+                        {
+                            "element_id": source.element_id,
+                            "page_number": source.page_number,
+                            "bbox": source.bbox,
+                            "order": source.order,
+                            "sheet": source.metadata.get("sheet"),
+                            "cell_range": source.metadata.get("range"),
+                        }
+                    ],
+                    asset_path=asset_path,
+                    image_hash=caption.get("image_hash") if caption else None,
+                    generated_enrichment=caption.get("caption") if caption else None,
+                    uncertainty_flags=(
+                        list((caption.get("caption") or {}).get("uncertainties") or [])
+                        if caption
+                        else []
+                    ),
+                    table_structure=(
+                        {
+                            key: deepcopy(source.metadata[key])
+                            for key in ("cells", "values", "rows", "columns", "range", "sheet")
+                            if key in source.metadata
+                        }
+                        if source.element_type == "table"
+                        else None
+                    ),
                     metadata=self._retrieval_metadata(source),
                 )
             )
@@ -140,6 +224,7 @@ class RetrievalPreprocessor:
             filename=document.filename,
             file_type=document.file_type,
             source_path=document.source_path,
+            document_version=str(document.metadata.get("document_version", document.schema_version)),
             elements=elements,
             metadata={"source_parser": document.metadata.get("parser")},
         )

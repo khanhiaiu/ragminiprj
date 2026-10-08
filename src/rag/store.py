@@ -29,8 +29,10 @@ import os
 from pathlib import Path
 from typing import Any, Sequence
 
-COLLECTION = "docs"
+COLLECTION = "rag_system_main_v1.0"
+CURRENT_ALIAS = "docs_current"
 VECTOR_NAME = "dense"
+SPARSE_VECTOR_NAME = "sparse"
 VECTOR_SIZE = 1024
 
 # Env / .env keys accepted for Qdrant connections (explicit args win).
@@ -194,7 +196,13 @@ class QdrantStore:
         vector_size: int = VECTOR_SIZE,
         in_memory: bool = False,
         api_key: str | None = None,
+        client: Any | None = None,
     ) -> None:
+        if client is not None:
+            self.client = client
+            self.collection = collection
+            self.vector_size = vector_size
+            return
         try:
             from qdrant_client import QdrantClient
         except ImportError as exc:
@@ -209,15 +217,21 @@ class QdrantStore:
         self.vector_size = vector_size
 
     def ensure_collection(self) -> None:
-        from qdrant_client.models import Distance, PayloadSchemaType, VectorParams
+        from qdrant_client.models import (
+            Distance,
+            PayloadSchemaType,
+            SparseVectorParams,
+            VectorParams,
+        )
 
         existing = {c.name for c in self.client.get_collections().collections}
         if self.collection not in existing:
             self.client.create_collection(
                 collection_name=self.collection,
                 vectors_config={VECTOR_NAME: VectorParams(size=self.vector_size, distance=Distance.COSINE)},
+                sparse_vectors_config={SPARSE_VECTOR_NAME: SparseVectorParams()},
             )
-        for field in ("doc_id", "type"):
+        for field in ("doc_id", "document_version", "type", "page", "sheet", "image_hash"):
             try:
                 self.client.create_payload_index(
                     collection_name=self.collection, field_name=field, field_schema=PayloadSchemaType.KEYWORD
@@ -267,6 +281,59 @@ class QdrantStore:
             self.client.upsert(collection_name=self.collection, points=points[i : i + 128])
         return len(points)
 
+    @staticmethod
+    def deterministic_point_id(chunk_id: str) -> str:
+        import hashlib
+
+        digest = hashlib.md5(chunk_id.encode("utf-8")).hexdigest()
+        return f"{digest[:8]}-{digest[8:12]}-{digest[12:16]}-{digest[16:20]}-{digest[20:32]}"
+
+    def upsert_hybrid(
+        self,
+        ids: Sequence[str],
+        dense_vectors: Sequence[Sequence[float]],
+        sparse_indices: Sequence[Sequence[int]],
+        sparse_values: Sequence[Sequence[float]],
+        payloads: Sequence[dict],
+        *,
+        batch_size: int = 128,
+    ) -> int:
+        """Upsert one deterministic Qdrant point per chunk with both named vectors."""
+        from qdrant_client.models import PointStruct, SparseVector
+
+        lengths = {len(ids), len(dense_vectors), len(sparse_indices), len(sparse_values), len(payloads)}
+        if len(lengths) != 1:
+            raise ValueError("hybrid vectors and payloads must align")
+        points = []
+        for chunk_id, dense, indices, values, payload in zip(
+            ids, dense_vectors, sparse_indices, sparse_values, payloads
+        ):
+            if len(dense) != self.vector_size:
+                raise ValueError(f"dense vector dim {len(dense)} != {self.vector_size}")
+            if len(indices) != len(values):
+                raise ValueError("sparse indices and values must align")
+            enriched = dict(payload)
+            enriched["chunk_id"] = chunk_id
+            points.append(
+                PointStruct(
+                    id=self.deterministic_point_id(str(chunk_id)),
+                    vector={
+                        VECTOR_NAME: list(map(float, dense)),
+                        SPARSE_VECTOR_NAME: SparseVector(
+                            indices=list(map(int, indices)), values=list(map(float, values))
+                        ),
+                    },
+                    payload=enriched,
+                )
+            )
+        for index in range(0, len(points), batch_size):
+            self.client.upsert(
+                collection_name=self.collection,
+                points=points[index : index + batch_size],
+                wait=True,
+            )
+        return len(points)
+
     def search_dense(
         self,
         query_vector: Sequence[float],
@@ -312,9 +379,106 @@ class QdrantStore:
     def count(self) -> int:
         return self.client.count(collection_name=self.collection).count
 
+    def search_sparse(
+        self,
+        indices: Sequence[int],
+        values: Sequence[float],
+        *,
+        top_k: int = 20,
+        filters: dict | None = None,
+    ) -> list[tuple[str, float, dict]]:
+        from qdrant_client.models import SparseVector
 
-def get_store(backend: str = "auto", **kwargs) -> LocalVectorStore | QdrantStore:
-    """backend: local | qdrant | qdrant-memory | auto (qdrant if reachable else local)."""
+        result = self.client.query_points(
+            collection_name=self.collection,
+            query=SparseVector(indices=list(indices), values=list(values)),
+            using=SPARSE_VECTOR_NAME,
+            limit=top_k,
+            query_filter=self._filter(filters),
+            with_payload=True,
+        )
+        return self._points(result.points)
+
+    def search_hybrid(
+        self,
+        dense: Sequence[float],
+        sparse_indices: Sequence[int],
+        sparse_values: Sequence[float],
+        *,
+        top_k: int = 20,
+        filters: dict | None = None,
+    ) -> list[tuple[str, float, dict]]:
+        from qdrant_client.models import Fusion, FusionQuery, Prefetch, SparseVector
+
+        query_filter = self._filter(filters)
+        result = self.client.query_points(
+            collection_name=self.collection,
+            prefetch=[
+                Prefetch(query=list(map(float, dense)), using=VECTOR_NAME, limit=max(top_k, 20)),
+                Prefetch(
+                    query=SparseVector(
+                        indices=list(map(int, sparse_indices)),
+                        values=list(map(float, sparse_values)),
+                    ),
+                    using=SPARSE_VECTOR_NAME,
+                    limit=max(top_k, 20),
+                ),
+            ],
+            query=FusionQuery(fusion=Fusion.RRF),
+            query_filter=query_filter,
+            limit=top_k,
+            with_payload=True,
+        )
+        return self._points(result.points)
+
+    @staticmethod
+    def _points(points) -> list[tuple[str, float, dict]]:
+        output = []
+        for point in points:
+            payload = dict(point.payload or {})
+            output.append((str(payload.get("chunk_id", point.id)), float(point.score), payload))
+        return output
+
+    @staticmethod
+    def _filter(filters: dict | None):
+        if not filters:
+            return None
+        from qdrant_client.models import FieldCondition, Filter, MatchValue
+
+        conditions = [
+            FieldCondition(key=key, match=MatchValue(value=value))
+            for key, value in filters.items()
+            if value is not None
+        ]
+        return Filter(must=conditions) if conditions else None
+
+    def publish_alias(self, alias: str = CURRENT_ALIAS) -> None:
+        """Atomically point the stable alias at this verified generation."""
+        from qdrant_client.models import (
+            CreateAlias,
+            CreateAliasOperation,
+            DeleteAlias,
+            DeleteAliasOperation,
+        )
+
+        aliases = {item.alias_name for item in self.client.get_aliases().aliases}
+        operations = []
+        if alias in aliases:
+            operations.append(DeleteAliasOperation(delete_alias=DeleteAlias(alias_name=alias)))
+        operations.append(
+            CreateAliasOperation(
+                create_alias=CreateAlias(collection_name=self.collection, alias_name=alias)
+            )
+        )
+        self.client.update_collection_aliases(change_aliases_operations=operations)
+
+    def verify_count(self, expected: int) -> dict[str, Any]:
+        actual = int(self.count())
+        return {"expected_points": expected, "actual_points": actual, "passed": actual == expected}
+
+
+def get_store(backend: str = "qdrant", **kwargs) -> LocalVectorStore | QdrantStore:
+    """Select a store explicitly. Production failures never fall back silently."""
     key = backend.strip().lower()
     if key == "local":
         return LocalVectorStore(dim=int(kwargs.get("dim", VECTOR_SIZE)))
@@ -334,6 +498,6 @@ def get_store(backend: str = "auto", **kwargs) -> LocalVectorStore | QdrantStore
             )
             store.ensure_collection()
             return store
-        except Exception:
-            return LocalVectorStore(dim=int(kwargs.get("dim", VECTOR_SIZE)))
+        except Exception as exc:
+            raise RuntimeError("Qdrant auto-discovery failed; refusing local fallback") from exc
     raise ValueError(f"Unknown backend {backend!r}")

@@ -1,0 +1,2365 @@
+{
+  "schema_version": "1.0",
+  "document_id": "386c6e92e7d3f83fcd76",
+  "filename": "VanBanGoc_34.signed.pdf",
+  "file_type": "pdf",
+  "source_path": "/workspace/APOLLO/ragminiprj/documents/VanBanGoc_34.signed.pdf",
+  "document_version": "1.0",
+  "elements": [
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e3",
+      "element_type": "heading",
+      "text": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 2,
+      "bbox": [
+        262.84756584197925,
+        72.9284064665127,
+        536.7270550678372,
+        104.594688221709
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e3"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e3",
+          "page_number": 1,
+          "bbox": [
+            262.84756584197925,
+            72.9284064665127,
+            536.7270550678372,
+            104.594688221709
+          ],
+          "order": 2,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "doc_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e4",
+      "element_type": "paragraph",
+      "text": "Hà Nội, ngày 17 tháng 3 năm 2020",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nHà Nội, ngày 17 tháng 3 năm 2020",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 3,
+      "bbox": [
+        301.21947326416597,
+        121.38741339491916,
+        499.79409417398244,
+        135.7811778290993
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e4"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e4",
+          "page_number": 1,
+          "bbox": [
+            301.21947326416597,
+            121.38741339491916,
+            499.79409417398244,
+            135.7811778290993
+          ],
+          "order": 3,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e5",
+      "element_type": "paragraph",
+      "text": "CHÍNH PHỦ",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nCHÍNH PHỦ",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 4,
+      "bbox": [
+        129.02553870710295,
+        73.4081986143187,
+        205.76935355147646,
+        88.28175519630484
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e5"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e5",
+          "page_number": 1,
+          "bbox": [
+            129.02553870710295,
+            73.4081986143187,
+            205.76935355147646,
+            88.28175519630484
+          ],
+          "order": 4,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e6",
+      "element_type": "paragraph",
+      "text": "Số: 34 /2020/NĐ- CP",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nSố: 34 /2020/NĐ- CP",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 5,
+      "bbox": [
+        111.27853152434157,
+        121.38741339491916,
+        223.51636073423782,
+        135.30138568129328
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e6"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e6",
+          "page_number": 1,
+          "bbox": [
+            111.27853152434157,
+            121.38741339491916,
+            223.51636073423782,
+            135.30138568129328
+          ],
+          "order": 5,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e7",
+      "element_type": "paragraph",
+      "text": "CÔNG THÔNG TIN ĐIỆN TỪ CHÍNH PHỦ ĐẾN Giờ:... Ngày: 19/312020..",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nCÔNG THÔNG TIN ĐIỆN TỪ CHÍNH PHỦ ĐẾN Giờ:... Ngày: 19/312020..",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 6,
+      "bbox": [
+        16.787709497206702,
+        142.01847575057735,
+        129.02553870710295,
+        189.51789838337183
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e7"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e7",
+          "page_number": 1,
+          "bbox": [
+            16.787709497206702,
+            142.01847575057735,
+            129.02553870710295,
+            189.51789838337183
+          ],
+          "order": 6,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e8",
+      "element_type": "paragraph",
+      "text": "NGHỊ ĐỊNH Sửa đổi, bổ sung Điều 3 Nghị định số 02/2018/NĐ-CP ngày 04 tháng 01 năm 2018 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Truyền hình Việt Nam",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nNGHỊ ĐỊNH Sửa đổi, bổ sung Điều 3 Nghị định số 02/2018/NĐ-CP ngày 04 tháng 01 năm 2018 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Truyền hình Việt Nam",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 7,
+      "bbox": [
+        106.96169193934557,
+        156.8920323325635,
+        533.3695131683959,
+        221.1841801385681
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e8"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e8",
+          "page_number": 1,
+          "bbox": [
+            106.96169193934557,
+            156.8920323325635,
+            533.3695131683959,
+            221.1841801385681
+          ],
+          "order": 7,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e9",
+      "element_type": "paragraph",
+      "text": "Căn cứ Luật Tổ chức Chính phủ ngày 19 tháng 6 năm 2015;",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nCăn cứ Luật Tổ chức Chính phủ ngày 19 tháng 6 năm 2015;",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 8,
+      "bbox": [
+        124.70869912210694,
+        245.17378752886836,
+        471.01516360734234,
+        258.60796766743647
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e9"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e9",
+          "page_number": 1,
+          "bbox": [
+            124.70869912210694,
+            245.17378752886836,
+            471.01516360734234,
+            258.60796766743647
+          ],
+          "order": 8,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e10",
+      "element_type": "paragraph",
+      "text": "Căn cứ Nghị định số 10/2016/NĐ-CP ngày 01 tháng 02 năm 2016 của Chính phủ quy định về cơ quan thuộc Chính phủ;",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nCăn cứ Nghị định số 10/2016/NĐ-CP ngày 01 tháng 02 năm 2016 của Chính phủ quy định về cơ quan thuộc Chính phủ;",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 9,
+      "bbox": [
+        97.36871508379888,
+        268.6836027713626,
+        543.4421388667198,
+        299.3903002309469
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e10"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e10",
+          "page_number": 1,
+          "bbox": [
+            97.36871508379888,
+            268.6836027713626,
+            543.4421388667198,
+            299.3903002309469
+          ],
+          "order": 9,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e11",
+      "element_type": "paragraph",
+      "text": "Căn cứ Nghị định số 47/2019/NĐ- CP ngày 05 tháng 6 năm 2019 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 10/2016/NĐ-CP ngày 01 tháng 02 năm 2016 của Chính phủ quy định về cơ quan thuộc Chính phủ;",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nCăn cứ Nghị định số 47/2019/NĐ- CP ngày 05 tháng 6 năm 2019 của Chính phủ sửa đổi, bổ sung một số điều của Nghị định số 10/2016/NĐ-CP ngày 01 tháng 02 năm 2016 của Chính phủ quy định về cơ quan thuộc Chính phủ;",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 10,
+      "bbox": [
+        96.88906624102154,
+        308.50635103926095,
+        542.9624900239426,
+        369.91974595842953
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e11"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e11",
+          "page_number": 1,
+          "bbox": [
+            96.88906624102154,
+            308.50635103926095,
+            542.9624900239426,
+            369.91974595842953
+          ],
+          "order": 10,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e12",
+      "element_type": "paragraph",
+      "text": "Theo đề nghị của Bộ trưởng Bộ Thông tin và Truyền thông;",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nTheo đề nghị của Bộ trưởng Bộ Thông tin và Truyền thông;",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 11,
+      "bbox": [
+        125.66799680766161,
+        379.51558891454965,
+        466.218675179569,
+        393.9093533487298
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e12"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e12",
+          "page_number": 1,
+          "bbox": [
+            125.66799680766161,
+            379.51558891454965,
+            466.218675179569,
+            393.9093533487298
+          ],
+          "order": 11,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e13",
+      "element_type": "paragraph",
+      "text": "Chính phủ ban hành Nghị định sửa đổi, bổ sung Điều 3 Nghị định số 02/2018/NĐ- CP ngày 04 tháng 01 năm 2018 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Truyền hình Việt Nam.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nChính phủ ban hành Nghị định sửa đổi, bổ sung Điều 3 Nghị định số 02/2018/NĐ- CP ngày 04 tháng 01 năm 2018 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Truyền hình Việt Nam.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 12,
+      "bbox": [
+        96.40941739824422,
+        403.50519630484985,
+        543.9217877094972,
+        449.0854503464203
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e13"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e13",
+          "page_number": 1,
+          "bbox": [
+            96.40941739824422,
+            403.50519630484985,
+            543.9217877094972,
+            449.0854503464203
+          ],
+          "order": 12,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e14",
+      "element_type": "paragraph",
+      "text": "Điều 1. Sửa đổi, bổ sung Điều 3 Nghị định số 02/2018/NĐ- CP ngày 04 tháng 01 năm 2018 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Truyền hình Việt Nam như sau:",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nĐiều 1. Sửa đổi, bổ sung Điều 3 Nghị định số 02/2018/NĐ- CP ngày 04 tháng 01 năm 2018 của Chính phủ quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Đài Truyền hình Việt Nam như sau:",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 13,
+      "bbox": [
+        96.40941739824422,
+        458.2015011547344,
+        543.9217877094972,
+        504.74133949191685
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e14"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e14",
+          "page_number": 1,
+          "bbox": [
+            96.40941739824422,
+            458.2015011547344,
+            543.9217877094972,
+            504.74133949191685
+          ],
+          "order": 13,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e15",
+      "element_type": "paragraph",
+      "text": "“Điều 3. Cơ cấu tổ chức",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n“Điều 3. Cơ cấu tổ chức",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 14,
+      "bbox": [
+        126.14764565043895,
+        513.3775981524249,
+        273.8794892258579,
+        527.291570438799
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e15"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e15",
+          "page_number": 1,
+          "bbox": [
+            126.14764565043895,
+            513.3775981524249,
+            273.8794892258579,
+            527.291570438799
+          ],
+          "order": 14,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e16",
+      "element_type": "paragraph",
+      "text": "1. Văn phòng.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n1. Văn phòng.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 15,
+      "bbox": [
+        127.1069433359936,
+        538.8065819861432,
+        210.08619313647247,
+        552.2407621247113
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e16"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e16",
+          "page_number": 1,
+          "bbox": [
+            127.1069433359936,
+            538.8065819861432,
+            210.08619313647247,
+            552.2407621247113
+          ],
+          "order": 15,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e17",
+      "element_type": "paragraph",
+      "text": "2. Ban Tổ chức cán bộ.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n2. Ban Tổ chức cán bộ.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 16,
+      "bbox": [
+        125.66799680766161,
+        561.3568129330254,
+        261.40861931364725,
+        574.3112009237875
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e17"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e17",
+          "page_number": 1,
+          "bbox": [
+            125.66799680766161,
+            561.3568129330254,
+            261.40861931364725,
+            574.3112009237875
+          ],
+          "order": 16,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e18",
+      "element_type": "paragraph",
+      "text": "3. Ban Kế hoạch - Tài chính.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n3. Ban Kế hoạch - Tài chính.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 17,
+      "bbox": [
+        126.14764565043895,
+        585.3464203233256,
+        292.10614525139664,
+        598.3008083140877
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e18"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e18",
+          "page_number": 1,
+          "bbox": [
+            126.14764565043895,
+            585.3464203233256,
+            292.10614525139664,
+            598.3008083140877
+          ],
+          "order": 17,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e19",
+      "element_type": "paragraph",
+      "text": "4. Ban Kiểm tra.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n4. Ban Kiểm tra.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 18,
+      "bbox": [
+        126.14764565043895,
+        609.3360277136259,
+        223.51636073423782,
+        622.290415704388
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e19"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e19",
+          "page_number": 1,
+          "bbox": [
+            126.14764565043895,
+            609.3360277136259,
+            223.51636073423782,
+            622.290415704388
+          ],
+          "order": 18,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e20",
+      "element_type": "paragraph",
+      "text": "5. Ban Hợp tác quốc tế.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n5. Ban Hợp tác quốc tế.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 19,
+      "bbox": [
+        126.62729449321628,
+        632.84584295612,
+        263.3272146847566,
+        647.7193995381062
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e20"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e20",
+          "page_number": 1,
+          "bbox": [
+            126.62729449321628,
+            632.84584295612,
+            263.3272146847566,
+            647.7193995381062
+          ],
+          "order": 19,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e21",
+      "element_type": "paragraph",
+      "text": "6. Ban Thư ký biên tập.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n6. Ban Thư ký biên tập.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 20,
+      "bbox": [
+        126.62729449321628,
+        658.7546189376443,
+        264.28651237031124,
+        672.1887990762125
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e21"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e21",
+          "page_number": 1,
+          "bbox": [
+            126.62729449321628,
+            658.7546189376443,
+            264.28651237031124,
+            672.1887990762125
+          ],
+          "order": 20,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e22",
+      "element_type": "paragraph",
+      "text": "7. Ban Thời sự.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n7. Ban Thời sự.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 21,
+      "bbox": [
+        127.1069433359936,
+        682.7442263279445,
+        218.24022346368716,
+        695.2188221709007
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e22"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e22",
+          "page_number": 1,
+          "bbox": [
+            127.1069433359936,
+            682.7442263279445,
+            218.24022346368716,
+            695.2188221709007
+          ],
+          "order": 21,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e23",
+      "element_type": "paragraph",
+      "text": "8. Ban Khoa giáo.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n8. Ban Khoa giáo.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 22,
+      "bbox": [
+        126.62729449321628,
+        706.7338337182448,
+        233.1093375897845,
+        720.1680138568129
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e23"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e23",
+          "page_number": 1,
+          "bbox": [
+            126.62729449321628,
+            706.7338337182448,
+            233.1093375897845,
+            720.1680138568129
+          ],
+          "order": 22,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e24",
+      "element_type": "paragraph",
+      "text": "9. Ban Truyền hình tiếng dân tộc.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n9. Ban Truyền hình tiếng dân tộc.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 23,
+      "bbox": [
+        126.62729449321628,
+        729.763856812933,
+        319.4461292897047,
+        744.6374133949191
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e24"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e24",
+          "page_number": 1,
+          "bbox": [
+            126.62729449321628,
+            729.763856812933,
+            319.4461292897047,
+            744.6374133949191
+          ],
+          "order": 23,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e25",
+      "element_type": "paragraph",
+      "text": "10. Ban Truyền hình đối ngoại.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n10. Ban Truyền hình đối ngoại.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 1,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 24,
+      "bbox": [
+        128.06624102154828,
+        754.2332563510392,
+        306.975259377494,
+        769.1068129330254
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e25"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e25",
+          "page_number": 1,
+          "bbox": [
+            128.06624102154828,
+            754.2332563510392,
+            306.975259377494,
+            769.1068129330254
+          ],
+          "order": 24,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e27",
+      "element_type": "paragraph",
+      "text": "11. Ban Văn nghệ.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n11. Ban Văn nghệ.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 26,
+      "bbox": [
+        126.14764565043895,
+        70.04965357967667,
+        234.06863527533918,
+        83.4838337182448
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e27"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e27",
+          "page_number": 2,
+          "bbox": [
+            126.14764565043895,
+            70.04965357967667,
+            234.06863527533918,
+            83.4838337182448
+          ],
+          "order": 26,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e28",
+      "element_type": "paragraph",
+      "text": "12. Ban Sản xuất các chương trình Giải trí.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n12. Ban Sản xuất các chương trình Giải trí.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 27,
+      "bbox": [
+        126.14764565043895,
+        94.03926096997691,
+        369.8092577813248,
+        107.95323325635104
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e28"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e28",
+          "page_number": 2,
+          "bbox": [
+            126.14764565043895,
+            94.03926096997691,
+            369.8092577813248,
+            107.95323325635104
+          ],
+          "order": 27,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e29",
+      "element_type": "paragraph",
+      "text": "13. Ban Sản xuất các chương trình Thể thao.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n13. Ban Sản xuất các chương trình Thể thao.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 28,
+      "bbox": [
+        126.62729449321628,
+        118.50866050808314,
+        379.40223463687147,
+        132.90242494226328
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e29"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e29",
+          "page_number": 2,
+          "bbox": [
+            126.62729449321628,
+            118.50866050808314,
+            379.40223463687147,
+            132.90242494226328
+          ],
+          "order": 28,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e30",
+      "element_type": "paragraph",
+      "text": "14. Ban Biên tập truyền hình cáp.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n14. Ban Biên tập truyền hình cáp.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 29,
+      "bbox": [
+        126.62729449321628,
+        143.9376443418014,
+        318.48683160415004,
+        158.33140877598152
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e30"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e30",
+          "page_number": 2,
+          "bbox": [
+            126.62729449321628,
+            143.9376443418014,
+            318.48683160415004,
+            158.33140877598152
+          ],
+          "order": 29,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e31",
+      "element_type": "paragraph",
+      "text": "15. Ban Thanh thiếu niên.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n15. Ban Thanh thiếu niên.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 30,
+      "bbox": [
+        127.1069433359936,
+        168.4070438799076,
+        275.3184357541899,
+        182.32101616628174
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e31"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e31",
+          "page_number": 2,
+          "bbox": [
+            127.1069433359936,
+            168.4070438799076,
+            275.3184357541899,
+            182.32101616628174
+          ],
+          "order": 30,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e32",
+      "element_type": "paragraph",
+      "text": "16. Trung tâm Phim tài liệu và Phóng sự.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n16. Trung tâm Phim tài liệu và Phóng sự.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 31,
+      "bbox": [
+        127.1069433359936,
+        194.31581986143186,
+        361.1755786113328,
+        208.229792147806
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e32"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e32",
+          "page_number": 2,
+          "bbox": [
+            127.1069433359936,
+            194.31581986143186,
+            361.1755786113328,
+            208.229792147806
+          ],
+          "order": 31,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e33",
+      "element_type": "paragraph",
+      "text": "17. Trung tâm Sản xuất phim truyền hình.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n17. Trung tâm Sản xuất phim truyền hình.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 32,
+      "bbox": [
+        127.58659217877094,
+        217.8256351039261,
+        365.01276935355145,
+        232.69919168591224
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e33"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e33",
+          "page_number": 2,
+          "bbox": [
+            127.58659217877094,
+            217.8256351039261,
+            365.01276935355145,
+            232.69919168591224
+          ],
+          "order": 32,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e34",
+      "element_type": "paragraph",
+      "text": "18. Trung tâm Tư liệu.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n18. Trung tâm Tư liệu.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 33,
+      "bbox": [
+        127.1069433359936,
+        243.73441108545035,
+        257.57142857142856,
+        257.1685912240185
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e34"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e34",
+          "page_number": 2,
+          "bbox": [
+            127.1069433359936,
+            243.73441108545035,
+            257.57142857142856,
+            257.1685912240185
+          ],
+          "order": 33,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e35",
+      "element_type": "paragraph",
+      "text": "19. Trung tâm Truyền hình Việt Nam khu vực Nam Bộ.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n19. Trung tâm Truyền hình Việt Nam khu vực Nam Bộ.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 34,
+      "bbox": [
+        126.62729449321628,
+        267.72401847575054,
+        444.634477254589,
+        281.6379907621247
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e35"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e35",
+          "page_number": 2,
+          "bbox": [
+            126.62729449321628,
+            267.72401847575054,
+            444.634477254589,
+            281.6379907621247
+          ],
+          "order": 34,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e36",
+      "element_type": "paragraph",
+      "text": "20. Trung tâm Truyền hình Việt Nam khu vực miền Trung - Trây Nguyên.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n20. Trung tâm Truyền hình Việt Nam khu vực miền Trung - Trây Nguyên.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 35,
+      "bbox": [
+        125.66799680766161,
+        292.1934180138568,
+        531.4509177972865,
+        307.06697459584296
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e36"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e36",
+          "page_number": 2,
+          "bbox": [
+            125.66799680766161,
+            292.1934180138568,
+            531.4509177972865,
+            307.06697459584296
+          ],
+          "order": 35,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e37",
+      "element_type": "paragraph",
+      "text": "21. Trung tâm Sản xuất và Phát triển nội dung số.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n21. Trung tâm Sản xuất và Phát triển nội dung số.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 36,
+      "bbox": [
+        125.66799680766161,
+        316.18302540415704,
+        411.05905826017556,
+        331.05658198614316
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e37"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e37",
+          "page_number": 2,
+          "bbox": [
+            125.66799680766161,
+            316.18302540415704,
+            411.05905826017556,
+            331.05658198614316
+          ],
+          "order": 36,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e38",
+      "element_type": "paragraph",
+      "text": "22. Các cơ quan thường trú Đài Truyền hình Việt Nam tại nước ngoài được thành lập theo quy định của pháp luật.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n22. Các cơ quan thường trú Đài Truyền hình Việt Nam tại nước ngoài được thành lập theo quy định của pháp luật.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 37,
+      "bbox": [
+        96.40941739824422,
+        341.61200923787527,
+        542.9624900239426,
+        371.83891454965357
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e38"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e38",
+          "page_number": 2,
+          "bbox": [
+            96.40941739824422,
+            341.61200923787527,
+            542.9624900239426,
+            371.83891454965357
+          ],
+          "order": 37,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e39",
+      "element_type": "paragraph",
+      "text": "23. Trung tâm Kỹ thuật sản xuất chương trình.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n23. Trung tâm Kỹ thuật sản xuất chương trình.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 38,
+      "bbox": [
+        125.66799680766161,
+        382.3943418013857,
+        391.8731045490822,
+        396.7881062355658
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e39"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e39",
+          "page_number": 2,
+          "bbox": [
+            125.66799680766161,
+            382.3943418013857,
+            391.8731045490822,
+            396.7881062355658
+          ],
+          "order": 38,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e40",
+      "element_type": "paragraph",
+      "text": "24. Trung tâm Kỹ thuật truyền dẫn phát sóng.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n24. Trung tâm Kỹ thuật truyền dẫn phát sóng.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 39,
+      "bbox": [
+        126.14764565043895,
+        406.8637413394919,
+        387.55626496408615,
+        421.73729792147805
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e40"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e40",
+          "page_number": 2,
+          "bbox": [
+            126.14764565043895,
+            406.8637413394919,
+            387.55626496408615,
+            421.73729792147805
+          ],
+          "order": 39,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e41",
+      "element_type": "paragraph",
+      "text": "25. Trung tâm Mỹ thuật.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n25. Trung tâm Mỹ thuật.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 40,
+      "bbox": [
+        126.62729449321628,
+        432.77251732101615,
+        269.0830007980846,
+        445.7269053117783
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e41"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e41",
+          "page_number": 2,
+          "bbox": [
+            126.62729449321628,
+            432.77251732101615,
+            269.0830007980846,
+            445.7269053117783
+          ],
+          "order": 40,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e42",
+      "element_type": "paragraph",
+      "text": "26. Trung tâm Đào tạo, bồi dưỡng nghiệp vụ truyền hình.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n26. Trung tâm Đào tạo, bồi dưỡng nghiệp vụ truyền hình.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 41,
+      "bbox": [
+        126.14764565043895,
+        455.80254041570436,
+        453.268156424581,
+        470.67609699769054
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e42"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e42",
+          "page_number": 2,
+          "bbox": [
+            126.14764565043895,
+            455.80254041570436,
+            453.268156424581,
+            470.67609699769054
+          ],
+          "order": 41,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e43",
+      "element_type": "paragraph",
+      "text": "27. Trung tâm Quảng cáo và Dịch vụ truyền hình.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n27. Trung tâm Quảng cáo và Dịch vụ truyền hình.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 42,
+      "bbox": [
+        126.14764565043895,
+        480.7517321016166,
+        411.5387071029529,
+        495.1454965357967
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e43"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e43",
+          "page_number": 2,
+          "bbox": [
+            126.14764565043895,
+            480.7517321016166,
+            411.5387071029529,
+            495.1454965357967
+          ],
+          "order": 42,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e44",
+      "element_type": "paragraph",
+      "text": "28. Trung tâm Tin học và Công nghệ truyền hình.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\n28. Trung tâm Tin học và Công nghệ truyền hình.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 43,
+      "bbox": [
+        126.62729449321628,
+        505.70092378752884,
+        410.5794094173982,
+        520.094688221709
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e44"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e44",
+          "page_number": 2,
+          "bbox": [
+            126.62729449321628,
+            505.70092378752884,
+            410.5794094173982,
+            520.094688221709
+          ],
+          "order": 43,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e45",
+      "element_type": "paragraph",
+      "text": "Các đơn vị quy định từ khoản 1 đến khoản 5 Điều này là tổ chức giúp việc Tổng Giám đốc; đơn vị quy định tại khoản 6 Điều này là tổ chức giúp việc Tổng Giám đốc và sản xuất, phát sóng chương trình; các đơn vị quy định từ khoản 7 đến khoản 25 Điều này là các tổ chức sản xuất, phát sóng chương trình; các đơn vị quy định từ khoản 26 đến khoản 28 Điều này là các tổ chức sự nghiệp khác.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nCác đơn vị quy định từ khoản 1 đến khoản 5 Điều này là tổ chức giúp việc Tổng Giám đốc; đơn vị quy định tại khoản 6 Điều này là tổ chức giúp việc Tổng Giám đốc và sản xuất, phát sóng chương trình; các đơn vị quy định từ khoản 7 đến khoản 25 Điều này là các tổ chức sản xuất, phát sóng chương trình; các đơn vị quy định từ khoản 26 đến khoản 28 Điều này là các tổ chức sự nghiệp khác.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 44,
+      "bbox": [
+        97.84836392657621,
+        529.690531177829,
+        544.4014365522745,
+        624.689376443418
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e45"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e45",
+          "page_number": 2,
+          "bbox": [
+            97.84836392657621,
+            529.690531177829,
+            544.4014365522745,
+            624.689376443418
+          ],
+          "order": 44,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e46",
+      "element_type": "paragraph",
+      "text": "Tổng Giám đốc Đài Truyền hình Việt Nam biáo ciáo xin ý kiến của Thủ thướng Chính phủ việc thành lập, giải thể và tổ chức sắp xếp các đơn vị khác thuộc thẩm quyền theo quy định của pháp luật.",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nTổng Giám đốc Đài Truyền hình Việt Nam biáo ciáo xin ý kiến của Thủ thướng Chính phủ việc thành lập, giải thể và tổ chức sắp xếp các đơn vị khác thuộc thẩm quyền theo quy định của pháp luật.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 45,
+      "bbox": [
+        98.80766161213089,
+        633.3256351039261,
+        544.4014365522745,
+        681.3048498845266
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e46"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e46",
+          "page_number": 2,
+          "bbox": [
+            98.80766161213089,
+            633.3256351039261,
+            544.4014365522745,
+            681.3048498845266
+          ],
+          "order": 45,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e47",
+      "element_type": "paragraph",
+      "text": "Ban Thư ký biên tập được tổ chưức 15 phòng; Văn phòng được tổ chức 10 phòng.”",
+      "text_for_embedding": "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc\nBan Thư ký biên tập được tổ chưức 15 phòng; Văn phòng được tổ chức 10 phòng.”",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "cộng-hoà-xã-hội-chủ-ng-hĩa-việt-nam-độc-lập---tự-do---hạnh-phúc-3",
+      "parent_id": null,
+      "order": 46,
+      "bbox": [
+        99.76695929768555,
+        690.4209006928406,
+        543.9217877094972,
+        722.087182448037
+      ],
+      "heading_path": [
+        "CỘNG HOÀ XÃ HỘI CHỦ NG HĨA VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e47"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e47",
+          "page_number": 2,
+          "bbox": [
+            99.76695929768555,
+            690.4209006928406,
+            543.9217877094972,
+            722.087182448037
+          ],
+          "order": 46,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e48",
+      "element_type": "heading",
+      "text": "Điều 2. Hiệu lực và trách nhiệm thi hành",
+      "text_for_embedding": "Điều 2. Hiệu lực và trách nhiệm thi hành",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "điều-2-hiệu-lực-và-trách-nhiệm-thi-hành-48",
+      "parent_id": null,
+      "order": 47,
+      "bbox": [
+        128.06624102154828,
+        732.162817551963,
+        377.4836392657622,
+        746.0767898383372
+      ],
+      "heading_path": [
+        "Điều 2. Hiệu lực và trách nhiệm thi hành"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e48"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e48",
+          "page_number": 2,
+          "bbox": [
+            128.06624102154828,
+            732.162817551963,
+            377.4836392657622,
+            746.0767898383372
+          ],
+          "order": 47,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e49",
+      "element_type": "paragraph",
+      "text": "1. Nghị định này có hiệu lực thi hành từ ngày 10 tháng 5 năm 2020.",
+      "text_for_embedding": "Điều 2. Hiệu lực và trách nhiệm thi hành\n1. Nghị định này có hiệu lực thi hành từ ngày 10 tháng 5 năm 2020.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 2,
+      "section_id": "điều-2-hiệu-lực-và-trách-nhiệm-thi-hành-48",
+      "parent_id": null,
+      "order": 48,
+      "bbox": [
+        129.02553870710295,
+        757.1120092378752,
+        512.7446129289705,
+        771.5057736720554
+      ],
+      "heading_path": [
+        "Điều 2. Hiệu lực và trách nhiệm thi hành"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e49"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e49",
+          "page_number": 2,
+          "bbox": [
+            129.02553870710295,
+            757.1120092378752,
+            512.7446129289705,
+            771.5057736720554
+          ],
+          "order": 48,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e51",
+      "element_type": "paragraph",
+      "text": "2. Bộ trưởng Bộ Thông tin và Truyền thông, Tổng Giánm đốc Đài Truyền. hình Việt Nam, các Bộ trưởng, Thủ trưởng cơ quan ngang bộn, Thủ trưởng cơ quan thuộc Chính phủ, Chủ tịch Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương chịu trách nhiệm thi hành Nghị định này./.",
+      "text_for_embedding": "Điều 2. Hiệu lực và trách nhiệm thi hành\n2. Bộ trưởng Bộ Thông tin và Truyền thông, Tổng Giánm đốc Đài Truyền. hình Việt Nam, các Bộ trưởng, Thủ trưởng cơ quan ngang bộn, Thủ trưởng cơ quan thuộc Chính phủ, Chủ tịch Ủy ban nhân dân tỉnh, thành phố trực thuộc trung ương chịu trách nhiệm thi hành Nghị định này./.",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 3,
+      "section_id": "điều-2-hiệu-lực-và-trách-nhiệm-thi-hành-48",
+      "parent_id": null,
+      "order": 50,
+      "bbox": [
+        94.01117318435755,
+        69.59335624284078,
+        542.0031923383879,
+        134.8671248568156
+      ],
+      "heading_path": [
+        "Điều 2. Hiệu lực và trách nhiệm thi hành"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e51"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e51",
+          "page_number": 3,
+          "bbox": [
+            94.01117318435755,
+            69.59335624284078,
+            542.0031923383879,
+            134.8671248568156
+          ],
+          "order": 50,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e53",
+      "element_type": "heading",
+      "text": "Nơi nhận:",
+      "text_for_embedding": "Nơi nhận:",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 3,
+      "section_id": "nơi-nhận-53",
+      "parent_id": null,
+      "order": 52,
+      "bbox": [
+        94.9704708699122,
+        161.74455899198168,
+        150.13008778930566,
+        173.26345933562428
+      ],
+      "heading_path": [
+        "Nơi nhận:"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e53"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e53",
+          "page_number": 3,
+          "bbox": [
+            94.9704708699122,
+            161.74455899198168,
+            150.13008778930566,
+            173.26345933562428
+          ],
+          "order": 52,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "386c6e92e7d3f83fcd76-e54",
+      "element_type": "paragraph",
+      "text": "T T T T T T T - Ban Bí thư Trung ương Đảng; - Thủ tướng, các Phó Thủ tướng Chính phủ; - Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ; - HĐND, UBND các tỉnh, thành phố trưực thuộc trung ương; - Văn phòng Trung ương và các Ban của Đảng; - Văn phòng Tổng Bí thư; - Văn phòng Chủ tịch nước; - Hội đồng Dân tộc và các Ủy ban của Quốc hội; - Văn phòng Quốc hội; - Tòa án nhân dân tối cao; - Viện kiểm sát nhân dân tối cao; o; - Kiểm toán Nhà nước; - Ủy ban Giám sát tài chính Quốc gia; - Ngân hàng Chính sách xã hội; - Ngân hàng Phát triển Việt Nam; - Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam; - Cơ quan trung ương của các đoàn thể; - VPCP: BTCN, các PCN, Trợ lý TTg, TGĐ Cổng TTĐT, các Vụ, Cục, đơn vị trực thuộc, Công báo; - Lưu: VT, TCCV (2b). 110",
+      "text_for_embedding": "Nơi nhận:\nT T T T T T T - Ban Bí thư Trung ương Đảng; - Thủ tướng, các Phó Thủ tướng Chính phủ; - Các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ; - HĐND, UBND các tỉnh, thành phố trưực thuộc trung ương; - Văn phòng Trung ương và các Ban của Đảng; - Văn phòng Tổng Bí thư; - Văn phòng Chủ tịch nước; - Hội đồng Dân tộc và các Ủy ban của Quốc hội; - Văn phòng Quốc hội; - Tòa án nhân dân tối cao; - Viện kiểm sát nhân dân tối cao; o; - Kiểm toán Nhà nước; - Ủy ban Giám sát tài chính Quốc gia; - Ngân hàng Chính sách xã hội; - Ngân hàng Phát triển Việt Nam; - Ủy ban Trung ương Mặt trận Tổ quốc Việt Nam; - Cơ quan trung ương của các đoàn thể; - VPCP: BTCN, các PCN, Trợ lý TTg, TGĐ Cổng TTĐT, các Vụ, Cục, đơn vị trực thuộc, Công báo; - Lưu: VT, TCCV (2b). 110",
+      "document_id": "386c6e92e7d3f83fcd76",
+      "page_number": 3,
+      "section_id": "nơi-nhận-53",
+      "parent_id": null,
+      "order": 53,
+      "bbox": [
+        94.9704708699122,
+        172.30355097365407,
+        362.6145251396648,
+        426.1993127147766
+      ],
+      "heading_path": [
+        "Nơi nhận:"
+      ],
+      "source_element_ids": [
+        "386c6e92e7d3f83fcd76-e54"
+      ],
+      "source_spans": [
+        {
+          "element_id": "386c6e92e7d3f83fcd76-e54",
+          "page_number": 3,
+          "bbox": [
+            94.9704708699122,
+            172.30355097365407,
+            362.6145251396648,
+            426.1993127147766
+          ],
+          "order": 53,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    }
+  ],
+  "metadata": {
+    "source_parser": "paddleocr"
+  }
+}

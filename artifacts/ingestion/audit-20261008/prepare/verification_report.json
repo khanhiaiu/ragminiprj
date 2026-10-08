@@ -1,0 +1,5 @@
+{
+  "status": "not_run",
+  "reason": "prepare-only/dry-run does not write a Qdrant generation",
+  "passed": false
+}

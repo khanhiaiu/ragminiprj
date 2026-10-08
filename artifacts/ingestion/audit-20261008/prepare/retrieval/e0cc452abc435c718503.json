@@ -1,0 +1,2047 @@
+{
+  "schema_version": "1.0",
+  "document_id": "e0cc452abc435c718503",
+  "filename": "Nửa đầu năm 2025, giảm tỷ lệ thất nghiệp và tỷ lệ thiếu việc làm trong độ tuổi lao động.pdf",
+  "file_type": "pdf",
+  "source_path": "/workspace/APOLLO/ragminiprj/documents/Nửa đầu năm 2025, giảm tỷ lệ thất nghiệp và tỷ lệ thiếu việc làm trong độ tuổi lao động.pdf",
+  "document_version": "1.0",
+  "elements": [
+    {
+      "element_id": "e0cc452abc435c718503-e3",
+      "element_type": "paragraph",
+      "text": "Từ khóa..",
+      "text_for_embedding": "Từ khóa..",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 2,
+      "bbox": [
+        491.52,
+        44.64,
+        523.1999999999999,
+        51.36
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e3"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e3",
+          "page_number": 1,
+          "bbox": [
+            491.52,
+            44.64,
+            523.1999999999999,
+            51.36
+          ],
+          "order": 2,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e4",
+      "element_type": "paragraph",
+      "text": "Trang chủ Giới thiệu Tin thức sự kiện Bảo vệ nền tảng tư tưởng của DĐảng Phòng chống tham nhũng, tiêu cưực Văn bản chiỉ đạo",
+      "text_for_embedding": "Trang chủ Giới thiệu Tin thức sự kiện Bảo vệ nền tảng tư tưởng của DĐảng Phòng chống tham nhũng, tiêu cưực Văn bản chiỉ đạo",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 3,
+      "bbox": [
+        31.68,
+        47.519999999999996,
+        462.71999999999997,
+        55.199999999999996
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e4"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e4",
+          "page_number": 1,
+          "bbox": [
+            31.68,
+            47.519999999999996,
+            462.71999999999997,
+            55.199999999999996
+          ],
+          "order": 3,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e6",
+      "element_type": "paragraph",
+      "text": "7-10-2026 11:2:18",
+      "text_for_embedding": "7-10-2026 11:2:18",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 5,
+      "bbox": [
+        43.68,
+        68.64,
+        105.11999999999999,
+        76.32
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e6"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e6",
+          "page_number": 1,
+          "bbox": [
+            43.68,
+            68.64,
+            105.11999999999999,
+            76.32
+          ],
+          "order": 5,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e7",
+      "element_type": "paragraph",
+      "text": "ĐUA THƯỰC HIỆN TTHẮNG LỢI NGHI QUYẾT ĐAI HỘI XIV CỦA ĐẢNGGI",
+      "text_for_embedding": "ĐUA THƯỰC HIỆN TTHẮNG LỢI NGHI QUYẾT ĐAI HỘI XIV CỦA ĐẢNGGI",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 6,
+      "bbox": [
+        30.24,
+        78.72,
+        297.12,
+        89.28
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e7"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e7",
+          "page_number": 1,
+          "bbox": [
+            30.24,
+            78.72,
+            297.12,
+            89.28
+          ],
+          "order": 6,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e8",
+      "element_type": "paragraph",
+      "text": "Văn hóa - Xã hội",
+      "text_for_embedding": "Văn hóa - Xã hội",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 7,
+      "bbox": [
+        31.68,
+        90.24,
+        87.84,
+        98.88
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e8"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e8",
+          "page_number": 1,
+          "bbox": [
+            31.68,
+            90.24,
+            87.84,
+            98.88
+          ],
+          "order": 7,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e9",
+      "element_type": "paragraph",
+      "text": "Đăng ngày: 08/07/2025 - Lượt xem: 7238",
+      "text_for_embedding": "Đăng ngày: 08/07/2025 - Lượt xem: 7238",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 8,
+      "bbox": [
+        31.68,
+        99.84,
+        166.56,
+        108.47999999999999
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e9"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e9",
+          "page_number": 1,
+          "bbox": [
+            31.68,
+            99.84,
+            166.56,
+            108.47999999999999
+          ],
+          "order": 8,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e10",
+      "element_type": "paragraph",
+      "text": "Nửa đầu năm 2025, giảm tỷ lệ thất nghiệp và tỷ lệ thiếu việc làm trong độ tuổi lao động",
+      "text_for_embedding": "Nửa đầu năm 2025, giảm tỷ lệ thất nghiệp và tỷ lệ thiếu việc làm trong độ tuổi lao động",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 9,
+      "bbox": [
+        30.72,
+        108.96,
+        312.96,
+        117.6
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e10"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e10",
+          "page_number": 1,
+          "bbox": [
+            30.72,
+            108.96,
+            312.96,
+            117.6
+          ],
+          "order": 9,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e11",
+      "element_type": "paragraph",
+      "text": "Theo Cục Thống kê (Bộ Tài chính), nưửa đầu 2025, lực lượng luao động từ 15 tuổi trở lên là 53 triệu người, tăng 542, 6 nghìn người so cùng kỳ 20243, lao động có việc làm là 51, 9 triệu người, tăng 538,1 nghìn người; tỷ lệ thất nghiệp trong độ tuổi lao động là 2,220% và tỷ lệ thiểu việc làm trong độ tuổi lao động là 1, 72%.",
+      "text_for_embedding": "Theo Cục Thống kê (Bộ Tài chính), nưửa đầu 2025, lực lượng luao động từ 15 tuổi trở lên là 53 triệu người, tăng 542, 6 nghìn người so cùng kỳ 20243, lao động có việc làm là 51, 9 triệu người, tăng 538,1 nghìn người; tỷ lệ thất nghiệp trong độ tuổi lao động là 2,220% và tỷ lệ thiểu việc làm trong độ tuổi lao động là 1, 72%.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 10,
+      "bbox": [
+        29.279999999999998,
+        125.28,
+        575.04,
+        142.56
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e11"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e11",
+          "page_number": 1,
+          "bbox": [
+            29.279999999999998,
+            125.28,
+            575.04,
+            142.56
+          ],
+          "order": 10,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e13",
+      "element_type": "paragraph",
+      "text": "Lao động nghề dệt truyền thống ở nước ta. (Ảnh: HNV)",
+      "text_for_embedding": "Lao động nghề dệt truyền thống ở nước ta. (Ảnh: HNV)",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 12,
+      "bbox": [
+        214.07999999999998,
+        389.28,
+        396.0,
+        397.91999999999996
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e13"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e13",
+          "page_number": 1,
+          "bbox": [
+            214.07999999999998,
+            389.28,
+            396.0,
+            397.91999999999996
+          ],
+          "order": 12,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e14",
+      "element_type": "paragraph",
+      "text": "Trong đó, lực lượng lao động và số người có việc làm trong quý I1/2025 tăng so quyý 1/2025 và tăng so củùng kỳ 2024. Thu nhập bình quân tháng của người lao động giảm so quý 1/2025 và tăng so củùng kỷ 2025; tỷ lệ thất nghiệp và tỷ lệ thiểu việc làm khá ổn định so quyý 1/2025 và giảm so củng kỳ 2024.",
+      "text_for_embedding": "Trong đó, lực lượng lao động và số người có việc làm trong quý I1/2025 tăng so quyý 1/2025 và tăng so củùng kỳ 2024. Thu nhập bình quân tháng của người lao động giảm so quý 1/2025 và tăng so củùng kỷ 2025; tỷ lệ thất nghiệp và tỷ lệ thiểu việc làm khá ổn định so quyý 1/2025 và giảm so củng kỳ 2024.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 13,
+      "bbox": [
+        28.799999999999997,
+        408.96,
+        578.88,
+        426.24
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e14"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e14",
+          "page_number": 1,
+          "bbox": [
+            28.799999999999997,
+            408.96,
+            578.88,
+            426.24
+          ],
+          "order": 13,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e15",
+      "element_type": "paragraph",
+      "text": "Cũng theo số liệu thống kê, tỷ lệ lao động qua đào tạo có bằng, chứng chỉ quý 1II/2025 là 29,1%, tăng 0,3 điểm phần trăm so quý 1/2025 và tăng 1 điđiểm phần trăm so củng kỳ 2024. Thính chung 6 tháng đầu năm 2025, tỷ lệ lao động qua đào tạo có bằng, chứng chỉ là 209%, tăng 1 điểm phần trăm so củng kỷ 2024, điều này cho thấy chất lượng nguồn lao động đang dân được nâng cao.",
+      "text_for_embedding": "Cũng theo số liệu thống kê, tỷ lệ lao động qua đào tạo có bằng, chứng chỉ quý 1II/2025 là 29,1%, tăng 0,3 điểm phần trăm so quý 1/2025 và tăng 1 điđiểm phần trăm so củng kỳ 2024. Thính chung 6 tháng đầu năm 2025, tỷ lệ lao động qua đào tạo có bằng, chứng chỉ là 209%, tăng 1 điểm phần trăm so củng kỷ 2024, điều này cho thấy chất lượng nguồn lao động đang dân được nâng cao.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 14,
+      "bbox": [
+        28.799999999999997,
+        435.84,
+        579.36,
+        463.68
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e15"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e15",
+          "page_number": 1,
+          "bbox": [
+            28.799999999999997,
+            435.84,
+            579.36,
+            463.68
+          ],
+          "order": 14,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e16",
+      "element_type": "paragraph",
+      "text": "Cục Thống kê nhận định, nhìn chung, lao động có việc làm có xu hướng tăng nhưng thị trường lao động phát triển chưa bền vững khi số lao động có việc làm phi chính thức chiểm tỷ troọng lớn. Số lao động có việc làm phi chính thức chung (bao gồm cả lao động làm việc trong hộ nông, lâm nghiệp và thủy sản) quyý I/2025 là 33 triệu người, chiểm 63, 5% trong tổng số lao động có việc làm.",
+      "text_for_embedding": "Cục Thống kê nhận định, nhìn chung, lao động có việc làm có xu hướng tăng nhưng thị trường lao động phát triển chưa bền vững khi số lao động có việc làm phi chính thức chiểm tỷ troọng lớn. Số lao động có việc làm phi chính thức chung (bao gồm cả lao động làm việc trong hộ nông, lâm nghiệp và thủy sản) quyý I/2025 là 33 triệu người, chiểm 63, 5% trong tổng số lao động có việc làm.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 15,
+      "bbox": [
+        28.799999999999997,
+        471.84,
+        578.88,
+        499.68
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e16"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e16",
+          "page_number": 1,
+          "bbox": [
+            28.799999999999997,
+            471.84,
+            578.88,
+            499.68
+          ],
+          "order": 15,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e17",
+      "element_type": "paragraph",
+      "text": "Tính chung 6 tháng đầu năm 2025, tỷ lệ lao động có việc lảm phi chính thức là 63, 9%, giảm 1,1 điểm phần trăm so củùng kỷ 2024.",
+      "text_for_embedding": "Tính chung 6 tháng đầu năm 2025, tỷ lệ lao động có việc lảm phi chính thức là 63, 9%, giảm 1,1 điểm phần trăm so củùng kỷ 2024.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 16,
+      "bbox": [
+        29.279999999999998,
+        508.32,
+        448.32,
+        516.96
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e17"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e17",
+          "page_number": 1,
+          "bbox": [
+            29.279999999999998,
+            508.32,
+            448.32,
+            516.96
+          ],
+          "order": 16,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e18",
+      "element_type": "paragraph",
+      "text": "số người và tỷ lệ thiếu việc làm trong độ tuổi lao động các quý năm 202 2-2025",
+      "text_for_embedding": "số người và tỷ lệ thiếu việc làm trong độ tuổi lao động các quý năm 202 2-2025",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 17,
+      "bbox": [
+        144.48,
+        529.4399999999999,
+        462.71999999999997,
+        538.56
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e18"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e18",
+          "page_number": 1,
+          "bbox": [
+            144.48,
+            529.4399999999999,
+            462.71999999999997,
+            538.56
+          ],
+          "order": 17,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e20",
+      "element_type": "paragraph",
+      "text": "Nguồn: CỤC THỐNG KÊ",
+      "text_for_embedding": "Nguồn: CỤC THỐNG KÊ",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 1,
+      "section_id": null,
+      "parent_id": null,
+      "order": 19,
+      "bbox": [
+        261.59999999999997,
+        725.28,
+        348.0,
+        733.92
+      ],
+      "heading_path": [],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e20"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e20",
+          "page_number": 1,
+          "bbox": [
+            261.59999999999997,
+            725.28,
+            348.0,
+            733.92
+          ],
+          "order": 19,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e23",
+      "element_type": "heading",
+      "text": "Nưữửa 2đầnu năm 2025, giảm tỷ lệ thất nghiệp và tỷ lệ thiếu việc làm trong độ tuổi lao động",
+      "text_for_embedding": "Nưữửa 2đầnu năm 2025, giảm tỷ lệ thất nghiệp và tỷ lệ thiếu việc làm trong độ tuổi lao động",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "nưữửa-2đầnu-năm-2025-giảm-tỷ-lệ-thất-nghiệp-và-tỷ-lệ-thiếu-việc-làm-trong-độ-tuổ-23",
+      "parent_id": null,
+      "order": 22,
+      "bbox": [
+        196.79999999999998,
+        14.399999999999999,
+        506.4,
+        23.04
+      ],
+      "heading_path": [
+        "Nưữửa 2đầnu năm 2025, giảm tỷ lệ thất nghiệp và tỷ lệ thiếu việc làm trong độ tuổi lao động"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e23"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e23",
+          "page_number": 2,
+          "bbox": [
+            196.79999999999998,
+            14.399999999999999,
+            506.4,
+            23.04
+          ],
+          "order": 22,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e24",
+      "element_type": "heading",
+      "text": "10/7/26, 11: 02 AM",
+      "text_for_embedding": "10/7/26, 11: 02 AM",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "10-7-26-11-02-am-24",
+      "parent_id": null,
+      "order": 23,
+      "bbox": [
+        23.04,
+        14.879999999999999,
+        87.84,
+        22.08
+      ],
+      "heading_path": [
+        "10/7/26, 11: 02 AM"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e24"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e24",
+          "page_number": 2,
+          "bbox": [
+            23.04,
+            14.879999999999999,
+            87.84,
+            22.08
+          ],
+          "order": 23,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e25",
+      "element_type": "paragraph",
+      "text": "Số liệu thống kếê cho thấy, số người, thiếu việc làm trong độ tuổi lao động quý 11/2025 là 79 9, 2 nghìn người, tăng 2,2n nghìn người so quý 1/2025 và giảm 148,8 nghìn người so củng kỷ 2024. Tỷ lệ thiểu việc làm trong độ tuổi lao động quý 1II/2025 là 1, 738%, tăng 0,01 điểm phần trăm so quý 1/2025 và giảm 0,33 điểm phần trăm so củng kỳ: 2024.",
+      "text_for_embedding": "10/7/26, 11: 02 AM\nSố liệu thống kếê cho thấy, số người, thiếu việc làm trong độ tuổi lao động quý 11/2025 là 79 9, 2 nghìn người, tăng 2,2n nghìn người so quý 1/2025 và giảm 148,8 nghìn người so củng kỷ 2024. Tỷ lệ thiểu việc làm trong độ tuổi lao động quý 1II/2025 là 1, 738%, tăng 0,01 điểm phần trăm so quý 1/2025 và giảm 0,33 điểm phần trăm so củng kỳ: 2024.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "10-7-26-11-02-am-24",
+      "parent_id": null,
+      "order": 24,
+      "bbox": [
+        28.32,
+        28.32,
+        578.88,
+        55.199999999999996
+      ],
+      "heading_path": [
+        "10/7/26, 11: 02 AM"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e25"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e25",
+          "page_number": 2,
+          "bbox": [
+            28.32,
+            28.32,
+            578.88,
+            55.199999999999996
+          ],
+          "order": 24,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e26",
+      "element_type": "paragraph",
+      "text": "Tính chung 6 tháng đầu năm 2025, số ngưởi thiếu việc làm trong độ tuổi lao động là 798 8,1 nghìn người, giảm 142, 4 nghìn người so cùng kỷ 2024:; tỷ lệ thiếu việc làm trong độ tuổi lao động là 1, 720%, giảm 0,33 điểm phần trăm so cùng kỷ 2024.",
+      "text_for_embedding": "10/7/26, 11: 02 AM\nTính chung 6 tháng đầu năm 2025, số ngưởi thiếu việc làm trong độ tuổi lao động là 798 8,1 nghìn người, giảm 142, 4 nghìn người so cùng kỷ 2024:; tỷ lệ thiếu việc làm trong độ tuổi lao động là 1, 720%, giảm 0,33 điểm phần trăm so cùng kỷ 2024.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "10-7-26-11-02-am-24",
+      "parent_id": null,
+      "order": 25,
+      "bbox": [
+        29.279999999999998,
+        64.32,
+        578.88,
+        82.56
+      ],
+      "heading_path": [
+        "10/7/26, 11: 02 AM"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e26"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e26",
+          "page_number": 2,
+          "bbox": [
+            29.279999999999998,
+            64.32,
+            578.88,
+            82.56
+          ],
+          "order": 25,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e27",
+      "element_type": "paragraph",
+      "text": "Đáng mừng lảà, thu nhập bình quân của người lao động quý 1I1/2025 1là 8.,2 triệu đồng/tháng, giảm 58 nghìn đồng so quý 1/2025 và tăng 800 nghìn đồng so củùng kỷ năm 2024. Trong đói, thu nhâập bình quân của lao động nam là 9,3 triệu đồng/tháng, lao động nữ là 7 triệu đồng/tháng:; thu nhập bình quân của lao động ở khu vực thảành thị là 9,9 triệu đồng/tháng, khu vực nông thôn là 7,2 triệu đồng/tháng.",
+      "text_for_embedding": "10/7/26, 11: 02 AM\nĐáng mừng lảà, thu nhập bình quân của người lao động quý 1I1/2025 1là 8.,2 triệu đồng/tháng, giảm 58 nghìn đồng so quý 1/2025 và tăng 800 nghìn đồng so củùng kỷ năm 2024. Trong đói, thu nhâập bình quân của lao động nam là 9,3 triệu đồng/tháng, lao động nữ là 7 triệu đồng/tháng:; thu nhập bình quân của lao động ở khu vực thảành thị là 9,9 triệu đồng/tháng, khu vực nông thôn là 7,2 triệu đồng/tháng.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "10-7-26-11-02-am-24",
+      "parent_id": null,
+      "order": 26,
+      "bbox": [
+        28.799999999999997,
+        91.2,
+        578.88,
+        119.03999999999999
+      ],
+      "heading_path": [
+        "10/7/26, 11: 02 AM"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e27"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e27",
+          "page_number": 2,
+          "bbox": [
+            28.799999999999997,
+            91.2,
+            578.88,
+            119.03999999999999
+          ],
+          "order": 26,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e28",
+      "element_type": "paragraph",
+      "text": "Tính chung 6 tháng đầu năm 2025, thu nhập bình quân của người lao động là 8,3 triệu đồng/tháng, tăng 10,1%, tương ứng tăng 760 nghìn đồng so cùng kỳ 2024. Trong đó, thu nhập bình quân của lao động nam là 9,3 triệu đồng/tháng, lao động nữ là 7,1 triệu đồng; thu nhập bình quân của lao động ở khu vực thành thị là 10 triệu đồng/tháng, khu vực nông thôn là 7,2 triệu đồng/tháng.",
+      "text_for_embedding": "10/7/26, 11: 02 AM\nTính chung 6 tháng đầu năm 2025, thu nhập bình quân của người lao động là 8,3 triệu đồng/tháng, tăng 10,1%, tương ứng tăng 760 nghìn đồng so cùng kỳ 2024. Trong đó, thu nhập bình quân của lao động nam là 9,3 triệu đồng/tháng, lao động nữ là 7,1 triệu đồng; thu nhập bình quân của lao động ở khu vực thành thị là 10 triệu đồng/tháng, khu vực nông thôn là 7,2 triệu đồng/tháng.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "10-7-26-11-02-am-24",
+      "parent_id": null,
+      "order": 27,
+      "bbox": [
+        29.279999999999998,
+        128.16,
+        578.88,
+        156.0
+      ],
+      "heading_path": [
+        "10/7/26, 11: 02 AM"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e28"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e28",
+          "page_number": 2,
+          "bbox": [
+            29.279999999999998,
+            128.16,
+            578.88,
+            156.0
+          ],
+          "order": 27,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e29",
+      "element_type": "paragraph",
+      "text": "Thêm một tín hiệu mửng nữa là mặc dủi tỷ lệ thất nghiệp trong độ tuổi lao động quyý 1II1/2025 là 2,248%0, tăng 0,04 điểm phần so quyý 1/2025 nhưng giảm 0,05 điểm phần trăm so cùng kỷ 2024, trong đó khu vực thành thị là 2,49%; khu vực nông thôn là 2,08%.",
+      "text_for_embedding": "10/7/26, 11: 02 AM\nThêm một tín hiệu mửng nữa là mặc dủi tỷ lệ thất nghiệp trong độ tuổi lao động quyý 1II1/2025 là 2,248%0, tăng 0,04 điểm phần so quyý 1/2025 nhưng giảm 0,05 điểm phần trăm so cùng kỷ 2024, trong đó khu vực thành thị là 2,49%; khu vực nông thôn là 2,08%.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "10-7-26-11-02-am-24",
+      "parent_id": null,
+      "order": 28,
+      "bbox": [
+        29.279999999999998,
+        181.92,
+        578.88,
+        200.16
+      ],
+      "heading_path": [
+        "10/7/26, 11: 02 AM"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e29"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e29",
+          "page_number": 2,
+          "bbox": [
+            29.279999999999998,
+            181.92,
+            578.88,
+            200.16
+          ],
+          "order": 28,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e30",
+      "element_type": "paragraph",
+      "text": "sSố người và tỷ lệ thất nghiệp trong độ tuổi lao động các quý năm 202 2-2025",
+      "text_for_embedding": "10/7/26, 11: 02 AM\nsSố người và tỷ lệ thất nghiệp trong độ tuổi lao động các quý năm 202 2-2025",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "10-7-26-11-02-am-24",
+      "parent_id": null,
+      "order": 29,
+      "bbox": [
+        148.79999999999998,
+        214.56,
+        466.08,
+        224.64
+      ],
+      "heading_path": [
+        "10/7/26, 11: 02 AM"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e30"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e30",
+          "page_number": 2,
+          "bbox": [
+            148.79999999999998,
+            214.56,
+            466.08,
+            224.64
+          ],
+          "order": 29,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "figure_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e32",
+      "element_type": "heading",
+      "text": "Nguồn: CỤC THỐNG KÊ",
+      "text_for_embedding": "Nguồn: CỤC THỐNG KÊ",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "nguồn-cục-thống-kê-32",
+      "parent_id": null,
+      "order": 31,
+      "bbox": [
+        261.12,
+        411.35999999999996,
+        348.47999999999996,
+        419.52
+      ],
+      "heading_path": [
+        "Nguồn: CỤC THỐNG KÊ"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e32"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e32",
+          "page_number": 2,
+          "bbox": [
+            261.12,
+            411.35999999999996,
+            348.47999999999996,
+            419.52
+          ],
+          "order": 31,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e33",
+      "element_type": "paragraph",
+      "text": "Tỷ lệ thất nghiệp trong độ tuổi lao động 6 tháng đầu năm 2025 là 2,220%, giảm 0,05 điểm phần trăm so củng kỷ 2024, trong đó khu vưực thành thị là 2,44%; khu vực nông thôn là 2,08%",
+      "text_for_embedding": "Nguồn: CỤC THỐNG KÊ\nTỷ lệ thất nghiệp trong độ tuổi lao động 6 tháng đầu năm 2025 là 2,220%, giảm 0,05 điểm phần trăm so củng kỷ 2024, trong đó khu vưực thành thị là 2,44%; khu vực nông thôn là 2,08%",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "nguồn-cục-thống-kê-32",
+      "parent_id": null,
+      "order": 32,
+      "bbox": [
+        29.279999999999998,
+        428.64,
+        578.88,
+        446.4
+      ],
+      "heading_path": [
+        "Nguồn: CỤC THỐNG KÊ"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e33"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e33",
+          "page_number": 2,
+          "bbox": [
+            29.279999999999998,
+            428.64,
+            578.88,
+            446.4
+          ],
+          "order": 32,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e34",
+      "element_type": "paragraph",
+      "text": "Tỷ lê lao đông không sử dung hết tiểm năng quý 11/2025 của khu vưực thành thi và khu vưực nông thôn đều là 3, 9%0. Thính chung 6 tháng đầu năm 2025. tỷ lê lao đông không sử dung hiết tiểm năng là 3.9%, giảm 0.4 điễểm phần trăm so cùng kỷ 2024.",
+      "text_for_embedding": "Nguồn: CỤC THỐNG KÊ\nTỷ lê lao đông không sử dung hết tiểm năng quý 11/2025 của khu vưực thành thi và khu vưực nông thôn đều là 3, 9%0. Thính chung 6 tháng đầu năm 2025. tỷ lê lao đông không sử dung hiết tiểm năng là 3.9%, giảm 0.4 điễểm phần trăm so cùng kỷ 2024.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "nguồn-cục-thống-kê-32",
+      "parent_id": null,
+      "order": 33,
+      "bbox": [
+        29.279999999999998,
+        456.0,
+        578.88,
+        474.24
+      ],
+      "heading_path": [
+        "Nguồn: CỤC THỐNG KÊ"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e34"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e34",
+          "page_number": 2,
+          "bbox": [
+            29.279999999999998,
+            456.0,
+            578.88,
+            474.24
+          ],
+          "order": 33,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e35",
+      "element_type": "paragraph",
+      "text": "Lao động làm công việc tự sản tự tiêu quý 1I1/2025 là 3,9 triệu người, tăng 81, 9 nghìn người so quý 1/2025 và giảm 7,1 nghìn ngưởi so củng kỷ 2024. Thính chung 6 tháng đầu năm 2025, lao động làm công việc tư sản tư tiêu là gần 3, 9 triệu người, giảm 62, 3 nghìn người so cùng kỷ 2024.",
+      "text_for_embedding": "Nguồn: CỤC THỐNG KÊ\nLao động làm công việc tự sản tự tiêu quý 1I1/2025 là 3,9 triệu người, tăng 81, 9 nghìn người so quý 1/2025 và giảm 7,1 nghìn ngưởi so củng kỷ 2024. Thính chung 6 tháng đầu năm 2025, lao động làm công việc tư sản tư tiêu là gần 3, 9 triệu người, giảm 62, 3 nghìn người so cùng kỷ 2024.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "nguồn-cục-thống-kê-32",
+      "parent_id": null,
+      "order": 34,
+      "bbox": [
+        29.279999999999998,
+        483.35999999999996,
+        578.88,
+        501.12
+      ],
+      "heading_path": [
+        "Nguồn: CỤC THỐNG KÊ"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e35"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e35",
+          "page_number": 2,
+          "bbox": [
+            29.279999999999998,
+            483.35999999999996,
+            578.88,
+            501.12
+          ],
+          "order": 34,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e36",
+      "element_type": "paragraph",
+      "text": "Có thể thấy, na đầu n2 5, bức tranh lao động, iệc làm có những tínhiệu sáng tích cực khả quan, trong đó phải kể đến sự gia tng trong thu nhập, sự cải thiện trong chất lượng lao động,. Tuy nhiên, cần chú ý đến tỷ lệ lao động phi chính thức vẫn còn cao.",
+      "text_for_embedding": "Nguồn: CỤC THỐNG KÊ\nCó thể thấy, na đầu n2 5, bức tranh lao động, iệc làm có những tínhiệu sáng tích cực khả quan, trong đó phải kể đến sự gia tng trong thu nhập, sự cải thiện trong chất lượng lao động,. Tuy nhiên, cần chú ý đến tỷ lệ lao động phi chính thức vẫn còn cao.",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "nguồn-cục-thống-kê-32",
+      "parent_id": null,
+      "order": 35,
+      "bbox": [
+        28.799999999999997,
+        527.52,
+        578.88,
+        545.76
+      ],
+      "heading_path": [
+        "Nguồn: CỤC THỐNG KÊ"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e36"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e36",
+          "page_number": 2,
+          "bbox": [
+            28.799999999999997,
+            527.52,
+            578.88,
+            545.76
+          ],
+          "order": 35,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e37",
+      "element_type": "heading",
+      "text": "Nguồn: Nhandan.vn",
+      "text_for_embedding": "Nguồn: Nhandan.vn",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "nguồn-nhandan-vn-37",
+      "parent_id": null,
+      "order": 36,
+      "bbox": [
+        30.24,
+        554.88,
+        101.28,
+        562.56
+      ],
+      "heading_path": [
+        "Nguồn: Nhandan.vn"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e37"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e37",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            554.88,
+            101.28,
+            562.56
+          ],
+          "order": 36,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e38",
+      "element_type": "heading",
+      "text": "B Tin liên quan",
+      "text_for_embedding": "B Tin liên quan",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "b-tin-liên-quan-38",
+      "parent_id": null,
+      "order": 37,
+      "bbox": [
+        30.24,
+        579.36,
+        84.96,
+        588.0
+      ],
+      "heading_path": [
+        "B Tin liên quan"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e38"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e38",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            579.36,
+            84.96,
+            588.0
+          ],
+          "order": 37,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e39",
+      "element_type": "paragraph",
+      "text": "Nguồn lực quốc gia tử ngoại giao văn hóa vì một cộng đồng khỏe mạnh, giảu bản sắc văn hóa Tập huấn triển khai 4 thủ tuục hành chính và quản trị, sử dụng hệ thống, giải quyết thủ tuục hành chính của Đảng trên môi trường điện tử Nhân lên những hạt nhân lao động sáng tạo Khuyyến học, khuyến tài chắp cánh ước mơ Hưng Yên mở rộng hợp tác với các đối tác Hàn Quốc về giáo dục, khoa học - công nghệ và y tế Đồng chí Phó Chủ tịch Thường trực UBND tỉnh thăm, tặng quả người cao tuổi tại phường Hồng Châu",
+      "text_for_embedding": "B Tin liên quan\nNguồn lực quốc gia tử ngoại giao văn hóa vì một cộng đồng khỏe mạnh, giảu bản sắc văn hóa Tập huấn triển khai 4 thủ tuục hành chính và quản trị, sử dụng hệ thống, giải quyết thủ tuục hành chính của Đảng trên môi trường điện tử Nhân lên những hạt nhân lao động sáng tạo Khuyyến học, khuyến tài chắp cánh ước mơ Hưng Yên mở rộng hợp tác với các đối tác Hàn Quốc về giáo dục, khoa học - công nghệ và y tế Đồng chí Phó Chủ tịch Thường trực UBND tỉnh thăm, tặng quả người cao tuổi tại phường Hồng Châu",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "b-tin-liên-quan-38",
+      "parent_id": null,
+      "order": 38,
+      "bbox": [
+        28.799999999999997,
+        588.48,
+        578.4,
+        622.0799999999999
+      ],
+      "heading_path": [
+        "B Tin liên quan"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e39"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e39",
+          "page_number": 2,
+          "bbox": [
+            28.799999999999997,
+            588.48,
+            578.4,
+            622.0799999999999
+          ],
+          "order": 38,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e40",
+      "element_type": "heading",
+      "text": "E Tin nổi bật",
+      "text_for_embedding": "E Tin nổi bật",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 39,
+      "bbox": [
+        30.24,
+        624.9599999999999,
+        76.32,
+        632.64
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e40"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e40",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            624.9599999999999,
+            76.32,
+            632.64
+          ],
+          "order": 39,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e41",
+      "element_type": "paragraph",
+      "text": "- Nguồn lực quốc gia từ ngoại giao văn hóa",
+      "text_for_embedding": "E Tin nổi bật\n- Nguồn lực quốc gia từ ngoại giao văn hóa",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 40,
+      "bbox": [
+        42.239999999999995,
+        641.76,
+        187.68,
+        649.92
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e41"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e41",
+          "page_number": 2,
+          "bbox": [
+            42.239999999999995,
+            641.76,
+            187.68,
+            649.92
+          ],
+          "order": 40,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e42",
+      "element_type": "paragraph",
+      "text": "- Tăng cường sự gắn bó giữa Đảng với nhân dân",
+      "text_for_embedding": "E Tin nổi bật\n- Tăng cường sự gắn bó giữa Đảng với nhân dân",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 41,
+      "bbox": [
+        42.239999999999995,
+        650.88,
+        204.0,
+        659.04
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e42"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e42",
+          "page_number": 2,
+          "bbox": [
+            42.239999999999995,
+            650.88,
+            204.0,
+            659.04
+          ],
+          "order": 41,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e43",
+      "element_type": "paragraph",
+      "text": "2 Phòng, chống \"diễn biễn hòỏa bình\": “Giữ nhà \" từ xa",
+      "text_for_embedding": "E Tin nổi bật\n2 Phòng, chống \"diễn biễn hòỏa bình\": “Giữ nhà \" từ xa",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 42,
+      "bbox": [
+        42.239999999999995,
+        659.52,
+        220.79999999999998,
+        668.16
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e43"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e43",
+          "page_number": 2,
+          "bbox": [
+            42.239999999999995,
+            659.52,
+            220.79999999999998,
+            668.16
+          ],
+          "order": 42,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e44",
+      "element_type": "paragraph",
+      "text": "- Ngày làm việc thứ hai Hội nghị lần thứ tư Ban Chấp hành Trung ương Đảng khóa XIV",
+      "text_for_embedding": "E Tin nổi bật\n- Ngày làm việc thứ hai Hội nghị lần thứ tư Ban Chấp hành Trung ương Đảng khóa XIV",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 43,
+      "bbox": [
+        42.239999999999995,
+        668.64,
+        330.71999999999997,
+        677.28
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e44"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e44",
+          "page_number": 2,
+          "bbox": [
+            42.239999999999995,
+            668.64,
+            330.71999999999997,
+            677.28
+          ],
+          "order": 43,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e45",
+      "element_type": "paragraph",
+      "text": "- Xã Minh Thọ: Ứng dụng công nghệ thông tin trong các trường học",
+      "text_for_embedding": "E Tin nổi bật\n- Xã Minh Thọ: Ứng dụng công nghệ thông tin trong các trường học",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 44,
+      "bbox": [
+        42.239999999999995,
+        678.24,
+        267.36,
+        686.4
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e45"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e45",
+          "page_number": 2,
+          "bbox": [
+            42.239999999999995,
+            678.24,
+            267.36,
+            686.4
+          ],
+          "order": 44,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e46",
+      "element_type": "paragraph",
+      "text": "- Trung tâm Chính trị phường Mỹ Hoào: Chú trọng chất lượng bồi dưỡng lý luận chính trị",
+      "text_for_embedding": "E Tin nổi bật\n- Trung tâm Chính trị phường Mỹ Hoào: Chú trọng chất lượng bồi dưỡng lý luận chính trị",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 45,
+      "bbox": [
+        41.76,
+        686.88,
+        331.68,
+        695.52
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e46"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e46",
+          "page_number": 2,
+          "bbox": [
+            41.76,
+            686.88,
+            331.68,
+            695.52
+          ],
+          "order": 45,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e47",
+      "element_type": "paragraph",
+      "text": "- Vvì môột công đồng khỏe mạnh, giảu bản sắc văn hóa",
+      "text_for_embedding": "E Tin nổi bật\n- Vvì môột công đồng khỏe mạnh, giảu bản sắc văn hóa",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 46,
+      "bbox": [
+        42.239999999999995,
+        696.48,
+        219.35999999999999,
+        704.64
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e47"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e47",
+          "page_number": 2,
+          "bbox": [
+            42.239999999999995,
+            696.48,
+            219.35999999999999,
+            704.64
+          ],
+          "order": 46,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e48",
+      "element_type": "paragraph",
+      "text": "- Hưng Yên: Phấn đấu hoàn thành 100% chỉ tiêu giao quân năm 2027",
+      "text_for_embedding": "E Tin nổi bật\n- Hưng Yên: Phấn đấu hoàn thành 100% chỉ tiêu giao quân năm 2027",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 47,
+      "bbox": [
+        41.76,
+        705.12,
+        270.71999999999997,
+        712.8
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e48"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e48",
+          "page_number": 2,
+          "bbox": [
+            41.76,
+            705.12,
+            270.71999999999997,
+            712.8
+          ],
+          "order": 47,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e49",
+      "element_type": "paragraph",
+      "text": "- Thông báo về việc thay đổi Lịch Tiếp công dân của đồng chí Bí thư Tỉnh ủy tháng 10/2026",
+      "text_for_embedding": "E Tin nổi bật\n- Thông báo về việc thay đổi Lịch Tiếp công dân của đồng chí Bí thư Tỉnh ủy tháng 10/2026",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 48,
+      "bbox": [
+        41.76,
+        713.28,
+        343.68,
+        721.92
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e49"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e49",
+          "page_number": 2,
+          "bbox": [
+            41.76,
+            713.28,
+            343.68,
+            721.92
+          ],
+          "order": 48,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e50",
+      "element_type": "paragraph",
+      "text": "- Hưng Yên \"xoay truục \" hướng ra biển, tiến về biển để liàm giàu",
+      "text_for_embedding": "E Tin nổi bật\n- Hưng Yên \"xoay truục \" hướng ra biển, tiến về biển để liàm giàu",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-nổi-bật-40",
+      "parent_id": null,
+      "order": 49,
+      "bbox": [
+        42.239999999999995,
+        723.36,
+        252.48,
+        731.04
+      ],
+      "heading_path": [
+        "E Tin nổi bật"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e50"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e50",
+          "page_number": 2,
+          "bbox": [
+            42.239999999999995,
+            723.36,
+            252.48,
+            731.04
+          ],
+          "order": 49,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "e0cc452abc435c718503-e51",
+      "element_type": "heading",
+      "text": "E Tin mới",
+      "text_for_embedding": "E Tin mới",
+      "document_id": "e0cc452abc435c718503",
+      "page_number": 2,
+      "section_id": "e-tin-mới-51",
+      "parent_id": null,
+      "order": 50,
+      "bbox": [
+        30.24,
+        739.68,
+        67.2,
+        747.36
+      ],
+      "heading_path": [
+        "E Tin mới"
+      ],
+      "source_element_ids": [
+        "e0cc452abc435c718503-e51"
+      ],
+      "source_spans": [
+        {
+          "element_id": "e0cc452abc435c718503-e51",
+          "page_number": 2,
+          "bbox": [
+            30.24,
+            739.68,
+            67.2,
+            747.36
+          ],
+          "order": 50,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    }
+  ],
+  "metadata": {
+    "source_parser": "paddleocr"
+  }
+}

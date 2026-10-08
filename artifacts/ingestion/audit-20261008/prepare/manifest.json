@@ -1,0 +1,17 @@
+{
+  "run_id": null,
+  "started_at": "2026-10-08T03:14:59.984239+00:00",
+  "input": "parsed_test_document/all_documents_gpu",
+  "captions": null,
+  "mode": "prepare-only",
+  "backend": "local",
+  "embedder": "bge-m3",
+  "chunks_seen": 737,
+  "chunks_new": 737,
+  "chunks_inserted": 0,
+  "chunks_skipped_dup": 0,
+  "published": false,
+  "status": "retired_missing_image_captions",
+  "recovery_directory": "/workspace/APOLLO/ragminiprj/artifacts/ingestion/audit-20261008/retired-no-captions-20261008T064347Z",
+  "retired_at": "2026-10-08T06:43:50.149065+00:00"
+}

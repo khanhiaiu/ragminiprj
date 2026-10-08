@@ -1,0 +1,1117 @@
+{
+  "schema_version": "1.0",
+  "document_id": "4c46d5203b30aca1aa8c",
+  "filename": "3275_BTTTT-UDCNTT_11324626.pdf",
+  "file_type": "pdf",
+  "source_path": "/workspace/APOLLO/ragminiprj/documents/3275_BTTTT-UDCNTT_11324626.pdf",
+  "document_version": "1.0",
+  "elements": [
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e1",
+      "element_type": "heading",
+      "text": "BỘ THÔNG TIN VÀ TRUYỀN THÔNG",
+      "text_for_embedding": "BỘ THÔNG TIN VÀ TRUYỀN THÔNG",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "bộ-thông-tin-và-truyền-thông-1",
+      "parent_id": null,
+      "order": 0,
+      "bbox": [
+        83.03445512820512,
+        67.64786324786324,
+        280.78125,
+        83.48034188034188
+      ],
+      "heading_path": [
+        "BỘ THÔNG TIN VÀ TRUYỀN THÔNG"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e1"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e1",
+          "page_number": 1,
+          "bbox": [
+            83.03445512820512,
+            67.64786324786324,
+            280.78125,
+            83.48034188034188
+          ],
+          "order": 0,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "paragraph_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e2",
+      "element_type": "heading",
+      "text": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 1,
+      "bbox": [
+        297.58012820512823,
+        68.12763532763532,
+        540.4439102564103,
+        101.7116809116809
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e2"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e2",
+          "page_number": 1,
+          "bbox": [
+            297.58012820512823,
+            68.12763532763532,
+            540.4439102564103,
+            101.7116809116809
+          ],
+          "order": 1,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "doc_title",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e3",
+      "element_type": "paragraph",
+      "text": "Số: 3275/BTTTT-ƯDCNTT V/v thực hiện các quy định của Nghị định. 43/2011/NĐ-CP ngày 13/6/2011 của Chính phủ",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\nSố: 3275/BTTTT-ƯDCNTT V/v thực hiện các quy định của Nghị định. 43/2011/NĐ-CP ngày 13/6/2011 của Chính phủ",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 2,
+      "bbox": [
+        78.23477564102565,
+        97.39373219373219,
+        285.10096153846155,
+        141.05299145299145
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e3"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e3",
+          "page_number": 1,
+          "bbox": [
+            78.23477564102565,
+            97.39373219373219,
+            285.10096153846155,
+            141.05299145299145
+          ],
+          "order": 2,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e4",
+      "element_type": "paragraph",
+      "text": "Hà Nội, ngày 28 tháng 10 năm 2011",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\nHà Nội, ngày 28 tháng 10 năm 2011",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 3,
+      "bbox": [
+        311.0192307692308,
+        118.50370370370369,
+        525.5649038461538,
+        133.85641025641024
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e4"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e4",
+          "page_number": 1,
+          "bbox": [
+            311.0192307692308,
+            118.50370370370369,
+            525.5649038461538,
+            133.85641025641024
+          ],
+          "order": 3,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e5",
+      "element_type": "paragraph",
+      "text": "Kính gửi:",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\nKính gửi:",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 4,
+      "bbox": [
+        127.19150641025641,
+        171.27863247863246,
+        184.30769230769232,
+        185.19202279202278
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e5"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e5",
+          "page_number": 1,
+          "bbox": [
+            127.19150641025641,
+            171.27863247863246,
+            184.30769230769232,
+            185.19202279202278
+          ],
+          "order": 4,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e6",
+      "element_type": "paragraph",
+      "text": "- Các Bộc, cơ quan ngang Bộ, cơ quan thuộc Chính phủ; - Ủy ban nhân dân các tỉnh, thành phố trực thuộc Trung ương.",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Các Bộc, cơ quan ngang Bộ, cơ quan thuộc Chính phủ; - Ủy ban nhân dân các tỉnh, thành phố trực thuộc Trung ương.",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 5,
+      "bbox": [
+        186.22756410256412,
+        193.82792022792023,
+        537.0841346153846,
+        231.7299145299145
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e6"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e6",
+          "page_number": 1,
+          "bbox": [
+            186.22756410256412,
+            193.82792022792023,
+            537.0841346153846,
+            231.7299145299145
+          ],
+          "order": 5,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e7",
+      "element_type": "paragraph",
+      "text": "Ngày 13 tháng 6 năm 2011, Chính phủ đã ban hành Nghị định số 43/201 1/NĐ-CP Quy định về việc cung cấp thông tin và dịch vụ công trực tuyến trên trang thông tin điện tử hoặc cổng thông tin điện tử của cơ quan nhà nước. Nghị định có hiệu lực thi hành kể từ ngày 01 tháng 10 năm 2011. Thực hiện nhiệm vụ hướng dẫn thực hiện Nghị định, Bộ Thông tin và Truyền thông trân trọng đề nghị Quý cơ quan xây dựng kế hoạch và tổ chức triển khai theo các quy định của Nghị định bao gồm những nội dung chính sau:",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\nNgày 13 tháng 6 năm 2011, Chính phủ đã ban hành Nghị định số 43/201 1/NĐ-CP Quy định về việc cung cấp thông tin và dịch vụ công trực tuyến trên trang thông tin điện tử hoặc cổng thông tin điện tử của cơ quan nhà nước. Nghị định có hiệu lực thi hành kể từ ngày 01 tháng 10 năm 2011. Thực hiện nhiệm vụ hướng dẫn thực hiện Nghị định, Bộ Thông tin và Truyền thông trân trọng đề nghị Quý cơ quan xây dựng kế hoạch và tổ chức triển khai theo các quy định của Nghị định bao gồm những nội dung chính sau:",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 6,
+      "bbox": [
+        83.03445512820512,
+        253.7994301994302,
+        540.9238782051282,
+        390.53447293447294
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e7"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e7",
+          "page_number": 1,
+          "bbox": [
+            83.03445512820512,
+            253.7994301994302,
+            540.9238782051282,
+            390.53447293447294
+          ],
+          "order": 6,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e8",
+      "element_type": "paragraph",
+      "text": "- Bổ sung, cập nhật các muục thông tin đăng tải trên trang /công thông tin điện tử theo quy định, bảo đảm các muục thông tin được cung cấp, cập nhật đầy đủ, đúng thời gian;",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Bổ sung, cập nhật các muục thông tin đăng tải trên trang /công thông tin điện tử theo quy định, bảo đảm các muục thông tin được cung cấp, cập nhật đầy đủ, đúng thời gian;",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 7,
+      "bbox": [
+        83.51442307692308,
+        401.5692307692307,
+        540.4439102564103,
+        456.26324786324784
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e8"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e8",
+          "page_number": 1,
+          "bbox": [
+            83.51442307692308,
+            401.5692307692307,
+            540.4439102564103,
+            456.26324786324784
+          ],
+          "order": 7,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e9",
+      "element_type": "paragraph",
+      "text": "- Xây dựng lộ trình cung cấp dịch vụ công trực tuyếng; bảo đảm thông tin dịch vụ công trực tuyến được cập nhật, bổ sung, chỉnh sửa kịp thời khi có sự thay đổi;",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Xây dựng lộ trình cung cấp dịch vụ công trực tuyếng; bảo đảm thông tin dịch vụ công trực tuyến được cập nhật, bổ sung, chỉnh sửa kịp thời khi có sự thay đổi;",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 8,
+      "bbox": [
+        83.03445512820512,
+        467.77777777777777,
+        540.4439102564103,
+        522.951566951567
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e9"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e9",
+          "page_number": 1,
+          "bbox": [
+            83.03445512820512,
+            467.77777777777777,
+            540.4439102564103,
+            522.951566951567
+          ],
+          "order": 8,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e10",
+      "element_type": "paragraph",
+      "text": "- Bảo đảnm nhân lưực phuục vụ cho trang/côổng thông tin điện tử bao gồm: kiện toàn Ban Biên tập trang/côổng thông tin điện tử, bố trí đầy đủ nhân lực xử lý dịch vụ công trực tuyến và nhân lưực quản trị kỹ thuật cho trang /công thông trin điện tử;",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Bảo đảnm nhân lưực phuục vụ cho trang/côổng thông tin điện tử bao gồm: kiện toàn Ban Biên tập trang/côổng thông tin điện tử, bố trí đầy đủ nhân lực xử lý dịch vụ công trực tuyến và nhân lưực quản trị kỹ thuật cho trang /công thông trin điện tử;",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 9,
+      "bbox": [
+        83.03445512820512,
+        534.4660968660968,
+        540.9238782051282,
+        589.639886039886
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e10"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e10",
+          "page_number": 1,
+          "bbox": [
+            83.03445512820512,
+            534.4660968660968,
+            540.9238782051282,
+            589.639886039886
+          ],
+          "order": 9,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e11",
+      "element_type": "paragraph",
+      "text": "- Xây dựng và ban hành Quy chế phối hợp giữa các đơn vị trong cơ quan để: cung cấp và xử lý thông tin, Quy chế vận hành và duy trì hoạt động cho trang/ công thông tin điện tử;",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Xây dựng và ban hành Quy chế phối hợp giữa các đơn vị trong cơ quan để: cung cấp và xử lý thông tin, Quy chế vận hành và duy trì hoạt động cho trang/ công thông tin điện tử;",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 10,
+      "bbox": [
+        83.03445512820512,
+        600.6746438746438,
+        540.4439102564103,
+        655.368660968661
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e11"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e11",
+          "page_number": 1,
+          "bbox": [
+            83.03445512820512,
+            600.6746438746438,
+            540.4439102564103,
+            655.368660968661
+          ],
+          "order": 10,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e12",
+      "element_type": "paragraph",
+      "text": "- Liên kết, tích hợp thông tin giữa trang/công thông tin điện tử của cơ quan với các đơn vị trực thuộc và với Công Thông tin điện tử Chính phủ;",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Liên kết, tích hợp thông tin giữa trang/công thông tin điện tử của cơ quan với các đơn vị trực thuộc và với Công Thông tin điện tử Chính phủ;",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 11,
+      "bbox": [
+        83.51442307692308,
+        666.8831908831909,
+        540.4439102564103,
+        701.9065527065527
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e12"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e12",
+          "page_number": 1,
+          "bbox": [
+            83.51442307692308,
+            666.8831908831909,
+            540.4439102564103,
+            701.9065527065527
+          ],
+          "order": 11,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e13",
+      "element_type": "paragraph",
+      "text": "- Triến hành rà soát và bổ sung, thay đổi tên miền truy cập trang/cổng thông tin điện tử của cơ quan theo quy định nhằm bảo đảm thuận tiện trong việc truy",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Triến hành rà soát và bổ sung, thay đổi tên miền truy cập trang/cổng thông tin điện tử của cơ quan theo quy định nhằm bảo đảm thuận tiện trong việc truy",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 1,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 12,
+      "bbox": [
+        83.51442307692308,
+        712.4615384615385,
+        540.9238782051282,
+        748.9242165242165
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e13"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e13",
+          "page_number": 1,
+          "bbox": [
+            83.51442307692308,
+            712.4615384615385,
+            540.9238782051282,
+            748.9242165242165
+          ],
+          "order": 12,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e14",
+      "element_type": "paragraph",
+      "text": "cập thông tin và dịch vụ công trực tuyến trên trang/công thông tin điện tiửn ciủa tổ cchức, công dân;",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\ncập thông tin và dịch vụ công trực tuyến trên trang/công thông tin điện tiửn ciủa tổ cchức, công dân;",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 13,
+      "bbox": [
+        93.59375,
+        67.16809116809117,
+        524.604967948718,
+        100.27236467236467
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e14"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e14",
+          "page_number": 2,
+          "bbox": [
+            93.59375,
+            67.16809116809117,
+            524.604967948718,
+            100.27236467236467
+          ],
+          "order": 13,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e15",
+      "element_type": "paragraph",
+      "text": "- Tăng cường công tác bảo đảm an toàn thông tin cho hệ thống trang/công thông tin điện tử.",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Tăng cường công tác bảo đảm an toàn thông tin cho hệ thống trang/công thông tin điện tử.",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 14,
+      "bbox": [
+        94.07371794871796,
+        110.82735042735042,
+        525.0849358974359,
+        144.411396011396
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e15"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e15",
+          "page_number": 2,
+          "bbox": [
+            94.07371794871796,
+            110.82735042735042,
+            525.0849358974359,
+            144.411396011396
+          ],
+          "order": 14,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e16",
+      "element_type": "paragraph",
+      "text": "Trong quá trình triển khai thực hiện, nếu có khó khăn, vướng mắc, các cơ quan liên hệ với Bộ Thông tin và Truyền thông (Cục Ứng dụng công nghệ thông tin) để cùng phối hợp giải quyết.",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\nTrong quá trình triển khai thực hiện, nếu có khó khăn, vướng mắc, các cơ quan liên hệ với Bộ Thông tin và Truyền thông (Cục Ứng dụng công nghệ thông tin) để cùng phối hợp giải quyết.",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 15,
+      "bbox": [
+        94.07371794871796,
+        154.96638176638177,
+        525.0849358974359,
+        208.7008547008547
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e16"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e16",
+          "page_number": 2,
+          "bbox": [
+            94.07371794871796,
+            154.96638176638177,
+            525.0849358974359,
+            208.7008547008547
+          ],
+          "order": 15,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e17",
+      "element_type": "paragraph",
+      "text": "Trân trọng cảm ơn./.",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\nTrân trọng cảm ơn./.",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 16,
+      "bbox": [
+        121.91185897435898,
+        219.25584045584046,
+        256.30288461538464,
+        239.88603988603987
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e17"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e17",
+          "page_number": 2,
+          "bbox": [
+            121.91185897435898,
+            219.25584045584046,
+            256.30288461538464,
+            239.88603988603987
+          ],
+          "order": 16,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e18",
+      "element_type": "paragraph",
+      "text": "Nơi nhận:",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\nNơi nhận:",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 17,
+      "bbox": [
+        101.27323717948718,
+        249.00170940170938,
+        154.06971153846155,
+        265.3139601139601
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e18"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e18",
+          "page_number": 2,
+          "bbox": [
+            101.27323717948718,
+            249.00170940170938,
+            154.06971153846155,
+            265.3139601139601
+          ],
+          "order": 17,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "ocr_line",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e19",
+      "element_type": "paragraph",
+      "text": "KT. BỘ TRƯỞNG THỨ TRƯỞNG",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\nKT. BỘ TRƯỞNG THỨ TRƯỞNG",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 18,
+      "bbox": [
+        371.01522435897436,
+        249.96125356125356,
+        472.7684294871795,
+        277.7880341880342
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e19"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e19",
+          "page_number": 2,
+          "bbox": [
+            371.01522435897436,
+            249.96125356125356,
+            472.7684294871795,
+            277.7880341880342
+          ],
+          "order": 18,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e20",
+      "element_type": "paragraph",
+      "text": "- Như trên;",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Như trên;",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 19,
+      "bbox": [
+        102.71314102564102,
+        264.834188034188,
+        151.18990384615384,
+        274.9094017094017
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e20"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e20",
+          "page_number": 2,
+          "bbox": [
+            102.71314102564102,
+            264.834188034188,
+            151.18990384615384,
+            274.9094017094017
+          ],
+          "order": 19,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e21",
+      "element_type": "paragraph",
+      "text": "- Phó Thưủ tướng CP Nguyễn Thiện Nhân (đốđể b/c); - Bộ trưởng (để b/c);",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Phó Thưủ tướng CP Nguyễn Thiện Nhân (đốđể b/c); - Bộ trưởng (để b/c);",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 20,
+      "bbox": [
+        102.71314102564102,
+        274.9094017094017,
+        311.9791666666667,
+        299.37777777777774
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e21"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e21",
+          "page_number": 2,
+          "bbox": [
+            102.71314102564102,
+            274.9094017094017,
+            311.9791666666667,
+            299.37777777777774
+          ],
+          "order": 20,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e23",
+      "element_type": "paragraph",
+      "text": "- Đơn vị chuyên trách CNTT các Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ;",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Đơn vị chuyên trách CNTT các Bộ, cơ quan ngang Bộ, cơ quan thuộc Chính phủ;",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 22,
+      "bbox": [
+        102.23317307692308,
+        300.817094017094,
+        311.9791666666667,
+        324.3259259259259
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e23"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e23",
+          "page_number": 2,
+          "bbox": [
+            102.23317307692308,
+            300.817094017094,
+            311.9791666666667,
+            324.3259259259259
+          ],
+          "order": 22,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    },
+    {
+      "element_id": "4c46d5203b30aca1aa8c-e24",
+      "element_type": "paragraph",
+      "text": "- Sở TT8&TT các tỉnh, thành phố trực thuộc TƯ; - Lưu: VT, ƯDCNTT (02 bản).",
+      "text_for_embedding": "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc\n- Sở TT8&TT các tỉnh, thành phố trực thuộc TƯ; - Lưu: VT, ƯDCNTT (02 bản).",
+      "document_id": "4c46d5203b30aca1aa8c",
+      "page_number": 2,
+      "section_id": "cộng-hòa-xã-hội-chủ-nghi-a-việt-nam-độc-lập---tự-do---hạnh-phúc-2",
+      "parent_id": null,
+      "order": 23,
+      "bbox": [
+        102.23317307692308,
+        324.805698005698,
+        303.3397435897436,
+        348.3145299145299
+      ],
+      "heading_path": [
+        "CỘNG HÒA XÃ HỘI CHỦ NGHI A VIỆT NAM Độc lập - Tự do - Hạnh phúc"
+      ],
+      "source_element_ids": [
+        "4c46d5203b30aca1aa8c-e24"
+      ],
+      "source_spans": [
+        {
+          "element_id": "4c46d5203b30aca1aa8c-e24",
+          "page_number": 2,
+          "bbox": [
+            102.23317307692308,
+            324.805698005698,
+            303.3397435897436,
+            348.3145299145299
+          ],
+          "order": 23,
+          "sheet": null,
+          "cell_range": null
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": null,
+      "metadata": {
+        "parser": "paddleocr",
+        "original_label": "text",
+        "coordinate_unit": "pt"
+      }
+    }
+  ],
+  "metadata": {
+    "source_parser": "paddleocr"
+  }
+}

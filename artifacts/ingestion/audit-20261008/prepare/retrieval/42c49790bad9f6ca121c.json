@@ -1,0 +1,1849 @@
+{
+  "schema_version": "1.0",
+  "document_id": "42c49790bad9f6ca121c",
+  "filename": "03_Chi_theo_bo_nganh_2026.xlsx",
+  "file_type": "xlsx",
+  "source_path": "/workspace/APOLLO/ragminiprj/documents/03_Chi_theo_bo_nganh_2026.xlsx",
+  "document_version": "1.0",
+  "elements": [
+    {
+      "element_id": "42c49790bad9f6ca121c-e1",
+      "element_type": "table",
+      "text": "| Dự toán và giải ngân 9 tháng 2026 theo bộ, ngành (tỷ ARL) |  |  |\n| --- | --- | --- |\n| Số liệu GIẢ ĐỊNH, chỉ dùng minh họa – quốc gia hư cấu 'Cộng hòa Aurelia', đơn vị tiền tệ: ARL |  |  |\n| Mục tiêu giải ngân 9 tháng | 0.7 | Giả định; bộ có tỷ lệ ≥ mục tiêu được đánh giá 'Đạt' |",
+      "text_for_embedding": "| Dự toán và giải ngân 9 tháng 2026 theo bộ, ngành (tỷ ARL) |  |  |\n| --- | --- | --- |\n| Số liệu GIẢ ĐỊNH, chỉ dùng minh họa – quốc gia hư cấu 'Cộng hòa Aurelia', đơn vị tiền tệ: ARL |  |  |\n| Mục tiêu giải ngân 9 tháng | 0.7 | Giả định; bộ có tỷ lệ ≥ mục tiêu được đánh giá 'Đạt' |",
+      "document_id": "42c49790bad9f6ca121c",
+      "page_number": null,
+      "section_id": null,
+      "parent_id": null,
+      "order": 0,
+      "bbox": null,
+      "heading_path": [],
+      "source_element_ids": [
+        "42c49790bad9f6ca121c-e1"
+      ],
+      "source_spans": [
+        {
+          "element_id": "42c49790bad9f6ca121c-e1",
+          "page_number": null,
+          "bbox": null,
+          "order": 0,
+          "sheet": "Chi_theo_bo",
+          "cell_range": "A1:C3"
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": {
+        "cells": [
+          {
+            "coordinate": "A1",
+            "row": 1,
+            "column": 1,
+            "value": "Dự toán và giải ngân 9 tháng 2026 theo bộ, ngành (tỷ ARL)",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A2",
+            "row": 2,
+            "column": 1,
+            "value": "Số liệu GIẢ ĐỊNH, chỉ dùng minh họa – quốc gia hư cấu 'Cộng hòa Aurelia', đơn vị tiền tệ: ARL",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A3",
+            "row": 3,
+            "column": 1,
+            "value": "Mục tiêu giải ngân 9 tháng",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B3",
+            "row": 3,
+            "column": 2,
+            "value": 0.7,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "C3",
+            "row": 3,
+            "column": 3,
+            "value": "Giả định; bộ có tỷ lệ ≥ mục tiêu được đánh giá 'Đạt'",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          }
+        ],
+        "values": [
+          [
+            "Dự toán và giải ngân 9 tháng 2026 theo bộ, ngành (tỷ ARL)",
+            null,
+            null
+          ],
+          [
+            "Số liệu GIẢ ĐỊNH, chỉ dùng minh họa – quốc gia hư cấu 'Cộng hòa Aurelia', đơn vị tiền tệ: ARL",
+            null,
+            null
+          ],
+          [
+            "Mục tiêu giải ngân 9 tháng",
+            0.7,
+            "Giả định; bộ có tỷ lệ ≥ mục tiêu được đánh giá 'Đạt'"
+          ]
+        ],
+        "range": "A1:C3",
+        "sheet": "Chi_theo_bo"
+      },
+      "metadata": {
+        "sheet": "Chi_theo_bo",
+        "parser": "openpyxl",
+        "workbook": "03_Chi_theo_bo_nganh_2026.xlsx",
+        "range": "A1:C3"
+      }
+    },
+    {
+      "element_id": "42c49790bad9f6ca121c-e2",
+      "element_type": "table",
+      "text": "| Bộ, ngành | Dự toán chi thường xuyên | Dự toán chi đầu tư | Tổng dự toán | % tổng | Giải ngân TX 9 tháng | Giải ngân ĐT 9 tháng | Tổng giải ngân | Tỷ lệ giải ngân | Đánh giá |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Bộ Giáo dục | 38000 | 4000 | 42000 | 0.129071911493546 | 27500 | 2400 | 29900 | 0.711904761904762 | Đạt |\n| Bộ Y tế | 22000 | 6500 | 28500 | 0.0875845113706208 | 15800 | 3300 | 19100 | 0.670175438596491 | Chậm |\n| Bộ Quốc phòng | 41000 | 5000 | 46000 | 0.141364474492932 | 30500 | 3100 | 33600 | 0.730434782608696 | Đạt |\n| Bộ Công an | 26000 | 3000 | 29000 | 0.089121081745544 | 19600 | 1700 | 21300 | 0.73448275862069 | Đạt |\n| Bộ Giao thông Vận tải | 3500 | 44000 | 47500 | 0.145974185617701 | 2300 | 25000 | 27300 | 0.574736842105263 | Chậm |\n| Bộ Nông nghiệp và Môi trường | 4800 | 15000 | 19800 | 0.0608481868469576 | 3200 | 9100 | 12300 | 0.621212121212121 | Chậm |\n| Bộ Tài chính | 9500 | 1200 | 10700 | 0.0328826060233559 | 6900 | 800 | 7700 | 0.719626168224299 | Đạt |\n| Bộ Khoa học và Công nghệ | 7500 | 2500 | 10000 | 0.0307314074984634 | 4900 | 1300 | 6200 | 0.62 | Chậm |\n| Bộ Lao động và Xã hội | 52000 | 1500 | 53500 | 0.164413030116779 | 38200 | 800 | 39000 | 0.728971962616822 | Đạt |\n| Bộ Xây dựng | 2000 | 9000 | 11000 | 0.0338045482483098 | 1400 | 5200 | 6600 | 0.6 | Chậm |\n| Bộ Công Thương | 2600 | 11500 | 14100 | 0.0433312845728334 | 1800 | 6000 | 7800 | 0.553191489361702 | Chậm |\n| Bộ Ngoại giao | 3200 | 600 | 3800 | 0.0116779348494161 | 2500 | 400 | 2900 | 0.763157894736842 | Đạt |\n| Bộ Tư pháp | 2300 | 400 | 2700 | 0.00829748002458513 | 1700 | 230 | 1930 | 0.714814814814815 | Đạt |\n| Bộ Văn hóa, Thể thao và Du lịch | 3000 | 3800 | 6800 | 0.0208973570989551 | 2100 | 2100 | 4200 | 0.617647058823529 | Chậm |\n| TỔNG CÁC BỘ | 217400 | 108000 | 325400 | 1 | 158400 | 61430 | 219830 | 0.675568531038722 | Chậm |",
+      "text_for_embedding": "| Bộ, ngành | Dự toán chi thường xuyên | Dự toán chi đầu tư | Tổng dự toán | % tổng | Giải ngân TX 9 tháng | Giải ngân ĐT 9 tháng | Tổng giải ngân | Tỷ lệ giải ngân | Đánh giá |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Bộ Giáo dục | 38000 | 4000 | 42000 | 0.129071911493546 | 27500 | 2400 | 29900 | 0.711904761904762 | Đạt |\n| Bộ Y tế | 22000 | 6500 | 28500 | 0.0875845113706208 | 15800 | 3300 | 19100 | 0.670175438596491 | Chậm |\n| Bộ Quốc phòng | 41000 | 5000 | 46000 | 0.141364474492932 | 30500 | 3100 | 33600 | 0.730434782608696 | Đạt |\n| Bộ Công an | 26000 | 3000 | 29000 | 0.089121081745544 | 19600 | 1700 | 21300 | 0.73448275862069 | Đạt |\n| Bộ Giao thông Vận tải | 3500 | 44000 | 47500 | 0.145974185617701 | 2300 | 25000 | 27300 | 0.574736842105263 | Chậm |\n| Bộ Nông nghiệp và Môi trường | 4800 | 15000 | 19800 | 0.0608481868469576 | 3200 | 9100 | 12300 | 0.621212121212121 | Chậm |\n| Bộ Tài chính | 9500 | 1200 | 10700 | 0.0328826060233559 | 6900 | 800 | 7700 | 0.719626168224299 | Đạt |\n| Bộ Khoa học và Công nghệ | 7500 | 2500 | 10000 | 0.0307314074984634 | 4900 | 1300 | 6200 | 0.62 | Chậm |\n| Bộ Lao động và Xã hội | 52000 | 1500 | 53500 | 0.164413030116779 | 38200 | 800 | 39000 | 0.728971962616822 | Đạt |\n| Bộ Xây dựng | 2000 | 9000 | 11000 | 0.0338045482483098 | 1400 | 5200 | 6600 | 0.6 | Chậm |\n| Bộ Công Thương | 2600 | 11500 | 14100 | 0.0433312845728334 | 1800 | 6000 | 7800 | 0.553191489361702 | Chậm |\n| Bộ Ngoại giao | 3200 | 600 | 3800 | 0.0116779348494161 | 2500 | 400 | 2900 | 0.763157894736842 | Đạt |\n| Bộ Tư pháp | 2300 | 400 | 2700 | 0.00829748002458513 | 1700 | 230 | 1930 | 0.714814814814815 | Đạt |\n| Bộ Văn hóa, Thể thao và Du lịch | 3000 | 3800 | 6800 | 0.0208973570989551 | 2100 | 2100 | 4200 | 0.617647058823529 | Chậm |\n| TỔNG CÁC BỘ | 217400 | 108000 | 325400 | 1 | 158400 | 61430 | 219830 | 0.675568531038722 | Chậm |",
+      "document_id": "42c49790bad9f6ca121c",
+      "page_number": null,
+      "section_id": null,
+      "parent_id": null,
+      "order": 1,
+      "bbox": null,
+      "heading_path": [],
+      "source_element_ids": [
+        "42c49790bad9f6ca121c-e2"
+      ],
+      "source_spans": [
+        {
+          "element_id": "42c49790bad9f6ca121c-e2",
+          "page_number": null,
+          "bbox": null,
+          "order": 1,
+          "sheet": "Chi_theo_bo",
+          "cell_range": "A5:J20"
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": {
+        "cells": [
+          {
+            "coordinate": "A5",
+            "row": 5,
+            "column": 1,
+            "value": "Bộ, ngành",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B5",
+            "row": 5,
+            "column": 2,
+            "value": "Dự toán chi thường xuyên",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "C5",
+            "row": 5,
+            "column": 3,
+            "value": "Dự toán chi đầu tư",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "D5",
+            "row": 5,
+            "column": 4,
+            "value": "Tổng dự toán",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "E5",
+            "row": 5,
+            "column": 5,
+            "value": "% tổng",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "F5",
+            "row": 5,
+            "column": 6,
+            "value": "Giải ngân TX 9 tháng",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "G5",
+            "row": 5,
+            "column": 7,
+            "value": "Giải ngân ĐT 9 tháng",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "H5",
+            "row": 5,
+            "column": 8,
+            "value": "Tổng giải ngân",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "I5",
+            "row": 5,
+            "column": 9,
+            "value": "Tỷ lệ giải ngân",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "J5",
+            "row": 5,
+            "column": 10,
+            "value": "Đánh giá",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A6",
+            "row": 6,
+            "column": 1,
+            "value": "Bộ Giáo dục",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B6",
+            "row": 6,
+            "column": 2,
+            "value": 38000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C6",
+            "row": 6,
+            "column": 3,
+            "value": 4000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D6",
+            "row": 6,
+            "column": 4,
+            "value": 42000,
+            "formula": "=B6+C6",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E6",
+            "row": 6,
+            "column": 5,
+            "value": 0.129071911493546,
+            "formula": "=D6/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F6",
+            "row": 6,
+            "column": 6,
+            "value": 27500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G6",
+            "row": 6,
+            "column": 7,
+            "value": 2400,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H6",
+            "row": 6,
+            "column": 8,
+            "value": 29900,
+            "formula": "=F6+G6",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I6",
+            "row": 6,
+            "column": 9,
+            "value": 0.711904761904762,
+            "formula": "=IFERROR(H6/D6,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J6",
+            "row": 6,
+            "column": 10,
+            "value": "Đạt",
+            "formula": "=IF(I6>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A7",
+            "row": 7,
+            "column": 1,
+            "value": "Bộ Y tế",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B7",
+            "row": 7,
+            "column": 2,
+            "value": 22000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C7",
+            "row": 7,
+            "column": 3,
+            "value": 6500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D7",
+            "row": 7,
+            "column": 4,
+            "value": 28500,
+            "formula": "=B7+C7",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E7",
+            "row": 7,
+            "column": 5,
+            "value": 0.0875845113706208,
+            "formula": "=D7/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F7",
+            "row": 7,
+            "column": 6,
+            "value": 15800,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G7",
+            "row": 7,
+            "column": 7,
+            "value": 3300,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H7",
+            "row": 7,
+            "column": 8,
+            "value": 19100,
+            "formula": "=F7+G7",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I7",
+            "row": 7,
+            "column": 9,
+            "value": 0.670175438596491,
+            "formula": "=IFERROR(H7/D7,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J7",
+            "row": 7,
+            "column": 10,
+            "value": "Chậm",
+            "formula": "=IF(I7>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A8",
+            "row": 8,
+            "column": 1,
+            "value": "Bộ Quốc phòng",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B8",
+            "row": 8,
+            "column": 2,
+            "value": 41000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C8",
+            "row": 8,
+            "column": 3,
+            "value": 5000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D8",
+            "row": 8,
+            "column": 4,
+            "value": 46000,
+            "formula": "=B8+C8",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E8",
+            "row": 8,
+            "column": 5,
+            "value": 0.141364474492932,
+            "formula": "=D8/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F8",
+            "row": 8,
+            "column": 6,
+            "value": 30500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G8",
+            "row": 8,
+            "column": 7,
+            "value": 3100,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H8",
+            "row": 8,
+            "column": 8,
+            "value": 33600,
+            "formula": "=F8+G8",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I8",
+            "row": 8,
+            "column": 9,
+            "value": 0.730434782608696,
+            "formula": "=IFERROR(H8/D8,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J8",
+            "row": 8,
+            "column": 10,
+            "value": "Đạt",
+            "formula": "=IF(I8>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A9",
+            "row": 9,
+            "column": 1,
+            "value": "Bộ Công an",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B9",
+            "row": 9,
+            "column": 2,
+            "value": 26000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C9",
+            "row": 9,
+            "column": 3,
+            "value": 3000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D9",
+            "row": 9,
+            "column": 4,
+            "value": 29000,
+            "formula": "=B9+C9",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E9",
+            "row": 9,
+            "column": 5,
+            "value": 0.089121081745544,
+            "formula": "=D9/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F9",
+            "row": 9,
+            "column": 6,
+            "value": 19600,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G9",
+            "row": 9,
+            "column": 7,
+            "value": 1700,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H9",
+            "row": 9,
+            "column": 8,
+            "value": 21300,
+            "formula": "=F9+G9",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I9",
+            "row": 9,
+            "column": 9,
+            "value": 0.73448275862069,
+            "formula": "=IFERROR(H9/D9,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J9",
+            "row": 9,
+            "column": 10,
+            "value": "Đạt",
+            "formula": "=IF(I9>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A10",
+            "row": 10,
+            "column": 1,
+            "value": "Bộ Giao thông Vận tải",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B10",
+            "row": 10,
+            "column": 2,
+            "value": 3500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C10",
+            "row": 10,
+            "column": 3,
+            "value": 44000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D10",
+            "row": 10,
+            "column": 4,
+            "value": 47500,
+            "formula": "=B10+C10",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E10",
+            "row": 10,
+            "column": 5,
+            "value": 0.145974185617701,
+            "formula": "=D10/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F10",
+            "row": 10,
+            "column": 6,
+            "value": 2300,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G10",
+            "row": 10,
+            "column": 7,
+            "value": 25000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H10",
+            "row": 10,
+            "column": 8,
+            "value": 27300,
+            "formula": "=F10+G10",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I10",
+            "row": 10,
+            "column": 9,
+            "value": 0.574736842105263,
+            "formula": "=IFERROR(H10/D10,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J10",
+            "row": 10,
+            "column": 10,
+            "value": "Chậm",
+            "formula": "=IF(I10>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A11",
+            "row": 11,
+            "column": 1,
+            "value": "Bộ Nông nghiệp và Môi trường",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B11",
+            "row": 11,
+            "column": 2,
+            "value": 4800,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C11",
+            "row": 11,
+            "column": 3,
+            "value": 15000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D11",
+            "row": 11,
+            "column": 4,
+            "value": 19800,
+            "formula": "=B11+C11",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E11",
+            "row": 11,
+            "column": 5,
+            "value": 0.0608481868469576,
+            "formula": "=D11/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F11",
+            "row": 11,
+            "column": 6,
+            "value": 3200,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G11",
+            "row": 11,
+            "column": 7,
+            "value": 9100,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H11",
+            "row": 11,
+            "column": 8,
+            "value": 12300,
+            "formula": "=F11+G11",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I11",
+            "row": 11,
+            "column": 9,
+            "value": 0.621212121212121,
+            "formula": "=IFERROR(H11/D11,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J11",
+            "row": 11,
+            "column": 10,
+            "value": "Chậm",
+            "formula": "=IF(I11>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A12",
+            "row": 12,
+            "column": 1,
+            "value": "Bộ Tài chính",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B12",
+            "row": 12,
+            "column": 2,
+            "value": 9500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C12",
+            "row": 12,
+            "column": 3,
+            "value": 1200,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D12",
+            "row": 12,
+            "column": 4,
+            "value": 10700,
+            "formula": "=B12+C12",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E12",
+            "row": 12,
+            "column": 5,
+            "value": 0.0328826060233559,
+            "formula": "=D12/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F12",
+            "row": 12,
+            "column": 6,
+            "value": 6900,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G12",
+            "row": 12,
+            "column": 7,
+            "value": 800,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H12",
+            "row": 12,
+            "column": 8,
+            "value": 7700,
+            "formula": "=F12+G12",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I12",
+            "row": 12,
+            "column": 9,
+            "value": 0.719626168224299,
+            "formula": "=IFERROR(H12/D12,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J12",
+            "row": 12,
+            "column": 10,
+            "value": "Đạt",
+            "formula": "=IF(I12>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A13",
+            "row": 13,
+            "column": 1,
+            "value": "Bộ Khoa học và Công nghệ",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B13",
+            "row": 13,
+            "column": 2,
+            "value": 7500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C13",
+            "row": 13,
+            "column": 3,
+            "value": 2500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D13",
+            "row": 13,
+            "column": 4,
+            "value": 10000,
+            "formula": "=B13+C13",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E13",
+            "row": 13,
+            "column": 5,
+            "value": 0.0307314074984634,
+            "formula": "=D13/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F13",
+            "row": 13,
+            "column": 6,
+            "value": 4900,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G13",
+            "row": 13,
+            "column": 7,
+            "value": 1300,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H13",
+            "row": 13,
+            "column": 8,
+            "value": 6200,
+            "formula": "=F13+G13",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I13",
+            "row": 13,
+            "column": 9,
+            "value": 0.62,
+            "formula": "=IFERROR(H13/D13,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J13",
+            "row": 13,
+            "column": 10,
+            "value": "Chậm",
+            "formula": "=IF(I13>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A14",
+            "row": 14,
+            "column": 1,
+            "value": "Bộ Lao động và Xã hội",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B14",
+            "row": 14,
+            "column": 2,
+            "value": 52000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C14",
+            "row": 14,
+            "column": 3,
+            "value": 1500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D14",
+            "row": 14,
+            "column": 4,
+            "value": 53500,
+            "formula": "=B14+C14",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E14",
+            "row": 14,
+            "column": 5,
+            "value": 0.164413030116779,
+            "formula": "=D14/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F14",
+            "row": 14,
+            "column": 6,
+            "value": 38200,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G14",
+            "row": 14,
+            "column": 7,
+            "value": 800,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H14",
+            "row": 14,
+            "column": 8,
+            "value": 39000,
+            "formula": "=F14+G14",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I14",
+            "row": 14,
+            "column": 9,
+            "value": 0.728971962616822,
+            "formula": "=IFERROR(H14/D14,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J14",
+            "row": 14,
+            "column": 10,
+            "value": "Đạt",
+            "formula": "=IF(I14>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A15",
+            "row": 15,
+            "column": 1,
+            "value": "Bộ Xây dựng",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B15",
+            "row": 15,
+            "column": 2,
+            "value": 2000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C15",
+            "row": 15,
+            "column": 3,
+            "value": 9000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D15",
+            "row": 15,
+            "column": 4,
+            "value": 11000,
+            "formula": "=B15+C15",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E15",
+            "row": 15,
+            "column": 5,
+            "value": 0.0338045482483098,
+            "formula": "=D15/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F15",
+            "row": 15,
+            "column": 6,
+            "value": 1400,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G15",
+            "row": 15,
+            "column": 7,
+            "value": 5200,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H15",
+            "row": 15,
+            "column": 8,
+            "value": 6600,
+            "formula": "=F15+G15",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I15",
+            "row": 15,
+            "column": 9,
+            "value": 0.6,
+            "formula": "=IFERROR(H15/D15,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J15",
+            "row": 15,
+            "column": 10,
+            "value": "Chậm",
+            "formula": "=IF(I15>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A16",
+            "row": 16,
+            "column": 1,
+            "value": "Bộ Công Thương",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B16",
+            "row": 16,
+            "column": 2,
+            "value": 2600,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C16",
+            "row": 16,
+            "column": 3,
+            "value": 11500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D16",
+            "row": 16,
+            "column": 4,
+            "value": 14100,
+            "formula": "=B16+C16",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E16",
+            "row": 16,
+            "column": 5,
+            "value": 0.0433312845728334,
+            "formula": "=D16/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F16",
+            "row": 16,
+            "column": 6,
+            "value": 1800,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G16",
+            "row": 16,
+            "column": 7,
+            "value": 6000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H16",
+            "row": 16,
+            "column": 8,
+            "value": 7800,
+            "formula": "=F16+G16",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I16",
+            "row": 16,
+            "column": 9,
+            "value": 0.553191489361702,
+            "formula": "=IFERROR(H16/D16,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J16",
+            "row": 16,
+            "column": 10,
+            "value": "Chậm",
+            "formula": "=IF(I16>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A17",
+            "row": 17,
+            "column": 1,
+            "value": "Bộ Ngoại giao",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B17",
+            "row": 17,
+            "column": 2,
+            "value": 3200,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C17",
+            "row": 17,
+            "column": 3,
+            "value": 600,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D17",
+            "row": 17,
+            "column": 4,
+            "value": 3800,
+            "formula": "=B17+C17",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E17",
+            "row": 17,
+            "column": 5,
+            "value": 0.0116779348494161,
+            "formula": "=D17/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F17",
+            "row": 17,
+            "column": 6,
+            "value": 2500,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G17",
+            "row": 17,
+            "column": 7,
+            "value": 400,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H17",
+            "row": 17,
+            "column": 8,
+            "value": 2900,
+            "formula": "=F17+G17",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I17",
+            "row": 17,
+            "column": 9,
+            "value": 0.763157894736842,
+            "formula": "=IFERROR(H17/D17,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J17",
+            "row": 17,
+            "column": 10,
+            "value": "Đạt",
+            "formula": "=IF(I17>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A18",
+            "row": 18,
+            "column": 1,
+            "value": "Bộ Tư pháp",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B18",
+            "row": 18,
+            "column": 2,
+            "value": 2300,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C18",
+            "row": 18,
+            "column": 3,
+            "value": 400,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D18",
+            "row": 18,
+            "column": 4,
+            "value": 2700,
+            "formula": "=B18+C18",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E18",
+            "row": 18,
+            "column": 5,
+            "value": 0.00829748002458513,
+            "formula": "=D18/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F18",
+            "row": 18,
+            "column": 6,
+            "value": 1700,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G18",
+            "row": 18,
+            "column": 7,
+            "value": 230,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H18",
+            "row": 18,
+            "column": 8,
+            "value": 1930,
+            "formula": "=F18+G18",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I18",
+            "row": 18,
+            "column": 9,
+            "value": 0.714814814814815,
+            "formula": "=IFERROR(H18/D18,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J18",
+            "row": 18,
+            "column": 10,
+            "value": "Đạt",
+            "formula": "=IF(I18>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A19",
+            "row": 19,
+            "column": 1,
+            "value": "Bộ Văn hóa, Thể thao và Du lịch",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B19",
+            "row": 19,
+            "column": 2,
+            "value": 3000,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C19",
+            "row": 19,
+            "column": 3,
+            "value": 3800,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D19",
+            "row": 19,
+            "column": 4,
+            "value": 6800,
+            "formula": "=B19+C19",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E19",
+            "row": 19,
+            "column": 5,
+            "value": 0.0208973570989551,
+            "formula": "=D19/D$20",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F19",
+            "row": 19,
+            "column": 6,
+            "value": 2100,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G19",
+            "row": 19,
+            "column": 7,
+            "value": 2100,
+            "formula": null,
+            "data_type": "n",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H19",
+            "row": 19,
+            "column": 8,
+            "value": 4200,
+            "formula": "=F19+G19",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I19",
+            "row": 19,
+            "column": 9,
+            "value": 0.617647058823529,
+            "formula": "=IFERROR(H19/D19,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J19",
+            "row": 19,
+            "column": 10,
+            "value": "Chậm",
+            "formula": "=IF(I19>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "A20",
+            "row": 20,
+            "column": 1,
+            "value": "TỔNG CÁC BỘ",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          },
+          {
+            "coordinate": "B20",
+            "row": 20,
+            "column": 2,
+            "value": 217400,
+            "formula": "=SUM(B6:B19)",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "C20",
+            "row": 20,
+            "column": 3,
+            "value": 108000,
+            "formula": "=SUM(C6:C19)",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "D20",
+            "row": 20,
+            "column": 4,
+            "value": 325400,
+            "formula": "=SUM(D6:D19)",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "E20",
+            "row": 20,
+            "column": 5,
+            "value": 1,
+            "formula": "=SUM(E6:E19)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "F20",
+            "row": 20,
+            "column": 6,
+            "value": 158400,
+            "formula": "=SUM(F6:F19)",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "G20",
+            "row": 20,
+            "column": 7,
+            "value": 61430,
+            "formula": "=SUM(G6:G19)",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "H20",
+            "row": 20,
+            "column": 8,
+            "value": 219830,
+            "formula": "=SUM(H6:H19)",
+            "data_type": "f",
+            "number_format": "#,##0;\\(#,##0\\);\\-"
+          },
+          {
+            "coordinate": "I20",
+            "row": 20,
+            "column": 9,
+            "value": 0.675568531038722,
+            "formula": "=IFERROR(H20/D20,0)",
+            "data_type": "f",
+            "number_format": "0.0%;\\(0.0%\\);\\-"
+          },
+          {
+            "coordinate": "J20",
+            "row": 20,
+            "column": 10,
+            "value": "Chậm",
+            "formula": "=IF(I20>=$B$3,\"Đạt\",\"Chậm\")",
+            "data_type": "f",
+            "number_format": "General"
+          }
+        ],
+        "values": [
+          [
+            "Bộ, ngành",
+            "Dự toán chi thường xuyên",
+            "Dự toán chi đầu tư",
+            "Tổng dự toán",
+            "% tổng",
+            "Giải ngân TX 9 tháng",
+            "Giải ngân ĐT 9 tháng",
+            "Tổng giải ngân",
+            "Tỷ lệ giải ngân",
+            "Đánh giá"
+          ],
+          [
+            "Bộ Giáo dục",
+            38000,
+            4000,
+            42000,
+            0.129071911493546,
+            27500,
+            2400,
+            29900,
+            0.711904761904762,
+            "Đạt"
+          ],
+          [
+            "Bộ Y tế",
+            22000,
+            6500,
+            28500,
+            0.0875845113706208,
+            15800,
+            3300,
+            19100,
+            0.670175438596491,
+            "Chậm"
+          ],
+          [
+            "Bộ Quốc phòng",
+            41000,
+            5000,
+            46000,
+            0.141364474492932,
+            30500,
+            3100,
+            33600,
+            0.730434782608696,
+            "Đạt"
+          ],
+          [
+            "Bộ Công an",
+            26000,
+            3000,
+            29000,
+            0.089121081745544,
+            19600,
+            1700,
+            21300,
+            0.73448275862069,
+            "Đạt"
+          ],
+          [
+            "Bộ Giao thông Vận tải",
+            3500,
+            44000,
+            47500,
+            0.145974185617701,
+            2300,
+            25000,
+            27300,
+            0.574736842105263,
+            "Chậm"
+          ],
+          [
+            "Bộ Nông nghiệp và Môi trường",
+            4800,
+            15000,
+            19800,
+            0.0608481868469576,
+            3200,
+            9100,
+            12300,
+            0.621212121212121,
+            "Chậm"
+          ],
+          [
+            "Bộ Tài chính",
+            9500,
+            1200,
+            10700,
+            0.0328826060233559,
+            6900,
+            800,
+            7700,
+            0.719626168224299,
+            "Đạt"
+          ],
+          [
+            "Bộ Khoa học và Công nghệ",
+            7500,
+            2500,
+            10000,
+            0.0307314074984634,
+            4900,
+            1300,
+            6200,
+            0.62,
+            "Chậm"
+          ],
+          [
+            "Bộ Lao động và Xã hội",
+            52000,
+            1500,
+            53500,
+            0.164413030116779,
+            38200,
+            800,
+            39000,
+            0.728971962616822,
+            "Đạt"
+          ],
+          [
+            "Bộ Xây dựng",
+            2000,
+            9000,
+            11000,
+            0.0338045482483098,
+            1400,
+            5200,
+            6600,
+            0.6,
+            "Chậm"
+          ],
+          [
+            "Bộ Công Thương",
+            2600,
+            11500,
+            14100,
+            0.0433312845728334,
+            1800,
+            6000,
+            7800,
+            0.553191489361702,
+            "Chậm"
+          ],
+          [
+            "Bộ Ngoại giao",
+            3200,
+            600,
+            3800,
+            0.0116779348494161,
+            2500,
+            400,
+            2900,
+            0.763157894736842,
+            "Đạt"
+          ],
+          [
+            "Bộ Tư pháp",
+            2300,
+            400,
+            2700,
+            0.00829748002458513,
+            1700,
+            230,
+            1930,
+            0.714814814814815,
+            "Đạt"
+          ],
+          [
+            "Bộ Văn hóa, Thể thao và Du lịch",
+            3000,
+            3800,
+            6800,
+            0.0208973570989551,
+            2100,
+            2100,
+            4200,
+            0.617647058823529,
+            "Chậm"
+          ],
+          [
+            "TỔNG CÁC BỘ",
+            217400,
+            108000,
+            325400,
+            1,
+            158400,
+            61430,
+            219830,
+            0.675568531038722,
+            "Chậm"
+          ]
+        ],
+        "range": "A5:J20",
+        "sheet": "Chi_theo_bo"
+      },
+      "metadata": {
+        "sheet": "Chi_theo_bo",
+        "parser": "openpyxl",
+        "workbook": "03_Chi_theo_bo_nganh_2026.xlsx",
+        "range": "A5:J20"
+      }
+    },
+    {
+      "element_id": "42c49790bad9f6ca121c-e3",
+      "element_type": "table",
+      "text": "| Lưu ý: chỉ gồm 14 bộ giả định, chưa bao gồm chi trả nợ, chi dự phòng và chi do địa phương thực hiện. |\n| --- |",
+      "text_for_embedding": "| Lưu ý: chỉ gồm 14 bộ giả định, chưa bao gồm chi trả nợ, chi dự phòng và chi do địa phương thực hiện. |\n| --- |",
+      "document_id": "42c49790bad9f6ca121c",
+      "page_number": null,
+      "section_id": null,
+      "parent_id": null,
+      "order": 2,
+      "bbox": null,
+      "heading_path": [],
+      "source_element_ids": [
+        "42c49790bad9f6ca121c-e3"
+      ],
+      "source_spans": [
+        {
+          "element_id": "42c49790bad9f6ca121c-e3",
+          "page_number": null,
+          "bbox": null,
+          "order": 2,
+          "sheet": "Chi_theo_bo",
+          "cell_range": "A22:A22"
+        }
+      ],
+      "asset_path": null,
+      "image_hash": null,
+      "generated_enrichment": null,
+      "uncertainty_flags": [],
+      "table_structure": {
+        "cells": [
+          {
+            "coordinate": "A22",
+            "row": 22,
+            "column": 1,
+            "value": "Lưu ý: chỉ gồm 14 bộ giả định, chưa bao gồm chi trả nợ, chi dự phòng và chi do địa phương thực hiện.",
+            "formula": null,
+            "data_type": "s",
+            "number_format": "General"
+          }
+        ],
+        "values": [
+          [
+            "Lưu ý: chỉ gồm 14 bộ giả định, chưa bao gồm chi trả nợ, chi dự phòng và chi do địa phương thực hiện."
+          ]
+        ],
+        "range": "A22:A22",
+        "sheet": "Chi_theo_bo"
+      },
+      "metadata": {
+        "sheet": "Chi_theo_bo",
+        "parser": "openpyxl",
+        "workbook": "03_Chi_theo_bo_nganh_2026.xlsx",
+        "range": "A22:A22"
+      }
+    }
+  ],
+  "metadata": {
+    "source_parser": "openpyxl"
+  }
+}
