@@ -1,9 +1,0 @@
-{
-  "model": "BAAI/bge-m3",
-  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
-  "dense_dimensions": 1024,
-  "dense": true,
-  "sparse": true,
-  "colbert": false,
-  "status": "not_generated"
-}

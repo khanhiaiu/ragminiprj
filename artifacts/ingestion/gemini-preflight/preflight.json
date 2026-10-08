@@ -1,8 +1,0 @@
-{
-  "vision_supported": true,
-  "provider": "google-gemini",
-  "model": "gemini-3.5-flash-lite",
-  "latency_ms": 2483,
-  "response_model": "gemini-3.5-flash-lite",
-  "parsed_image_type": "unknown"
-}
