@@ -1,11 +1,38 @@
-from pathlib import Path
 from types import SimpleNamespace
 
 import pytest
 from PIL import Image
 
+from document_parser.errors import DependencyUnavailableError
 from document_parser.parsers.docx.docling_parser import DoclingDOCXParser
-from document_parser.parsers.image.paddle_image_parser import PaddleEngine, PaddleImageParser
+from document_parser.parsers.image.paddle_image_parser import (
+    PaddleEngine,
+    PaddleImageParser,
+    recover_unassigned_ocr_lines,
+    require_requested_gpu,
+)
+
+
+@pytest.mark.parametrize(
+    "compiled,count,device",
+    [(False, 0, "gpu:0"), (True, 0, "gpu:0"), (True, 1, "gpu:1"), (True, 1, "gpu:-1")],
+)
+def test_gpu_request_fails_without_usable_cuda(compiled, count, device):
+    paddle = SimpleNamespace(
+        is_compiled_with_cuda=lambda: compiled,
+        device=SimpleNamespace(cuda=SimpleNamespace(device_count=lambda: count)),
+    )
+    with pytest.raises(DependencyUnavailableError):
+        require_requested_gpu(device, paddle)
+
+
+def test_gpu_preflight_accepts_visible_card_and_cpu_does_not_import_cuda():
+    paddle = SimpleNamespace(
+        is_compiled_with_cuda=lambda: True,
+        device=SimpleNamespace(cuda=SimpleNamespace(device_count=lambda: 1)),
+    )
+    require_requested_gpu("gpu:0", paddle)
+    require_requested_gpu("cpu", None)
 
 
 def test_image_preserves_original_and_table_structure(tmp_path):
@@ -14,11 +41,26 @@ def test_image_preserves_original_and_table_structure(tmp_path):
 
     class Backend:
         def predict(self, path):
-            yield SimpleNamespace(json={"res": {"parsing_res_list": [
-                {"block_label": "table", "block_content": "<table><tr><td>Value</td></tr></table>",
-                 "block_bbox": [10, 10, 100, 80], "block_order": 0},
-                {"block_label": "image", "block_content": "", "block_bbox": [100, 0, 200, 100], "block_order": 1},
-            ]}})
+            yield SimpleNamespace(
+                json={
+                    "res": {
+                        "parsing_res_list": [
+                            {
+                                "block_label": "table",
+                                "block_content": "<table><tr><td>Value</td></tr></table>",
+                                "block_bbox": [10, 10, 100, 80],
+                                "block_order": 0,
+                            },
+                            {
+                                "block_label": "image",
+                                "block_content": "",
+                                "block_bbox": [100, 0, 200, 100],
+                                "block_order": 1,
+                            },
+                        ]
+                    }
+                }
+            )
 
     assets = tmp_path / "output/assets"
     doc = PaddleImageParser(assets, PaddleEngine(backend=Backend())).parse(path)
@@ -35,23 +77,50 @@ def test_ocr_recovers_layout_omissions_without_duplicate_table_or_text(tmp_path)
 
     class Backend:
         def predict(self, path):
-            yield SimpleNamespace(json={"res": {
-                "parsing_res_list": [
-                    {"block_label": "text", "block_content": "Body content", "block_bbox": [10, 50, 190, 80]},
-                    {"block_label": "table", "block_content": "<table><tr><td>42</td></tr></table>",
-                     "block_bbox": [10, 100, 190, 150]},
-                ],
-                "overall_ocr_res": {
-                    "rec_texts": ["Missing title", "Body content", "Missing middle", "42", "Missing tail"],
-                    "rec_boxes": [[10, 10, 180, 30], [10, 50, 180, 70], [10, 85, 180, 95],
-                                  [10, 105, 40, 120], [10, 160, 180, 180]],
-                    "rec_scores": [0.9] * 5,
-                },
-            }})
+            yield SimpleNamespace(
+                json={
+                    "res": {
+                        "parsing_res_list": [
+                            {
+                                "block_label": "text",
+                                "block_content": "Body content",
+                                "block_bbox": [10, 50, 190, 80],
+                            },
+                            {
+                                "block_label": "table",
+                                "block_content": "<table><tr><td>42</td></tr></table>",
+                                "block_bbox": [10, 100, 190, 150],
+                            },
+                        ],
+                        "overall_ocr_res": {
+                            "rec_texts": [
+                                "Missing title",
+                                "Body content",
+                                "Missing middle",
+                                "42",
+                                "Missing tail",
+                            ],
+                            "rec_boxes": [
+                                [10, 10, 180, 30],
+                                [10, 50, 180, 70],
+                                [10, 85, 180, 95],
+                                [10, 105, 40, 120],
+                                [10, 160, 180, 180],
+                            ],
+                            "rec_scores": [0.9] * 5,
+                        },
+                    }
+                }
+            )
 
     parsed = PaddleEngine(backend=Backend()).predict(path)
-    assert [e["text"] for e in parsed] == ["Missing title", "Body content", "Missing middle",
-                                           "<table><tr><td>42</td></tr></table>", "Missing tail"]
+    assert [e["text"] for e in parsed] == [
+        "Missing title",
+        "Body content",
+        "Missing middle",
+        "<table><tr><td>42</td></tr></table>",
+        "Missing tail",
+    ]
     recovered = [e for e in parsed if e["metadata"].get("layout_fallback")]
     assert len(recovered) == 3
     assert all(e["metadata"]["ocr_confidence"] == 0.9 for e in recovered)
@@ -60,24 +129,97 @@ def test_ocr_recovers_layout_omissions_without_duplicate_table_or_text(tmp_path)
 def test_docling_adapter_uses_structural_order(tmp_path):
     path = tmp_path / "x.docx"
     path.write_bytes(b"fake fixture for injected converter")
-    items = [SimpleNamespace(label=SimpleNamespace(value="section_header"), text="Heading", level=1,
-                              self_ref="#/texts/0", parent=None, prov=[]),
-             SimpleNamespace(label=SimpleNamespace(value="text"), text="Body", self_ref="#/texts/1",
-                              parent=SimpleNamespace(cref="#/texts/0"), prov=[])]
+    items = [
+        SimpleNamespace(
+            label=SimpleNamespace(value="section_header"),
+            text="Heading",
+            level=1,
+            self_ref="#/texts/0",
+            parent=None,
+            prov=[],
+        ),
+        SimpleNamespace(
+            label=SimpleNamespace(value="text"),
+            text="Body",
+            self_ref="#/texts/1",
+            parent=SimpleNamespace(cref="#/texts/0"),
+            prov=[],
+        ),
+    ]
 
     class Document:
         pages = {}
+
         def iterate_items(self):
             return [(item, 1) for item in items]
 
     class Converter:
         def convert(self, path):
-            return SimpleNamespace(document=Document(), status=SimpleNamespace(value="success"), errors=[])
+            return SimpleNamespace(
+                document=Document(), status=SimpleNamespace(value="success"), errors=[]
+            )
 
     doc = DoclingDOCXParser(converter=Converter()).parse(path)
     assert [e.element_type for e in doc.elements] == ["heading", "paragraph"]
     assert doc.elements[1].parent_id == doc.elements[0].element_id
     assert doc.elements[0].page_number is None
+
+
+def test_contained_page_number_does_not_get_recovered_twice():
+    elements = [
+        {"element_type": "paragraph_title", "text": "2", "bbox": [302, 42, 309, 52], "metadata": {}}
+    ]
+    ocr = {
+        "rec_texts": ["2", "2"],
+        "rec_boxes": [[300, 40, 312, 55], [300, 140, 312, 155]],
+        "rec_scores": [0.99, 0.99],
+    }
+    parsed = recover_unassigned_ocr_lines(elements, ocr)
+    assert len(parsed) == 2
+    assert parsed[0]["bbox"] == [302, 42, 309, 52]
+    assert parsed[1]["metadata"]["layout_fallback"]
+
+
+def test_ocr_line_joining_and_page_number_exclusion(tmp_path):
+    path = tmp_path / "scan.png"
+    Image.new("RGB", (1000, 1000), "white").save(path)
+
+    class Backend:
+        def predict(self, path):
+            yield SimpleNamespace(
+                json={
+                    "res": {
+                        "parsing_res_list": [
+                            {
+                                "block_label": "text",
+                                "block_content": "Chủtịch Hồ Chí Minh",
+                                "block_bbox": [100, 200, 800, 280],
+                            },
+                            {
+                                "block_label": "paragraph_title",
+                                "block_content": "2",
+                                "block_bbox": [495, 30, 505, 50],
+                            },
+                        ],
+                        "overall_ocr_res": {
+                            "rec_texts": ["Chủ", "tịch Hồ Chí Minh", "2"],
+                            "rec_boxes": [
+                                [100, 200, 800, 225],
+                                [100, 250, 800, 275],
+                                [490, 25, 510, 55],
+                            ],
+                            "rec_scores": [0.9, 0.95, 0.99],
+                        },
+                    }
+                }
+            )
+
+    doc = PaddleImageParser(engine=PaddleEngine(backend=Backend())).parse(path)
+    body = next(e for e in doc.elements if e.text == "Chủ tịch Hồ Chí Minh")
+    assert body.metadata["text_original"] == "Chủtịch Hồ Chí Minh"
+    assert len(body.metadata["ocr_lines"]) == 2
+    number = next(e for e in doc.elements if e.text == "2")
+    assert number.element_type == "footer" and number.metadata["exclude_from_content"]
 
 
 def test_real_docling_images_and_tables(tmp_path):
@@ -99,7 +241,9 @@ def test_real_docling_images_and_tables(tmp_path):
     word.save(source)
     assets = tmp_path / "output/assets"
     parsed = DoclingDOCXParser(assets).parse(source)
-    assert {"heading", "paragraph", "list", "table", "image"} <= {e.element_type for e in parsed.elements}
+    assert {"heading", "paragraph", "list", "table", "image"} <= {
+        e.element_type for e in parsed.elements
+    }
     table_element = next(e for e in parsed.elements if e.element_type == "table")
     assert table_element.metadata["table_data"]["num_rows"] == 2
     image_element = next(e for e in parsed.elements if e.element_type == "image")

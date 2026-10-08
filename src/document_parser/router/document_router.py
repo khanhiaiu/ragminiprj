@@ -6,7 +6,14 @@ from ..parsers.base import BaseDocumentParser
 
 
 class DocumentRouter:
-    FORMATS = {".pdf": "pdf", ".docx": "docx", ".xlsx": "excel", ".png": "image", ".jpg": "image", ".jpeg": "image"}
+    FORMATS = {
+        ".pdf": "pdf",
+        ".docx": "docx",
+        ".xlsx": "excel",
+        ".png": "image",
+        ".jpg": "image",
+        ".jpeg": "image",
+    }
 
     def __init__(self, factories: dict[str, Callable[[], BaseDocumentParser]] | None = None):
         self.factories = factories or {}

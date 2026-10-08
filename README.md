@@ -1,27 +1,32 @@
 # RAG Document Parser
 
-Pipeline Python dùng để đọc và chuẩn hóa tài liệu trước khi đưa vào hệ thống RAG. Project hỗ trợ PDF, DOCX, XLSX và ảnh PNG/JPG/JPEG; kết quả chính là JSON theo schema `CanonicalDocument`, kèm Markdown và các asset để kiểm tra.
+Pipeline Python dùng để đọc tài liệu `PDF`, `DOCX`, `XLSX` và ảnh, sau đó chuẩn hóa nội dung và xuất ra JSON, Markdown cùng các asset liên quan.
 
-Project hiện tập trung vào ingestion và parsing. Chunking, embedding, vector database và retrieval chưa nằm trong pipeline này.
+> Project tập trung vào ingestion/parsing và có lớp chuẩn bị dữ liệu retrieval; chưa triển khai
+> chunking, embedding, vector database hoặc truy vấn.
 
 ## Yêu cầu
 
-- Python 3.10–3.13; khuyến nghị Python 3.12
-- Linux hoặc môi trường có PaddlePaddle wheel tương thích
-- CPU chạy được toàn bộ pipeline; không bắt buộc GPU
-- Internet trong lần cài dependency và tải model đầu tiên
+- Python `3.11` đến `3.13` (khuyến nghị `3.12`)
+- Internet ở lần cài dependency và tải model đầu tiên
+- Chọn **một** backend Paddle: CPU hoặc GPU
 
-## Chạy nhanh
+Các lệnh bên dưới được chạy tại thư mục gốc của project (`ragminiprj`).
 
-Thực hiện các lệnh sau từ thư mục gốc của project:
+## Chạy nhanh bằng CPU
 
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
+
 python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
+python -m pip install -e '.[cpu]'
 python scripts/download_ocr_models.py
-python scripts/parse_test_documents.py --ocr-options config/ocr_scan_vi.json
+
+python scripts/parse_test_documents.py \
+  --device cpu \
+  --input documents \
+  --output parsed_test_document/cpu
 ```
 
 Trên Windows PowerShell, kích hoạt môi trường bằng:
@@ -30,268 +35,138 @@ Trên Windows PowerShell, kích hoạt môi trường bằng:
 .venv\Scripts\Activate.ps1
 ```
 
-`requirements.txt` cài project ở chế độ editable cùng các extra DOCX, OCR và test. `constraints.txt` khóa các phiên bản đã được kiểm tra trên Python 3.12/Linux CPU.
+## Chạy bằng GPU
 
-Nếu Python trên Debian/Ubuntu không có `ensurepip`, có thể tạo môi trường bằng:
-
-```bash
-python3.12 -m venv --without-pip .venv
-python -m pip --python .venv/bin/python install pip
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-```
-
-Nếu việc cài PaddlePaddle từ PyPI gặp lỗi, cài CPU wheel trước rồi chạy lại requirements:
+Tạo một virtual environment riêng và cài bản `paddlepaddle-gpu` phù hợp với CUDA/driver của máy. Ví dụ với CUDA 11.8:
 
 ```bash
-python -m pip install paddlepaddle==3.3.0 \
-  --index-url https://www.paddlepaddle.org.cn/packages/stable/cpu/
-python -m pip install -r requirements.txt
+python3.12 -m venv .venv-gpu
+source .venv-gpu/bin/activate
+
+python -m pip install --upgrade pip
+python -m pip install paddlepaddle-gpu==3.3.0 \
+  --index-url https://www.paddlepaddle.org.cn/packages/stable/cu118/
+python -m pip install -e '.[gpu]'
+python scripts/download_ocr_models.py
+
+python scripts/check_gpu.py
+python scripts/parse_test_documents.py \
+  --device gpu \
+  --input documents \
+  --output parsed_test_document/gpu
 ```
 
-## Chuẩn bị dữ liệu
+Nếu dùng phiên bản CUDA khác, chọn wheel Paddle tương ứng theo [hướng dẫn cài đặt PaddlePaddle](https://www.paddlepaddle.org.cn/documentation/docs/en/install/index_en.html). Parser sẽ báo lỗi nếu GPU không khả dụng, không tự động chuyển sang CPU.
 
-Đặt tài liệu cần xử lý vào thư mục `documents/`:
+## Cấu hình
+
+File cấu hình mặc định nằm tại [`src/document_parser/config.yaml`](src/document_parser/config.yaml). Các mục thường cần chỉnh:
+
+```yaml
+device: gpu:0 # cpu, gpu hoặc gpu:N
+
+paths:
+  input: documents
+  output: parsed_test_document/results
+
+ocr:
+  dpi: 150
+```
+
+Có thể không sửa file cấu hình mà ghi đè trực tiếp khi chạy:
+
+```bash
+python scripts/parse_test_documents.py \
+  --device cpu \
+  --input /path/to/documents \
+  --output /path/to/results
+```
+
+Hoặc dùng một file YAML riêng:
+
+```bash
+python scripts/parse_test_documents.py --config /path/to/config.yaml
+```
+
+Các tùy chọn CLI chính:
 
 ```text
-documents/
-  tai_lieu.pdf
-  bao_cao.docx
-  du_lieu.xlsx
-  anh_scan.png
+--device cpu|gpu|gpu:N
+--input PATH
+--output PATH
+--config PATH
+--layout-model MODEL
+--detection-model MODEL
+--recognition-model MODEL
+--corrector protonx|protonx_legal|bmd1905|bravend
 ```
 
-Các định dạng được hỗ trợ:
+Thư mục output phải nằm ngoài thư mục input. Lệnh trả exit code `1` nếu không tìm thấy tài liệu hỗ trợ, có file lỗi hoặc có tài liệu chỉ được xử lý một phần.
 
-| Định dạng | Backend | Nội dung trích xuất |
-| --- | --- | --- |
-| PDF digital | PyMuPDF | Text, bảng, ảnh, font và bounding box |
-| PDF scan | PaddleOCR PPStructureV3 | Layout, OCR, bounding box và ảnh trang |
-| PDF hybrid | PyMuPDF | Native text và image assets |
-| DOCX | Docling | Heading, đoạn văn, danh sách, bảng và ảnh |
-| XLSX | openpyxl | Vùng bảng, giá trị, công thức và merged cells |
-| PNG/JPG/JPEG | PaddleOCR PPStructureV3 | OCR, layout và bounding box |
+## Kết quả
 
-## Tải model OCR
-
-Profile tiếng Việt dùng ba nhóm model:
-
-- Recognition tiếng Việt: `.cache/models/ppocrv6_vi/`
-- Layout: `.cache/paddlex/official_models/PP-DocLayout-S/`
-- Text detection: `.cache/paddlex/official_models/PP-OCRv5_mobile_det/`
-
-Tải model recognition tiếng Việt bằng:
-
-```bash
-python scripts/download_ocr_models.py
-```
-
-Script tải bốn inference file từ model `tieubaoca/pp-ocrv6-medium-rec-vietnamese`, cố định revision và ghi checksum vào `model_manifest.json`. Model layout và detection được Paddle tải vào `.cache/paddlex/` khi OCR chạy lần đầu. Toàn bộ `.cache/` đã được loại khỏi Git.
-
-Muốn lưu recognition model ở vị trí khác:
-
-```bash
-python scripts/download_ocr_models.py --output /duong/dan/model
-```
-
-Sau đó cập nhật `text_recognition_model_dir` trong file cấu hình OCR.
-
-## Chạy parser
-
-### Chạy với profile OCR tiếng Việt
-
-Đây là lệnh khuyến nghị cho tập tài liệu có PDF scan hoặc ảnh tiếng Việt:
-
-```bash
-python scripts/parse_test_documents.py \
-  --input documents \
-  --output parsed_test_document \
-  --ocr-options config/ocr_scan_vi.json
-```
-
-### Chạy với cấu hình mặc định
-
-Nếu chỉ xử lý PDF digital, DOCX hoặc XLSX:
-
-```bash
-python scripts/parse_test_documents.py
-```
-
-Mặc định script đọc `documents/` và ghi vào `parsed_test_document/`. Các đường dẫn mặc định luôn được tính từ thư mục project, nên có thể gọi script từ working directory khác.
-
-### Điều chỉnh DPI OCR
-
-```bash
-python scripts/parse_test_documents.py \
-  --ocr-options config/ocr_scan_vi.json \
-  --ocr-dpi 200
-```
-
-DPI mặc định là 150. Tăng DPI có thể giúp tài liệu chữ nhỏ nhưng sẽ dùng nhiều RAM và chạy lâu hơn.
-
-### Chạy bằng Python API
-
-```python
-from pathlib import Path
-
-from document_parser import DocumentPipeline
-
-pipeline = DocumentPipeline()
-summary = pipeline.parse_all(
-    Path("documents"),
-    Path("parsed_test_document"),
-)
-print(summary["counts"])
-```
-
-Nếu cần profile tiếng Việt qua API, đọc `config/ocr_scan_vi.json`, resolve các đường dẫn tương đối theo thư mục `config/`, rồi truyền dictionary vào `ParserConfig(ocr_options=...)`. Script CLI đã thực hiện bước resolve này tự động.
-
-## Kết quả đầu ra
-
-Mỗi tài liệu tạo một thư mục riêng:
+Mỗi tài liệu được ghi vào một thư mục riêng:
 
 ```text
 parsed_test_document/
   summary.json
-  tai_lieu/
+  ten_tai_lieu/
     document.json
     document.md
     assets/
 ```
 
-- `document.json`: dữ liệu chuẩn để pipeline RAG sử dụng
-- `document.md`: phiên bản dễ đọc để kiểm tra thủ công
-- `assets/`: ảnh gốc, ảnh trích xuất và trang PDF được render cho OCR
-- `summary.json`: trạng thái toàn batch, parser đã dùng, chất lượng và lỗi từng file/trang
+- `summary.json`: tổng hợp trạng thái của cả batch và lỗi theo file
+- `document.json`: nội dung chuẩn hóa, metadata, quality và thông tin OCR
+- `document.md`: bản dễ đọc để kiểm tra kết quả
+- `assets/`: ảnh gốc, ảnh trích xuất hoặc trang PDF đã render
 
-Script trả exit code `0` khi tất cả file thành công và `1` khi không có input, có file lỗi hoặc có trang ở trạng thái partial. Một trang lỗi không làm dừng toàn bộ batch.
+## Dùng Python API
 
-## Chạy test
+```python
+from document_parser import DocumentPipeline, ProjectConfig
 
-Chạy toàn bộ test:
-
-```bash
-python -m pytest -q
+config = ProjectConfig.load().parser_config(device="cpu")
+summary = DocumentPipeline(config).parse_all("documents", "parsed_test_document/api")
+print(summary["counts"])
 ```
 
-Tách test nhanh và integration test:
+Chuẩn bị element sạch và có context heading cho bước chunk/embed sau này:
+
+```python
+from document_parser import RetrievalPreprocessor
+
+document = DocumentPipeline(config).parse(
+    "documents/report.pdf", "parsed_test_document/report"
+)
+retrieval_document = RetrievalPreprocessor().process(document)
+```
+
+## Kiểm tra project
 
 ```bash
 python -m pytest -q -m 'not integration'
-python -m pytest -q -m integration
+ruff check src scripts tests
+ruff format --check src scripts tests
 ```
 
-Các test thông thường không yêu cầu GPU hoặc model OCR thật; OCR backend được giả lập ở những test phù hợp.
+Test dùng tài liệu/model thật chạy riêng bằng `python -m pytest -q -m integration`.
 
-## Cấu hình OCR
-
-Profile `config/ocr_scan_vi.json` dành cho tài liệu scan tiếng Việt dạng văn bản trên CPU. Profile sử dụng:
-
-- `PP-DocLayout-S` cho layout
-- `PP-OCRv5_mobile_det` cho text detection
-- `PP-OCRv6_medium_rec` với model tiếng Việt cho recognition
-- Tắt orientation, unwarping, region detection, table recognition và formula recognition
-
-Table recognition bị tắt vì profile này ưu tiên scan văn bản. Việc trích xuất bảng native từ PDF digital và XLSX vẫn hoạt động. Nếu tài liệu scan có bảng, tạo một file JSON khác và bật `use_table_recognition`.
-
-Ví dụ cấu hình OCR tối giản:
-
-```json
-{
-  "device": "cpu",
-  "cpu_threads": 4,
-  "enable_mkldnn": false,
-  "use_doc_orientation_classify": false,
-  "use_doc_unwarping": false,
-  "use_textline_orientation": false,
-  "use_formula_recognition": false
-}
-```
-
-Chạy bằng file cấu hình riêng:
+Benchmark OCR một số trang PDF:
 
 ```bash
-python scripts/parse_test_documents.py --ocr-options ocr_options.json
+python scripts/benchmark_ocr.py \
+  --device gpu \
+  --input documents/hp.pdf \
+  --pages 1 15 31 \
+  --output parsed_test_document/benchmark.json
 ```
 
-## Luồng xử lý
+Tài liệu chi tiết về model, hậu xử lý OCR, cấu trúc output và các giới hạn hiện tại nằm tại [`docs/README.md`](docs/README.md). Báo cáo parse gần nhất nằm tại [`docs/PARSE_REPORT.md`](docs/PARSE_REPORT.md).
 
-```mermaid
-flowchart TD
-    A[Tài liệu đầu vào] --> B[Document Router]
-    B --> C{Định dạng}
-    C -->|PDF| D[Phân tích từng trang]
-    C -->|DOCX| E[Docling]
-    C -->|XLSX| F[openpyxl]
-    C -->|Ảnh| G[PaddleOCR]
-    D -->|Digital/Hybrid| H[PyMuPDF]
-    D -->|Scanned| G
-    H --> I{Quality đạt?}
-    I -->|Không| G
-    I -->|Có| J[Normalizer]
-    E --> J
-    F --> J
-    G --> J
-    J --> K[CanonicalDocument]
-    K --> L[JSON, Markdown, Assets]
-```
+## Xử lý lỗi thường gặp
 
-PDF được phân loại theo từng trang. Pipeline ưu tiên native extraction khi text đủ tốt và chỉ fallback sang OCR cho trang scan hoặc trang không đạt quality check. OCR thay thế text native trên trang fallback để tránh dữ liệu trùng.
-
-## Cấu trúc project
-
-```text
-config/                     Cấu hình PaddleOCR và profile tiếng Việt
-documents/                  Tài liệu đầu vào mặc định
-scripts/
-  download_ocr_models.py    Tải model recognition tiếng Việt
-  parse_test_documents.py   CLI chạy parser theo batch
-src/document_parser/
-  loader/                   Đọc và kiểm tra file
-  router/                   Chọn parser, phân loại trang PDF
-  parsers/                  PDF, DOCX, XLSX và image adapters
-  normalization/            Canonical schema và normalizer
-  quality/                  Kiểm tra chất lượng extraction
-  utils/                    Serialization và file utilities
-tests/                      Unit và integration tests
-```
-
-## Lỗi thường gặp
-
-**`Cannot initialize PPStructureV3`**
-
-Kiểm tra môi trường đã được activate và chạy lại:
-
-```bash
-python -m pip install -r requirements.txt
-python scripts/download_ocr_models.py
-```
-
-**Không tìm thấy model tiếng Việt**
-
-Kiểm tra file sau tồn tại:
-
-```bash
-ls .cache/models/ppocrv6_vi/inference.pdiparams
-```
-
-Sau đó chạy parser với `--ocr-options config/ocr_scan_vi.json`.
-
-**Paddle báo lỗi OneDNN/PIR trên CPU**
-
-Profile mặc định đã tắt MKLDNN cho pipeline. Nếu lỗi xuất hiện trong recognition model, bỏ phần `engine_config` của `TextRecognition` trong `config/ocr_pp_structure_vi.yaml` để dùng CPU backend thông thường.
-
-**Script kết thúc với exit code 1**
-
-Mở `parsed_test_document/summary.json` để xem `failed`, `partial`, `failed_pages` và thông báo lỗi tương ứng.
-
-## Giới hạn hiện tại
-
-- Reading order và heading của PDF digital dựa trên heuristic, có thể sai ở layout nhiều cột.
-- PDF hybrid chưa OCR chọn lọc từng vùng ảnh.
-- DOCX thường không có page number hoặc bounding box thật.
-- openpyxl không tự tính lại công thức Excel.
-- OCR tiếng Việt vẫn có thể sai dấu, số, ký tự và thứ tự đọc.
-- Quality check đánh giá cấu trúc và chất lượng text cơ bản, chưa đo CER/WER.
-
-Kết quả kiểm thử trên bộ tài liệu mẫu nằm trong `PARSE_REPORT.md`.
+- **Không tìm thấy tài liệu:** kiểm tra `--input`; chỉ các định dạng PDF, DOCX, XLSX và ảnh được hỗ trợ.
+- **Không tải được model:** kiểm tra kết nối mạng rồi chạy lại `python scripts/download_ocr_models.py`.
+- **GPU verification failed:** kiểm tra wheel Paddle, CUDA và driver bằng `python scripts/check_gpu.py`.
+- **CLI trả mã lỗi `1`:** mở `summary.json`, sau đó kiểm tra `failed_pages` và lỗi trong metadata của tài liệu.

@@ -1,5 +1,20 @@
-# Reproducible development environment.
-# Direct and transitive versions validated on Python 3.12 / Linux CPU are pinned
-# in constraints.txt; project dependencies and extras are defined in pyproject.toml.
--c constraints.txt
--e .[docx,ocr,test]
+# Shared dependencies, also read by pyproject.toml for package metadata.
+# Install exactly one Paddle backend with the project's cpu or gpu extra.
+pymupdf==1.28.2
+openpyxl==3.1.5
+pydantic==2.13.5
+pillow==12.3.0
+PyYAML==6.0.2
+docling-slim[format-docx]==2.133.0
+docling-core==2.99.0
+paddleocr[doc-parser]==3.7.0
+paddlex==3.7.2
+huggingface-hub>=0.34,<1
+transformers>=4.45,<5
+sentencepiece>=0.2,<0.2.2
+# PyTorch 2.9+ wheels may require a newer CUDA driver than this project's
+# validated NVIDIA 575 / CUDA 12.9 host. Keep the CUDA 12.8-compatible line.
+torch>=2.2,<2.9
+opencv-contrib-python==4.10.0.84
+numpy==2.3.5
+pytest==9.1.1

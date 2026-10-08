@@ -30,8 +30,11 @@ def detect_table_regions(sheet) -> list[tuple[int, int, int, int]]:
     occupied = {(c.row, c.column) for row in sheet.iter_rows() for c in row if c.value is not None}
     for merged in sheet.merged_cells.ranges:
         if sheet.cell(merged.min_row, merged.min_col).value is not None:
-            occupied.update((r, c) for r in range(merged.min_row, merged.max_row + 1)
-                            for c in range(merged.min_col, merged.max_col + 1))
+            occupied.update(
+                (r, c)
+                for r in range(merged.min_row, merged.max_row + 1)
+                for c in range(merged.min_col, merged.max_col + 1)
+            )
     regions = []
     for r1, r2 in contiguous_bands({r for r, _ in occupied}):
         columns = {c for r, c in occupied if r1 <= r <= r2}
@@ -64,7 +67,8 @@ class ExcelParser:
                 if sheet.max_row * sheet.max_column > self.config.max_excel_region_cells:
                     raise DocumentParseError(f"Sheet {sheet.title!r} exceeds configured cell limit")
                 sheet_meta = {
-                    "sheet": sheet.title, "state": sheet.sheet_state,
+                    "sheet": sheet.title,
+                    "state": sheet.sheet_state,
                     "merged_cells": [str(r) for r in sheet.merged_cells.ranges],
                     "hidden_rows": [n for n, d in sheet.row_dimensions.items() if d.hidden],
                     "hidden_columns": [k for k, d in sheet.column_dimensions.items() if d.hidden],
@@ -81,15 +85,34 @@ class ExcelParser:
                                 value = cell.value
                             values.append(json_value(value) if value is not None else formula)
                             if cell.value is not None:
-                                cells.append({"coordinate": cell.coordinate, "row": cell.row, "column": cell.column,
-                                              "value": json_value(value), "formula": formula, "data_type": cell.data_type,
-                                              "number_format": cell.number_format})
+                                cells.append(
+                                    {
+                                        "coordinate": cell.coordinate,
+                                        "row": cell.row,
+                                        "column": cell.column,
+                                        "value": json_value(value),
+                                        "formula": formula,
+                                        "data_type": cell.data_type,
+                                        "number_format": cell.number_format,
+                                    }
+                                )
                         rows.append(values)
                     region = f"{get_column_letter(c1)}{r1}:{get_column_letter(c2)}{r2}"
-                    data["elements"].append({"element_type": "table", "text": table_markdown(rows),
-                        "metadata": {**sheet_meta, "parser": "openpyxl", "workbook": path.name,
-                                     "range": region, "values": rows, "cells": cells,
-                                     "formula_cache_note": "openpyxl does not recalculate formulas"}})
+                    data["elements"].append(
+                        {
+                            "element_type": "table",
+                            "text": table_markdown(rows),
+                            "metadata": {
+                                **sheet_meta,
+                                "parser": "openpyxl",
+                                "workbook": path.name,
+                                "range": region,
+                                "values": rows,
+                                "cells": cells,
+                                "formula_cache_note": "openpyxl does not recalculate formulas",
+                            },
+                        }
+                    )
         finally:
             formulas.close()
             cached.close()
