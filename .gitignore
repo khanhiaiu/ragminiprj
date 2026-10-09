@@ -37,3 +37,5 @@ tmp/
 .DS_Store
 Thumbs.db
 documents/
+.codex-private/
+refactor_ocr/
